@@ -1,7 +1,6 @@
-import style from './button.module.css'
 interface Props {
     title: string;
-    className: string
+    className: string;
 }
 
 export default function Button({ title, className }: Props) {

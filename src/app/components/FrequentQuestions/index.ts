@@ -1,1 +1,1 @@
-export * from './FrequentQuestions';
+export { default as FrequentQuestions } from './FrequentQuestions';

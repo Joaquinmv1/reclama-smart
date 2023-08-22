@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import { Accordion } from "react-bootstrap";
 
 export default function FrequentQuestions() {
