@@ -1,8 +1,10 @@
-import FrequentQuestions from './components/FrequentQuestions/FrequentQuestions';
+import { FrequentQuestions, FrontPage } from "./components";
+
 export default function Home() {
   return (
     <>
-      <FrequentQuestions/>
+      <FrontPage />
+      <FrequentQuestions />
     </>
   )
 }

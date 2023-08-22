@@ -4,6 +4,8 @@ import Image from "next/image";
 import arrow from "../../../assets/images/chevron-up.png";
 import { useState } from "react";
 
+import { Accordion } from "react-bootstrap";
+
 export default function FrequentQuestions() {
   const info = [
     {
