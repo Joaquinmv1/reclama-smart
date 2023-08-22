@@ -1,5 +1,6 @@
 import { Footer, Navbar } from '@/components'
 import './globals.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 
