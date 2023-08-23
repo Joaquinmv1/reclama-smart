@@ -17,4 +17,14 @@
   font-style: normal;
   font-weight: 600;
   /* line-height: normal; */
-}
+  body{
+  background-color: #FAFAFA;
+  }
+
+  a{
+  text-decoration: none;
+  }
+
+  li{
+    list-style: none;
+ }
