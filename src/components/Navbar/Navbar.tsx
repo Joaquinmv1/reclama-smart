@@ -6,7 +6,6 @@ import logo from '../../assets/images/LOGO.svg'
 import what from '../../assets/images/Vector.svg'
 import React, { useState } from "react"
 import { routes } from "@/assets/constants/constants"
-import Button from "../Button/Button"
 
 
 export default function Navbar() {
