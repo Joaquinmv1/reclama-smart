@@ -1,10 +1,10 @@
-import FrontPage from "./components/FrontPage/FrontPage";
-import FrequentQuestions from './components/FrequentQuestions/FrequentQuestions';
+import { FeacturedService, FrequentQuestions, FrontPage } from "./components";
 
 export default function Home() {
   return (
     <>
       <FrontPage />
+      <FeacturedService />
       <FrequentQuestions />
     </>
   )
