@@ -20,7 +20,7 @@ export default function Footer() {
     <footer className={styles.footer}>
 
       <section className={styles.featuresSection}>
-        <div>
+        <div className={styles.information}>
 
           <p>Términos y condiciones</p>
           <p>Política y privacidad</p>
@@ -29,8 +29,9 @@ export default function Footer() {
 
         <p>Copyright © Reclamaquí 2023 - Todos los derechos reservados</p>
       </section>
-      <section className={styles.contactSection}>
 
+
+      <section className={styles.contactSection}>
 
         <Image src={logo} alt="logo" width={200} height={50} />
         <p>info@reclameaqui.pe</p>

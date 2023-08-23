@@ -6,9 +6,9 @@
 
 .footer {
   background-color: #fff;
-  padding: 50px 100px;
+  padding: 48px 150px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
 }
 
@@ -20,5 +20,21 @@
 
 .redes {
   display: flex;
-  gap: 10px;
+  gap: 30px;
 }
+
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+/* 
+{
+  color: #111;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+} */
