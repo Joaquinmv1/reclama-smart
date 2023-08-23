@@ -13,7 +13,7 @@ export default function FrontPage() {
 				<Button title='Consulta Gratis' className={style.button} />
 			</div>
 			<div className={style.banner}>
-				<Image width={600} alt='banner' src={imgBanner} />
+				<Image src={imgBanner} width={600} alt='banner' />
 			</div>
 		</section>
 	)

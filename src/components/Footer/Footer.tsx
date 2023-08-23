@@ -7,7 +7,6 @@ import img3 from 'src/assets/images/logo-tik.svg'
 import img4 from 'src/assets/images/logo-wp.svg'
 import logo from 'src/assets/images/logo-reclama-smart.svg'
 
-
 export default function Footer() {
 
   const redes = [

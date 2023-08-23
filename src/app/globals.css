@@ -4,11 +4,19 @@
   margin: 0;
 }
 
+:root {
+  --color-primary: #02311A;
+  --color-secondary: #FF5220;
+}
 
-  a{
+body{
+  background-color: #FAFAFA;
+}
+
+a{
   text-decoration: none;
-  }
+}
 
-  li{
+li{
     list-style: none;
- }
+}
