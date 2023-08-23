@@ -4,27 +4,19 @@
   margin: 0;
 }
 
-.button {
-  color: white;
-  display: inline-flex;
-  padding: 15px 50px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 8px;
-  background-color: #FF5220;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  /* line-height: normal; */
-  body{
+:root {
+  --color-primary: #02311A;
+  --color-secondary: #FF5220;
+}
+
+body{
   background-color: #FAFAFA;
-  }
+}
 
-  a{
+a{
   text-decoration: none;
-  }
+}
 
-  li{
+li{
     list-style: none;
- }
+}

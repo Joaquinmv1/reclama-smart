@@ -1,10 +1,8 @@
-"use client"
-import style from "./FrequentQuestions.module.css";
+"use client";
 import Image from "next/image";
-import arrow from "../../../assets/images/chevron-up.png";
 import { useState } from "react";
-
-import { Accordion } from "react-bootstrap";
+import arrow from "../../../assets/images/chevron-up.png";
+import style from "./FrequentQuestions.module.css";
 
 export default function FrequentQuestions() {
   const info = [

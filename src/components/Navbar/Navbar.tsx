@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import logo from '../../assets/images/LOGO.svg';
-import what from '../../assets/images/Vector.svg';
+import what from '../../assets/images/whatsapp.svg';
 import style from './navbar.module.css';
 
 export default function Navbar() {
