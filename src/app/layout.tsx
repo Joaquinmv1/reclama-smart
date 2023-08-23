@@ -1,12 +1,24 @@
 import { Footer, Navbar } from '@/components';
 import type { Metadata } from 'next';
-import { Roboto } from 'next/font/google';
+import { Roboto, Montserrat, Open_Sans } from 'next/font/google';
 import './globals.css';
 
 const roboto = Roboto({
   weight: ['400', '500', '700'],
   subsets: ['latin'],
   variable: '--font-roboto',
+  display: 'optional'
+});
+const montserrat = Montserrat({
+  weight: ['400', '500', '700', '900'],
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+  display: 'optional'
+});
+const openSans = Open_Sans({
+  weight: ['400', '500', '700'],
+  subsets: ['latin'],
+  variable: '--font-openSans',
   display: 'optional'
 });
 
@@ -22,7 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={roboto.className}>
+      <body className={`${roboto.className} ${montserrat.className}`}>
         <Navbar />
         {children}
         <Footer />
