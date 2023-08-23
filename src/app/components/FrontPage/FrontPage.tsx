@@ -1,7 +1,7 @@
 import style from './FrontPage.module.css';
 import Button from '@/components/Button/Button';
 import Image from 'next/image';
-import imgBanner from '../../../assets/images/banner.jpg';
+import imgBanner from '../../../assets/images/banner1.svg';
 
 export default function FrontPage() {
 	return (
@@ -13,7 +13,7 @@ export default function FrontPage() {
 				<Button title='Consulta Gratis' className={style.button} />
 			</div>
 			<div className={style.banner}>
-				<Image width={600} alt='banner' src={imgBanner} />
+				<Image src={imgBanner} width={600} alt='banner' />
 			</div>
 		</section>
 	)
