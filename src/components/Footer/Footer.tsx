@@ -9,6 +9,7 @@ import logo from 'src/assets/images/logo-reclama-smart.svg'
 
 
 export default function Footer() {
+
   const redes = [
     img1,
     img2,
