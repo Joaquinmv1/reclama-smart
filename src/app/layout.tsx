@@ -1,10 +1,10 @@
-import { Footer, Navbar, Partners } from '@/components'
+import { Footer, Navbar } from '@/components'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 
-const roboto = Roboto({
-  weight: ['400', '500', '700'],
+const roboto = Roboto({ 
+  weight: ['400','500', '700'],
   subsets: ['latin'],
   variable: '--font-roboto',
   display: 'optional'
