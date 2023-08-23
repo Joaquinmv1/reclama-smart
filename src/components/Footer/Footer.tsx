@@ -36,7 +36,7 @@ export default function Footer() {
         <p>+ 51 932 468 027</p>
         <div className={styles.redes}>
           {
-            redes.map((red) => <Image key={red} src={red} alt="logo-red" width={20} height={20} />)
+            redes.map((red, i) => <Image key={`${red} ${i}`} src={red} alt="logo-red" width={20} height={20} />)
           }
         </div>
 
