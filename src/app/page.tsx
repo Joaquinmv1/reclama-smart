@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <>
       <FrontPage />
-      {/* <FeacturedService />
-      <FrequentQuestions /> */}
+      <FeacturedService />
+      <FrequentQuestions />
     </>
   )
 }

@@ -19,7 +19,7 @@ export default function Navbar() {
     <header className={style.containerNavbar}>
       <NavbarResponsive/>
       <Image className={style.logo} width={250} height={30} alt="logo" src={logo} />
-      <nav>
+      <nav className={style.navB}>
         <ul className={style.links}>
           {routes.map(({ route, name }) => {
             const classNames = activeLink === name ? style.activeLink : ''
@@ -29,11 +29,11 @@ export default function Navbar() {
               </li>
             )
           })}
+        </ul>
           <button className={style.button}>
             <Image className={style.whatsapp} alt="whatsapp" src={what} width={36} height={36} />
             Chatear
           </button>
-        </ul>
       </nav>
     </header>
   )

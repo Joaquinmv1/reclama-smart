@@ -71,7 +71,7 @@
     width: 3rem;
     height: 3rem;
     position: absolute;
-    top: 0.8rem;
+    top: 1rem;
     right: 2rem;
     background-color: transparent;
     border: none;
@@ -83,7 +83,7 @@
     display: block;
     height: 2px;
     width: 100%;
-    background-color: #FF5220;
+    background-color: #02311A;
 }
 .icono{
     margin-right: 0.8rem;
