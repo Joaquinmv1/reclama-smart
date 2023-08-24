@@ -11,13 +11,13 @@ import NavbarResponsive from "@/app/components/NavbarResponsive/navbarResponsive
 export default function Navbar() {
   const [activeLink, setActiveLink] = useState('Inicio');
 
-  const activeClick = (route: Route) => {
+  const activeClick = (route: string) => {
     setActiveLink(route);
   };
 
   return (
     <header className={style.containerNavbar}>
-      <NavbarResponsive/>
+      <NavbarResponsive />
       <Image className={style.logo} width={250} height={30} alt="logo" src={logo} />
       <nav className={style.navB}>
         <ul className={style.links}>
@@ -30,10 +30,10 @@ export default function Navbar() {
             )
           })}
         </ul>
-          <button className={style.button}>
-            <Image className={style.whatsapp} alt="whatsapp" src={what} width={36} height={36} />
-            Chatear
-          </button>
+      <button className={style.button}>
+        <Image className={style.whatsapp} alt="whatsapp" src={what} width={36} height={36} />
+        Chatear
+      </button>
       </nav>
     </header>
   )

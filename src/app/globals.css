@@ -5,13 +5,22 @@
 }
 
 :root {
-  --color-primary: #02311A;
-  --color-secondary: #FF5220;
-  
+  --color-primary: #FF5220;
+  --color-secondary: #93E2AC;
+  --color-acento: #43A047;
+  --color-primaryLight: #FF744C;
+  --color-secundaryLight: #345A47;
+  --color-acentoLight: #43A047;
+  --color-primaryLigh2: #B23916;
+  --color-secundaryDark: #012212;
+  --color-acentoLight2: #43A047;
+  --color-fondo: #F0F2F5;
+  --color-title: #02311A;
+  --color-texts: #374F42;
 }
 
 body{
-  background-color: #F0F2F5;
+  background-color: var(--color-fondo);
 }
 
 a {

@@ -5,7 +5,7 @@ import logo from '../../../assets/images/LOGO.svg'
 import { routes, iconRoute } from '@/assets/constants/constants';
 import Link from 'next/link';
 export default function NavbarResponsive() {
-    const [menuOpen, setMenuOpen] = useState(true);
+    const [menuOpen, setMenuOpen] = useState(false);
 
 
     const handleLinkClick = () => {
