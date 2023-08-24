@@ -1,9 +1,10 @@
-import bussines from '../images/business.svg';
+import { Routes } from '@/app/models';
+import businessImg from '../../assets/images/business.jpg';
 import vector from '../images/Vector.svg';
 import bag from '../images/bag.svg';
-import businessImg from '../../assets/images/business.jpg';
+import bussines from '../images/business.svg';
 
-export const routes = [
+export const routes: Routes[] = [
   { name: "Inicio", route: "/" },
   { name: "Conócenos", route: "/" },
   { name: "Servicios", route: "/" },

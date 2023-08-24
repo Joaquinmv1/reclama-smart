@@ -1,5 +1,7 @@
-import { BusinessInsight, FeacturedService, FrequentQuestions, FrontPage } from "./components";
+
+import { BusinessInsight, FeacturedService, FrequentQuestions, FrontPage, OurAlliances } from "./components";
 import { Cases } from "./components/Cases";
+
 
 export default function Home() {
   return (
@@ -9,6 +11,7 @@ export default function Home() {
       <BusinessInsight />
       <Cases />
       <FrequentQuestions />
+      <OurAlliances />
     </>
   )
 }
