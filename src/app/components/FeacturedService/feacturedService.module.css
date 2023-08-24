@@ -1,0 +1,72 @@
+.container-feacturedService {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--color-secundaryLight);
+
+  width: 100%;
+}
+
+.container-aboutServices {
+  width: 73%;
+  margin-block:.5rem ;
+}
+
+.titleServices {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-block: .7rem;
+}
+
+.pServices {
+  width:50%;
+  font-size: .9rem;
+  margin-block: 1rem;
+}
+
+.aboutServicesSpan {
+  font-weight: bold;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+
+  width: 65%;
+  margin-block: .7rem;
+}
+
+.cardContainer li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+
+  border-radius: 10px;
+  font-size: 1.3rem;
+  width: 240px;
+  height: 230px;
+  font-weight:bolder;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.buttonService {
+  border: none;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  width: 15.5rem;
+  padding: 16px 50px;
+  border-radius: 10px;
+  margin: 1rem 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.buttonService:hover{
+  color: #d4d4d4;
+}
