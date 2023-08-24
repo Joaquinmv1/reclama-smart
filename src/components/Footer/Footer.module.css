@@ -29,6 +29,27 @@
   gap: 23px;
 }
 
+.button {
+  display: flex;
+  padding: 15px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(--ff-5220, #FF5220);
+  color: white;
+  font-weight: 600;
+  border: none;
+}
+
+.text {
+  color: var(--02311-a, #02311A);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
 /* 
 {
   color: #111;
