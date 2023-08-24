@@ -45,13 +45,11 @@
 .link:hover {
   background-size: 100% 2px;
   cursor: pointer;
-  color: #FF5220;
+  color: var(--color-primary);
 }
 
-
 .activeLink {
-  color: #FF5220;
-  text-decoration: underline;
+  text-decoration: underline var(--color-primary);
 }
 
 .button {
