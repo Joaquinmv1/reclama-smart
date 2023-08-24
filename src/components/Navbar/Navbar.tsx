@@ -6,6 +6,7 @@ import logo from '../../assets/images/LOGO.svg'
 import what from '../../assets/images/whatsapp.svg'
 import React, { useState } from "react"
 import { routes } from "@/assets/constants/constants"
+import NavbarResponsive from "@/app/components/NavbarResponsive/navbarResponsive"
 
 export default function Navbar() {
   const [activeLink, setActiveLink] = useState('inicio');
@@ -16,7 +17,8 @@ export default function Navbar() {
 
   return (
     <header className={style.containerNavbar}>
-      <Image width={250} height={30} alt="logo" src={logo} />
+      <NavbarResponsive/>
+      <Image className={style.logo} width={250} height={30} alt="logo" src={logo} />
       <nav>
         <ul className={style.links}>
           {routes.map(({ route, name }) => {
@@ -28,7 +30,7 @@ export default function Navbar() {
             )
           })}
           <button className={style.button}>
-            <Image alt="whatsapp" src={what} width={36} height={36} />
+            <Image className={style.whatsapp} alt="whatsapp" src={what} width={36} height={36} />
             Chatear
           </button>
         </ul>
