@@ -12,6 +12,7 @@
     position: fixed;
     top: 0;
   }
+
   .navB{
     display: flex;
     justify-content: center;
@@ -20,16 +21,12 @@
     gap: 3rem;
   }
   
-  .links {
-}
-
 .links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    gap: 3rem;
-}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 3rem;
   
  .link {
     color: #000000;
@@ -53,29 +50,24 @@
   
   .activeLink {
     color: #0b854e;
+  }
+
+.button {
+  color: #FFF;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #02311A;
+  font-family: var(--font-openSans);
 }
 
-
-.activeLink {
-    text-decoration: underline 3px #FF5220;
-}
-  
- .button {
-    color: #FFF;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 10px;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    background: #02311A;
-    font-family: var(--font-openSans);
-}
-  
 .button:hover {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     transform: scale(0.98);
@@ -122,3 +114,6 @@
       padding: 0.5rem 0.5rem;
     }
   }
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transform: scale(0.98);
+}
