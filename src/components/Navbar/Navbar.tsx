@@ -31,10 +31,10 @@ export default function Navbar() {
             )
           })}
         </ul>
-      <button className={style.button}>
-        <Image className={style.whatsapp} alt="whatsapp" src={what} width={36} height={36} />
-        Chatear
-      </button>
+        <button className={style.button}>
+          <Image className={style.whatsapp} alt="whatsapp" src={what} width={36} height={36} />
+          Chatear
+        </button>
       </nav>
     </header>
   )
