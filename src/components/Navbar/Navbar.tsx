@@ -1,16 +1,17 @@
-'use client'
-import Link from "next/link"
-import Image from "next/image"
-import style from './navbar.module.css'
-import logo from '../../assets/images/LOGO.svg'
-import what from '../../assets/images/whatsapp.svg'
-import React, { useState } from "react"
-import { routes } from "@/assets/constants/constants"
+'use client';
+import { routes } from "@/assets/constants/constants";
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+import logo from '../../assets/images/LOGO.svg';
+import what from '../../assets/images/whatsapp.svg';
+import style from './navbar.module.css';
+import { Route } from "@/app/models";
 
 export default function Navbar() {
-  const [activeLink, setActiveLink] = useState('inicio');
+  const [activeLink, setActiveLink] = useState('Inicio');
 
-  const activeClick = (route: string) => {
+  const activeClick = (route: Route) => {
     setActiveLink(route);
   };
 
@@ -20,7 +21,7 @@ export default function Navbar() {
       <nav>
         <ul className={style.links}>
           {routes.map(({ route, name }) => {
-            const classNames = activeLink === name ? style.activeLink : ''
+            const classNames = activeLink === name ? style.activeLink : '';
             return (
               <li key={name} className={classNames} >
                 <Link onClick={() => activeClick(name)} className={style.link} href={route}>{name}</Link>

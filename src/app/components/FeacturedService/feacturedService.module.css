@@ -3,19 +3,26 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
   color: var(--color-primary);
+
+  width: 100%;
 }
 
 .container-aboutServices {
+  width: 73%;
+  margin-block:.5rem ;
 }
 
 .titleServices {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-block: .7rem;
 }
 
 .pServices {
-  /* margin-block: .5rem; */
-  width: 60%;
+  width:50%;
+  font-size: .9rem;
+  margin-block: 1rem;
 }
 
 .aboutServicesSpan {
@@ -24,9 +31,10 @@
 
 .cardContainer {
   display: flex;
-  width: 50%;
   justify-content: space-around;
-  gap: 15px;
+  gap: 20px;
+
+  width: 65%;
   margin-block: .7rem;
 }
 
@@ -39,9 +47,10 @@
 
   border-radius: 10px;
   font-size: 1.3rem;
-  width: 250px;
+  width: 240px;
   height: 230px;
-  font-weight: bold;
+  font-weight:bolder;
+  background-color: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -51,9 +60,13 @@
   color: #fff;
   font-weight: 600;
   width: 15.5rem;
-  padding: 16px 60px;
+  padding: 16px 50px;
   border-radius: 10px;
   margin: 1rem 0;
-  margin-left: 1.8rem;
   text-align: center;
+  cursor: pointer;
+}
+
+.buttonService:hover{
+  color: #d4d4d4;
 }
