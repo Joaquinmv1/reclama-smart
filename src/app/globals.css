@@ -10,31 +10,33 @@
   
 }
 
-body{
+body {
   background-color: #FAFAFA;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-body,html{
+body,
+html {
   background-color: #FAFAFA;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-li{
+li {
   list-style: none;
 }
