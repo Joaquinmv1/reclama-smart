@@ -12,7 +12,9 @@
   position: fixed;
   top: 0;
 }
-
+.logo{
+  margin-left: 1.3rem;
+}
 .navB {
   display: flex;
   justify-content: center;
@@ -45,13 +47,11 @@
 .link:hover {
   background-size: 100% 2px;
   cursor: pointer;
-  color: #FF5220;
+  color: var(--color-primary);
 }
 
-
 .activeLink {
-  color: #FF5220;
-  text-decoration: underline;
+  text-decoration: underline var(--color-primary);
 }
 
 .button {

@@ -12,7 +12,7 @@ import vector from '../images/Vector.svg'
 
 export const routes: Routes[] = [
   { name: "Inicio", route: "/" },
-  { name: "Conócenos", route: "/" },
+  { name: "Conócenos", route: "/about" },
   { name: "Servicios", route: "/" },
   { name: "Blog", route: "/" },
   { name: "Contacto", route: "/" }
