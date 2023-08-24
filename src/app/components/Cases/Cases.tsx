@@ -16,7 +16,10 @@ export default function Cases() {
                     <Image className={style.imageArrowLeft} src={left} alt="Arrow left"/>
                 </div>
 
-                <div className={style.box}></div>
+                <div className={style.box}>
+                    <p>Luis C.</p>
+                    <small>23/03/2023</small>
+                </div>
                 <div className={style.box}></div>
                 <div className={style.box}></div>
 
