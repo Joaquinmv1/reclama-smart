@@ -1,12 +1,12 @@
-'use client';
-import { routes } from "@/assets/constants/constants";
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
-import logo from '../../assets/images/LOGO.svg';
-import what from '../../assets/images/whatsapp.svg';
-import style from './navbar.module.css';
-import { Route } from "@/app/models";
+'use client'
+import Link from "next/link"
+import Image from "next/image"
+import style from './navbar.module.css'
+import logo from '../../assets/images/LOGO.svg'
+import what from '../../assets/images/whatsapp.svg'
+import React, { useState } from "react"
+import { routes } from "@/assets/constants/constants"
+import NavbarResponsive from "@/app/components/NavbarResponsive/navbarResponsive"
 
 export default function Navbar() {
   const [activeLink, setActiveLink] = useState('Inicio');
@@ -17,8 +17,9 @@ export default function Navbar() {
 
   return (
     <header className={style.containerNavbar}>
-      <Image width={250} height={30} alt="logo" src={logo} />
-      <nav>
+      <NavbarResponsive/>
+      <Image className={style.logo} width={250} height={30} alt="logo" src={logo} />
+      <nav className={style.navB}>
         <ul className={style.links}>
           {routes.map(({ route, name }) => {
             const classNames = activeLink === name ? style.activeLink : '';
@@ -28,11 +29,11 @@ export default function Navbar() {
               </li>
             )
           })}
+        </ul>
           <button className={style.button}>
-            <Image alt="whatsapp" src={what} width={36} height={36} />
+            <Image className={style.whatsapp} alt="whatsapp" src={what} width={36} height={36} />
             Chatear
           </button>
-        </ul>
       </nav>
     </header>
   )

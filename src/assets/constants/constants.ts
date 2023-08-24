@@ -2,6 +2,11 @@ import { Routes } from '@/app/models';
 import businessImg from '../../assets/images/business.jpg';
 import vector from '../images/Vector.svg';
 import bag from '../images/bag.svg';
+import home from '../images/home.svg';
+import about from '../images/about.svg';
+import service from '../images/service.svg';
+import blog from '../images/blog.svg';
+import contact from '../images/contact.svg';
 import bussines from '../images/business.svg';
 
 export const routes: Routes[] = [
@@ -13,9 +18,17 @@ export const routes: Routes[] = [
 ];
 
 export const cardsServices = [
-  { image: vector, title: "Vuelos" },
-  { image: bussines, title: "Estadías" },
-  { image: bag, title: "Compras" }
+  { icon: vector, title: "Vuelos" },
+  { icon: bussines, title: "Estadías" },
+  { icon: bag, title: "Compras" }
+];
+
+export const iconRoute = [
+  {icon: home},
+  {icon:about},
+  {icon: service},
+  {icon: blog},
+  {icon: contact}
 ];
 
 export const businessInfo = [

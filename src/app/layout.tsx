@@ -34,7 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={`${roboto.className} ${montserrat.className}`}>
+      <body className={`${montserrat.className} ${openSans.className}`}>
         <Navbar />
         {children}
         <Footer />

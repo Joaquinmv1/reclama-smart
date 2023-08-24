@@ -10,27 +10,18 @@
   
 }
 
-body {
-  background-color: #FAFAFA;
+body{
+  background-color: #F0F2F5;
 }
 
 a {
   text-decoration: none;
 }
 
-li {
-  list-style: none;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-body,
-html {
-  background-color: #FAFAFA;
 }
 
 a {
