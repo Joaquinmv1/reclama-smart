@@ -1,17 +1,18 @@
 'use client'
-import Link from "next/link"
+import NavbarResponsive from "@/app/components/NavbarResponsive/navbarResponsive"
+import { Route } from "@/app/models"
+import { routes } from "@/assets/constants/constants"
 import Image from "next/image"
-import style from './navbar.module.css'
+import Link from "next/link"
+import { useState } from "react"
 import logo from '../../assets/images/LOGO.svg'
 import what from '../../assets/images/whatsapp.svg'
-import React, { useState } from "react"
-import { routes } from "@/assets/constants/constants"
-import NavbarResponsive from "@/app/components/NavbarResponsive/navbarResponsive"
+import style from './navbar.module.css'
 
 export default function Navbar() {
   const [activeLink, setActiveLink] = useState('Inicio');
 
-  const activeClick = (route: string) => {
+  const activeClick = (route: Route) => {
     setActiveLink(route);
   };
 

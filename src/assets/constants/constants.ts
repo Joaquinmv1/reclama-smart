@@ -1,6 +1,5 @@
 import { Routes } from '@/app/models';
 import businessImg from '../../assets/images/business.jpg';
-import vector from '../images/Vector.svg';
 import bag from '../images/bag.svg';
 import home from '../images/home.svg';
 import about from '../images/about.svg';
@@ -8,6 +7,8 @@ import service from '../images/service.svg';
 import blog from '../images/blog.svg';
 import contact from '../images/contact.svg';
 import bussines from '../images/business.svg';
+import vector from '../images/Vector.svg'
+
 
 export const routes: Routes[] = [
   { name: "Inicio", route: "/" },
@@ -18,9 +19,9 @@ export const routes: Routes[] = [
 ];
 
 export const cardsServices = [
-  { icon: vector, title: "Vuelos" },
-  { icon: bussines, title: "Estadías" },
-  { icon: bag, title: "Compras" }
+  { image: vector, title: "Vuelos" },
+  { image: bussines, title: "Estadías" },
+  { image: bag, title: "Compras" }
 ];
 
 export const iconRoute = [

@@ -1,4 +1,4 @@
-import { Card } from '@/app/models/card.model';
+import { Card } from '@/app/models';
 import Image from 'next/image';
 
 interface Props {
