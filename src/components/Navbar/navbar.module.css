@@ -12,7 +12,9 @@
   position: fixed;
   top: 0;
 }
-
+.logo{
+  margin-left: 1.3rem;
+}
 .navB {
   display: flex;
   justify-content: center;
