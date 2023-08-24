@@ -1,4 +1,4 @@
-import { BusinessInsight, FeacturedService, FrequentQuestions, FrontPage } from "./components";
+import { BusinessInsight, FeacturedService, FrequentQuestions, FrontPage, OurAlliances } from "./components";
 
 export default function Home() {
   return (
@@ -7,6 +7,7 @@ export default function Home() {
       <FeacturedService />
       <BusinessInsight />
       <FrequentQuestions />
+      <OurAlliances />
     </>
   )
 }
