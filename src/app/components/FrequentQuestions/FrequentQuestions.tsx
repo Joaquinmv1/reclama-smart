@@ -35,14 +35,14 @@ export default function FrequentQuestions() {
   };
 
   return (
-    <div className={`${style["answers-contain"]} container fluid`}>
+    <div className={`${style["answers-contain"]}`}>
       <h2>Preguntas frecuentes</h2>
       {info.map((inf, index) => (
-        <div className={style.acordion} key={index}>
+        <div className={style.acordion} key={inf.title}>
           <div
             className={`${style.acordionHeader} ${
-              openAccordion === index ? style.active : ""
-            }`}
+            openAccordion === index ? style.active : ""
+            } ${index === 0 ? style.firstAccordion : ""} ${index === info.length - 1 ? style.lastAccordion : ""}`}
             onClick={() => handleAccordion(index)}
           >
             <h5>{inf.title}</h5>
@@ -52,7 +52,7 @@ export default function FrequentQuestions() {
               alt="Arrow icon"
             />
           </div>
-
+  
           {openAccordion === index && (
             <div className={`${style.acordionBody} ${openAccordion === index ? style.open : ""}`}>
               <p>{inf.description}</p>
@@ -61,5 +61,5 @@ export default function FrequentQuestions() {
         </div>
       ))}
     </div>
-  );
+  ); 
 }
