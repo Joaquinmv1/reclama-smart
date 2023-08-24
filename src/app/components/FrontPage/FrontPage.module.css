@@ -12,7 +12,7 @@
 }
 
 .title {
-  color: #02311A;
+  color: var(--color-title);
   font-weight: 900;
   font-size: 4rem;
   font-weight: 900;
@@ -20,14 +20,14 @@
 }
 
 .subTitle {
-  color: #374F42;
+  color: var(--color-texts);
   font-size: 1.7rem;
   margin-bottom: 5rem;
   font-family: var(--font-montserrat);
 }
 
 .h5 {
-  color: #374F42;
+  color: var(--color-texts);
   font-size: 24px;
   margin-bottom: 15px;
   font-family: var(--font-openSans);
@@ -36,8 +36,8 @@
 
 .button {
   padding: 1rem 3rem;
-  color: #FFF;
-  background-color: #FF5220;
+  color: #FFFFFF;
+  background-color: var(--color-primary);
   border: none;
   border-radius: 8px;
   font-size: 20px;
@@ -117,5 +117,45 @@
   .image{
     max-width: 330px;
     max-height: 330px;
+  }
+}
+@media only screen and (max-width: 660px){
+  .title {
+    font-size: 2rem;
+  }
+  .subTitle .h5{
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  .button{
+    padding: 0.7rem 1.5rem;
+  }
+  .image{
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .bannerDescrip{
+    gap: 0.6rem;
+  }
+}
+@media only screen and (max-width: 525px){
+  .image{
+    display: none;
+  }
+  .button{
+    padding: 0.5rem 1rem;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .subTitle{
+    font-size: 0.8rem;
+    margin-bottom: 0.1rem;
+  }
+  .h5{
+    font-size: 0.6rem;
+  }
+  .bannerDescrip{
+    width: 100%;
   }
 }
