@@ -1,11 +1,16 @@
+.section-containerBusiness{
+  background-color: var(--color-fondo);
+}
+
 .businessInfo {
   width: 73%;
-  color: var(--color-secundaryLight);
+  color: var(--color-title);
+
   margin: 0 auto;
 }
 
 .businessInfo h2 {
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
   margin-block: 1.5rem;
 }
@@ -46,8 +51,6 @@
   display: none;
 }
 
-
-
 @media screen and (max-width: 1600px) {
   .businessInfo {
     width: 81%;
@@ -60,7 +63,6 @@
     width: 80%;
   }
   .card-business {
-    /* flex-direction: column; */
     justify-content: space-evenly;
     gap: 0px;
   }
@@ -146,5 +148,13 @@
     margin-block:7rem;
     width: 50px;
     height: 800px;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .businessInfo h2 {
+    text-align: center;
+    font-size: 1.7rem;
+
   }
 }
