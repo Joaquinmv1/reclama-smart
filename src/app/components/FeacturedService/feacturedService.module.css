@@ -4,19 +4,22 @@
   align-items: center;
   flex-direction: column;
   color: var(--color-title);
+  font-family: var(--font-openSans);
   width: 100%;
+  margin-top: 3.8rem;
 }
 
 .container-aboutServices {
   width: 73%;
-  margin-block:.5rem ;
+  margin-block:.5rem;
 }
 
 .titleServices {
   font-size: 2.5rem;
   font-size: 1.7rem;
   font-weight: bold;
-  margin-block: .7rem;
+  margin-block: 1rem;
+  font-family: var(--font-montserrat);
 }
 
 .pServices {
@@ -35,7 +38,7 @@
   gap: 20px;
 
   width: 65%;
-  margin-block: .7rem;
+  margin-block: 1.2rem;
 }
 
 .cardContainer li{
