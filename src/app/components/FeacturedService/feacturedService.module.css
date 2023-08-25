@@ -70,3 +70,19 @@
 .buttonService:hover{
   color: #d4d4d4;
 }
+
+@media screen and (max-width: 850px) {
+  .cardContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1250px) { x
+  .pServices {
+    width: 100%;
+    font-size: 1rem;
+  }
+}

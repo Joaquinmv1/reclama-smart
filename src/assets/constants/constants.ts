@@ -9,7 +9,6 @@ import contact from '../images/contact.svg';
 import bussines from '../images/business.svg';
 import vector from '../images/Vector.svg'
 
-
 export const routes: Routes[] = [
   { name: "Inicio", route: "/" },
   { name: "Conócenos", route: "/about" },
