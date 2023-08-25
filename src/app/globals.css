@@ -40,3 +40,31 @@ a {
 li {
   list-style: none;
 }
+.vector2{
+  position: absolute;
+  top: 50rem;
+  left: 0;
+  z-index: 20;
+}
+.vector{
+  position: absolute;
+  top: 110rem;
+  right: 0;
+  z-index: 10;
+}
+.imgVector{
+  width: 200px;
+}
+@media only screen and (max-width: 800px){
+  .imgVector{
+    width: 150px;
+  }
+  .imgVector2{
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 600px){
+  .vector{
+    display: none;
+  }
+}
