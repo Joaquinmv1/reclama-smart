@@ -8,8 +8,14 @@
   background-color: #fff;
   padding: 48px 150px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 
+}
+
+.containerFooter {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
 }
 
 .contactSection {

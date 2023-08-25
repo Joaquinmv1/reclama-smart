@@ -7,7 +7,7 @@
 :root {
   --color-primary: #02311A;
   --color-secondary: #FF5220;
-  
+
 }
 
 body {
@@ -39,4 +39,13 @@ a {
 
 li {
   list-style: none;
+}
+
+span {
+  color: var(--color-secondary);
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }

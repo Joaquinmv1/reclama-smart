@@ -17,32 +17,35 @@ export default function Footer() {
   ]
   return (
     <footer className={styles.footer}>
+      <section className={styles.containerFooter}>
 
-      <section className={styles.featuresSection}>
-        <div className={styles.information}>
+        <article className={styles.featuresSection}>
+          <div className={styles.information}>
 
-          <p className={styles.text}>Términos y condiciones</p>
-          <p className={styles.text}>Política y privacidad</p>
-          <p className={styles.text}>Libro de reclamaciones</p>
-        </div>
+            <p className={styles.text}>Términos y condiciones</p>
+            <p className={styles.text}>Política y privacidad</p>
+            <p className={styles.text}>Libro de reclamaciones</p>
+          </div>
 
-        <p>Copyright © Reclamaquí 2023 - Todos los derechos reservados</p>
+        </article>
+
+
+        <article className={styles.contactSection}>
+
+          <Image src={logo} alt="logo" width={200} height={50} />
+          <p className={styles.text}>info@reclameaqui.pe</p>
+          <p className={styles.text}>+ 51 932 468 027</p>
+          <div className={styles.redes}>
+            {
+              redes.map((red, i) => <Image key={`${red} ${i}`} src={red} alt="logo-red" width={20} height={20} />)
+            }
+          </div>
+
+          <Button title='Consulta gratis' className={styles.button} />
+        </article>
+
       </section>
-
-
-      <section className={styles.contactSection}>
-
-        <Image src={logo} alt="logo" width={200} height={50} />
-        <p className={styles.text}>info@reclameaqui.pe</p>
-        <p className={styles.text}>+ 51 932 468 027</p>
-        <div className={styles.redes}>
-          {
-            redes.map((red, i) => <Image key={`${red} ${i}`} src={red} alt="logo-red" width={20} height={20} />)
-          }
-        </div>
-
-        <Button title='Consulta gratis' className={styles.button} />
-      </section>
+      <p>Copyright © Reclamaquí 2023 - Todos los derechos reservados</p>
     </footer>
   )
 }
