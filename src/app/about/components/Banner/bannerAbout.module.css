@@ -1,0 +1,109 @@
+.bannerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  min-width: 100%;
+  gap: 1rem;
+}
+
+.bannerDescription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  color: var(--color-texts);
+  font-size: 40px;
+  font-family: var(--font-montserrat);
+  font-weight: 900;
+}
+
+.description {
+  color: var(--color-texts);
+  font-size: 18px;
+  font-family: var(--font-openSans);
+  margin-bottom: 2rem;
+}
+
+.buttonContain {
+  display: flex;
+  width: 100%;
+}
+
+.button {
+  border-radius: 8px;
+  padding: 15px 50px;
+  border: none;
+  color: #FFF;
+  font-family: var(--font-roboto);
+  background-color: var(--color-primary);
+}
+
+.button:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transform: scale(0.99);
+  cursor: pointer;
+}
+
+.image {
+  max-width: 600px;
+}
+@media only screen and (max-width: 1348px){
+  .title{
+    font-size:30px ;
+  }
+  .bannerContainer{
+    justify-content: space-between;
+  }
+  .image {
+    max-width: 500px;
+    max-height: 500px;
+  }
+}
+@media only screen and (max-width: 1158px){
+  .title{
+    font-size:24px ;
+  }
+  .description{
+    font-size: 16px;
+  }
+  .image {
+    max-width: 400px;
+    max-height: 400px;
+  }
+}
+@media only screen and (max-width: 900px){
+  .bannerContainer{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .imgContain{
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 600px){
+  .description{
+    display: none;
+  }
+  .title{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--font-openSans);
+  }
+  .image{
+    width: 300px;
+    height: 300px;
+  }
+  .button{
+    padding: 8px;
+  }
+  .buttonContain{
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-openSans);
+  }
+}

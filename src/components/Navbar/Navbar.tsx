@@ -7,7 +7,6 @@ import Link from "next/link"
 import { useState } from "react"
 import logo from '../../assets/images/LOGO.svg'
 import what from '../../assets/images/whatsapp.svg'
-import NavbarResponsive from "@/app/components/NavbarResponsive/navbarResponsive"
 import style from './navbar.module.css'
 
 export default function Navbar() {
