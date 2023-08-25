@@ -1,6 +1,6 @@
 .businessInfo {
   width: 73%;
-  color: var(--color-primary);
+  color: var(--color-secundaryLight);
   margin: 0 auto;
 }
 
@@ -21,7 +21,7 @@
   align-items: center;
   gap: 140px;
 
-  color: var(--color-primary);
+  color: var(--color-secundaryLight);
   margin-bottom: 9.5rem;
 }
 
