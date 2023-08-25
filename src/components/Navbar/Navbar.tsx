@@ -1,5 +1,4 @@
 'use client'
-import NavbarResponsive from "@/app/components/NavbarResponsive/navbarResponsive"
 import { Route } from "@/app/models"
 import { routes } from "@/assets/constants/constants"
 import Image from "next/image"
