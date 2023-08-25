@@ -4,7 +4,6 @@
   align-items: center;
   flex-direction: column;
   color: var(--color-secundaryLight);
-
   width: 100%;
 }
 
@@ -20,8 +19,8 @@
 }
 
 .pServices {
-  width:50%;
-  font-size: .9rem;
+  width:58%;
+  font-size: 1.1rem;
   margin-block: 1rem;
 }
 
@@ -70,3 +69,61 @@
 .buttonService:hover{
   color: #d4d4d4;
 }
+
+@media screen and (max-width: 1600px) {
+  .container-aboutServices {
+    width: 80%;
+  }
+
+  .pServices{ 
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .container-aboutServices {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  .container-aboutServices {
+    width: 92%;
+  }
+
+  .pServices {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .container-aboutServices {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .pServices {
+    display: none;
+  }
+
+  .cardContainer {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .titleServices {
+    font-size: 1.7rem;
+    padding-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .titleServices {
+    font-size: 1.5rem;
+    padding-left: 3.5rem;
+  }
+}
+
+
+
