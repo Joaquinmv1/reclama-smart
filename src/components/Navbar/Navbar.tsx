@@ -7,7 +7,6 @@ import Link from "next/link"
 import { useState } from "react"
 import logo from '../../assets/images/LOGO.svg'
 import what from '../../assets/images/whatsapp.svg'
-import NavbarResponsive from "@/app/components/NavbarResponsive/navbarResponsive"
 import style from './navbar.module.css'
 
 export default function Navbar() {
@@ -32,10 +31,10 @@ export default function Navbar() {
             )
           })}
         </ul>
-      <button className={style.button}>
-        <Image className={style.whatsapp} alt="whatsapp" src={what} width={36} height={36} />
-        Chatear
-      </button>
+        <button className={style.button}>
+          <Image className={style.whatsapp} alt="whatsapp" src={what} width={36} height={36} />
+          Chatear
+        </button>
       </nav>
     </header>
   )
