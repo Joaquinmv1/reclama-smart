@@ -17,8 +17,7 @@ function OurAlliances() {
 
   useEffect(() => {
     const observer = new IntersectionObserver((([entry]) => {
-      setIsObserver(entry.isIntersecting);
-      console.log('esta intersectando');
+      if (entry.isIntersecting) setIsObserver(entry.isIntersecting);
     }), options);
 
     const elementToObserve = ref.current;
@@ -33,6 +32,9 @@ function OurAlliances() {
 
   return (
     <>
+      <div className={style.partersTitle}>
+        <h2 className={style.h2}>Nuestros Partners</h2>
+      </div>
       <section ref={ref} className={style.containerSlide}>
         <article className={`${style.logosSlide} ${isObserver ? '' : style.noAnimation}`}>
           <Image src={partner} alt={'partner'} />
