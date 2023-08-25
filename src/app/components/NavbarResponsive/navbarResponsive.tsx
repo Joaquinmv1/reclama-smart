@@ -20,9 +20,6 @@ export default function NavbarResponsive() {
                 <div className={style.bar}></div>
             </button>
             <section className={`${style.navbarResponsive} ${menuOpen ? style.navbarOpen : style.navbarClosed}`}>
-                <section className={style.imgContain}>
-                    <Image width={150} alt='logo' src={logo} className={style.img} />
-                </section>
                 <ul className={style.ul}>
                     {routes.map(({ route, name }, index) => {
                         const { icon } = iconRoute[index];
