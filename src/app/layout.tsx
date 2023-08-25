@@ -10,19 +10,19 @@ const roboto = Roboto({
   weight: ['400', '500', '700'],
   subsets: ['latin'],
   variable: '--font-roboto',
-  display: 'optional'
+  display: 'swap'
 });
 const montserrat = Montserrat({
   weight: ['400', '500', '700', '900'],
   subsets: ['latin'],
   variable: '--font-montserrat',
-  display: 'optional'
+  display: 'swap'
 });
 const openSans = Open_Sans({
   weight: ['400', '500', '700'],
   subsets: ['latin'],
   variable: '--font-openSans',
-  display: 'optional'
+  display: 'swap'
 });
 
 export const metadata: Metadata = {
@@ -36,8 +36,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es">
-      <body className={`${montserrat.className} ${openSans.className} ${roboto.className}`}>
+    <html lang="es" className={`${montserrat.variable} ${openSans.variable} ${roboto.variable}`}>
+      <body>
         <Navbar />
         {children}
         <div className='vector2'><Image className='imgVector2' alt='vector2' src={vector2} /></div>
