@@ -1,7 +1,7 @@
 .casesContain {
   width: 76%;
   margin: auto;
-  margin-right: 210px;
+
   margin-bottom: 150px;
   margin-top: 50px;
   /* margin: 50px 150px 50px 220px; */
@@ -47,7 +47,7 @@
   align-items: flex-start;
   border-radius: 16px;
   background-color: #fff;
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 5px 5px 0px #FF744C;
   padding: 15px 48px;
 }
 
@@ -140,17 +140,17 @@
   animation: slideInBox 0.5s ease;
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES MOBILE */
 
 @media only screen and (max-width: 599px) {
   .casesContain {
     width: 100%;
-    margin-bottom: 150px;
+    margin-bottom: 80px;
   }
 
   .casesContain h3 {
     width: 50%;
-    margin-left: 50px;
+    margin-left: 30px;
     color: #02311a;
     font-size: 32px;
     font-style: normal;
@@ -168,22 +168,24 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-left: 40px;
+    margin-left: 10px;
   }
 
   .box {
-    width: 55%;
+    width: 60%;
     padding: 10px 20px;
   }
 
   .box .textC h5 {
-    font-size: 10px;
+    font-size: 20px;
   }
 
   .box p {
     width: 50%;
     padding: 8px;
-    font-size: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 16px;
   }
 
   .arrowLeft,
@@ -200,3 +202,66 @@
     padding: 2px;
   }
 }
+
+/* MEDIA QUERIES TABLET */
+
+@media only screen and (max-width: 904px) {
+  .casesContain {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+
+  .casesContain h3 {
+    width: 50%;
+    margin-left: 30px;
+    color: #02311a;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 12px;
+  }
+
+  .casesContain p {
+    text-align: center;
+  }
+
+  .carrousel {
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+  }
+
+  .box {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .box .textC h5 {
+    font-size: 16px;
+  }
+
+  .box p {
+    width: 50%;
+    padding: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .arrowLeft,
+  .arrowRight {
+    width: 40px;
+    height: 40px;
+  }
+
+  .imageArrowLeft,
+  .imageArrowRigth {
+    width: 30px;
+    height: 30px;
+    margin: 6px;
+    padding: 2px;
+  }
+}
+

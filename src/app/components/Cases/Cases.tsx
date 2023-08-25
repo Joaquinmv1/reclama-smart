@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import left from "../../../assets/images/left.png";
 import right from "../../../assets/images/rigth.png";
@@ -41,18 +41,38 @@ export default function Cases() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animationDirection, setAnimationDirection] = useState("");
+  const [screen, setScreen] = useState(3);
+
+  useEffect(() => {
+    const updateScreen = () => {
+      if (window.innerWidth < 599) {
+        setScreen(1);
+      } else if (window.innerWidth < 904) {
+        setScreen(2);
+      } else {
+        setScreen(3);
+      }
+    };
+
+    updateScreen();
+    window.addEventListener("resize", updateScreen);
+
+    return () => {
+      window.removeEventListener("resize", updateScreen);
+    };
+  }, []);
 
   const handlePrev = () => {
     setAnimationDirection("slide-out");
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? data.length - 3 : prevIndex - 3
+      prevIndex === 0 ? data.length - screen : prevIndex - screen
     );
   };
 
   const handleNext = () => {
     setAnimationDirection("slide-in");
     setCurrentIndex((prevIndex) =>
-      prevIndex >= data.length - 3 ? 0 : prevIndex + 3
+      prevIndex >= data.length - screen ? 0 : prevIndex + screen
     );
   };
 
@@ -72,7 +92,7 @@ export default function Cases() {
             />
           </div>
 
-          {data.slice(currentIndex, currentIndex + 3).map((item, index) => (
+          {data.slice(currentIndex, currentIndex + screen).map((item, index) => (
             <div
               className={`${style.box} ${
                 animationDirection === "slide-out"
