@@ -7,11 +7,12 @@ import what from '../../assets/images/whatsapp.svg'
 import React, { useState } from "react"
 import { routes } from "@/assets/constants/constants"
 import NavbarResponsive from "@/app/components/NavbarResponsive/navbarResponsive"
+  import { Route } from "@/app/models"
 
 export default function Navbar() {
-  const [activeLink, setActiveLink] = useState('Inicio');
+  const [activeLink, setActiveLink] = useState<Route>('Inicio');
 
-  const activeClick = (route: string) => {
+  const activeClick = (route: Route) => {
     setActiveLink(route);
   };
 
