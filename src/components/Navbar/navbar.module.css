@@ -142,4 +142,9 @@
   .logo{
     width: 100px;
   }
+  .button{
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    margin-right: 6.5rem;
+  }
 }
