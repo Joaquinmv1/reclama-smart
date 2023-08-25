@@ -2,24 +2,27 @@ import { Footer, Navbar } from '@/components';
 import type { Metadata } from 'next';
 import { Roboto, Montserrat, Open_Sans } from 'next/font/google';
 import './globals.css';
+import Image from 'next/image';
+import vector from './../assets/images/OBJECTS (1).svg'
+import vector2 from './../assets/images/OBJECTS (2).svg'
 
 const roboto = Roboto({
   weight: ['400', '500', '700'],
   subsets: ['latin'],
   variable: '--font-roboto',
-  display: 'optional'
+  display: 'swap'
 });
 const montserrat = Montserrat({
   weight: ['400', '500', '700', '900'],
   subsets: ['latin'],
   variable: '--font-montserrat',
-  display: 'optional'
+  display: 'swap'
 });
 const openSans = Open_Sans({
   weight: ['400', '500', '700'],
   subsets: ['latin'],
   variable: '--font-openSans',
-  display: 'optional'
+  display: 'swap'
 });
 
 export const metadata: Metadata = {
@@ -33,10 +36,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es">
-      <body className={`${roboto.className} ${montserrat.className}`}>
+    <html lang="es" className={`${montserrat.variable} ${openSans.variable} ${roboto.variable}`}>
+      <body>
         <Navbar />
         {children}
+        <div className='vector2'><Image className='imgVector2' alt='vector2' src={vector2} /></div>
+        <div className='vector'><Image className='imgVector' alt='vector' src={vector} /></div>
         <Footer />
       </body>
     </html>
