@@ -32,20 +32,27 @@ export default function Footer() {
 
         <article className={styles.contactSection}>
 
-          <Image src={logo} alt="logo" width={200} height={50} />
-          <p className={styles.text}>info@reclameaqui.pe</p>
-          <p className={styles.text}>+ 51 932 468 027</p>
-          <div className={styles.redes}>
-            {
-              redes.map((red, i) => <Image key={`${red} ${i}`} src={red} alt="logo-red" width={20} height={20} />)
-            }
+          <div className={styles.infoContactSection}>
+
+            <Image src={logo} alt="logo" width={200} height={50} />
+            <p className={styles.text}>info@reclameaqui.pe</p>
+            <p className={styles.text}>+ 51 932 468 027</p>
           </div>
 
-          <Button title='Consulta gratis' className={styles.button} />
+          <div className={styles.containerRedes}>
+
+            <div className={styles.redes}>
+              {
+                redes.map((red, i) => <Image key={`${red} ${i}`} src={red} alt="logo-red" width={20} height={20} />)
+              }
+            </div>
+            <Button title='Consulta gratis' className={styles.button} />
+          </div>
+
         </article>
 
       </section>
-      <p>Copyright © Reclamaquí 2023 - Todos los derechos reservados</p>
+      <p className={styles.copyright}>Copyright © Reclamaquí 2023 - Todos los derechos reservados</p>
     </footer>
   )
 }

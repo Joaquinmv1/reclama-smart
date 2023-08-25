@@ -1,14 +1,14 @@
-import Image from 'next/image';
-import imgTeam from '../../../assets/img/team-image.jpg';
 
-import style from './Team.module.scss';
+import imgTeam from '../../../assets/images/team-image.png'
+import Image from 'next/image';
+import style from './Team.module.css';
 
 export default function Team() {
     return (
         <section className={style.containerSection}>
             <aside className={style.asideContent}>
-                <h3 className={style.title}>Somos un equipo</h3>
                 <div className={style.body}>
+                    <h3 className={style.title}>Somos un equipo</h3>
 
                     <h4>Somos <span>INNOVADORES,</span></h4>
                     <h4>estamos <span>COMPROMETIDOS,</span></h4>
@@ -21,7 +21,10 @@ export default function Team() {
                 </p>
             </aside>
 
-            <Image className={style.imageTeam} src={imgTeam} alt="Team image" width={600} height={400} />
+            <aside className={style.imgContainer}>
+
+                <Image className={style.imageTeam} src={imgTeam} alt="Team image" width={600} height={400} />
+            </aside>
         </section>
     )
 }
