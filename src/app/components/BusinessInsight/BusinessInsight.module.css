@@ -1,3 +1,7 @@
+.section-containerBusiness{
+  background-color: var(--color-fondo);
+}
+
 .businessInfo {
   width: 73%;
   color: var(--color-title);
@@ -47,8 +51,6 @@
   display: none;
 }
 
-
-
 @media screen and (max-width: 1600px) {
   .businessInfo {
     width: 81%;
@@ -61,7 +63,6 @@
     width: 80%;
   }
   .card-business {
-    /* flex-direction: column; */
     justify-content: space-evenly;
     gap: 0px;
   }
