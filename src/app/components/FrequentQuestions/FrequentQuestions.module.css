@@ -4,6 +4,7 @@
   width: 100%;
   margin: auto;
   margin-bottom: 60px;
+  
 }
 
 .acordion {
@@ -19,6 +20,7 @@
   font-size: 28px;
   font-style: normal;
   font-weight: 600;
+  font-family: var(--font-montserrat);
   line-height: normal;
   margin-bottom: 20px;
 }
@@ -47,6 +49,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
+  font-family: var(--font-openSans);
   line-height: normal;
 }
 
@@ -79,5 +82,45 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+  font-family: var(--font-openSans);
   line-height: 28px;
+}
+
+/* MEDIA QUERIES MOBILE */
+
+@media only screen and (max-width: 599px) {
+  .answers-contain {
+    margin-bottom: 40px;
+  }
+
+  .acordion {
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+  }
+
+  .answers-contain h2 {
+    width: 80%;
+    font-size: 24px;
+    margin-bottom: 32px;
+    text-align: start;
+    margin-left: 26px;
+  }
+
+  .acordionHeader {
+    padding: 12px;
+  }
+
+  .acordionHeader h5 {
+    font-size: 14px;
+  }
+
+  .acordionBody {
+    padding: 12px;
+  }
+
+  .acordionBody p {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }

@@ -83,7 +83,7 @@
 .bar {
     display: block;
     height: 3px;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 100%;
     background-color: #000000;
 }
