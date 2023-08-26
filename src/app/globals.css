@@ -19,7 +19,7 @@
   --color-texts: #374F42;
 }
 
-body{
+body {
   background-color: var(--color-fondo);
 }
 
@@ -39,38 +39,41 @@ span {
   font-weight: 600;
   line-height: normal;
 }
-  button {
+
+button {
   cursor: pointer;
 }
 
-.vector2{
+.vector2 {
   position: absolute;
   top: 50rem;
   left: 0;
   z-index: 20;
 }
 
-.vector{
+.vector {
   position: absolute;
   top: 110rem;
   right: 0;
   z-index: 10;
 }
 
-.imgVector{
+.imgVector {
   width: 200px;
 }
 
-@media only screen and (max-width: 800px){
-  .imgVector{
+@media only screen and (max-width: 800px) {
+  .imgVector {
     width: 150px;
   }
-  .imgVector2{
+
+  .imgVector2 {
     width: 150px;
   }
 }
-@media only screen and (max-width: 600px){
-  .vector{
+
+@media only screen and (max-width: 600px) {
+  .vector {
     display: none;
   }
 }
