@@ -27,19 +27,21 @@ a {
   text-decoration: none;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 li {
   list-style: none;
 }
 
-span {
-  color: var(--color-secondary);
-  font-family: Open Sans;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-  button {
+button {
   cursor: pointer;
 }
 
