@@ -5,21 +5,26 @@
 }
 
 :root {
-  --color-primary: #02311A;
-  --color-secondary: #FF5220;
-  
+  --color-primary: #FF5220;
+  --color-secondary: #93E2AC;
+  --color-acento: #43A047;
+  --color-primaryLight: #FF744C;
+  --color-secundaryLight: #345A47;
+  --color-acentoLight: #43A047;
+  --color-primaryLigh2: #B23916;
+  --color-secundaryDark: #012212;
+  --color-acentoLight2: #43A047;
+  --color-fondo: #F0F2F5;
+  --color-title: #02311A;
+  --color-texts: #374F42;
 }
 
 body {
-  background-color: #FAFAFA;
+  background-color: var(--color-fondo);
 }
 
 a {
   text-decoration: none;
-}
-
-li {
-  list-style: none;
 }
 
 * {
@@ -28,15 +33,48 @@ li {
   margin: 0;
 }
 
-body,
-html {
-  background-color: #FAFAFA;
-}
-
 a {
   text-decoration: none;
 }
 
 li {
   list-style: none;
+}
+
+  button {
+  cursor: pointer;
+}
+
+.vector2 {
+  position: absolute;
+  top: 50rem;
+  left: 0;
+  z-index: 20;
+}
+
+.vector {
+  position: absolute;
+  top: 110rem;
+  right: 0;
+  z-index: 10;
+}
+
+.imgVector {
+  width: 200px;
+}
+
+@media only screen and (max-width: 800px) {
+  .imgVector {
+    width: 150px;
+  }
+
+  .imgVector2 {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .vector {
+    display: none;
+  }
 }
