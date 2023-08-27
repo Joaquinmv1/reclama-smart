@@ -22,7 +22,7 @@
 .subTitle {
   color: var(--color-texts);
   font-size: 1.7rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   font-family: var(--font-montserrat);
 }
 
@@ -119,43 +119,31 @@
     max-height: 330px;
   }
 }
-@media only screen and (max-width: 660px){
+@media only screen and (max-width: 700px){
   .title {
-    font-size: 2rem;
-  }
-  .subTitle .h5{
-    font-size: 0.8rem;
-    margin-bottom: 0.8rem;
-  }
-  .button{
-    padding: 0.7rem 1.5rem;
-  }
-  .image{
-    max-width: 300px;
-    max-height: 300px;
+    font-size: 3rem;
+    text-align: center;
   }
   .bannerDescrip{
     gap: 0.6rem;
   }
-}
-@media only screen and (max-width: 525px){
   .image{
     display: none;
   }
-  .button{
-    padding: 0.5rem 1rem;
-  }
-  .title {
-    font-size: 1.5rem;
-  }
-  .subTitle{
-    font-size: 0.8rem;
-    margin-bottom: 0.1rem;
-  }
-  .h5{
-    font-size: 0.6rem;
-  }
   .bannerDescrip{
     width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 435px){
+  .title{
+    font-size: 2.5rem;
+  }
+  .subTitle{
+    font-size: 0.7rem;
+  }
+  .h5{
+    font-size: 0.7rem;
   }
 }

@@ -4,11 +4,12 @@
     justify-content: space-between;
     flex-direction: column;
     position: absolute;
-    transition: all 1s;
+    z-index: 900;
+    transition: all 2s;
     background-color: #FFFFFF;
     top: -1000px;
-    width: 50%;
-    height: 90vh;
+    min-width: 100%;
+    max-height: 50vh;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
     display: none;
 }
@@ -82,7 +83,7 @@
 .bar {
     display: block;
     height: 3px;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 100%;
     background-color: #000000;
 }
@@ -126,11 +127,13 @@
         justify-content: space-between;
         flex-direction: column;
         position: absolute;
+        z-index: 900;
         background-color: #FFFFFF;
-        top: 0;
+        top: 80px;
         left: 0;
-        width: 50%;
-        height: 90vh;
+        transition: all 2s;
+        min-width: 100%;
+        max-height: 50vh;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
     }
 }
@@ -140,5 +143,10 @@
         width: 2.3rem;
         height: 2.3rem;
         top: 1.3rem;
+    }
+}
+@media only screen and (max-width: 435px){
+    .navbarMenuButton{
+        right: 1rem;
     }
 }

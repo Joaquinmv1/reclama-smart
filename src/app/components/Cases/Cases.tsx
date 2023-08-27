@@ -1,58 +1,78 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import left from "../../../assets/images/left.png";
 import right from "../../../assets/images/rigth.png";
 import style from "./cases.module.css";
 
-export default function Cases() {
-  const data = [
-    {
-      name: "Luis C.",
-      date: "23/03/2023",
-      amount: "+ s/ 5.780",
-    },
-    {
-      name: "Ana S.",
-      date: "15/06/2023",
-      amount: "+ s/ 8.320",
-    },
-    {
-      name: "Carlos M.",
-      date: "02/09/2023",
-      amount: "+ s/ 3.950",
-    },
-    {
-      name: "María R.",
-      date: "10/12/2023",
-      amount: "+ s/ 6.720",
-    },
-    {
-      name: "Javier P.",
-      date: "05/02/2024",
-      amount: "+ s/ 9.150",
-    },
-    {
-      name: "Sofía G.",
-      date: "20/04/2024",
-      amount: "+ s/ 7.860",
-    },
-  ];
+const data = [
+  {
+    name: "Luis C.",
+    date: "23/03/2023",
+    amount: "+ s/ 5.780",
+  },
+  {
+    name: "Ana S.",
+    date: "15/06/2023",
+    amount: "+ s/ 8.320",
+  },
+  {
+    name: "Carlos M.",
+    date: "02/09/2023",
+    amount: "+ s/ 3.950",
+  },
+  {
+    name: "María R.",
+    date: "10/12/2023",
+    amount: "+ s/ 6.720",
+  },
+  {
+    name: "Javier P.",
+    date: "05/02/2024",
+    amount: "+ s/ 9.150",
+  },
+  {
+    name: "Sofía G.",
+    date: "20/04/2024",
+    amount: "+ s/ 7.860",
+  }
+];
 
+export default function Cases() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animationDirection, setAnimationDirection] = useState("");
+  const [screen, setScreen] = useState(3);
+
+  useEffect(() => {
+    const updateScreen = () => {
+      if (window.innerWidth < 599) {
+        setScreen(1);
+      } else if (window.innerWidth < 904) {
+        setScreen(2);
+      } else {
+        setScreen(3);
+      }
+    };
+
+    updateScreen();
+    window.addEventListener("resize", updateScreen);
+
+    return () => {
+      window.removeEventListener("resize", updateScreen);
+    };
+  }, []);
 
   const handlePrev = () => {
     setAnimationDirection("slide-out");
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? data.length - 3 : prevIndex - 3
+      prevIndex === 0 ? data.length - screen : prevIndex - screen
     );
   };
 
   const handleNext = () => {
     setAnimationDirection("slide-in");
     setCurrentIndex((prevIndex) =>
-      prevIndex >= data.length - 3 ? 0 : prevIndex + 3
+      prevIndex >= data.length - screen ? 0 : prevIndex + screen
     );
   };
 
@@ -72,7 +92,7 @@ export default function Cases() {
             />
           </div>
 
-          {data.slice(currentIndex, currentIndex + 3).map((item, index) => (
+          {data.slice(currentIndex, currentIndex + screen).map((item, index) => (
             <div
               className={`${style.box} ${
                 animationDirection === "slide-out"
