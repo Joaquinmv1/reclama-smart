@@ -15,15 +15,38 @@ import bandera from '../../assets/images/MvvImages/flag.svg'
 export const routes: Routes[] = [
   { name: "Inicio", route: "/" },
   { name: "Conócenos", route: "/about" },
-  { name: "Servicios", route: "/" },
-  { name: "Blog", route: "/" },
-  { name: "Contacto", route: "/" }
+  { name: "Servicios", route: "/ourServices" },
+  { name: "Blog", route: "/blog" },
+  { name: "Contacto", route: "/contact" }
 ];
 
 export const cardsServices = [
   { image: vector, title: "Vuelos" },
   { image: bussines, title: "Estadías" },
   { image: bag, title: "Compras" }
+];
+
+export const benefitsData = [
+  {
+    image: vector,
+    title: 'Vuelos',
+    benefits: ['Cancelaciones de Vuelo', 'Demoras excesivas', 'Negación de Embarque (Overbooking)', 'Incidentes en el vuelo', 'Perdida de equipaje']
+  },
+  {
+    image: bussines,
+    title: 'Bancos',
+    benefits: ['Cancelaciones de Vuelo', 'Demoras excesivas', 'Negación de Embarque (Overbooking)', 'Incidentes en el vuelo', 'Perdida de equipaje']
+  },
+  {
+    image: bag,
+    title: 'Compras',
+    benefits: ['Cancelaciones de Vuelo', 'Demoras excesivas', 'Negación de Embarque (Overbooking)', 'Incidentes en el vuelo', 'Perdida de equipaje']
+  },
+  {
+    image: bag,
+    title: 'Compras',
+    benefits: ['Cancelaciones de Vuelo', 'Demoras excesivas', 'Negación de Embarque (Overbooking)', 'Incidentes en el vuelo', 'Perdida de equipaje']
+  },
 ];
 
 export const iconRoute = [

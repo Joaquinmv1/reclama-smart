@@ -6,7 +6,7 @@ import pic_two from "../../../../assets/images/eluisaPic.png";
 export default function Founders() {
   return (
     <>
-      <div className={style.founderContain}>
+      <section className={style.founderContain}>
         <h4>Fundadoras</h4>
 
         <div className={style.founders}>
@@ -22,7 +22,7 @@ export default function Founders() {
           </div>
 
         </div>
-      </div>
+      </section>
     </>
   )
 }
