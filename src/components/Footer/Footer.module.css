@@ -9,8 +9,10 @@
 .footer {
   background-color: #fff;
   padding: 48px 150px;
+  /* display: none; */
   display: flex;
   flex-direction: column;
+  
 }
 
 .containerFooter {

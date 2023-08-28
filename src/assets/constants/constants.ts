@@ -8,6 +8,9 @@ import blog from '../images/blog.svg';
 import contact from '../images/contact.svg';
 import bussines from '../images/business.svg';
 import vector from '../images/Vector.svg'
+import vision from '../../assets/images/MvvImages/eye.svg'
+import mision from '../../assets/images/MvvImages/cohete.svg'
+import bandera from '../../assets/images/MvvImages/flag.svg'
 
 export const routes: Routes[] = [
   { name: "Inicio", route: "/" },
@@ -70,4 +73,22 @@ export const info = [
     description:
       "No,  no tienes que adelantar ni un sol. Nosotros asumimos todos los gastos, incluyendo costos de trámite y otras tasas legales. Tú solo pagas  si ganamos tu caso y recuperamos tu dinero. No tienes que pagar nada por adelantado. Nosotros asumimos todos los gastos durante el proceso, lo que incluye costos de trámites y tasas legales. Si ganamos el caso y recuperamos el dinero, nos pagan.",
   },
+];
+
+export const mvvData = [
+  {
+    image: mision,
+    title: 'Misión',
+    description: 'agiliza el proceso mientras empoderamos a los consumidores'
+  },
+  {
+    image: vision,
+    title: 'Visión',
+    description: 'agiliza el proceso mientras empoderamos a los consumidores'
+  },
+  {
+    image: bandera,
+    title: 'Valores',
+    description: 'agiliza el proceso mientras empoderamos a los consumidores'
+  }
 ];
