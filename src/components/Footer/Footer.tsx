@@ -11,10 +11,24 @@ import Link from 'next/link'
 export default function Footer() {
 
   const redes = [
-    img1,
-    img2,
-    img3,
-    img4
+    {
+      img: img1,
+      link: ""
+
+    }, {
+
+      img: img2,
+      link: "https://www.instagram.com/reclamaqui.pe/"
+    },
+    {
+      img: img3,
+      link: ""
+
+    }, {
+      img: img4,
+      link: "https://api.whatsapp.com/send?phone=+51932468027&text=¨¡Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20Reclamaqu%C3%AD."
+    }
+
   ]
   return (
     <footer className={styles.footer}>
@@ -44,10 +58,13 @@ export default function Footer() {
 
             <div className={styles.redes}>
               {
-                redes.map((red, i) => <Link key={`${red} ${i}`} href={red}> <Image src={red} alt="logo-red" width={20} height={20} /></Link>)
+                redes.map((red, i) => <Link key={`${red} ${i}`} href={red.link}> <Image src={red.img} alt="logo-red" width={20} height={20} /></Link>)
               }
             </div>
-            <Button title='Consulta gratis' className={styles.button} />
+            <Link href={redes[3].link}>
+
+              <Button title='Consulta gratis' className={styles.button} />
+            </Link>
           </div>
 
         </article>
