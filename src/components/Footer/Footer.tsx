@@ -6,6 +6,7 @@ import img3 from 'src/assets/images/logo-tik.svg'
 import img4 from 'src/assets/images/logo-wp.svg'
 import logo from 'src/assets/images/logo-reclama-smart.svg'
 import Button from '../Button/Button'
+import Link from 'next/link'
 
 export default function Footer() {
 
@@ -43,7 +44,7 @@ export default function Footer() {
 
             <div className={styles.redes}>
               {
-                redes.map((red, i) => <Image key={`${red} ${i}`} src={red} alt="logo-red" width={20} height={20} />)
+                redes.map((red, i) => <Link key={`${red} ${i}`} href={red}> <Image src={red} alt="logo-red" width={20} height={20} /></Link>)
               }
             </div>
             <Button title='Consulta gratis' className={styles.button} />

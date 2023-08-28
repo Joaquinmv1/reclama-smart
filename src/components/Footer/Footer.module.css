@@ -70,6 +70,10 @@
   line-height: normal;
 }
 
+.copyright {
+  font-family: var(--font-roboto);
+}
+
 /* Tablet Version */
 
 @media (max-width: 950px) {
