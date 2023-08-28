@@ -1,0 +1,82 @@
+.successContainer {
+    display: flex;
+    margin: 150px;
+    position: relative;
+    width: 80%;
+
+}
+
+.title {
+    color: #02311A;
+    font-family: Roboto;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.pharagraph {
+    color: #646A7A;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title span {
+    color: #FF5220;
+
+}
+
+.successBody {
+    background-color: #F8F1ED;
+    width: 70%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.successBody article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+}
+
+.containerImg {
+    position: absolute;
+    top: 10%;
+    right: -50px;
+}
+
+.successBody article h3 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.successBody article h4 {
+
+    color: #02311A;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.successBody article h5 {
+
+    color: #FF5220;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
