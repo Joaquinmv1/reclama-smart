@@ -1,13 +1,14 @@
 import style from './about.module.css'
-import Banner from './components/Banner/BannerAbout'
 import Founders from './components/Founders/Founders'
+import { BannerAbout, Mvv, Team } from './components'
 
-
-export default function About(){
-    return(
-        <section className={style.aboutContainer}>
-            <Banner/>
-            <Founders/>
-        </section>
-    )
+export default function About() {
+  return (
+    <main className={style.aboutContainer}>
+      <BannerAbout />
+      <Founders/>
+      <Mvv />
+      <Team />
+    </main>
+  )
 }
