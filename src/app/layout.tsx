@@ -23,7 +23,7 @@ export default function RootLayout({
         {children}
         <div className='vector2'><Image className='imgVector2' alt='vector2' src={vector2} /></div>
         <div className='vector'><Image className='imgVector' alt='vector' src={vector} /></div>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   )
