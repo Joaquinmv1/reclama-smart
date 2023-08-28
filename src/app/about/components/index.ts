@@ -1,1 +1,3 @@
-export { default as BannerAbout } from './Banner/BannerAbout';
+export * from './Banner';
+export * from './Mvv';
+export * from './Team';
