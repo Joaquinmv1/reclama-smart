@@ -4,18 +4,32 @@ import { Route } from "@/app/models"
 import { routes } from "@/assets/constants/constants"
 import Image from "next/image"
 import Link from "next/link"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import logo from '../../assets/images/LOGO.svg'
 import what from '../../assets/images/whatsapp.svg'
 import style from './navbar.module.css'
 
 export default function Navbar() {
-  const [activeLink, setActiveLink] = useState<Route>('Inicio');
+  const [activeLink, setActiveLink] = useState<Route>('Inicio')
+
 
   const activeClick = (route: Route) => {
     setActiveLink(route);
+    // const localStorage = window.localStorage.setItem('route', route);
+    // console.log(localStorage);
   };
 
+  useEffect(() => {
+    let activeClicks = localStorage.getItem('activeLinks')
+    if(activeClicks) {
+      setActiveLink(activeClicks as Route)
+    }
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem('activeLinks', activeLink)
+  }, [activeLink])
+  
   return (
     <header className={style.containerNavbar}>
       <NavbarResponsive />
