@@ -3,12 +3,12 @@
     margin: 150px;
     position: relative;
     width: 80%;
-
+    font-family: var(--font-roboto);
 }
 
 .title {
     color: #02311A;
-    font-family: Roboto;
+    font-family: var(--font-roboto);
     font-size: 44px;
     font-style: normal;
     font-weight: 600;
@@ -17,7 +17,7 @@
 
 .pharagraph {
     color: #646A7A;
-    font-family: Roboto;
+    font-family: var(--font-roboto);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -53,7 +53,7 @@
 
 .successBody article h3 {
     color: #000;
-    font-family: Roboto;
+    font-family: var(--font-roboto);
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
@@ -63,7 +63,7 @@
 .successBody article h4 {
 
     color: #02311A;
-    font-family: Roboto;
+    font-family: var(--font-roboto);
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
@@ -74,7 +74,7 @@
 .successBody article h5 {
 
     color: #FF5220;
-    font-family: Roboto;
+    font-family: var(--font-roboto);
     font-size: 28px;
     font-style: normal;
     font-weight: 400;

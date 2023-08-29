@@ -22,7 +22,7 @@ export default function Footer() {
     },
     {
       img: img3,
-      link: ""
+      link: "https://www.tiktok.com/@reclamaqui.pe?_t=8ao4mz66gfk&_r=1"
 
     }, {
       img: img4,
@@ -58,7 +58,7 @@ export default function Footer() {
 
             <div className={styles.redes}>
               {
-                redes.map((red, i) => <Link key={`${red} ${i}`} href={red.link}> <Image src={red.img} alt="logo-red" width={20} height={20} /></Link>)
+                redes.map((red, i) => <Link target='_blank' key={`${red} ${i}`} href={red.link}> <Image src={red.img} alt="logo-red" width={20} height={20} /></Link>)
               }
             </div>
             <Link href={redes[3].link}>
