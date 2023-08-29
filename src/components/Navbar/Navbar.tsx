@@ -10,9 +10,13 @@ import what from '../../assets/images/whatsapp.svg'
 import style from './navbar.module.css'
 
 export default function Navbar() {
-  const [activeLink, setActiveLink] = useState<Route>('Inicio');
+  const [activeLink, setActiveLink] = useState<Route>(() => {
+    const hasStorage = window.localStorage.getItem('route') ?? 'Inicio';
+    return hasStorage as Route;
+  });
 
   const activeClick = (route: Route) => {
+    window.localStorage.setItem('route', route);
     setActiveLink(route);
   };
 

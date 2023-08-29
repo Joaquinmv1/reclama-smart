@@ -1,0 +1,49 @@
+.mvv-Container {
+  font-family: var(--font-openSans);
+  width: 100%;
+  height: auto;
+}
+
+.mvvTitle {
+  font-family: var(--font-montserrat);
+  color: var(--color-title);
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+  width: 90%;
+}
+
+.mvvTitle span {
+  color: var(--color-primary);
+}
+
+.mvv-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.mvv-card li {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.mvv-card li h3 {
+  color: var(--color-primary);
+  font-size: 2.75rem;
+}
+
+.mvv-card li p {
+  width: 60%;
+  font-size: 24px;
+}
+
+/* @media screen and (max-width: 768px) {
+  .mvvTitle{
+    font-size: 24px;
+  }
+} */
