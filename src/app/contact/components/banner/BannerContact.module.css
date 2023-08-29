@@ -1,0 +1,46 @@
+.bannerSection {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F9F4F3;
+    margin: 150px;
+    padding: 40px;
+    font-family: var(--font-openSans);
+    color: var(--color-title);
+}
+
+.title {
+    font-size: 40px;
+}
+
+.content {
+    display: block;
+
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    color: #FFFFFF;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    /* display: inline-flex; */
+    max-width: 300px;
+}
+
+.bannerSection h3 {
+    font-size: 30px;
+}
+
+
+.bannerSection span {
+    color: var(--color-primary);
+}
+
+.containerBody {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
