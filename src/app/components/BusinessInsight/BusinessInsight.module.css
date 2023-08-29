@@ -1,11 +1,16 @@
+.section-containerBusiness{
+  background-color: var(--color-fondo);
+}
+
 .businessInfo {
   width: 73%;
-  color: var(--color-secundaryLight);
+  color: var(--color-title);
+
   margin: 0 auto;
 }
 
 .businessInfo h2 {
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
   margin-block: 1.5rem;
 }
@@ -23,6 +28,7 @@
 
   color: var(--color-secundaryLight);
   margin-bottom: 9.5rem;
+  background-color: transparent;
 }
 
 .card-business li {
@@ -39,4 +45,116 @@
 .card-business li p {
   width: 300px;
   font-size: .9rem;
+}
+
+.businessImgVertical {
+  display: none;
+}
+
+@media screen and (max-width: 1600px) {
+  .businessInfo {
+    width: 81%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .businessImg {
+    width: 80%;
+  }
+  .card-business {
+    justify-content: space-evenly;
+    gap: 0px;
+  }
+} 
+
+@media screen and (max-width: 1082px) {
+  .businessImg {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .card-business li {
+    width: 270px;
+  }
+
+  .card-business li p {
+    width: 250px;
+    font-size: .9rem;
+  }
+  
+}
+
+@media screen and (max-width: 850px) {
+  .card-business li {
+    width: 250px;
+  }
+} 
+
+@media screen and (max-width: 780px) {
+  .card-business li {
+    width: 220px;
+  }
+
+  .card-business li p {
+    width: 220px;
+    font-size: .9rem;
+  }
+} 
+
+@media screen and (max-width: 690px) {
+  .card-business li {
+    width: 200px;
+  }
+
+  .card-business li p {
+    width: 200px;
+    font-size: .9rem;
+  }
+} 
+
+
+
+@media screen and (max-width: 669px) {
+  .card-business li {
+    width: 90%;
+  }
+
+  .businessInfo p{
+    display: none;
+  }
+
+  .businessImg {
+    display: none;
+  }
+
+  .businessInfo {
+    width: 92%;
+  }
+
+  .card-business {
+    flex-direction: column;
+  }
+
+  .containerSteps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .businessImgVertical {
+    display: block;
+    margin-block:7rem;
+    width: 50px;
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .businessInfo h2 {
+    text-align: center;
+    font-size: 1.7rem;
+
+  }
 }

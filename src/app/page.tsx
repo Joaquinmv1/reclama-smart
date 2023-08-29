@@ -5,10 +5,9 @@ import { BusinessInsight, FeacturedService, FrequentQuestions, FrontPage, OurAll
 import { Cases } from "./components/Cases";
 import './globals.css';
 
-
 export default function Home() {
   return (
-    <>
+    <main>
       <div className='vector2'><Image className='imgVector2' alt='vector2' src={vector2} /></div>
       <div className='vector'><Image className='imgVector' alt='vector' src={vector} /></div>
       <FrontPage />
@@ -17,6 +16,6 @@ export default function Home() {
       <Cases />
       <FrequentQuestions />
       <OurAlliances />
-    </>
+    </main>
   )
 }
