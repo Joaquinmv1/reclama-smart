@@ -30,6 +30,16 @@
   height: 130px;
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.10);
   border-radius: 10px;
+  margin-inline: 1rem;
+  transition: all .3s ease;
+}
+
+.containerSlide:hover .logosSlide {
+  animation-play-state: paused;
+}
+
+.logosSlide img:hover {
+  transform: scale(1.1);
 }
 
 .noAnimation {
@@ -47,7 +57,6 @@
 
 @media screen and (max-width: 1035px) {
   .partersTitle {
-    /* text-align: start; */
     width: 52%;
     padding-left: 1rem;
   }
@@ -78,3 +87,4 @@
     font-size: 1.7rem;
   }
 }
+
