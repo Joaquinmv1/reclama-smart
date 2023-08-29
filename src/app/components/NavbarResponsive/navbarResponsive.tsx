@@ -1,5 +1,4 @@
 'use client';
-
 import { iconRoute, routes } from '@/assets/constants/constants';
 import Image from 'next/image';
 import Link from 'next/link';

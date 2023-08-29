@@ -1,9 +1,6 @@
 import { Footer, Navbar } from '@/components';
 import type { Metadata } from 'next';
 import './globals.css';
-import Image from 'next/image';
-import vector from './../assets/images/OBJECTS (1).svg'
-import vector2 from './../assets/images/OBJECTS (2).svg'
 import { montserrat, openSans, roboto } from '@/assets/fonts/fonts';
 
 export const metadata: Metadata = {
@@ -21,8 +18,6 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
-        <div className='vector2'><Image className='imgVector2' alt='vector2' src={vector2} /></div>
-        <div className='vector'><Image className='imgVector' alt='vector' src={vector} /></div>
         <Footer />
       </body>
     </html>

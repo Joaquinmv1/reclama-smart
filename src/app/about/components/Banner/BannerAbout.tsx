@@ -1,7 +1,7 @@
 import Button from "@/components/Button/Button"
 import style from './bannerAbout.module.css'
 import Image from "next/image"
-import imgBanner from '../../../../assets/images/Group 88 1.svg'
+import fotoBanner from '../../../../assets/images/fotoAbout.svg'
 
 export default function Banner() {
 
@@ -16,7 +16,7 @@ export default function Banner() {
                 <div className={style.buttonContain}><Button title='Consulta Gratis' className={style.button} /></div>
             </div>
             <div className={style.imgContain}>
-                <Image className={style.image} alt="bannerImg" src={imgBanner} />
+                <Image className={style.image} alt="bannerImg" src={fotoBanner} />
             </div>
         </section>
     )
