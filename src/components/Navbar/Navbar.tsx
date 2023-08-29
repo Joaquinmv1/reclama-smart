@@ -1,30 +1,31 @@
-'use client'
-import NavbarResponsive from "@/app/components/NavbarResponsive/navbarResponsive"
-import { Route } from "@/app/models"
-import { routes } from "@/assets/constants/constants"
-import Image from "next/image"
-import Link from "next/link"
-import { useState } from "react"
-import logo from '../../assets/images/LOGO.svg'
-import what from '../../assets/images/whatsapp.svg'
-import style from './navbar.module.css'
+'use client';
+
+import NavbarResponsive from "@/app/components/NavbarResponsive/navbarResponsive";
+import { Route } from "@/app/models";
+import { routes } from "@/assets/constants/constants";
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+import logo from '../../assets/images/LOGO.svg';
+import what from '../../assets/images/whatsapp.svg';
+import style from './navbar.module.css';
 
 export default function Navbar() {
-  // const [activeLink, setActiveLink] = useState<Route>(() => {
-  //     const hasStorage = window.localStorage.getItem('route') || JSON.stringify('Inicio');
-  //     const condition = JSON.parse(hasStorage);
-  //     console.log(condition);
-      
-  //     return condition
-   
-  // });
-  const [activeLink, setActiveLink] = useState<Route>('Inicio')
-
+  const [activeLink, setActiveLink] = useState<Route>(() => {
+    try {
+      const hasStorage = window.localStorage.getItem('route');
+      const condition = hasStorage ? JSON.parse(hasStorage) : 'Inicio';
+      console.log(condition);
+      return condition;
+    } catch (error) {
+      console.error('Error parsing JSON:', error);
+      return 'Inicio';
+    }
+  });
 
   const activeClick = (route: Route) => {
+    window.localStorage.setItem('route', route);
     setActiveLink(route);
-    // const localStorage = window.localStorage.setItem('route', route);
-    // console.log(localStorage);
   };
 
   return (
