@@ -1,7 +1,6 @@
 import style from './navbarResponsive.module.css'
 import { useState } from 'react';
 import Image from 'next/image';
-import logo from '../../../assets/images/LOGO.svg'
 import { routes, iconRoute } from '@/assets/constants/constants';
 import Link from 'next/link';
 export default function NavbarResponsive() {

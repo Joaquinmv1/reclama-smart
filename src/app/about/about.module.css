@@ -1,4 +1,4 @@
-.aboutContainer{
+.aboutContainer {
     display: flex;
     margin-top: 100px;
     flex-direction: column;
@@ -7,27 +7,56 @@
     padding-left: 150px;
     padding-right: 150px;
 }
-@media only screen and (max-width: 1348px){
-    .aboutContainer{
+
+.vector3 {
+    position: absolute;
+    top: 55rem;
+    left: 0;
+    z-index: 20;
+}
+
+.vector1 {
+    position: absolute;
+    top: 110rem;
+    right: 0;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 1348px) {
+    .aboutContainer {
         padding-left: 80px;
         padding-right: 80px;
     }
+    .vector3, .vector1 {
+        width: 135px;
+    }
 }
-@media only screen and (max-width: 800px){
-    .aboutContainer{
+
+@media only screen and (max-width: 800px) {
+    .aboutContainer {
         padding-left: 50px;
         padding-right: 50px;
     }
+
+    .vector3, .vector1  {
+        width: 120px;
+    }
 }
-@media only screen and (max-width: 500px){
-    .aboutContainer{
+
+@media only screen and (max-width: 500px) {
+    .aboutContainer {
         padding-left: 35px;
         padding-right: 35px;
     }
 }
-@media only screen and (max-width: 400px){
-    .aboutContainer{
+
+@media only screen and (max-width: 400px) {
+    .aboutContainer {
         padding-left: 25px;
         padding-right: 25px;
+    }
+
+    .vector3, .vector1  {
+        width: 100px;
     }
 }

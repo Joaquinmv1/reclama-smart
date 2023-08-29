@@ -2,9 +2,6 @@ import { Footer, Navbar } from '@/components';
 import type { Metadata } from 'next';
 import { Roboto, Montserrat, Open_Sans } from 'next/font/google';
 import './globals.css';
-import Image from 'next/image';
-import vector from './../assets/images/OBJECTS (1).svg'
-import vector2 from './../assets/images/OBJECTS (2).svg'
 
 const roboto = Roboto({
   weight: ['400', '500', '700'],
@@ -40,8 +37,6 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
-        <div className='vector2'><Image className='imgVector2' alt='vector2' src={vector2} /></div>
-        <div className='vector'><Image className='imgVector' alt='vector' src={vector} /></div>
         <Footer />
       </body>
     </html>
