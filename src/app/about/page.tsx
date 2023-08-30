@@ -1,5 +1,6 @@
 import style from './about.module.css'
 import { BannerAbout, Founders, Mvv, Team } from './components'
+import OurFounders from './components/OurFounders/OurFounders'
 
 export default function About() {
   return (
@@ -7,6 +8,7 @@ export default function About() {
       <BannerAbout />
       <Founders />
       <Mvv />
+      <OurFounders/>
       <Team />
     </main>
   )
