@@ -11,20 +11,15 @@ import style from './navbar.module.css'
 
 export default function Navbar() {
   // const [activeLink, setActiveLink] = useState<Route>(() => {
-  //     const hasStorage = window.localStorage.getItem('route') || JSON.stringify('Inicio');
-  //     const condition = JSON.parse(hasStorage);
-  //     console.log(condition);
-      
-  //     return condition
-   
-  // });
+  //   const hasStorage = window.localStorage.getItem('route') ?? 'Inicio';
+  //   return hasStorage as Route;
+  // })
+
   const [activeLink, setActiveLink] = useState<Route>('Inicio')
 
-
   const activeClick = (route: Route) => {
+    // window.localStorage.setItem('route', route);
     setActiveLink(route);
-    // const localStorage = window.localStorage.setItem('route', route);
-    // console.log(localStorage);
   };
 
   return (
