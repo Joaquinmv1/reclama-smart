@@ -8,6 +8,19 @@ import logo from 'src/assets/images/logo-reclama-smart.svg'
 import Button from '../Button/Button'
 import Link from 'next/link'
 
+interface Props {
+  text: string;
+  className?: string;
+};
+
+const Pharagraph = ({ text, }: Props) => {
+  return (
+    <p className={styles.text}>{text}</p>
+  )
+}
+
+
+
 export default function Footer() {
 
   const redes = [
@@ -37,9 +50,10 @@ export default function Footer() {
         <article className={styles.featuresSection}>
           <div className={styles.information}>
 
-            <p className={styles.text}>Términos y condiciones</p>
-            <p className={styles.text}>Política y privacidad</p>
-            <p className={styles.text}>Libro de reclamaciones</p>
+            <Pharagraph text={"Términos y condiciones"} />
+            <Pharagraph text={"Política y privacidad"} />
+            <Pharagraph text={"Libro de reclamaciones"} />
+
           </div>
 
         </article>
