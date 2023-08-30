@@ -11,6 +11,10 @@ import vector from '../images/Vector.svg'
 import vision from '../../assets/images/MvvImages/eye.svg'
 import mision from '../../assets/images/MvvImages/cohete.svg'
 import bandera from '../../assets/images/MvvImages/flag.svg'
+import reclamaAqui from '../images/imgTrajectory.svg'
+import canal9 from '../images/imgTrajectory1.svg'
+import UIlima from '../images/imgTrajectory2.svg'
+import reclamaSmart from '../images/imgTrajectory3.svg'
 
 export const routes: Routes[] = [
   { name: "Inicio", route: "/" },
@@ -56,6 +60,12 @@ export const iconRoute = [
   {icon: blog},
   {icon: contact}
 ];
+export const imgTrajectory = [
+  {img: reclamaAqui},
+  {img: canal9},
+  {img: reclamaSmart},
+  {img: UIlima}
+]
 
 export const businessInfo = [
   {
