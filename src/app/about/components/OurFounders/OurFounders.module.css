@@ -1,0 +1,68 @@
+.teamContainer {
+  border: 4px solid #345a47;
+  margin: 50px 50px;
+  padding: 70px;
+}
+
+.teamContainer h2 {
+  color: #02311a;
+  font-family: var(--font-montserrat);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+
+.teamContainer span {
+  color: #ff5220;
+}
+
+.team {
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.info {
+  width: 500px;
+}
+
+.info h6 {
+  width: 100%;
+  color: #02311a;
+  font-family: var(--font-openSans);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.info p:first-of-type {
+  color: #02311a;
+  font-family: var(--font-openSans);
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.info p:nth-of-type(2) {
+  color: #02311a;
+  font-family: var(--font-openSans);
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 230px;
+}
+
+.info img {
+  margin-left: 10px;
+}
+
+.info img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}

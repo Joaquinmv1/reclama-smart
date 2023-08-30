@@ -1,36 +1,28 @@
 .casesContain {
-  width: 76%;
+  width: 100%;
   margin: auto;
   margin-bottom: 150px;
   margin-top: 50px;
+  background-color: #68b36b;
+  padding: 80px 120px;
 }
 
 .casesContain h3 {
   width: 100%;
-  color: #02311a;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 600;
+  color: #fff;
   font-family: var(--font-montserrat);
+  font-size: 30px;
+  font-style: normal;
   line-height: normal;
   margin-bottom: 12px;
-}
-
-.casesContain p {
-  color: #374f42;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  font-family: var(--font-openSans);
-  line-height: normal;
-  margin-bottom: 20px;
+  margin-left: 120px;
 }
 
 /* CARROUSEL */
 
 .carrousel {
-  width: 100%;
-  height: 120px;
+  width: 50%;
+  height: 250px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -41,47 +33,59 @@
 /* CARROUSEL BOX */
 
 .box {
-  width: 30%;
-  height: 80px;
+  width: 100%;
+  height: 200px;
   display: flex;
   align-items: flex-start;
   border-radius: 16px;
   background-color: #fff;
-  box-shadow: 0px 5px 5px 0px #FF744C;
+  box-shadow: 0px 5px 5px 0px #ff744c;
   padding: 15px 48px;
 }
 
-.box .textC {
-  width: 90%;
-  margin-top: 5px;
+.box img {
+  margin-top: 1rem;
+  border-radius: 50px;
 }
 
-.box .textC h5 {
-  width: 70%;
+.box .comments {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.box .comments h6 {
+  margin-bottom: 7px;
+  color: orangered;
   font-size: 16px;
+}
+
+.box .comments h4 {
+  color: #02311a;
+  text-align: end;
+  font-family: var(--font-openSans);
+  font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  font-family: var(--font-montserrat);
   line-height: normal;
 }
 
-.box .textC small {
+.box .comments p {
+  width: 380px;
+  color: #374f42;
   font-family: var(--font-openSans);
-}
-
-.box p {
-  width: 70%;
-  background-color: #ff744c;
-  border-radius: 16px;
-  color: black;
-  padding: 12px;
-  font-style: normal;
-  font-weight: 700;
-  font-family: var(--font-roboto);
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
   line-height: normal;
 }
 
 /* ARROWS */
+
+.arrows {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
 
 .arrowLeft {
   width: 60px;
@@ -92,6 +96,10 @@
   border-radius: 40px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
+}
+
+.arrowLeft:hover {
+  transform: scale(0.9);
 }
 
 .imageArrowLeft {
@@ -108,6 +116,10 @@
   border-radius: 40px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
+}
+
+.arrowRight:hover {
+  transform: scale(0.9);
 }
 
 .imageArrowRigth {
@@ -150,62 +162,37 @@
 
 @media only screen and (max-width: 599px) {
   .casesContain {
-    width: 100%;
-    margin-bottom: 80px;
+    padding: 10px 0px;
+    height: 480px;
   }
 
   .casesContain h3 {
-    width: 50%;
-    margin-left: 30px;
-    color: #02311a;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-bottom: 12px;
-  }
-
-  .casesContain p {
-    text-align: center;
+    padding: 10px;
   }
 
   .carrousel {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-left: 10px;
+    display: flex;
+    height: 300px;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
   }
 
   .box {
-    width: 60%;
-    padding: 10px 20px;
+    flex: 1;
+    min-width: calc(40.33% - 150px);
+    min-height: 230px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
   }
 
-  .box .textC h5 {
-    font-size: 20px;
+  .box .comments {
+    width: 100%;
   }
 
-  .box p {
-    width: 50%;
-    padding: 8px;
-    margin-top: 10px;
-    margin-right: 10px;
-    font-size: 16px;
-  }
-
-  .arrowLeft,
-  .arrowRight {
-    width: 40px;
-    height: 40px;
-  }
-
-  .imageArrowLeft,
-  .imageArrowRigth {
-    width: 30px;
-    height: 30px;
-    margin: 6px;
-    padding: 2px;
+  .box .comments p {
+    width: 100%;
   }
 }
 
@@ -213,61 +200,40 @@
 
 @media only screen and (max-width: 904px) {
   .casesContain {
-    width: 100%;
-    margin-bottom: 80px;
+    padding: 10px 0px;
+    height: 480px;
   }
 
   .casesContain h3 {
-    width: 50%;
-    margin-left: 30px;
-    color: #02311a;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-bottom: 12px;
-  }
-
-  .casesContain p {
-    text-align: center;
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+    margin-right: 300px;
   }
 
   .carrousel {
-    width: 95%;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-left: 10px;
+    width: 100%;
+    display: flex;
+    height: 300px;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
   }
 
   .box {
+    flex: 1;
     width: 100%;
-    padding: 10px 20px;
+    min-height: 210px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
   }
 
-  .box .textC h5 {
-    font-size: 16px;
+  .box .comments {
+    width: 100%;
   }
 
-  .box p {
-    width: 50%;
-    padding: 8px;
-    margin-top: 10px;
-    font-size: 13px;
-  }
-
-  .arrowLeft,
-  .arrowRight {
-    width: 40px;
-    height: 40px;
-  }
-
-  .imageArrowLeft,
-  .imageArrowRigth {
-    width: 30px;
-    height: 30px;
-    margin: 6px;
-    padding: 2px;
+  .box .comments p {
+    width: 100%;
   }
 }
-
