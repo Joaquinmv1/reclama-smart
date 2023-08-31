@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { imgTrajectory } from "@/assets/constants/constants";
 import style from './trajectory.module.css';
+import TrajectoryResponsive from "./components/TrajectoryResponsive";
 
 interface TrajectoryItemProps {
     title: string
@@ -26,6 +27,7 @@ export default function Trajectory() {
             </article>
 
             <h4>Compartimos nuestro camino</h4>
+            <TrajectoryResponsive/>
             <section className={style.imagesSection}>
                 <div className={style.imageContainer}>
                     {imgTrajectory.map(({ img }, index) => (

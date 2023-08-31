@@ -11,11 +11,11 @@ export default function Home() {
 {/*       <div className='vector2'><Image className='imgVector2' alt='vector2' src={vector2} /></div>
       <div className='vector'><Image className='imgVector' alt='vector' src={vector} /></div> */}
       <FrontPage />
-      <FeacturedService />
+      {/* <FeacturedService />
       <BusinessInsight />
       <Cases />
       <FrequentQuestions />
-      <OurAlliances />
+      <OurAlliances /> */}
     </main>
   )
 }

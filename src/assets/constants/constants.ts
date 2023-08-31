@@ -61,10 +61,10 @@ export const iconRoute = [
   {icon: contact}
 ];
 export const imgTrajectory = [
-  {img: reclamaAqui},
-  {img: canal9},
-  {img: reclamaSmart},
-  {img: UIlima}
+  {img: reclamaAqui, title: "Reclamaquí", text: "con un MVP para crear una empresa digital"},
+  {img: canal9, title: "Canal 9", text: "Entrevista Canal 9 “El Cliente"},
+  {img: reclamaSmart, title:"ULima Emprendimiento Social", text:"Ganamos en el Contest “ULima Emprendimiento Social”"},
+  {img: UIlima, title:"Reclama Smart", text:"Lanzamos nueva plataforma"}
 ]
 
 export const businessInfo = [
