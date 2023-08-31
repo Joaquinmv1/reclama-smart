@@ -129,17 +129,16 @@ export default function Cases() {
           {data.slice(currentIndex, currentIndex + screen)
             .map((item, index) => (
               <div className={`${style.box} 
-            ${
-              animationDirection === "slide-out"
-                ? style["slide-out"]
-                : animationDirection === "slide-in"
-                ? style["slide-in"]
-                : ""
-            }`}
+            ${animationDirection === "slide-out"
+                  ? style["slide-out"]
+                  : animationDirection === "slide-in"
+                    ? style["slide-in"]
+                    : ""
+                }`}
                 onAnimationEnd={() => setAnimationDirection("")}
                 key={index}
               >
-                <Image width={100} height={100} src={item.image} alt="Cliente de ReclamaSmart"/>
+                <Image width={100} height={100} src={item.image} alt="Cliente de ReclamaSmart" />
                 <div className={style.comments}>
                   <h6>⭐⭐⭐⭐⭐</h6>
                   <p>{item.comment}</p>
@@ -163,7 +162,7 @@ export default function Cases() {
               alt="Arrow right"
             />
           </div>
-          
+
         </div>
 
       </div>
