@@ -39,7 +39,7 @@ export default function Footer() {
 
     }, {
       img: img4,
-      link: "https://api.whatsapp.com/send?phone=+51932468027&text=¨¡Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20Reclamaqu%C3%AD."
+      link: "https://api.whatsapp.com/send?phone=+51932468027&text=¡Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20Reclamaqu%C3%AD."
     }
 
   ]
@@ -64,15 +64,18 @@ export default function Footer() {
           <div className={styles.infoContactSection}>
 
             <Image src={logo} alt="logo" width={200} height={50} />
-            <p className={styles.text}>info@reclameaqui.pe</p>
-            <p className={styles.text}>+ 51 932 468 027</p>
+            <Pharagraph text={"info@reclameaqui.pe"} className={`${styles.text} ${styles.underline} ${styles.hover}`} />
+            <Link href={redes[3].link}>
+              <Pharagraph text={"+ 51 932 468 027"} className={`${styles.text} ${styles.underline} ${styles.hover}`} />
+            </Link>
+
           </div>
 
           <div className={styles.containerRedes}>
 
             <div className={styles.redes}>
               {
-                redes.map((red, i) => <Link target='_blank' key={`${red} ${i}`} href={red.link}> <Image src={red.img} alt="logo-red" width={20} height={20} /></Link>)
+                redes.map((red, i) => <Link className={styles.hover} target='_blank' key={`${red} ${i}`} href={red.link}> <Image src={red.img} alt="logo-red" width={20} height={20} /></Link>)
               }
             </div>
             <Link href={redes[3].link}>
