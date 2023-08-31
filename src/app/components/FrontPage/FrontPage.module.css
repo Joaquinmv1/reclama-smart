@@ -30,7 +30,13 @@
   font-size: 24px;
   margin-bottom: 15px;
   font-family: var(--font-openSans);
-
+}
+.h5mobile{
+  color: var(--color-texts);
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-family: var(--font-openSans);
+  display: none;
 }
 
 .button {
@@ -143,6 +149,10 @@
     font-size: 0.7rem;
   }
   .h5{
+    display: none;
+  }
+  .h5mobile{
+    display: flex;
     font-size: 0.7rem;
   }
 }
