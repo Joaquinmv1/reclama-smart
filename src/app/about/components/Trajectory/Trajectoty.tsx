@@ -31,7 +31,7 @@ export default function Trajectory() {
             <section className={style.imagesSection}>
                 <div className={style.imageContainer}>
                     {imgTrajectory.map(({ img }, index) => (
-                        <Image width={160} height={160} alt="img" src={img} key={index} />
+                        <Image className={style.image} alt="img" src={img} key={index} />
                     ))}
                 </div>
                 <article className={style.line}>

@@ -1,13 +1,12 @@
 .frontContainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   box-sizing: border-box;
   flex-wrap: nowrap;
   min-width: 100%;
-  padding: 25px;
-  gap: 3.5rem;
+  padding: 1.5rem 5.5rem;
 }
 
 .title {
@@ -63,13 +62,9 @@
   padding-left: 2rem;
 }
 
-.banner {
-  display: flex;
-  justify-content: start;
-  align-items: start;
-}
 .image{
   width: 600px;
+  height: 600px;
 }
 
 
@@ -82,7 +77,7 @@
     max-height: 500px;
   }
   .frontContainer{
-    margin-top: 6rem;
+    margin-top: 1rem;
   }
   .subTitle{
     font-size: 1.3rem;
@@ -129,6 +124,9 @@
     font-size: 3rem;
     text-align: center;
   }
+  .subTitle{
+  text-align: center;
+  }
   .bannerDescrip{
     gap: 0.6rem;
   }
@@ -153,6 +151,7 @@
   }
   .h5mobile{
     display: flex;
+    text-align: center;
     font-size: 0.7rem;
   }
 }
