@@ -13,7 +13,7 @@ export default function About() {
       <BannerAbout />
       <Founders />
       <Mvv />
-      <OurFounders/>
+      {/* <OurFounders/> */}
       <Team />
       <Trajectory />
     </>
