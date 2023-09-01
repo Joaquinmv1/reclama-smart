@@ -43,7 +43,7 @@
 }
 
 .box img {
-  /* margin-top: 1rem; */
+  margin-top: 1rem;
   border-radius: 50px;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .box .comments h6 {
-  margin-bottom: 7px;
+
   color: orangered;
   font-size: 16px;
 }
@@ -74,10 +74,9 @@
 .box .comments p {
   color: #374f42;
   font-family: var(--font-openSans);
-  font-size: 14px;
+  font-size: 17.5px;
   font-style: italic;
   font-weight: 600;
-  line-height: normal;
 }
 
 /* ARROWS */
@@ -163,6 +162,71 @@
 
 @media only screen and (max-width: 904px) {
   .casesContain {
+    padding: 50px 30px;
+  }
+
+  .casesContain h3 {
+    margin: 0px;
+    font-size: 32px;
+    padding: 10px 10px;
+  }
+
+  .carrousel {
+    height: auto;
+    gap: 20px;
+    padding: 20px 0px;
+  }
+
+  .box .comments h6 {
+    font-size: 22px;
+  }
+
+  .box .comments p {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+/* MEDIA QUERIES MOBILE */
+@media only screen and (max-width: 599px) {
+  .casesContain {
+    padding: 70px 40px;
+  }
+
+  .casesContain h3 {
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .carrousel {
+    width: 90%;
+    gap: 10px;
+  }
+
+  .box {
+    height: auto;
+    justify-content: space-evenly;
+  }
+
+  .box .comments h6 {
+    font-size: 22px;
+  }
+
+  .box .comments p {
+    width: 100%;
+    font-size: 15px;
+  }
+
+
+}
+
+
+
+
+
+/* @media only screen and (max-width: 904px) {
+  .casesContain {
     padding: 20px 20px;
   }
 
@@ -201,11 +265,10 @@
   .box .comments h6 {
     font-size: 23px;
   }
-}
+} */
 
 /* MEDIA QUERIES MOBILE */
-
-@media only screen and (max-width: 599px) {
+/* @media only screen and (max-width: 599px) {
   .casesContain h3 {
     width: 80%;
     margin-left: 0px;
@@ -232,4 +295,4 @@
   .box .comments h6 {
     font-size: 34px;
   }
-}
+} */
