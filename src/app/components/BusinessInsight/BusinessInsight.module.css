@@ -1,32 +1,44 @@
 .section-containerBusiness{
   background-color: var(--color-fondo);
   font-family: var(--font-montserrat);
+  color: #374F42;
+  /* margin-top: 2rem; */
 }
 
 .businessInfo {
-  width: 73%;
-  color: var(--color-title);
+  width: 100%;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin: 0 auto;
 }
 
 .businessInfo h2 {
-  font-size: 1.7rem;
-  font-weight: bold;
+  font-size: 2.5rem;
   margin-block: 0.9rem;
   font-family: var(--font-montserrat);
+}
+
+.businessInfo p {
+  width: 55%;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .businessImg {
   display: block;
   margin: 2.5rem auto;
+  width: 100%;
+  height: 61.599px;
 }
 
 .card-business {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 140px;
+  /* gap: 140px; */
 
   color: var(--color-secundaryLight);
   margin-bottom: 9.5rem;
@@ -37,16 +49,21 @@
   display: flex;
   gap: 10px;
   flex-direction: column;
+  font-size: 1.2rem;
 }
 
 .card-business li img {
   width: 100%;
+  width: 284px;
+  height: 284px;
   object-fit: contain;
+  margin-bottom: 1rem;
 }
 
 .card-business li p {
   width: 300px;
-  font-size: .9rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .businessImgVertical {

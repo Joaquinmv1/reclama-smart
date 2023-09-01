@@ -11,6 +11,10 @@ import vector from '../images/Vector.svg'
 import vision from '../../assets/images/MvvImages/eye.svg'
 import mision from '../../assets/images/MvvImages/cohete.svg'
 import bandera from '../../assets/images/MvvImages/flag.svg'
+import reclamo from '../../assets/images/businessInsightImages/reclamasmart2 1.jpg'
+import respuesta from '../../assets/images/businessInsightImages/Fotos38 1 (1).jpg'
+import recuperar from '../../assets/images/businessInsightImages/Fotos38 1 (2).jpg'
+
 
 export const routes: Routes[] = [
   { name: "Inicio", route: "/" },
@@ -59,19 +63,19 @@ export const iconRoute = [
 
 export const businessInfo = [
   {
-    image: businessImg,
-    title: "Ingresa tu reclamo 1",
-    description: "Cuéntanos los detalles de tu caso a través de nuestro WhatsApp"
+    image: reclamo,
+    title: "Ingresa tu reclamo",
+    description: "Comunícate con nosotros por WhatsApp para contarnos los detalles de tu caso."
   },
   {
-    image: businessImg,
-    title: "Ingresa tu reclamo 2",
-    description: "Cuéntanos los detalles de tu caso a través de nuestro WhatsApp"
+    image: respuesta,
+    title: "Responderemos en 24hs",
+    description: "Nosotros nos encargamos de todo, incluyendo la evaluación del reclamo, si podemos o no ayudarte."
   },
   {
-    image: businessImg,
-    title: "Ingresa tu reclamo 3",
-    description: "Cuéntanos los detalles de tu caso a través de nuestro WhatsApp"
+    image: recuperar,
+    title: "Recuperamos tu dinero",
+    description: "Te mantenemos informado en cada paso del proceso."
   }
 ];
 
@@ -102,16 +106,16 @@ export const mvvData = [
   {
     image: mision,
     title: 'Misión',
-    description: 'agiliza el proceso mientras empoderamos a los consumidores'
+    description: 'Ayudar a nuestros clientes a resolver sus reclamos de manera rápida y fácil.'
   },
   {
     image: vision,
     title: 'Visión',
-    description: 'agiliza el proceso mientras empoderamos a los consumidores'
+    description: 'Crear una experiencia positiva para nuestros clientes.'
   },
   {
     image: bandera,
     title: 'Valores',
-    description: 'agiliza el proceso mientras empoderamos a los consumidores'
+    description: 'Equidad y accesibilidad en temas relacionados al consumo.'
   }
 ];

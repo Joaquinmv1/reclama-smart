@@ -2,13 +2,16 @@
   font-family: var(--font-openSans);
   width: 100%;
   height: auto;
+  background-color: #fff;
 }
 
 .mvvTitle {
   font-family: var(--font-montserrat);
   color: var(--color-title);
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 2.5rem;
+  text-align: center;
+  margin: 1rem auto;
   width: 90%;
 }
 
@@ -20,16 +23,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2.5rem;
+  margin-block: 2.5rem;
 }
 
 .mvv-card li {
-  width: 25%;
+  width: 350px;
+  margin: 1rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 50px;
+
+  border-radius: 16px;
+  background: var(--Fondo, #F0F2F5);
+  box-shadow: 0px 4px 4px 0px #FF5220;
+  padding: 25px;
 }
 
 .mvv-card li h3 {

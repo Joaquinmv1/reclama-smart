@@ -20,7 +20,6 @@ function Benefits() {
               )
             })}
           </ul>
-          
         </div>
       </section>
     </>

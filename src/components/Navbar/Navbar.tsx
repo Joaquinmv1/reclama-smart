@@ -29,7 +29,7 @@ export default function Navbar() {
           {routes.map(({ route, name }) => {
             const classNames = activeLink === name ? style.activeLink : '';
             return (
-              <li key={name} className={classNames} >
+              <li key={name} className={classNames}>
                 <Link onClick={() => activeClick(name)} className={style.link} href={route}>{name}</Link>
               </li>
             )

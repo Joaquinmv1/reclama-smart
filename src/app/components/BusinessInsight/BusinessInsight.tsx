@@ -11,7 +11,7 @@ function BusinessInsight() {
       <section className={style['section-containerBusiness']}>
         <article className={style.businessInfo}>
           <h2>Así funciona</h2>
-          <p>Aquí te explicamos los pasos a seguir</p>
+          <p>Reclama sin complicaciones, nosotros nos encargamos de todo y te mantenemos informado en cada paso</p>
         </article>
         <Image
           src={lineaDeProgresoHorizontal}
@@ -34,4 +34,5 @@ function BusinessInsight() {
     </>
   )
 }
+
 export default BusinessInsight;
