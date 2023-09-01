@@ -2,10 +2,10 @@ import { Routes } from '@/app/models';
 import businessImg from '../../assets/images/business.jpg';
 import bag from '../images/bag.svg';
 import home from '../images/home.svg';
-import about from '../images/about.svg';
-import service from '../images/service.svg';
+import about from '../images/conocenos.svg';
+import service from '../images/servicios.svg';
 import blog from '../images/blog.svg';
-import contact from '../images/contact.svg';
+import contact from '../images/contacto.svg';
 import bussines from '../images/business.svg';
 import vector from '../images/Vector.svg'
 import vision from '../../assets/images/MvvImages/eye.svg'
@@ -61,10 +61,10 @@ export const iconRoute = [
   {icon: contact}
 ];
 export const imgTrajectory = [
-  {img: reclamaAqui, title: "Reclamaquí", text: "con un MVP para crear una empresa digital"},
+  {img: UIlima, title: "Reclamaquí", text: "con un MVP para crear una empresa digital"},
   {img: canal9, title: "Canal 9", text: "Entrevista Canal 9 “El Cliente"},
   {img: reclamaSmart, title:"ULima Emprendimiento Social", text:"Ganamos en el Contest “ULima Emprendimiento Social”"},
-  {img: UIlima, title:"Reclama Smart", text:"Lanzamos nueva plataforma"}
+  {img: reclamaAqui, title:"Reclama Smart", text:"Lanzamos nueva plataforma"}
 ]
 
 export const businessInfo = [
