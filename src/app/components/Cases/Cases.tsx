@@ -5,37 +5,45 @@ import left from "../../../assets/images/left.png";
 import right from "../../../assets/images/rigth.png";
 import style from "./cases.module.css";
 
+//PERSONS
+import person1 from "../../../assets/images/person1.jpg"
+import person2 from "../../../assets/images/person2.jpg"
+import person3 from "../../../assets/images/person3.jpg"
+import person4 from "../../../assets/images/person4.jpg"
+import person5 from "../../../assets/images/person5.jpg"
+import person6 from "../../../assets/images/person6.jpg"
+
 export default function Cases() {
   const data = [
     {
-      name: "Luis C.",
-      date: "23/03/2023",
-      amount: "+ s/ 5.780",
+      name: "Luis",
+      image: person1,
+      comment: '"Me ayudaron a recuperar mi dinero tras años de lucha. Finalmente la empresa me devolvió la plata de un viaje cancelado que ya había dado por perdida"',
     },
     {
-      name: "Ana S.",
-      date: "15/06/2023",
-      amount: "+ s/ 8.320",
+      name: "Ana",
+      image: person2,
+      comment: '"Gracias a reclamasmart, pude recuperar la plata por un vuelo al que no me dejaron abordar nunca."',
     },
     {
-      name: "Carlos M.",
-      date: "02/09/2023",
-      amount: "+ s/ 3.950",
+      name: "Carlos",
+      image: person3,
+      comment: '"Después de más de un año de tratar de recuperar dinero que había pagado por mis lentes, reclamasmart pudo lograrlo en meses. Realmente espectacular."',
     },
     {
-      name: "María R.",
-      date: "10/12/2023",
-      amount: "+ s/ 6.720",
+      name: "María",
+      image: person4,
+      comment: '"Increíble experiencia con ReclamaSmart. Después de años de lidiar con reclamaciones de productos defectuosos, finalmente obtuve una compensación justa."',
     },
     {
-      name: "Javier P.",
-      date: "05/02/2024",
-      amount: "+ s/ 9.150",
+      name: "Javier",
+      image: person5,
+      comment: '"ReclamaSmart superó mis expectativas. No solo recuperé mi dinero por un servicio insatisfactorio, sino que también me brindaron un excelente soporte durante todo el proceso."',
     },
     {
-      name: "Sofía G.",
-      date: "20/04/2024",
-      amount: "+ s/ 7.860",
+      name: "Sofía",
+      image: person6,
+      comment: '"Recomendaría ReclamaSmart a cualquiera que busque una forma efectiva de resolver problemas con empresas."',
     },
   ];
 
@@ -80,37 +88,37 @@ export default function Cases() {
     <>
       <div className={style.casesContain}>
         <h3>Casos de éxito</h3>
-        <p>Por motivos de protección de datos hemos cambiado los nombres</p>
 
         <div className={style.carrousel}>
-            
-          <div className={style.arrowLeft} onClick={handlePrev}>
-            <Image
-              className={style.imageArrowLeft}
-              src={left}
-              alt="Arrow left"
-            />
-          </div>
+          {data.slice(currentIndex, currentIndex + screen)
+            .map((item, index) => (
+              <div className={`${style.box} 
+            ${
+              animationDirection === "slide-out"
+                ? style["slide-out"]
+                : animationDirection === "slide-in"
+                ? style["slide-in"]
+                : ""
+            }`}
+                onAnimationEnd={() => setAnimationDirection("")}
+                key={index}
+              >
+                <Image width={100} height={100} src={item.image} alt="Cliente de ReclamaSmart"/>
+                <div className={style.comments}>
+                  <h6>⭐⭐⭐⭐⭐</h6>
+                  <p>{item.comment}</p>
+                  <h4>{item.name}</h4>
+                </div>
 
-          {data.slice(currentIndex, currentIndex + screen).map((item, index) => (
-            <div
-              className={`${style.box} ${
-                animationDirection === "slide-out"
-                  ? style["slide-out"]
-                  : animationDirection === "slide-in"
-                  ? style["slide-in"]
-                  : ""
-              }`}
-              onAnimationEnd={() => setAnimationDirection("")}
-              key={index}
-            >
-              <div className={style.textC}>
-                <h5>{item.name}</h5>
-                <small>{item.date}</small>
               </div>
-              <p>{item.amount}</p>
-            </div>
-          ))}
+            ))}
+        </div>
+
+        <div className={style.arrows}>
+
+          <div className={style.arrowLeft} onClick={handlePrev}>
+            <Image className={style.imageArrowLeft} src={left} alt="Arrow left" />
+          </div>
 
           <div className={style.arrowRight} onClick={handleNext}>
             <Image
@@ -119,7 +127,9 @@ export default function Cases() {
               alt="Arrow right"
             />
           </div>
+          
         </div>
+
       </div>
     </>
   );
