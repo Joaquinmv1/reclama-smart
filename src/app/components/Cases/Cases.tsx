@@ -13,7 +13,6 @@ import person4 from "../../../assets/images/person4.jpg"
 import person5 from "../../../assets/images/person5.jpg"
 import person6 from "../../../assets/images/person6.jpg"
 
-
 const data = [
   {
     name: "Luis",
@@ -46,6 +45,7 @@ const data = [
     comment: '"Recomendaría ReclamaSmart a cualquiera que busque una forma efectiva de resolver problemas con empresas."',
   },
 ];
+
 export default function Cases() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animationDirection, setAnimationDirection] = useState("");
