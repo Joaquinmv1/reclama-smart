@@ -1,7 +1,7 @@
 import style from './FrontPage.module.css';
 import Button from '@/components/Button/Button';
 import Image from 'next/image';
-import imgBanner from '../../../assets/images/fotoBanner.svg';
+import imgBanner from '../../../assets/images/fotoBanner3.svg';
 
 export default function FrontPage() {
 	return (
@@ -10,6 +10,7 @@ export default function FrontPage() {
 				<h1 className={style.title}>Recuperamos <br /><span style={{ color: '#FF5220' }}>tu dinero</span></h1>
 				<h4 className={style.subTitle}>Resolvemos tus reclamos<br /> de manera rápida y sencilla</h4>
 				<h5 className={style.h5}>¿Quieres descubrir si tu reclamo será exitoso?</h5>
+				<h5 className={style.h5mobile}>¿Estás interesado en saber si tu reclamo tendrá exito?</h5>
 				<Button title='Consulta Gratis' className={style.button} />
 			</div>
 			<div className={style.banner}>
