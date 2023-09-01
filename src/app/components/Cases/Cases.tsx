@@ -13,40 +13,40 @@ import person4 from "../../../assets/images/person4.jpg"
 import person5 from "../../../assets/images/person5.jpg"
 import person6 from "../../../assets/images/person6.jpg"
 
-export default function Cases() {
-  const data = [
-    {
-      name: "Luis",
-      image: person1,
-      comment: '"Me ayudaron a recuperar mi dinero tras años de lucha. Finalmente la empresa me devolvió la plata de un viaje cancelado que ya había dado por perdida"',
-    },
-    {
-      name: "Ana",
-      image: person2,
-      comment: '"Gracias a reclamasmart, pude recuperar la plata por un vuelo al que no me dejaron abordar nunca."',
-    },
-    {
-      name: "Carlos",
-      image: person3,
-      comment: '"Después de más de un año de tratar de recuperar dinero que había pagado por mis lentes, reclamasmart pudo lograrlo en meses. Realmente espectacular."',
-    },
-    {
-      name: "María",
-      image: person4,
-      comment: '"Increíble experiencia con ReclamaSmart. Después de años de lidiar con reclamaciones de productos defectuosos, finalmente obtuve una compensación justa."',
-    },
-    {
-      name: "Javier",
-      image: person5,
-      comment: '"ReclamaSmart superó mis expectativas. No solo recuperé mi dinero por un servicio insatisfactorio, sino que también me brindaron un excelente soporte durante todo el proceso."',
-    },
-    {
-      name: "Sofía",
-      image: person6,
-      comment: '"Recomendaría ReclamaSmart a cualquiera que busque una forma efectiva de resolver problemas con empresas."',
-    },
-  ];
+const data = [
+  {
+    name: "Luis",
+    image: person1,
+    comment: '"Me ayudaron a recuperar mi dinero tras años de lucha. Finalmente la empresa me devolvió la plata de un viaje cancelado que ya había dado por perdida"',
+  },
+  {
+    name: "Ana",
+    image: person2,
+    comment: '"Gracias a reclamasmart, pude recuperar la plata por un vuelo al que no me dejaron abordar nunca."',
+  },
+  {
+    name: "Carlos",
+    image: person3,
+    comment: '"Después de más de un año de tratar de recuperar dinero que había pagado por mis lentes, reclamasmart pudo lograrlo en meses. Realmente espectacular."',
+  },
+  {
+    name: "María",
+    image: person4,
+    comment: '"Increíble experiencia con ReclamaSmart. Después de años de lidiar con reclamaciones de productos defectuosos, finalmente obtuve una compensación justa."',
+  },
+  {
+    name: "Javier",
+    image: person5,
+    comment: '"ReclamaSmart superó mis expectativas. No solo recuperé mi dinero por un servicio insatisfactorio, sino que también me brindaron un excelente soporte durante todo el proceso."',
+  },
+  {
+    name: "Sofía",
+    image: person6,
+    comment: '"Recomendaría ReclamaSmart a cualquiera que busque una forma efectiva de resolver problemas con empresas."',
+  },
+];
 
+export default function Cases() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animationDirection, setAnimationDirection] = useState("");
   const [screen, setScreen] = useState(3);
@@ -93,17 +93,16 @@ export default function Cases() {
           {data.slice(currentIndex, currentIndex + screen)
             .map((item, index) => (
               <div className={`${style.box} 
-            ${
-              animationDirection === "slide-out"
-                ? style["slide-out"]
-                : animationDirection === "slide-in"
-                ? style["slide-in"]
-                : ""
-            }`}
+            ${animationDirection === "slide-out"
+                  ? style["slide-out"]
+                  : animationDirection === "slide-in"
+                    ? style["slide-in"]
+                    : ""
+                }`}
                 onAnimationEnd={() => setAnimationDirection("")}
                 key={index}
               >
-                <Image width={100} height={100} src={item.image} alt="Cliente de ReclamaSmart"/>
+                <Image width={100} height={100} src={item.image} alt="Cliente de ReclamaSmart" />
                 <div className={style.comments}>
                   <h6>⭐⭐⭐⭐⭐</h6>
                   <p>{item.comment}</p>
@@ -127,7 +126,7 @@ export default function Cases() {
               alt="Arrow right"
             />
           </div>
-          
+
         </div>
 
       </div>

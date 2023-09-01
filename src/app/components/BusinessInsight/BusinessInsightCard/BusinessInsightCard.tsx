@@ -5,7 +5,10 @@ interface Props {
   card: Card;
 }
 
+
+
 function BusinessInsightCard({ card }: Props) {
+
   return (
     <>
       <li key={card.title}>
