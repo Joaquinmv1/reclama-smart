@@ -3,25 +3,24 @@
   margin: auto;
   margin-bottom: 150px;
   margin-top: 50px;
-  background-color: #43a047;
+  background-color: #D6EDD4;
   padding: 80px 120px;
+  overflow: hidden;
 }
 
 .casesContain h3 {
   width: 100%;
+  text-align: center;
   color: #02311a;
   font-family: var(--font-montserrat);
   font-size: 30px;
   font-style: normal;
   line-height: normal;
-  margin-bottom: 12px;
-  margin-left: 120px;
 }
 
 /* CARROUSEL */
 
 .carrousel {
-  width: 100%;
   height: 250px;
   margin: auto;
   display: flex;
@@ -36,14 +35,17 @@
   width: 100%;
   height: 200px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   border-radius: 16px;
   background-color: #fff;
   box-shadow: 0px 5px 5px 0px #ff744c;
-  padding: 15px 48px;
+  padding: 15px 30px;
 }
 
 .box img {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   border-radius: 50px;
 }
 
@@ -74,7 +76,7 @@
 .box .comments p {
   color: #374f42;
   font-family: var(--font-openSans);
-  font-size: 17.5px;
+  font-size: 14px;
   font-style: italic;
   font-weight: 600;
 }
@@ -188,7 +190,8 @@
 }
 
 /* MEDIA QUERIES MOBILE */
-@media only screen and (max-width: 599px) {
+
+@media only screen and (max-width: 755px) {
   .casesContain {
     padding: 70px 40px;
   }
@@ -215,7 +218,7 @@
 
   .box .comments p {
     width: 100%;
-    font-size: 15px;
+    line-height: 14px;
   }
 
 

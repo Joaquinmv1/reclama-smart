@@ -1,13 +1,12 @@
-import { BannerAbout, Mvv, Team } from './components'
+import { BannerAbout, Mvv, Team, OurFounders} from './components'
 import Trajectory from './components/Trajectory/Trajectoty'
-import OurFounders from './components/OurFounders/OurFounders'
 
 export default function About() {
   return (
     <>
       <BannerAbout />
       <Mvv />
-      {/* <OurFounders/> */}
+      <OurFounders/>
       <Team />
       <Trajectory />
     </>
