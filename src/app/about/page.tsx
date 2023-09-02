@@ -1,5 +1,6 @@
-import { BannerAbout, Founders, Mvv, Team } from './components'
+import { BannerAbout, Mvv, Team } from './components'
 import Trajectory from './components/Trajectory/Trajectoty'
+import OurFounders from './components/OurFounders/OurFounders'
 
 export default function About() {
   return (
