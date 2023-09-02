@@ -6,10 +6,9 @@
   color: var(--color-title);
   font-family: var(--font-openSans);
   width: 100%;
-  margin-block: 3.8rem;
+  margin-block: 3rem;
   background: #FFF;
-  padding-top: 30px;
-  padding-bottom:70px ;
+  padding: 80px 150px;
 }
 
 .container-aboutServices {
@@ -31,7 +30,7 @@
 }
 
 .pServices {
-  width:58%;
+  width:70%;
   margin-block: 1rem;
   font-size: 1.5rem;
 }

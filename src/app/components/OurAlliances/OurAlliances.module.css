@@ -31,10 +31,11 @@
   align-items: center;
 }
 
-.logosSlide img {
+.logosSlide div {
   text-align: center;
   object-fit: cover;
   transition: all .3s ease;
+  cursor: pointer;
 }
 
 .containerSlide:hover .logosSlide {

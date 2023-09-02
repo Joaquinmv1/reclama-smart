@@ -8,9 +8,9 @@ import blog from '../images/blog.svg';
 import contact from '../images/contacto.svg';
 import bussines from '../images/business.svg';
 import vector from '../images/Vector.svg'
-import vision from '../../assets/images/MvvImages/eye.svg'
-import mision from '../../assets/images/MvvImages/cohete.svg'
-import bandera from '../../assets/images/MvvImages/flag.svg'
+import vision from '../../assets/images/MvvImages/eye2.svg'
+import mision from '../../assets/images/MvvImages/cohete2.svg'
+import bandera from '../../assets/images/MvvImages/flag2.svg'
 import reclamo from '../../assets/images/businessInsightImages/reclamasmart2 1.jpg'
 import respuesta from '../../assets/images/businessInsightImages/Fotos38 1 (1).jpg'
 import recuperar from '../../assets/images/businessInsightImages/Fotos38 1 (2).jpg'
