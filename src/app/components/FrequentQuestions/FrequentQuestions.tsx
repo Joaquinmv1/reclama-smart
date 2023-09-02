@@ -14,7 +14,7 @@ export default function FrequentQuestions() {
   };
 
   return (
-    <div className={`${style["answers-contain"]}`}>
+    <section className={`${style["answers-contain"]}`}>
       <h2>Preguntas frecuentes</h2>
       {info.map((inf, index) => (
         <div className={style.acordion} key={inf.title}>
@@ -38,6 +38,6 @@ export default function FrequentQuestions() {
           )}
         </div>
       ))}
-    </div>
+    </section>
   );
 }

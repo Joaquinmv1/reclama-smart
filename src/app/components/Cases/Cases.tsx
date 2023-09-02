@@ -104,7 +104,6 @@ export default function Cases() {
               >
                 <Image width={100} height={100} src={item.image} alt="Cliente de ReclamaSmart" />
                 <div className={style.comments}>
-                  <h6>⭐⭐⭐⭐⭐</h6>
                   <p>{item.comment}</p>
                   <h4>{item.name}</h4>
                 </div>
