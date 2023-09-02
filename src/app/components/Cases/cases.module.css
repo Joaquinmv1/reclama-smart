@@ -5,6 +5,7 @@
   margin-top: 50px;
   background-color: #68b36b;
   padding: 80px 120px;
+  overflow: hidden;
 }
 
 .casesContain h3 {
@@ -21,7 +22,6 @@
 /* CARROUSEL */
 
 .carrousel {
-  width: 50%;
   height: 250px;
   margin: auto;
   display: flex;
@@ -160,7 +160,7 @@
 
 /* MEDIA QUERIES MOBILE */
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 755px) {
   .casesContain {
     padding: 10px 0px;
     height: 480px;
@@ -193,6 +193,7 @@
 
   .box .comments p {
     width: 100%;
+    line-height: 14px;
   }
 }
 
