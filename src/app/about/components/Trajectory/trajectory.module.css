@@ -6,19 +6,19 @@
     min-width: 100%;
     padding: 60px 150px;
     gap: 4rem;
-    background-color: var(--color-acentoLight);
+    background-color: var(--color-tertiary);
 }
 
 .containerTrajectory h3 {
     font-size: 40px;
-    color: #FFFFFF;
+    color: var(--color-title);
     font-weight: 600;
     font-family: var(--font-montserrat);
 }
 
 .containerTrajectory h4 {
     font-size: 40px;
-    color: #FFFFFF;
+    color: var(--color-title);
     font-weight: 600;
     font-family: var(--font-montserrat);
 }
@@ -42,13 +42,13 @@
 
 .trajectoryItem span {
     font-size: 70px;
-    color: var(--color-title);
+    color: #4D8650;
     font-weight: 700;
 }
 
 .trajectoryItem p {
     font-size: 20px;
-    color: #FFFFFF;
+    color: var(--color-texts);
 }
 
 .imagesSection {
@@ -88,6 +88,13 @@
     font-size: 16px;
     font-family: var(--font-openSans);
 }
+.timelineItem span{
+    color: var(--color-texts);
+    font-weight: 600;
+}
+.timelineItem p{
+    color: var(--color-texts);
+}
 
 .line {
     display: flex;
@@ -105,39 +112,219 @@
     background-color: var(--color-title);
     border-radius: 50%;
 }
-@media only screen and (max-width: 400px){
+
+.image{
+    width: 160px;
+    height: 160px;
+}
+
+@media only screen and (max-width: 1300px){
     .containerTrajectory{
-        padding: 0.6rem;
+        padding: 40px 100px;
+    }
+    .trajectoryItem span{
+        font-size: 60px;
+    }
+    .trajectoryItem p{
+        font-size: 18px;
+    }
+    .image{
+        width: 135px;
+        height: 135px;
+    }
+    .line div{
+        width: 28px;
+        height: 28px;
+    }
+    .statsSection{
+        gap: 1rem;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .containerTrajectory{
+        padding: 30px 50px;
+    }
+    .trajectoryItem span{
+        font-size: 40px;
+    }
+    .trajectoryItem p{
+        font-size: 16px;
+    }
+    .image{
+        width: 100px;
+        height: 100px;
+    }
+    .line div{
+        width: 24px;
+        height: 24px;
     }
     .containerTrajectory h3{
+        font-size: 30px;
+    }
+    .containerTrajectory h4{
+        font-size: 30;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .containerTrajectory{
+        padding: 30px 50px;
+    }
+    .trajectoryItem span{
+        font-size: 40px;
+    }
+    .trajectoryItem p{
+        font-size: 16px;
+    }
+    .image{
+        width: 100px;
+        height: 100px;
+    }
+    .line div{
+        width: 24px;
+        height: 24px;
+    }
+    .containerTrajectory h3{
+        font-size: 30px;
+    }
+    .containerTrajectory h4{
+        font-size: 30;
+    }
+}
+@media only screen and (max-width: 780px){
+    .containerTrajectory{
+        padding: 20px 30px;
+    }
+    .trajectoryItem span{
+        font-size: 30px;
+    }
+    .trajectoryItem p{
+        font-size: 16px;
+    }
+    .image{
+        width: 80px;
+        height: 80px;
+    }
+    .line div{
+        width: 20px;
+        height: 20px;
+    }
+    .containerTrajectory h3{
+        font-size: 25px;
+    }
+    .containerTrajectory h4{
+        font-size: 25px;
+    }
+    .timelineItem{
+        padding-left: 8px;
+    }
+    .timelineItem span{
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .timelineItem p{
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .imagesSection{
+        padding: 10px 1.5rem;
+    }
+}
+@media only screen and (max-width: 638px){
+    .containerTrajectory{
+        padding: 20px 10px;
+    }
+    .trajectoryItem span{
+        font-size: 28px;
+    }
+    .trajectoryItem p{
+        font-size: 12px;
+    }
+    .image{
+        width: 70px;
+        height: 70px;
+    }
+    .line div{
+        width: 18px;
+        height: 18px;
+    }
+    .containerTrajectory h3{
+        font-size: 22px;
+    }
+    .containerTrajectory h4{
+        font-size: 22px;
+    }
+    .timelineItem{
+        padding-left: 5px;
+    }
+    .timelineItem span{
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .timelineItem p{
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .imagesSection{
+        padding: 0px 1rem;
+    }
+}
+@media only screen and (max-width: 500px){
+    .trajectoryItem span{
+        font-size: 22px;
+    }
+    .trajectoryItem{
+        justify-content: space-between;
+        padding: 0px;
+    }
+    .trajectoryItem p{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .containerTrajectory {
+        padding: 0.6rem;
+    }
+
+    .containerTrajectory h3 {
         font-size: 20px;
         text-align: center;
     }
-    .statsSection{
+
+    .statsSection {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         gap: 1rem;
     }
-    .trajectoryItem{
+
+
+    .trajectoryItem {
         display: flex;
         width: 100%;
     }
-    .trajectoryItem span{
+
+
+    .trajectoryItem span {
         font-size: 24px;
         width: 30%;
         font-weight: 700;
         margin-right: 1rem;
     }
-    .trajectoryItem p{
+
+
+    .trajectoryItem p {
         font-size: 16px;
         width: 100%;
     }
-    .containerTrajectory h4{
+
+
+    .containerTrajectory h4 {
         font-size: 20px;
     }
-    .imagesSection{
+
+    .imagesSection {
         display: none;
     }
 }

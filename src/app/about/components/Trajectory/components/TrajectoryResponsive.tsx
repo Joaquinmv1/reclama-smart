@@ -10,14 +10,14 @@ export default function TrajectoryResponsive() {
                     <article className={style.line}>
                         <div />
                         <div />
-                        <div />
+                        <div className={style.numberThree} />
                         <div />
                     </article>
                 </div>
                 <div className={style.imageContainer}>
                     {imgTrajectory.map(({ img, title, text }, index) => (
                         <article className={style.timelineItem} key={index} >
-                            <Image width={78} height={78} alt="img" src={img} />
+                            <Image width={100} height={100} alt="img" src={img} />
                             <span>{title}</span>
                             <p>{text}</p>
                         </article>
