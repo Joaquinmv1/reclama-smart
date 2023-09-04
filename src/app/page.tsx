@@ -5,12 +5,12 @@ import './globals.css';
 export default function Home() {
   return (
     <main>
-     {/*  <FrontPage />
+      <FrontPage />
       <FeacturedService />
-      <BusinessInsight /> */}
+      <BusinessInsight />
       <Cases />
-    {/*   <FrequentQuestions />
-      <OurAlliances /> */}
+      <FrequentQuestions />
+      <OurAlliances />
     </main>
   )
 }
