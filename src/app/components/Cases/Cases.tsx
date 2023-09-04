@@ -1,52 +1,21 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import left from "../../../assets/images/left.png";
 import right from "../../../assets/images/rigth.png";
 import style from "./cases.module.css";
 
-//PERSONS
-import person1 from "../../../assets/images/person1.jpg"
-import person2 from "../../../assets/images/person2.jpg"
-import person3 from "../../../assets/images/person3.jpg"
-import person4 from "../../../assets/images/person4.jpg"
-import person5 from "../../../assets/images/person5.jpg"
-import person6 from "../../../assets/images/person6.jpg"
+interface CaseData {
+  name: string
+  image: StaticImageData
+  comment: string
+}
 
-const data = [
-  {
-    name: "Luis",
-    image: person1,
-    comment: '"Me ayudaron a recuperar mi dinero tras años de lucha."',
-  },
-  {
-    name: "Ana",
-    image: person2,
-    comment: '"Gracias a reclamasmart, pude recuperar la plata por un vuelo al que no me dejaron abordar nunca."',
-  },
-  {
-    name: "Carlos",
-    image: person3,
-    comment: '"Después de más de un año de tratar de recuperar dinero que había pagado por mis lentes"',
-  },
-  {
-    name: "María",
-    image: person4,
-    comment: '"Increíble experiencia con ReclamaSmart."',
-  },
-  {
-    name: "Javier",
-    image: person5,
-    comment: '"ReclamaSmart superó mis expectativas."',
-  },
-  {
-    name: "Sofía",
-    image: person6,
-    comment: '"Recomendaría ReclamaSmart a cualquiera que busque una forma efectiva de resolver problemas."',
-  },
-];
+interface CaseProps {
+  data: CaseData[]
+}
 
-export default function Cases() {
+export default function Cases({ data }: CaseProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animationDirection, setAnimationDirection] = useState("");
   const [screen, setScreen] = useState(3);
@@ -110,6 +79,7 @@ export default function Cases() {
               </div>
             ))}
         </div>
+
         <div className={style.arrows}>
           <div className={style.arrowLeft} onClick={handlePrev}>
             <Image className={style.imageArrowLeft} src={left} alt="Arrow left" />
