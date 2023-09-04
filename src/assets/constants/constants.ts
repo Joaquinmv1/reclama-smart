@@ -11,6 +11,7 @@ import vector from '../images/Vector.svg'
 import vision from '../../assets/images/MvvImages/eye2.svg'
 import mision from '../../assets/images/MvvImages/cohete2.svg'
 import bandera from '../../assets/images/MvvImages/flag2.svg'
+import otros from '../../assets/images/MvvImages/Vector (1).svg'
 import reclamo from '../../assets/images/businessInsightImages/reclamasmart2 1.jpg'
 import respuesta from '../../assets/images/businessInsightImages/Fotos38 1 (1).jpg'
 import recuperar from '../../assets/images/businessInsightImages/Fotos38 1 (2).jpg'
@@ -23,6 +24,7 @@ import img1 from 'src/assets/images/logo-face.svg'
 import img2 from 'src/assets/images/logo-insta.svg'
 import img3 from 'src/assets/images/logo-tik.svg'
 import img4 from 'src/assets/images/logo-wp.svg'
+
 
 export const routes: Routes[] = [
   { name: "Inicio", route: "/" },
@@ -40,24 +42,24 @@ export const cardsServices = [
 
 export const benefitsData = [
   {
-    image: vector,
-    title: 'Vuelos',
-    benefits: ['Cancelaciones de Vuelo', 'Demoras excesivas', 'Negación de Embarque (Overbooking)', 'Incidentes en el vuelo', 'Perdida de equipaje']
+    image: bag,
+    title: 'Compras',
+    benefits: ['Dificultades con entregas', 'Complicaciones en reembolsos', 'Inconvenientes con garantías', 'Artículos con fallas']
   },
   {
     image: bussines,
     title: 'Bancos',
-    benefits: ['Cancelaciones de Vuelo', 'Demoras excesivas', 'Negación de Embarque (Overbooking)', 'Incidentes en el vuelo', 'Perdida de equipaje']
+    benefits: ['Cargos desconocidos', 'Pagos excesivos', 'Fraude bancario', 'Uso inadecuado de tarjetas de crédito']
   },
   {
-    image: bag,
-    title: 'Compras',
-    benefits: ['Cancelaciones de Vuelo', 'Demoras excesivas', 'Negación de Embarque (Overbooking)', 'Incidentes en el vuelo', 'Perdida de equipaje']
+    image: vector,
+    title: 'Vuelos',
+    benefits: ['Cancelaciones', 'Tardanzas', 'Sobreventa de pasajes (Overbooking)', 'Incidentes con equipaje']
   },
   {
-    image: bag,
-    title: 'Compras',
-    benefits: ['Cancelaciones de Vuelo', 'Demoras excesivas', 'Negación de Embarque (Overbooking)', 'Incidentes en el vuelo', 'Perdida de equipaje']
+    image: otros,
+    title: 'Otros',
+    benefits: ['Servicios de suscripción', 'Incidentes en suministro de luz o agua', 'Contratos desfavorables', 'Servicios no brindados']
   },
 ];
 
