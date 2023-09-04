@@ -6,8 +6,8 @@ function Benefits() {
   return (
     <>
       <section className={style.containerBenefits}>
-        <p>Nuestros Servicios</p>
-        <h2>Te ofrecemos un conjunto completo de servicios diseñados para proteger tus derechos. Nuestro equipo de abogados experimentados esta aquí para respaldarte en una variedad de situaciones.</h2>
+        {/* <p>Nuestros Servicios</p>
+        <h2>Te ofrecemos un conjunto completo de servicios diseñados para proteger tus derechos. Nuestro equipo de abogados experimentados esta aquí para respaldarte en una variedad de situaciones.</h2> */}
         <div className={style.cardBenefits}>
           <ul className={style['benefits-card-container']}>
             {benefitsData.map((card, i) => {
@@ -20,7 +20,6 @@ function Benefits() {
               )
             })}
           </ul>
-          
         </div>
       </section>
     </>
