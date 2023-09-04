@@ -30,12 +30,17 @@
 .containerRedes {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 20px;
 }
 
 .redes {
   display: flex;
   gap: 30px;
+}
+
+.redes img {
+  width: 25px;
 }
 
 .information {
@@ -87,6 +92,7 @@
 
 .hover {
   cursor: pointer;
+
   transition: all 0.3s ease-in-out;
 }
 
@@ -115,6 +121,7 @@
   }
 
   .featuresSection {
+    padding-top: 0;
     width: 30%;
   }
 
@@ -142,7 +149,7 @@
   .contactSection {
     flex-direction: row;
     justify-content: space-between;
-    width: 70%;
+    width: 50%;
 
   }
 
@@ -160,6 +167,9 @@
     flex-direction: column;
   }
 
+  .logo {
+    width: 1150px;
+  }
 }
 
 
