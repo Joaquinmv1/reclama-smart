@@ -1,12 +1,9 @@
 import styles from './Footer.module.css'
 import Image from 'next/image'
-import img1 from 'src/assets/images/logo-face.svg'
-import img2 from 'src/assets/images/logo-insta.svg'
-import img3 from 'src/assets/images/logo-tik.svg'
-import img4 from 'src/assets/images/logo-wp.svg'
 import logo from 'src/assets/images/logo-reclama-smart.svg'
 import Button from '../Button/Button'
 import Link from 'next/link'
+import { redes } from '@/assets/constants/constants'
 
 interface Props {
   text: string;
@@ -23,26 +20,7 @@ const Pharagraph = ({ text, }: Props) => {
 
 export default function Footer() {
 
-  const redes = [
-    {
-      img: img1,
-      link: ""
 
-    }, {
-
-      img: img2,
-      link: "https://www.instagram.com/reclamaqui.pe/"
-    },
-    {
-      img: img3,
-      link: "https://www.tiktok.com/@reclamaqui.pe?_t=8ao4mz66gfk&_r=1"
-
-    }, {
-      img: img4,
-      link: "https://api.whatsapp.com/send?phone=+51932468027&text=¡Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20Reclamaqu%C3%AD."
-    }
-
-  ]
   return (
     <footer className={styles.footer}>
       <section className={styles.containerFooter}>
