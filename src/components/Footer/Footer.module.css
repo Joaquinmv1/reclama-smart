@@ -12,7 +12,7 @@
   /* display: none; */
   display: flex;
   flex-direction: column;
-  
+
 }
 
 .containerFooter {
@@ -55,6 +55,7 @@
   color: white;
   font-weight: 600;
   border: none;
+  transition: all 0.3s ease-in-out;
 }
 
 .infoContactSection {
@@ -72,8 +73,27 @@
   line-height: normal;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .copyright {
   font-family: var(--font-roboto);
+}
+
+.button:hover {
+  background-color: #fa663d;
+}
+
+.hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.hover:hover {
+  transform: scale(1.01);
+  filter: opacity(0.6);
+
 }
 
 /* Tablet Version */
@@ -110,6 +130,7 @@
   .containerRedes {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
     padding-top: 15px;
   }
@@ -129,6 +150,8 @@
     font-size: 10px;
   }
 }
+
+
 
 /* Mobile Version */
 @media (max-width: 768px) {

@@ -2,9 +2,15 @@
 
 .answers-contain {
   width: 100%;
+  height: auto;
   margin: auto;
   margin-bottom: 60px;
-  
+  background-color: #fff;
+  padding: 20px 0px;
+}
+
+.answers-contain h2 {
+  padding: 20px 0px;
 }
 
 .acordion {
@@ -94,7 +100,7 @@
   }
 
   .acordion {
-    width: 90%;
+    width: 50%;
     margin: auto;
     background-color: #fff;
   }

@@ -1,0 +1,197 @@
+.mobile {
+  display: none;
+}
+
+.teamContainer {
+  border: 4px solid #43A047;
+  margin: 50px 50px;
+  padding: 70px;
+}
+
+.teamContainer h2 {
+  color: #02311a;
+  font-family: var(--font-montserrat);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+
+.teamContainer span {
+  color: #ff5220;
+}
+
+.team {
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.foundersImg {
+  width: 100%;
+}
+
+.info {
+  width: 100%;
+}
+
+.info h6 {
+  width: 60%;
+  color: #02311a;
+  font-family: var(--font-openSans);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.info p:first-of-type {
+  color: #02311a;
+  font-family: var(--font-openSans);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.info p:nth-of-type(2) {
+  width: 90%;
+  color: #02311a;
+  font-family: var(--font-openSans);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 230px;
+}
+
+.info img {
+  margin-left: 90%;
+}
+
+.info img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+/* MEDIA QUERIES TABLET */
+@media only screen and (max-width: 904px) {
+  .teamContainer {
+    padding: 30px 30px;
+    margin: 0px;
+  }
+
+  .foundersImg {
+    width: 300px;
+    height: 300px;
+  }
+
+  .info {
+    height: auto;
+  }
+
+  .info h6 {
+    width: 100%;
+    font-size: 19px;
+  }
+
+  .info p:first-of-type {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .info p:nth-of-type(2) {
+    width: 100%;
+    font-size: 17px;
+    margin-bottom: 0;
+  }
+
+  .info img {
+    width: 25px; 
+    height: 25px;
+  }
+}
+
+/* MEDIA QUERIES MOBILE */
+
+@media only screen and (max-width: 599px) {
+  .team .one,
+  .team .two,
+  .team .foundersImg {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .teamContainer h2 {
+    font-size: 38px;
+  }
+
+  .teamContainer {
+    margin: 0px;
+    margin-bottom: 50px;
+    padding: 30px;
+    border: none;
+  }
+
+  .mobile .infoMobileOne,
+  .mobile .infoMobileTwo {
+    display: flex;
+    padding: 40px 0px;
+    margin-bottom: 10px;
+  }
+
+  .infoMobileOne > img,
+  .infoMobileTwo > img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .mobile1,
+  .mobile2 {
+    margin-left: 10px;
+  }
+
+  .mobile1 h6,
+  .mobile2 h6 {
+    color: #02311a;
+    font-family: var(--font-openSans);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .mobile1 p:first-of-type,
+  .mobile2 p:first-of-type {
+    color: rgba(2, 49, 26, 0.75);
+    font-family: var(--font-openSans);
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+
+  .mobile1 p:nth-of-type(2),
+  .mobile2 p:nth-of-type(2) {
+    color: #02311a;
+    font-family: var(--font-openSans);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .mobile1 .linkedinIcon,
+  .mobile2 .linkedinIcon {
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 82%;
+  }
+}

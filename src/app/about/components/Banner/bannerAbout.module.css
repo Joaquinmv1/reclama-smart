@@ -2,10 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   flex-wrap: nowrap;
   min-width: 100%;
   gap: 1rem;
+  padding: 2rem 150px;
 }
 
 .bannerDescription {
@@ -13,29 +13,41 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .title {
   color: var(--color-texts);
-  font-size: 40px;
+  font-size: 60px;
+  text-align: center;
   font-family: var(--font-montserrat);
   font-weight: 900;
+}
+.title span{
+  color: var(--color-primary);
 }
 
 .description {
   color: var(--color-texts);
-  font-size: 18px;
+  font-size: 28px;
+  width: 50%;
+  text-align: center;
   font-family: var(--font-openSans);
   margin-bottom: 2rem;
 }
-
-.buttonContain {
-  display: flex;
-  width: 100%;
+.description2{
+  font-size: 20px;
+  width: 50%;
+  color: var(--color-texts);
+  text-align: center;
+  font-family: var(--font-openSans);
+  margin-bottom: 0.7rem;
 }
+
 
 .button {
   border-radius: 8px;
+  font-size: 18px;
   padding: 15px 50px;
   border: none;
   color: #FFF;
@@ -54,21 +66,34 @@
 }
 @media only screen and (max-width: 1348px){
   .title{
-    font-size:30px ;
+    font-size:40px ;
+    width: 100%;
   }
   .bannerContainer{
     justify-content: space-between;
+    padding: 50px 100px;
+    margin-top: 1.5rem;
   }
   .image {
     max-width: 500px;
     max-height: 500px;
   }
+  .description{
+    width: 70%;
+  }
+  .description2{
+    width: 70%;
+  }
 }
 @media only screen and (max-width: 1158px){
-  .title{
-    font-size:24px ;
+  .bannerContainer{
+    padding: 30px 80px;
+    margin-top: 1rem;
   }
   .description{
+    font-size: 18px;
+  }
+  .description2{
     font-size: 16px;
   }
   .image {
@@ -80,17 +105,21 @@
   .bannerContainer{
     flex-direction: column;
     gap: 10px;
+    padding: 1rem 50px;
+    margin-top: 0.7rem;
   }
   .imgContain{
     padding: 0;
   }
 }
 @media only screen and (max-width: 600px){
-  .description{
-    display: none;
+  .bannerContainer{
+    padding: 10px 10px;
+    width: 100%;
+    margin-top: 0.5rem;
   }
   .title{
-    font-size: 18px;
+    font-size: 35px;
     font-weight: 600;
     font-family: var(--font-openSans);
   }
@@ -98,12 +127,14 @@
     width: 300px;
     height: 300px;
   }
-  .button{
-    padding: 8px;
+  .description{
+    font-size: 16px;
   }
-  .buttonContain{
-    justify-content: center;
-    align-items: center;
-    font-family: var(--font-openSans);
+  .description2{
+    font-size: 14px;
+  }
+  .button{
+    padding: 8px 10px;
+    font-size: 14px;
   }
 }

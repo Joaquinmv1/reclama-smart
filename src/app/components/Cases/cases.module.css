@@ -1,36 +1,26 @@
 .casesContain {
-  width: 76%;
+  width: 100%;
   margin: auto;
-  margin-bottom: 150px;
   margin-top: 50px;
+  background-color: #D6EDD4;
+  padding: 80px 120px;
+  overflow: hidden;
 }
 
 .casesContain h3 {
   width: 100%;
+  text-align: center;
   color: #02311a;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 600;
   font-family: var(--font-montserrat);
-  line-height: normal;
-  margin-bottom: 12px;
-}
-
-.casesContain p {
-  color: #374f42;
-  font-size: 14px;
+  font-size: 30px;
   font-style: normal;
-  font-weight: 400;
-  font-family: var(--font-openSans);
   line-height: normal;
-  margin-bottom: 20px;
 }
 
 /* CARROUSEL */
 
 .carrousel {
-  width: 100%;
-  height: 120px;
+  height: 250px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -41,47 +31,62 @@
 /* CARROUSEL BOX */
 
 .box {
-  width: 30%;
-  height: 80px;
+  width: 100%;
+  height: 200px;
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   border-radius: 16px;
   background-color: #fff;
-  box-shadow: 0px 5px 5px 0px #FF744C;
-  padding: 15px 48px;
+  box-shadow: 0px 5px 5px 0px #ff744c;
+  padding: 15px 30px;
 }
 
-.box .textC {
-  width: 90%;
-  margin-top: 5px;
+.box img {
+  /* margin-top: 1rem; */
+  border-radius: 50px;
 }
 
-.box .textC h5 {
-  width: 70%;
-  font-size: 16px;
+.box .comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.box .comments h6 {
+
+  color: orangered;
+  font-size: 19px;
+}
+
+.box .comments h4 {
+  color: #02311a;
+  text-align: end;
+  font-family: var(--font-openSans);
+  font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  font-family: var(--font-montserrat);
   line-height: normal;
 }
 
-.box .textC small {
+.box .comments p {
+  color: #374f42;
   font-family: var(--font-openSans);
-}
-
-.box p {
-  width: 70%;
-  background-color: #ff744c;
-  border-radius: 16px;
-  color: black;
-  padding: 12px;
-  font-style: normal;
-  font-weight: 700;
-  font-family: var(--font-roboto);
-  line-height: normal;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
 }
 
 /* ARROWS */
+
+.arrows {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
 
 .arrowLeft {
   width: 60px;
@@ -92,6 +97,10 @@
   border-radius: 40px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
+}
+
+.arrowLeft:hover {
+  transform: scale(0.9);
 }
 
 .imageArrowLeft {
@@ -108,6 +117,10 @@
   border-radius: 40px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
+}
+
+.arrowRight:hover {
+  transform: scale(0.9);
 }
 
 .imageArrowRigth {
@@ -146,128 +159,142 @@
   animation: slideInBox 0.5s ease;
 }
 
-/* MEDIA QUERIES MOBILE */
-
-@media only screen and (max-width: 599px) {
-  .casesContain {
-    width: 100%;
-    margin-bottom: 80px;
-  }
-
-  .casesContain h3 {
-    width: 50%;
-    margin-left: 30px;
-    color: #02311a;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-bottom: 12px;
-  }
-
-  .casesContain p {
-    text-align: center;
-  }
-
-  .carrousel {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-left: 10px;
-  }
-
-  .box {
-    width: 60%;
-    padding: 10px 20px;
-  }
-
-  .box .textC h5 {
-    font-size: 20px;
-  }
-
-  .box p {
-    width: 50%;
-    padding: 8px;
-    margin-top: 10px;
-    margin-right: 10px;
-    font-size: 16px;
-  }
-
-  .arrowLeft,
-  .arrowRight {
-    width: 40px;
-    height: 40px;
-  }
-
-  .imageArrowLeft,
-  .imageArrowRigth {
-    width: 30px;
-    height: 30px;
-    margin: 6px;
-    padding: 2px;
-  }
-}
-
 /* MEDIA QUERIES TABLET */
 
 @media only screen and (max-width: 904px) {
   .casesContain {
+    padding: 50px 30px;
+  }
+
+  .casesContain h3 {
+    margin: 0px;
+    font-size: 32px;
+    padding: 10px 10px;
+  }
+
+  .carrousel {
+    height: auto;
+    gap: 20px;
+    padding: 20px 0px;
+  }
+
+  .box .comments h6 {
+    font-size: 22px;
+  }
+
+  .box .comments p {
     width: 100%;
-    margin-bottom: 80px;
+    font-size: 15px;
+  }
+}
+
+/* MEDIA QUERIES MOBILE */
+
+@media only screen and (max-width: 755px) {
+  .casesContain {
+    padding: 70px 40px;
+  }
+
+  .casesContain h3 {
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .carrousel {
+    width: 90%;
+    gap: 10px;
+  }
+
+  .box {
+    height: auto;
+    justify-content: space-evenly;
+  }
+
+  .box .comments h6 {
+    font-size: 22px;
+  }
+
+  .box .comments p {
+    width: 100%;
+    line-height: 14px;
+  }
+
+
+}
+
+
+
+
+
+/* @media only screen and (max-width: 904px) {
+  .casesContain {
+    padding: 20px 20px;
   }
 
   .casesContain h3 {
     width: 50%;
-    margin-left: 30px;
-    color: #02311a;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-bottom: 12px;
-  }
-
-  .casesContain p {
-    text-align: center;
+    margin-left: 1rem;
+    margin-bottom: 0px;
   }
 
   .carrousel {
-    width: 95%;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-left: 10px;
+    height: auto;
+    gap: 20px;
   }
 
   .box {
     width: 100%;
-    padding: 10px 20px;
+    height: 220px;
+    position: relative;
+    padding: 15px 20px;
+    margin-top: 120px;
+    margin-bottom: 40px;
   }
 
-  .box .textC h5 {
-    font-size: 16px;
+  .box img {
+    position: absolute;
+    top: -55px;
+    left: 140px;
   }
 
-  .box p {
-    width: 50%;
-    padding: 8px;
-    margin-top: 10px;
-    font-size: 13px;
+  .box .comments {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45px;
   }
 
-  .arrowLeft,
-  .arrowRight {
-    width: 40px;
-    height: 40px;
+  .box .comments h6 {
+    font-size: 23px;
+  }
+} */
+
+/* MEDIA QUERIES MOBILE */
+/* @media only screen and (max-width: 599px) {
+  .casesContain h3 {
+    width: 80%;
+    margin-left: 0px;
+    margin-bottom: 0px;
   }
 
-  .imageArrowLeft,
-  .imageArrowRigth {
-    width: 30px;
-    height: 30px;
-    margin: 6px;
-    padding: 2px;
+  .box {
+    position: relative;
+    margin-top: 70px;
   }
-}
 
+  .box img {
+    position: absolute;
+    top: -65px;
+    left: 195px;
+  }
+
+  .box .comments {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px 10px;
+  }
+
+  .box .comments h6 {
+    font-size: 34px;
+  }
+} */

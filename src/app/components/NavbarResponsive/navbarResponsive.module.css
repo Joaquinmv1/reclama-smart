@@ -1,17 +1,20 @@
 .navbarResponsive {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     position: absolute;
+    gap: 2rem;
     z-index: 900;
     transition: all 2s;
     background-color: #FFFFFF;
     top: -1000px;
     min-width: 100%;
-    max-height: 50vh;
+    max-height: 100vh;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
     display: none;
+    padding: 1rem 0.7rem;
+    font-family: var(--font-openSans);
 }
 
 .imgContain {
@@ -38,8 +41,7 @@
 }
 
 .li {
-    color: #000000;
-    font-weight: 500;
+    color: var(--color-title);
     font-family: var(--font-montserrat);
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
@@ -49,19 +51,10 @@
     font-family: var(--font-montserrat);
 }
 
-.li:hover {
-    background-size: 100% 2px;
-    cursor: pointer;
-    color: #FF5220;
-}
 
-
-.navbarAvatar {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
+.activeLink {
+    text-decoration: underline 2px var(--color-primary);
+    font-weight: 700;
 }
 
 .navbarMenuButton {
@@ -99,6 +92,33 @@
     flex-direction: row;
 }
 
+.button {
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    border-radius: 3px;
+    cursor: pointer;
+    background: var(--color-acentoLight);
+    font-family: var(--font-openSans);
+}
+
+.whatsapp {
+    width: 20px;
+    height: 20px;
+}
+
+.contanerButton {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+
 @media only screen and (max-width: 900px) {
     .navbarMenuButton {
         display: flex;
@@ -124,8 +144,9 @@
     .navbarOpen {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         flex-direction: column;
+        gap: 2rem;
         position: absolute;
         z-index: 900;
         background-color: #FFFFFF;
@@ -133,7 +154,8 @@
         left: 0;
         transition: all 2s;
         min-width: 100%;
-        max-height: 50vh;
+        max-height: 100vh;
+        padding: 1rem 0.7rem;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
     }
 }
@@ -145,8 +167,9 @@
         top: 1.3rem;
     }
 }
-@media only screen and (max-width: 435px){
-    .navbarMenuButton{
+
+@media only screen and (max-width: 435px) {
+    .navbarMenuButton {
         right: 1rem;
     }
 }

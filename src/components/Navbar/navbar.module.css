@@ -131,7 +131,7 @@
     gap: 2rem;
   }
   .button{
-    font-size: 1rem;
+    display: none;
   }
   .whatsapp {
     width: 20px;
