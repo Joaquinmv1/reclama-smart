@@ -57,8 +57,14 @@
 .mvv-card li image {
 }
 
-/* @media screen and (max-width: 768px) {
-  .mvvTitle{
-    font-size: 24px;
+@media screen and (max-width: 1275px) {
+  .mvv-card {
+    gap: 50px;
   }
-} */
+}
+
+@media screen and (max-width: 1150px) {
+  .mvv-card li {
+    width: 50%;
+  }
+} 

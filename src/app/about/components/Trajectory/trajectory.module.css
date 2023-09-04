@@ -165,31 +165,7 @@
         font-size: 30;
     }
 }
-@media only screen and (max-width: 1000px){
-    .containerTrajectory{
-        padding: 30px 50px;
-    }
-    .trajectoryItem span{
-        font-size: 40px;
-    }
-    .trajectoryItem p{
-        font-size: 16px;
-    }
-    .image{
-        width: 100px;
-        height: 100px;
-    }
-    .line div{
-        width: 24px;
-        height: 24px;
-    }
-    .containerTrajectory h3{
-        font-size: 30px;
-    }
-    .containerTrajectory h4{
-        font-size: 30;
-    }
-}
+
 @media only screen and (max-width: 780px){
     .containerTrajectory{
         padding: 20px 30px;

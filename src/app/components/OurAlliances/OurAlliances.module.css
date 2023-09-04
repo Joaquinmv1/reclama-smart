@@ -59,36 +59,3 @@
   }
 }
 
-@media screen and (max-width: 1035px) {
-  .partersTitle {
-    width: 52%;
-    padding-left: 1rem;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .partersTitle {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 668px){
-  .partersTitle {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 600px){
-  .partersTitle {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 431px) {
-  .h2 {
-    width: 100%;
-    text-align: center;
-    font-size: 1.7rem;
-  }
-}
-
