@@ -17,7 +17,7 @@ const data = [
   {
     name: "Luis",
     image: person1,
-    comment: '"Me ayudaron a recuperar mi dinero tras años de lucha. Finalmente la empresa me devolvió la plata de un viaje cancelado que ya había dado por perdida"',
+    comment: '"Me ayudaron a recuperar mi dinero tras años de lucha."',
   },
   {
     name: "Ana",
@@ -27,22 +27,22 @@ const data = [
   {
     name: "Carlos",
     image: person3,
-    comment: '"Después de más de un año de tratar de recuperar dinero que había pagado por mis lentes, reclamasmart pudo lograrlo en meses. Realmente espectacular."',
+    comment: '"Después de más de un año de tratar de recuperar dinero que había pagado por mis lentes"',
   },
   {
     name: "María",
     image: person4,
-    comment: '"Increíble experiencia con ReclamaSmart. Después de años de lidiar con reclamaciones de productos defectuosos, finalmente obtuve una compensación justa."',
+    comment: '"Increíble experiencia con ReclamaSmart."',
   },
   {
     name: "Javier",
     image: person5,
-    comment: '"ReclamaSmart superó mis expectativas. No solo recuperé mi dinero por un servicio insatisfactorio, sino que también me brindaron un excelente soporte durante todo el proceso."',
+    comment: '"ReclamaSmart superó mis expectativas."',
   },
   {
     name: "Sofía",
     image: person6,
-    comment: '"Recomendaría ReclamaSmart a cualquiera que busque una forma efectiva de resolver problemas con empresas."',
+    comment: '"Recomendaría ReclamaSmart a cualquiera que busque una forma efectiva de resolver problemas."',
   },
 ];
 

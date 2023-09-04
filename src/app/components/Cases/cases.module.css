@@ -32,7 +32,6 @@
 
 .box {
   width: 100%;
-  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +39,7 @@
   border-radius: 16px;
   background-color: #fff;
   box-shadow: 0px 5px 5px 0px #ff744c;
-  padding: 15px 30px;
+  padding: 15px 20px;
 }
 
 .box img {
@@ -178,6 +177,10 @@
     padding: 20px 0px;
   }
 
+  .box {
+    height: 200px;
+  }
+
   .box .comments h6 {
     font-size: 22px;
   }
@@ -192,7 +195,7 @@
 
 @media only screen and (max-width: 755px) {
   .casesContain {
-    padding: 70px 40px;
+    padding: 30px 0px;
   }
 
   .casesContain h3 {
@@ -209,14 +212,21 @@
   .box {
     height: auto;
     justify-content: space-evenly;
+    padding: 10px;
+  }
+
+  .box img {
+    width: 80px;
+    height: 80px;
   }
 
   .box .comments h6 {
-    font-size: 22px;
+    font-size: 15px;
   }
 
   .box .comments p {
     width: 100%;
+    font-size: 12px;
     line-height: 14px;
   }
 
