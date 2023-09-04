@@ -15,6 +15,14 @@ import reclamo from '../../assets/images/businessInsightImages/reclamasmart2 1.j
 import respuesta from '../../assets/images/businessInsightImages/Fotos38 1 (1).jpg'
 import recuperar from '../../assets/images/businessInsightImages/Fotos38 1 (2).jpg'
 
+//PERSONS
+import person1 from "../images/person1.jpg"
+import person2 from "../images/person2.jpg"
+import person3 from "../images/person3.jpg"
+import person4 from "../images/person4.jpg"
+import person5 from "../images/person5.jpg"
+import person6 from "../images/person6.jpg"
+
 import reclamaAqui from '../images/imgTrajectory.svg'
 import canal9 from '../images/imgTrajectory1.svg'
 import UIlima from '../images/imgTrajectory2.svg'
@@ -64,6 +72,40 @@ export const iconRoute = [
   {icon: blog},
   {icon: contact}
 ];
+
+export const dataClients = [
+  {
+    name: "Luis",
+    image: person1,
+    comment: '"Me ayudaron a recuperar mi dinero tras años de lucha."',
+  },
+  {
+    name: "Ana",
+    image: person2,
+    comment: '"Gracias a reclamasmart, pude recuperar la plata por un vuelo al que no me dejaron abordar nunca."',
+  },
+  {
+    name: "Carlos",
+    image: person3,
+    comment: '"Después de más de un año de tratar de recuperar dinero que había pagado por mis lentes"',
+  },
+  {
+    name: "María",
+    image: person4,
+    comment: '"Increíble experiencia con ReclamaSmart."',
+  },
+  {
+    name: "Javier",
+    image: person5,
+    comment: '"ReclamaSmart superó mis expectativas."',
+  },
+  {
+    name: "Sofía",
+    image: person6,
+    comment: '"Recomendaría ReclamaSmart a cualquiera que busque una forma efectiva de resolver problemas."',
+  },
+];
+
 export const imgTrajectory = [
   {img: UIlima, title: "Reclamaquí", text: "con un MVP para crear una empresa digital"},
   {img: canal9, title: "Canal 9", text: "Entrevista Canal 9 “El Cliente"},
