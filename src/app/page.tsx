@@ -11,6 +11,7 @@ export default function Home() {
       <FeacturedService />
       <BusinessInsight />
       <Cases />
+
       <OurAlliances />
       <FrequentQuestions />
     </main>

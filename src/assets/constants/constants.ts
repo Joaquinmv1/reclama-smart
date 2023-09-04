@@ -19,6 +19,10 @@ import reclamaAqui from '../images/imgTrajectory.svg'
 import canal9 from '../images/imgTrajectory1.svg'
 import UIlima from '../images/imgTrajectory2.svg'
 import reclamaSmart from '../images/imgTrajectory3.svg'
+import img1 from 'src/assets/images/logo-face.svg'
+import img2 from 'src/assets/images/logo-insta.svg'
+import img3 from 'src/assets/images/logo-tik.svg'
+import img4 from 'src/assets/images/logo-wp.svg'
 
 export const routes: Routes[] = [
   { name: "Inicio", route: "/" },
@@ -58,17 +62,17 @@ export const benefitsData = [
 ];
 
 export const iconRoute = [
-  {icon: home},
-  {icon:about},
-  {icon: service},
-  {icon: blog},
-  {icon: contact}
+  { icon: home },
+  { icon: about },
+  { icon: service },
+  { icon: blog },
+  { icon: contact }
 ];
 export const imgTrajectory = [
-  {img: UIlima, title: "Reclamaquí", text: "con un MVP para crear una empresa digital"},
-  {img: canal9, title: "Canal 9", text: "Entrevista Canal 9 “El Cliente"},
-  {img: reclamaSmart, title:"ULima Emprendimiento Social", text:"Ganamos en el Contest “ULima Emprendimiento Social”"},
-  {img: reclamaAqui, title:"Reclama Smart", text:"Lanzamos nueva plataforma"}
+  { img: UIlima, title: "Reclamaquí", text: "con un MVP para crear una empresa digital" },
+  { img: canal9, title: "Canal 9", text: "Entrevista Canal 9 “El Cliente" },
+  { img: reclamaSmart, title: "ULima Emprendimiento Social", text: "Ganamos en el Contest “ULima Emprendimiento Social”" },
+  { img: reclamaAqui, title: "Reclama Smart", text: "Lanzamos nueva plataforma" }
 ]
 
 export const businessInfo = [
@@ -144,3 +148,24 @@ export const mvvData = [
     description: 'Equidad y accesibilidad en temas relacionados al consumo.'
   }
 ];
+
+export const redes = [
+  {
+    img: img1,
+    link: ""
+
+  }, {
+
+    img: img2,
+    link: "https://www.instagram.com/reclamaqui.pe/"
+  },
+  {
+    img: img3,
+    link: "https://www.tiktok.com/@reclamaqui.pe?_t=8ao4mz66gfk&_r=1"
+
+  }, {
+    img: img4,
+    link: "https://api.whatsapp.com/send?phone=+51932468027&text=¡Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20Reclamaqu%C3%AD."
+  }
+
+]
