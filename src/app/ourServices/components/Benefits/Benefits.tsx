@@ -1,13 +1,13 @@
 import { benefitsData } from "@/assets/constants/constants";
 import Image from "next/image";
 import style from './Benefits.module.css';
+import Button from "@/components/Button/Button";
 
 function Benefits() {
   return (
     <>
       <section className={style.containerBenefits}>
-        <p>Nuestros Servicios</p>
-        <h2>Te ofrecemos un conjunto completo de servicios diseñados para proteger tus derechos. Nuestro equipo de abogados experimentados esta aquí para respaldarte en una variedad de situaciones.</h2>
+        <h2>¡Conoce nuestros servicios!</h2>
         <div className={style.cardBenefits}>
           <ul className={style['benefits-card-container']}>
             {benefitsData.map((card, i) => {
@@ -20,9 +20,11 @@ function Benefits() {
               )
             })}
           </ul>
+          <Button title="Consulta Gratis" className={style.buttonBeneficts} />
         </div>
       </section>
     </>
   )
 }
-export default Benefits
+
+export default Benefits;
