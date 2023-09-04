@@ -97,10 +97,11 @@
 @media only screen and (max-width: 599px) {
   .answers-contain {
     margin-bottom: 40px;
+    padding: 0px 15px;
   }
 
   .acordion {
-    width: 50%;
+    width: 100%;
     margin: auto;
     background-color: #fff;
   }
@@ -109,11 +110,13 @@
     width: 80%;
     font-size: 24px;
     margin-bottom: 32px;
-    text-align: start;
+    text-align: center;
     margin-left: 26px;
   }
 
   .acordionHeader {
+    border-right: none;
+    border-left: none;
     padding: 12px;
   }
 
@@ -121,7 +124,17 @@
     font-size: 14px;
   }
 
+  .firstAccordion {
+    border: none;
+  }
+  
+  .lastAccordion {
+    border: none;
+  }
+
   .acordionBody {
+    border: none;
+    border-bottom: 1px solid #ced4da;
     padding: 12px;
   }
 
