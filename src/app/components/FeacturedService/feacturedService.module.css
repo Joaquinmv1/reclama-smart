@@ -7,6 +7,8 @@
   font-family: var(--font-openSans);
   width: 100%;
   margin-top: 3.8rem;
+  background-color: #fff;
+  padding: 20px 0px;
 }
 
 .container-aboutServices {

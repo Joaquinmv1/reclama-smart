@@ -1,6 +1,7 @@
 .section-containerBusiness{
   background-color: var(--color-fondo);
   font-family: var(--font-montserrat);
+  padding: 20px 0px;
 }
 
 .businessInfo {
