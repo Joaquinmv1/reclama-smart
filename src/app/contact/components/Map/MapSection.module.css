@@ -1,10 +1,36 @@
 .mapImg {
-    width: 400px;
+    max-width: 300px;
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.containerImg {
+    background-color: white;
+    width: 40%;
+    margin: 20px;
+}
+
+.title {
+    color: var(--color-text);
+    font-family: var(--font-openSans);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 40px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.sectionMap {
+    background-color: #ffffff;
+    padding: 50px;
 }
 
 .containerMap {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 40px;
     font-family: var(--font-roboto);
@@ -15,12 +41,26 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 16px;
+    background: #F0F2F5;
+    /* Sombra naranja */
+    box-shadow: 0px 4px 4px 0px #FF5220;
 }
 
 .contact {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.redes {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
 }
 
 .contact div h2 {
@@ -34,5 +74,22 @@
 .content {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 10px;
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: var(--color-primary);
+    color: white;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease-in-out;
 }
