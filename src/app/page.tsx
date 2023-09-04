@@ -9,8 +9,8 @@ export default function Home() {
       <FeacturedService />
       <BusinessInsight />
       <Cases />
-      <FrequentQuestions />
       <OurAlliances />
+      <FrequentQuestions />
     </main>
   )
 }
