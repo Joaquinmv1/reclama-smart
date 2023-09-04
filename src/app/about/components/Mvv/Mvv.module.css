@@ -3,14 +3,17 @@
   width: 100%;
   height: auto;
   background-color: #fff;
+  padding: 80px 150px;
 }
 
 .mvvTitle {
   font-family: var(--font-montserrat);
   color: var(--color-title);
-  font-size: 3rem;
+  font-size: 2.2rem;
   margin-bottom: 2.5rem;
-  width: 90%;
+  text-align: center;
+  margin: 1rem auto;
+  width: 85%;
 }
 
 .mvvTitle span {
@@ -19,32 +22,49 @@
 
 .mvv-card {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin-bottom: 2.5rem;
+  margin-block: 2.5rem;
 }
 
 .mvv-card li {
-  width: 25%;
+  width: 300px;
+  height: 350px;
+
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 34px;
+
+  border-radius: 16px;
+  background: var(--Fondo, #F0F2F5);
+  box-shadow: 0px 4px 4px 0px #FF5220;
 }
 
 .mvv-card li h3 {
-  color: var(--color-primary);
-  font-size: 2.75rem;
+  font-size: 32px;
+  color: #02311A;
 }
 
 .mvv-card li p {
-  width: 60%;
-  font-size: 24px;
+  width: 90%;
+  text-align: center;
+  font-size: 1.3rem;
+  /* padding-inline: .2rem; */
 }
 
-/* @media screen and (max-width: 768px) {
-  .mvvTitle{
-    font-size: 24px;
+.mvv-card li image {
+}
+
+@media screen and (max-width: 1275px) {
+  .mvv-card {
+    gap: 50px;
   }
-} */
+}
+
+@media screen and (max-width: 1150px) {
+  .mvv-card li {
+    width: 50%;
+  }
+} 
