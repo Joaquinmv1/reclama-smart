@@ -1,4 +1,5 @@
 export { default as BusinessInsightCard } from './BusinessInsight/BusinessInsightCard/BusinessInsightCard';
+export { default as Circle } from './BusinessInsight/Circle/Circle';
 export * from './BusinessInsight';
 export * from './Cases';
 export { default as FeacturedServiceCard } from './FeacturedService/FeacturedServiceCard/FeacturedServiceCard';

@@ -8,10 +8,9 @@ const FeacturedService = () => {
     <>
       <section className={style['container-feacturedService']}>
         <article className={style['container-aboutServices']}>
-          <h2 className={style.titleServices}>Servicios destacados</h2>
+          <h2 className={style.titleServices}>Conoce nuestros servicios</h2>
           <p className={style.pServices}>
-            Somos especialistas legales en reclamos, dedicados a recuperar tu dinero de manera efectiva.
-            <span className={style.aboutServicesSpan}> Deja en nuestras manos la tarea de recuperar lo que te corresponde</span>
+            Estamos comprometidos a recuperar su dinero de la manera más rápida y eficiente posible. Trabajaremos con usted en cada paso del camino para garantizar que reciba el dinero que le corresponde.
           </p>
         </article>
         <ul className={style.cardContainer}>
