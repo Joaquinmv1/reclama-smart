@@ -15,6 +15,10 @@ import reclamaAqui from '../images/imgTrajectory.svg'
 import canal9 from '../images/imgTrajectory1.svg'
 import UIlima from '../images/imgTrajectory2.svg'
 import reclamaSmart from '../images/imgTrajectory3.svg'
+import errorService from '../images/errorService.svg'
+import gestionamos from '../images/gestionamos.svg'
+import exitoService from '../images/exitoService.svg'
+import calculoService from '../images/calculoService.svg'
 
 export const routes: Routes[] = [
   { name: "Inicio", route: "/" },
@@ -65,6 +69,12 @@ export const imgTrajectory = [
   {img: canal9, title: "Canal 9", text: "Entrevista Canal 9 “El Cliente"},
   {img: reclamaSmart, title:"ULima Emprendimiento Social", text:"Ganamos en el Contest “ULima Emprendimiento Social”"},
   {img: reclamaAqui, title:"Reclama Smart", text:"Lanzamos nueva plataforma"}
+]
+export const imgService = [
+  {img: errorService, title: "Tu producto falló", text: "Imagina invertir 1000 soles en un televisor que se avería rápidamente debido a defectos de fábrica."},
+  {img: gestionamos, title: "Gestionamos tu reclamo", text: "Presentas tu reclamo con nosotros y nos encargamos de todo el proceso."},
+  {img: exitoService, title: "Hemos tenido éxito", text: "Si ganamos, la entidad pública obliga a la empresa a reembolsarte."},
+  {img: calculoService, title: "Calcula tu pago", text: "Nuestra tarifa es del 20%, si invertiste 1000 soles, tu recuperas 800 soles. 20% tarifa x s/1000= 800"},
 ]
 
 export const businessInfo = [

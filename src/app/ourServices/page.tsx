@@ -1,11 +1,11 @@
 import { Benefits } from "./components"
-import SuccessRate from "./components/SuccessRate/SuccessRate"
+import SuccessRatesService from "./components/successRates/SuccessRatesService"
 
 function OurServices() {
   return (
     <>
       <Benefits />
-      <SuccessRate />
+      <SuccessRatesService/>
     </>
   )
 }
