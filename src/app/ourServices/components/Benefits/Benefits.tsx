@@ -7,11 +7,11 @@ function Benefits() {
   return (
     <>
       <section className={style.containerBenefits}>
-
         <h2>¡Conoce nuestros servicios!</h2>
         {/* <p>Nuestros Servicios</p>
         <h2>Te ofrecemos un conjunto completo de servicios diseñados para proteger tus derechos. Nuestro equipo de abogados experimentados esta aquí para respaldarte en una variedad de situaciones.</h2> */}
         <div className={style.cardBenefits}>
+          <h2>¡Conoce nuestros servicios!</h2>
           <ul className={style['benefits-card-container']}>
             {benefitsData.map((card, i) => {
               return (
