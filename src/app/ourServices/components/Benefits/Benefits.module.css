@@ -2,8 +2,6 @@
   width: 100%;
   font-family: var(--font-roboto);
   margin-top: 50px;
-<<<<<<< HEAD
-
 }
 
 .cardBenefits {
@@ -11,10 +9,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-=======
   background-color: #fff;
   padding: 30px 0px;
->>>>>>> 3572e7c92e08f3d86740efeef185754f2989da4c
 }
 
 .containerBenefits p {
