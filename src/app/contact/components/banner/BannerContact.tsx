@@ -13,8 +13,8 @@ export default function BannerContact() {
                 <div className={style.content}>
                     <h3 className={style.logoStep}>1</h3>
                     <aside>
-                        <h4>Elige tu horario:</h4>
-                        <p>Explora los horarios disponibles en nuestro calendario.</p>
+                        <h4>Selecciona tu horario</h4>
+                        <p>Descubre las opciones en nuestro calendario de disponibilidad</p>
                     </aside>
 
                 </div>
@@ -23,21 +23,21 @@ export default function BannerContact() {
                     <aside>
 
                         <h4>Completa la información</h4>
-                        <p>¡Déjanos conocerte un poco más! tu nombre, correo electrónico y detalles adicionales que puedan ser útiles para la reunión.</p>
+                        <p>Empecemos por conocerte mejor.Indícanos tu nombre, correo electrónico y cualquier información que consideres relevante que sepamos.</p>
                     </aside>
                 </div>
                 <div className={style.content}>
                     <h3 className={style.logoStep}>3</h3>
                     <aside>
-                        <h4>Confirmaciones y recordatorios automáticos</h4>
-                        <p>Después de reservar tu cita,recibirás una confirmación automática.</p>
+                        <h4>Confirmación y recordatorio:</h4>
+                        <p>Una vez agendada tu cita, recibirás una confirmación automática.</p>
                     </aside>
                 </div>
 
                 <Button title={"Agendar reunion"} className={style.button} />
             </aside>
 
-            <article><Image src={calendlyImg} alt='Calendly image' /></article>
+            <article><Image className={style.calendlyImg} src={calendlyImg} alt='Calendly image' /></article>
         </section>
     )
 }

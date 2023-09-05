@@ -40,6 +40,12 @@
     font-size: 30px;
 }
 
+.content h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
 
 .bannerSection span {
     color: var(--color-primary);
@@ -48,7 +54,7 @@
 .containerBody {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px;
 }
 
 .logoStep {
@@ -59,5 +65,58 @@
     border: 2px solid var(--color-primary);
     border-radius: 100%;
     text-align: center;
+
+}
+
+/* Tablet Version */
+
+@media only screen and (max-width: 980px) {
+    .bannerSection {
+        margin: 0;
+        align-items: center;
+    }
+
+    .bannerSection h3 {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .content {
+        font-size: 14px;
+    }
+
+    .calendlyImg {
+        max-width: 350px;
+    }
+}
+
+/* Mobile Version */
+
+@media only screen and (max-width: 768px) {
+    .bannerSection {
+        flex-direction: column-reverse;
+        margin: 15px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .containerBody {
+        align-items: center;
+    }
+
+    .containerBody h3 {
+        font-size: 18px;
+
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 
 }

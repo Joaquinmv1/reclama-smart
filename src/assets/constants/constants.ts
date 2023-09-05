@@ -195,21 +195,24 @@ export const mvvData = [
 
 export const redes = [
   {
-    img: img1,
-    link: ""
-
-  }, {
+    img: img4,
+    link: "https://api.whatsapp.com/send?phone=+51932468027&text=¡Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20Reclamaqu%C3%AD."
+  }
+  ,
+  {
 
     img: img2,
     link: "https://www.instagram.com/reclamaqui.pe/"
   },
   {
+    img: img1,
+    link: ""
+
+  },
+  {
     img: img3,
     link: "https://www.tiktok.com/@reclamaqui.pe?_t=8ao4mz66gfk&_r=1"
 
-  }, {
-    img: img4,
-    link: "https://api.whatsapp.com/send?phone=+51932468027&text=¡Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20Reclamaqu%C3%AD."
   }
 
 ]

@@ -8,9 +8,6 @@ interface Props {
 }
 
 function BusinessInsightCard({ card, index }: Props) {
-  console.log(index);
-  
-
   return (
     <>
       <li key={card.title}>
