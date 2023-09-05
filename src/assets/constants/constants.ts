@@ -17,7 +17,7 @@ import respuesta from '../../assets/images/businessInsightImages/Fotos38 1 (1).j
 import recuperar from '../../assets/images/businessInsightImages/Fotos38 1 (2).jpg'
 
 //PERSONS
-import person1 from "../images/person1.jpg"
+import person1 from "../images/person1.png"
 import person2 from "../images/person2.jpg"
 import person3 from "../images/person3.jpg"
 import person4 from "../images/person4.jpg"
@@ -81,19 +81,19 @@ export const iconRoute = [
 
 export const dataClients = [
   {
-    name: "Luis",
+    name: "Maria",
     image: person1,
-    comment: '"Me ayudaron a recuperar mi dinero tras años de lucha."',
+    comment: '"Una aerolínea me negó asiento por sobreventa, pero reclama smart logró 25% de compensación."',
   },
   {
-    name: "Ana",
+    name: "Alvaro",
     image: person2,
-    comment: '"Gracias a reclamasmart, pude recuperar la plata por un vuelo al que no me dejaron abordar nunca."',
+    comment: '"Superé una injusticia aérea con Reclama Smart, logramos un reembolso de USD$160. Su apoyo hizo la diferencia."',
   },
   {
-    name: "Carlos",
+    name: "Roberto",
     image: person3,
-    comment: '"Después de más de un año de tratar de recuperar dinero que había pagado por mis lentes"',
+    comment: '"Recuperé S/2031 a través de Reclama Smart por unos lentes defectuosos ¡Excelente servicio!"',
   },
   {
     name: "María",

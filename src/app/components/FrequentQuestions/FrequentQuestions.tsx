@@ -19,8 +19,7 @@ export default function FrequentQuestions() {
       {info.map((inf, index) => (
         <div className={style.acordion} key={inf.title}>
           <div
-            className={`${style.acordionHeader} ${openAccordion === index ? style.active : ""
-              } ${index === 0 ? style.firstAccordion : ""} ${index === info.length - 1 ? style.lastAccordion : ""}`}
+            className={`${style.acordionHeader} ${openAccordion === index ? style.deleteBorder : ""}`}
             onClick={() => handleAccordion(index)}
           >
             <h5>{inf.title}</h5>
