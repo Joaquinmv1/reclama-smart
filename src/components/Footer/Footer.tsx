@@ -29,7 +29,7 @@ export default function Footer() {
           <div className={styles.information}>
 
             <Pharagraph text={"Términos y condiciones"} />
-            <Pharagraph text={"Política y privacidad"} />
+            <Pharagraph text={"Políticas de privacidad"} />
             <Pharagraph text={"Libro de reclamaciones"} />
 
           </div>
@@ -41,8 +41,8 @@ export default function Footer() {
 
           <div className={styles.infoContactSection}>
 
-            <Image src={logo} alt="logo" width={200} height={50} className='logo' />
-            <Pharagraph text={"info@reclameaqui.pe"} className={`${styles.text} ${styles.underline} ${styles.hover}`} />
+            <Image src={logo} alt="logo" className={styles.logo} />
+            <Pharagraph text={"info@reclamaqui.pe"} className={`${styles.text} ${styles.underline} ${styles.hover}`} />
             <Link href={redes[3].link}>
               <Pharagraph text={"+ 51 932 468 027"} className={`${styles.text} ${styles.underline} ${styles.hover}`} />
             </Link>
@@ -58,14 +58,14 @@ export default function Footer() {
             </div>
             <Link href={redes[3].link}>
 
-              <Button title='Consulta gratis' className={styles.button} />
+              <Button title='Consulta Gratis' className={styles.button} />
             </Link>
           </div>
 
         </article>
 
       </section>
-      <p className={styles.copyright}>Copyright © Reclamaquí 2023 - Todos los derechos reservados</p>
+      <p className={styles.copyright}>Copyright © ReclamaSmart 2023 - Todos los derechos reservados</p>
     </footer>
   )
 }

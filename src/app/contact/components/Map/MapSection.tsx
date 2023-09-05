@@ -13,12 +13,13 @@ export default function MapSection() {
         <div className={style.sectionMap}>
             <h2 className={style.title}>Nos encontramos en Peru</h2>
             <section className={style.containerMap}>
-                <div className={style.containerImg}>
 
+                <div className={style.containerImg}>
                     <Image className={style.mapImg} src={mapImg} alt='Map image' />
                 </div>
 
                 <aside className={style.contact}>
+
                     <div className={style.content}>
                         <Image className={style.mailImg} src={wpImg} alt='Whatsapp image' />
                         <h2>EMAIL</h2>
@@ -39,7 +40,7 @@ export default function MapSection() {
                             <div className={style.redes}>
 
                                 {
-                                    redes.map((red, i) => <Link className={style.hover} target='_blank' key={`${red} ${i}`} href={red.link}> <Image src={red.img} alt="logo-red" /></Link>)
+                                    redes.map((red, i) => <Link target='_blank' key={`${red} ${i}`} href={red.link}> <Image className={style.red} src={red.img} alt="logo-red" /></Link>)
                                 }
                             </div>
                         </div>
@@ -50,8 +51,6 @@ export default function MapSection() {
                     </div>
                 </aside>
             </section>
-
-            <TermsAndConditions />
         </div>
     )
 }

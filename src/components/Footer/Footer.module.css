@@ -7,7 +7,7 @@
 }
 
 .footer {
-  background-color: #fff;
+  background-color: #FFF;
   padding: 48px 150px;
   /* display: none; */
   display: flex;
@@ -102,6 +102,7 @@
 
 }
 
+
 /* Tablet Version */
 
 @media (max-width: 950px) {
@@ -122,7 +123,7 @@
 
   .featuresSection {
     padding-top: 0;
-    width: 30%;
+    width: 50%;
   }
 
   .containerFooter {
@@ -154,7 +155,12 @@
   }
 
   .copyright {
-    font-size: 10px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .logo {
+    width: 200px;
   }
 }
 
@@ -165,11 +171,25 @@
 
   .contactSection {
     flex-direction: column;
+    gap: 15px;
   }
 
   .logo {
-    width: 1150px;
+    width: 180px;
   }
+
+  .redes {
+    gap: 15px;
+  }
+
+  .containerRedes {
+    align-items: flex-start;
+    gap: 20px
+  }
+
+
+
+
 }
 
 
