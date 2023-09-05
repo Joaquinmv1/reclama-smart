@@ -9,16 +9,11 @@ import what from '../../../assets/images/whatsapp.svg'
 
 export default function NavbarResponsive() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState<Route>(() => {
-    const hasStorage = window.localStorage.getItem('route') ?? 'Inicio';
-    return hasStorage as Route;
-  });
+  const [activeLink, setActiveLink] = useState<Route>('Inicio')
 
   const activeClick = (route: Route) => {
-    window.localStorage.setItem('route', route);
     setActiveLink(route);
   };
-
 
   const handleLinkClick = () => {
     setMenuOpen(false);
