@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import linkedinIcon from "../../../../assets/images/linkedinIcon.png";
 import team from "../../../../assets/images/team.png";
-import marianaPic from "../../../../assets/images/marianaPic.png";
-import eluisaPic from "../../../../assets/images/eluisaPic.png";
+import marianaPic from "../../../../assets/images/marianaPic.svg";
+import eluisaPic from "../../../../assets/images/eluisaPic.svg";
 
 export default function OurFounders() {
   return (
@@ -17,14 +17,16 @@ export default function OurFounders() {
         {/* DESKTOP // TABLET */}
         <div className={style.one}>
           <div className={style.info}>
-            <h6>Mariana Silva Santisteban</h6>
-            <p>CCO</p>
+            <div>
+              <h6>Mariana Silva Santisteban</h6>
+              <p>CCO</p>
 
-            <p>
-              Abogada de la Universidad de Lima con más de 5 años de experiencia
-              en comercio, publicidad, libre competencia y derecho de consumidor
-              en firmas de abogados y empresas transnacionales.
-            </p>
+              <p>
+                Abogada de la Universidad de Lima con más de 5 años de
+                experiencia en comercio, publicidad, libre competencia y derecho
+                de consumidor en firmas de abogados y empresas transnacionales.
+              </p>
+            </div>
 
             <Link href="#">
               <Image
@@ -41,14 +43,16 @@ export default function OurFounders() {
 
         <div className={style.two}>
           <div className={style.info}>
-            <h6>Eluisa Maria Helbig-Marchena</h6>
-            <p>CEO</p>
+            <div>
+              <h6>Eluisa Maria Helbig-Marchena</h6>
+              <p>CEO</p>
 
-            <p>
-              Abogada alemana, PhD en Derecho por la Universidad de Tübingen, 
-              5+ años experiencia en Litigios, desarrolló el primer índice de
-              Legal Tech en América Latina.
-            </p>
+              <p>
+                Abogada alemana, PhD en Derecho por la Universidad de Tübingen, 
+                5+ años experiencia en Litigios, desarrolló el primer índice de
+                Legal Tech en América Latina.
+              </p>
+            </div>
 
             <Link href="#">
               <Image
