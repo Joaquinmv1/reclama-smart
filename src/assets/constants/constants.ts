@@ -11,14 +11,28 @@ import vector from '../images/Vector.svg'
 import vision from '../../assets/images/MvvImages/eye2.svg'
 import mision from '../../assets/images/MvvImages/cohete2.svg'
 import bandera from '../../assets/images/MvvImages/flag2.svg'
+import otros from '../../assets/images/MvvImages/Vector (1).svg'
 import reclamo from '../../assets/images/businessInsightImages/reclamasmart2 1.jpg'
 import respuesta from '../../assets/images/businessInsightImages/Fotos38 1 (1).jpg'
 import recuperar from '../../assets/images/businessInsightImages/Fotos38 1 (2).jpg'
+
+//PERSONS
+import person1 from "../images/person1.jpg"
+import person2 from "../images/person2.jpg"
+import person3 from "../images/person3.jpg"
+import person4 from "../images/person4.jpg"
+import person5 from "../images/person5.jpg"
+import person6 from "../images/person6.jpg"
 
 import reclamaAqui from '../images/imgTrajectory.svg'
 import canal9 from '../images/imgTrajectory1.svg'
 import UIlima from '../images/imgTrajectory2.svg'
 import reclamaSmart from '../images/imgTrajectory3.svg'
+import img1 from 'src/assets/images/logo-face.svg'
+import img2 from 'src/assets/images/logo-insta.svg'
+import img3 from 'src/assets/images/logo-tik.svg'
+import img4 from 'src/assets/images/logo-wp.svg'
+
 
 export const routes: Routes[] = [
   { name: "Inicio", route: "/" },
@@ -36,39 +50,73 @@ export const cardsServices = [
 
 export const benefitsData = [
   {
-    image: vector,
-    title: 'Vuelos',
-    benefits: ['Cancelaciones de Vuelo', 'Demoras excesivas', 'Negación de Embarque (Overbooking)', 'Incidentes en el vuelo', 'Perdida de equipaje']
+    image: bag,
+    title: 'Compras',
+    benefits: ['Dificultades con entregas', 'Complicaciones en reembolsos', 'Inconvenientes con garantías', 'Artículos con fallas']
   },
   {
     image: bussines,
     title: 'Bancos',
-    benefits: ['Cancelaciones de Vuelo', 'Demoras excesivas', 'Negación de Embarque (Overbooking)', 'Incidentes en el vuelo', 'Perdida de equipaje']
+    benefits: ['Cargos desconocidos', 'Pagos excesivos', 'Fraude bancario', 'Uso inadecuado de tarjetas de crédito']
   },
   {
-    image: bag,
-    title: 'Compras',
-    benefits: ['Cancelaciones de Vuelo', 'Demoras excesivas', 'Negación de Embarque (Overbooking)', 'Incidentes en el vuelo', 'Perdida de equipaje']
+    image: vector,
+    title: 'Vuelos',
+    benefits: ['Cancelaciones', 'Tardanzas', 'Sobreventa de pasajes (Overbooking)', 'Incidentes con equipaje']
   },
   {
-    image: bag,
-    title: 'Compras',
-    benefits: ['Cancelaciones de Vuelo', 'Demoras excesivas', 'Negación de Embarque (Overbooking)', 'Incidentes en el vuelo', 'Perdida de equipaje']
+    image: otros,
+    title: 'Otros',
+    benefits: ['Servicios de suscripción', 'Incidentes en suministro de luz o agua', 'Contratos desfavorables', 'Servicios no brindados']
   },
 ];
 
 export const iconRoute = [
-  {icon: home},
-  {icon:about},
-  {icon: service},
-  {icon: blog},
-  {icon: contact}
+  { icon: home },
+  { icon: about },
+  { icon: service },
+  { icon: blog },
+  { icon: contact }
 ];
+
+export const dataClients = [
+  {
+    name: "Luis",
+    image: person1,
+    comment: '"Me ayudaron a recuperar mi dinero tras años de lucha."',
+  },
+  {
+    name: "Ana",
+    image: person2,
+    comment: '"Gracias a reclamasmart, pude recuperar la plata por un vuelo al que no me dejaron abordar nunca."',
+  },
+  {
+    name: "Carlos",
+    image: person3,
+    comment: '"Después de más de un año de tratar de recuperar dinero que había pagado por mis lentes"',
+  },
+  {
+    name: "María",
+    image: person4,
+    comment: '"Increíble experiencia con ReclamaSmart."',
+  },
+  {
+    name: "Javier",
+    image: person5,
+    comment: '"ReclamaSmart superó mis expectativas."',
+  },
+  {
+    name: "Sofía",
+    image: person6,
+    comment: '"Recomendaría ReclamaSmart a cualquiera que busque una forma efectiva de resolver problemas."',
+  },
+];
+
 export const imgTrajectory = [
-  {img: UIlima, title: "Reclamaquí", text: "con un MVP para crear una empresa digital"},
-  {img: canal9, title: "Canal 9", text: "Entrevista Canal 9 “El Cliente"},
-  {img: reclamaSmart, title:"ULima Emprendimiento Social", text:"Ganamos en el Contest “ULima Emprendimiento Social”"},
-  {img: reclamaAqui, title:"Reclama Smart", text:"Lanzamos nueva plataforma"}
+  { img: UIlima, title: "Reclamaquí", text: "con un MVP para crear una empresa digital" },
+  { img: canal9, title: "Canal 9", text: "Entrevista Canal 9 “El Cliente" },
+  { img: reclamaSmart, title: "ULima Emprendimiento Social", text: "Ganamos en el Contest “ULima Emprendimiento Social”" },
+  { img: reclamaAqui, title: "Reclama Smart", text: "Lanzamos nueva plataforma" }
 ]
 
 export const businessInfo = [
@@ -144,3 +192,24 @@ export const mvvData = [
     description: 'Equidad y accesibilidad en temas relacionados al consumo.'
   }
 ];
+
+export const redes = [
+  {
+    img: img1,
+    link: ""
+
+  }, {
+
+    img: img2,
+    link: "https://www.instagram.com/reclamaqui.pe/"
+  },
+  {
+    img: img3,
+    link: "https://www.tiktok.com/@reclamaqui.pe?_t=8ao4mz66gfk&_r=1"
+
+  }, {
+    img: img4,
+    link: "https://api.whatsapp.com/send?phone=+51932468027&text=¡Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20Reclamaqu%C3%AD."
+  }
+
+]

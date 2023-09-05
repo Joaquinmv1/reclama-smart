@@ -1,0 +1,17 @@
+.containerGeneral {
+    width: 80%;
+    margin: 0 auto;
+    font-size: var(--font-openSans);
+}
+
+.section {
+    margin: 50px 0;
+    font-family: var(--font-openSans);
+    color: var(--color-title);
+}
+
+.Terms {
+    color: var(--color-primary);
+    font-size: 36px;
+    font-family: var(--font-openSans);
+}
