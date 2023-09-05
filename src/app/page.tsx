@@ -11,6 +11,8 @@ export default function Home() {
       <FrontPage />
       <FeacturedService />
       <BusinessInsight />
+      <FrequentQuestions />
+      <OurAlliances />
       <Cases data={dataClients}/>
       <OurAlliances />
       <FrequentQuestions />

@@ -1,7 +1,7 @@
 import { Cases } from "../components"
 import { Benefits } from "./components"
+import SuccessRatesService from "./components/successRates/SuccessRatesService"
 import BannerServices from "./components/BannerServices/BannerServices"
-import SuccessRate from "./components/SuccessRate/SuccessRate"
 import { dataClients } from "@/assets/constants/constants"
 
 function OurServices() {
@@ -9,7 +9,7 @@ function OurServices() {
     <>
       <BannerServices/>
       <Benefits />
-      <SuccessRate />
+      <SuccessRatesService/>
       <Cases data={dataClients}/>
     </>
   )
