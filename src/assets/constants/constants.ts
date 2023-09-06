@@ -12,9 +12,9 @@ import vision from '../../assets/images/MvvImages/eye2.svg'
 import mision from '../../assets/images/MvvImages/cohete2.svg'
 import bandera from '../../assets/images/MvvImages/flag2.svg'
 import otros from '../../assets/images/MvvImages/Vector (1).svg'
-import reclamo from '../../assets/images/businessInsightImages/reclamasmart2 1.jpg'
-import respuesta from '../../assets/images/businessInsightImages/Fotos38 1 (1).jpg'
-import recuperar from '../../assets/images/businessInsightImages/Fotos38 1 (2).jpg'
+import reclamo from '../../assets/images/asifunciona/reclamasmart2 1.svg'
+import respuesta from '../../assets/images/asifunciona/Fotos38 1.svg'
+import recuperar from '../../assets/images/asifunciona/Fotos38 1 (1).svg'
 
 //PERSONS
 import person1 from "../images/person1.png"
@@ -28,6 +28,10 @@ import reclamaAqui from '../images/imgTrajectory.svg'
 import canal9 from '../images/imgTrajectory1.svg'
 import UIlima from '../images/imgTrajectory2.svg'
 import reclamaSmart from '../images/imgTrajectory3.svg'
+import errorService from '../images/errorService.svg'
+import gestionamos from '../images/gestionamos.svg'
+import exitoService from '../images/exitoService.svg'
+import calculoService from '../images/calculoService.svg'
 import img1 from 'src/assets/images/logo-face.svg'
 import img2 from 'src/assets/images/logo-insta.svg'
 import img3 from 'src/assets/images/logo-tik.svg'
@@ -44,7 +48,7 @@ export const routes: Routes[] = [
 
 export const cardsServices = [
   { image: vector, title: "Vuelos" },
-  { image: bussines, title: "Estadías" },
+  { image: bussines, title: "Bancos" },
   { image: bag, title: "Compras" }
 ];
 
@@ -117,6 +121,12 @@ export const imgTrajectory = [
   { img: canal9, title: "Canal 9", text: "Entrevista Canal 9 “El Cliente" },
   { img: reclamaSmart, title: "ULima Emprendimiento Social", text: "Ganamos en el Contest “ULima Emprendimiento Social”" },
   { img: reclamaAqui, title: "Reclama Smart", text: "Lanzamos nueva plataforma" }
+]
+export const imgService = [
+  {img: errorService, title: "Tu producto falló", text: "Imagina invertir 1000 soles en un televisor que se avería rápidamente debido a defectos de fábrica."},
+  {img: gestionamos, title: "Gestionamos tu reclamo", text: "Presentas tu reclamo con nosotros y nos encargamos de todo el proceso."},
+  {img: exitoService, title: "Hemos tenido éxito", text: "Si ganamos, la entidad pública obliga a la empresa a reembolsarte."},
+  {img: calculoService, title: "Calcula tu pago", text: "Nuestra tarifa es del 20%, si invertiste 1000 soles, tu recuperas 800 soles. 20% tarifa x s/1000= 800"},
 ]
 
 export const businessInfo = [

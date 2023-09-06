@@ -30,9 +30,9 @@
 }
 
 .pServices {
-  width:60%;
+  width:55%;
   margin-block: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 400;
   text-align: center;
 }
@@ -43,7 +43,7 @@
 
 .cardContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   gap: 20px;
 
@@ -58,7 +58,7 @@
   flex-direction: column;
   gap: 35px;
 
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: 1.5rem;
   width: 240px;
   height: 230px;
