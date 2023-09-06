@@ -1,8 +1,5 @@
-import { BusinessInsight, FeacturedService, FrequentQuestions, FrontPage, OurAlliances } from "./components";
-import { Cases } from "./components/Cases";
+import { BusinessInsight, Cases, FeacturedService, FrequentQuestions, FrontPage, OurAlliances } from "./components";
 import { dataClients } from "@/assets/constants/constants";
-import Privacity from "./components/Policy&Privacity/Privacity";
-import TermsAndConditions from "./components/Terms&Conditions/Terms&Conditions";
 import './globals.css';
 
 export default function Home() {
@@ -11,9 +8,7 @@ export default function Home() {
       <FrontPage />
       <FeacturedService />
       <BusinessInsight />
-      <FrequentQuestions />
-      <OurAlliances />
-      <Cases data={dataClients}/>
+      <Cases data={dataClients} />
       <OurAlliances />
       <FrequentQuestions />
     </main>
