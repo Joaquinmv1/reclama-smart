@@ -12,9 +12,9 @@ import vision from '../../assets/images/MvvImages/eye2.svg'
 import mision from '../../assets/images/MvvImages/cohete2.svg'
 import bandera from '../../assets/images/MvvImages/flag2.svg'
 import otros from '../../assets/images/MvvImages/Vector (1).svg'
-import reclamo from '../../assets/images/businessInsightImages/reclamasmart2 1.jpg'
-import respuesta from '../../assets/images/businessInsightImages/Fotos38 1 (1).jpg'
-import recuperar from '../../assets/images/businessInsightImages/Fotos38 1 (2).jpg'
+import reclamo from '../../assets/images/asifunciona/reclamasmart2 1.svg'
+import respuesta from '../../assets/images/asifunciona/Fotos38 1.svg'
+import recuperar from '../../assets/images/asifunciona/Fotos38 1 (1).svg'
 
 //PERSONS
 import person1 from "../images/person1.png"
@@ -48,7 +48,7 @@ export const routes: Routes[] = [
 
 export const cardsServices = [
   { image: vector, title: "Vuelos" },
-  { image: bussines, title: "Estadías" },
+  { image: bussines, title: "Bancos" },
   { image: bag, title: "Compras" }
 ];
 
