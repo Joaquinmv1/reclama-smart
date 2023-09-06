@@ -17,8 +17,8 @@ export default function OurFounders() {
         {/* DESKTOP // TABLET */}
         <div className={style.one}>
           <div className={style.info}>
-            <div>
-              <h6>Mariana Silva Santisteban</h6>
+            <div className={style.containInfo}>
+              <h6>Mariana Silva<br/> Santisteban</h6>
               <p>CCO</p>
 
               <p>
@@ -28,14 +28,16 @@ export default function OurFounders() {
               </p>
             </div>
 
-            <Link href="#">
-              <Image
-                width={40}
-                height={40}
-                src={linkedinIcon}
-                alt="Linkedin Icon"
-              />
-            </Link>
+            <div className={style.containLogo}>
+              <Link href="#">
+                <Image
+                  width={40}
+                  height={40}
+                  src={linkedinIcon}
+                  alt="Linkedin Icon"
+                />
+              </Link>
+            </div>
           </div>
         </div>
 
@@ -43,8 +45,8 @@ export default function OurFounders() {
 
         <div className={style.two}>
           <div className={style.info}>
-            <div>
-              <h6>Eluisa Maria Helbig-Marchena</h6>
+            <div className={style.containInfo}>
+              <h6>Eluisa Maria Helbig-<br/>Marchena</h6>
               <p>CEO</p>
 
               <p>
@@ -54,14 +56,16 @@ export default function OurFounders() {
               </p>
             </div>
 
-            <Link href="#">
-              <Image
-                width={40}
-                height={40}
-                src={linkedinIcon}
-                alt="Linkedin Icon"
-              />
-            </Link>
+            <div className={style.containLogo}>
+              <Link href="#">
+                <Image
+                  width={40}
+                  height={40}
+                  src={linkedinIcon}
+                  alt="Linkedin Icon"
+                />
+              </Link>
+            </div>
           </div>
         </div>
 
