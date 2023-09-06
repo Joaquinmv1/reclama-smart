@@ -1,4 +1,4 @@
-import { ArticleTerms } from "../Terms&Conditions/Terms&Conditions";
+import { ArticleTerms } from "../terms/page";
 import styles from './Privacity.module.css';
 
 export default function Privacity() {

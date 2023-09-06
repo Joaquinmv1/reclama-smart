@@ -58,14 +58,19 @@
 }
 
 .logoStep {
-    width: 50px;
+    width: 60px;
     height: 50px;
+
+
+}
+
+.logoStep h3 {
+    padding: 7px 20px;
     background-color: #fff;
     color: var(--color-primary);
     border: 2px solid var(--color-primary);
     border-radius: 100%;
     text-align: center;
-
 }
 
 /* Tablet Version */
@@ -76,7 +81,7 @@
         align-items: center;
     }
 
-    .bannerSection h3 {
+    .containerBody h3 {
         font-size: 18px;
     }
 
@@ -90,6 +95,10 @@
 
     .calendlyImg {
         max-width: 350px;
+    }
+
+    .logoStep h3 {
+        font-size: 30px;
     }
 }
 
@@ -115,6 +124,7 @@
     .content {
         flex-direction: column;
         align-items: center;
+        width: 70%;
     }
 
 

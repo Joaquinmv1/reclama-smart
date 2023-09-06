@@ -179,7 +179,7 @@ export default function TermsAndConditions() {
     return (
         <div className={styles.containerGeneral}>
 
-            <h1 className={styles.Terms}>Terminos y Condiciones</h1>
+            <h1 className={styles.Terms}>Politicas de Privacidad</h1>
 
             <section className={styles.section}>
                 {

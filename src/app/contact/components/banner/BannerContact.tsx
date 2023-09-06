@@ -11,7 +11,9 @@ export default function BannerContact() {
                 <h2 className={style.title}>Estamos a tu <span>disposicion</span> </h2>
                 <h3>Programa una reunión <span>gratis</span> </h3>
                 <div className={style.content}>
-                    <h3 className={style.logoStep}>1</h3>
+                    <div className={style.logoStep}>
+                        <h3>1</h3>
+                    </div>
                     <aside>
                         <h4>Selecciona tu horario</h4>
                         <p>Descubre las opciones en nuestro calendario de disponibilidad</p>
@@ -19,7 +21,9 @@ export default function BannerContact() {
 
                 </div>
                 <div className={style.content}>
-                    <h3 className={style.logoStep}>2</h3>
+                    <div className={style.logoStep}>
+                        <h3>2</h3>
+                    </div>
                     <aside>
 
                         <h4>Completa la información</h4>
@@ -27,7 +31,10 @@ export default function BannerContact() {
                     </aside>
                 </div>
                 <div className={style.content}>
-                    <h3 className={style.logoStep}>3</h3>
+
+                    <div className={style.logoStep}>
+                        <h3 >3</h3>
+                    </div>
                     <aside>
                         <h4>Confirmación y recordatorio:</h4>
                         <p>Una vez agendada tu cita, recibirás una confirmación automática.</p>

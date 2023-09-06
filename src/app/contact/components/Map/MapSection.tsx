@@ -6,7 +6,7 @@ import mailImg from '../../../../assets/images/mail-vector.svg';
 import Link from "next/link";
 import Button from "@/components/Button/Button";
 import { redes } from '@/assets/constants/constants'
-import TermsAndConditions from "@/app/components/Terms&Conditions/Terms&Conditions";
+import TermsAndConditions from "@/app/terms/page";
 
 export default function MapSection() {
     return (
