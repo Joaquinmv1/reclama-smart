@@ -29,8 +29,9 @@
 
 .description {
   color: var(--color-texts);
-  font-size: 28px;
-  width: 50%;
+  font-size: 32px;
+  width: 80%;
+  font-weight: 600;
   text-align: center;
   font-family: var(--font-openSans);
   margin-bottom: 2rem;
