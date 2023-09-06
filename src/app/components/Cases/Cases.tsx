@@ -24,7 +24,7 @@ export default function Cases({ data }: CaseProps) {
     const updateScreen = () => {
       if (window.innerWidth < 599) {
         setScreen(1);
-      } else if (window.innerWidth < 904) {
+      } else if (window.innerWidth < 1124) {
         setScreen(2);
       } else {
         setScreen(3);

@@ -52,7 +52,6 @@
 
 .services div img {
   margin-right: 8px;
-  
 }
 
 .services p {
@@ -112,29 +111,30 @@
 /* MEDIA QUERIES MOBILE */
 
 @media only screen and (max-width: 755px) {
-    .servicesContain {
-        flex-direction: column;
-        /* align-items: center; */
-    }
+  .servicesContain {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .services {
-        width: 100%;
-    }
+  .services {
+    width: 100%;
+    padding: 30px;
+  }
 
-    .services div h6 {
-        text-align: start;
-    }
+  .services div h6 {
+    width: 50%;
+    text-align: center;
+  }
 
-    .services div img {
-        margin-top: 0px;
-    }
+  .services div img {
+    margin: 0px;
+  }
 
-    .services p {
-        text-align: start;
-        font-size: 15px;
-    }
-
-    .services div h6 {
-        width: 100%;
-    }
+  .services p {
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+  }
 }
