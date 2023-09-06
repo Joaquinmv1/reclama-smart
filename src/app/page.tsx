@@ -8,8 +8,7 @@ export default function Home() {
       <FrontPage />
       <FeacturedService />
       <BusinessInsight />
-      <FrequentQuestions />
-      <Cases data={dataClients}/>
+      <Cases data={dataClients} />
       <OurAlliances />
       <FrequentQuestions />
     </main>
