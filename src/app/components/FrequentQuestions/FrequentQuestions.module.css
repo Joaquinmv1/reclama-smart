@@ -10,7 +10,9 @@
 }
 
 .answers-contain h2 {
+  width: 100%;
   padding: 20px 0px;
+  margin: auto;
 }
 
 .acordion {
@@ -36,18 +38,17 @@
 .acordionHeader {
   display: flex;
   justify-content: space-between;
-  border: 1px solid #ced4da;
+  border: none;
+  border-bottom: 1px solid #ced4da;
   padding: 16px;
 }
 
-.firstAccordion {
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+.deleteBorder {
+ border: none;
 }
 
-.lastAccordion {
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
+.addBorder {
+  border-bottom: 1px solid #ced4da;
 }
 
 .acordionHeader h5 {
@@ -74,18 +75,20 @@
 /* ACCORDION BODY */
 
 .acordionBody {
-  border: 1px solid #ced4da;
+  /* border-top: 1px solid #ced4da; */
+  border: none;
+  border-bottom: 1px solid #ced4da;
   padding: 16px;
 }
 
-.open {
+/* .open {
   max-height: 1000px;
   transition: max-height 0.7s ease-in-out;
-}
+} */
 
 .acordionBody p {
-  color: #02311a;
-  font-size: 16px;
+  color: #000000;
+  font-size: 17px;
   font-style: normal;
   font-weight: 400;
   font-family: var(--font-openSans);
@@ -97,10 +100,11 @@
 @media only screen and (max-width: 599px) {
   .answers-contain {
     margin-bottom: 40px;
+    padding: 0px 15px;
   }
 
   .acordion {
-    width: 50%;
+    width: 100%;
     margin: auto;
     background-color: #fff;
   }
@@ -109,11 +113,13 @@
     width: 80%;
     font-size: 24px;
     margin-bottom: 32px;
-    text-align: start;
+    text-align: center;
     margin-left: 26px;
   }
 
   .acordionHeader {
+    border-right: none;
+    border-left: none;
     padding: 12px;
   }
 
@@ -121,7 +127,17 @@
     font-size: 14px;
   }
 
+  .firstAccordion {
+    border: none;
+  }
+  
+  .lastAccordion {
+    border: none;
+  }
+
   .acordionBody {
+    border: none;
+    border-bottom: 1px solid #ced4da;
     padding: 12px;
   }
 

@@ -1,7 +1,6 @@
 .bannerSection {
     display: flex;
     justify-content: space-around;
-    background-color: #F9F4F3;
     margin: 150px;
     padding: 40px;
     font-family: var(--font-openSans);
@@ -13,7 +12,14 @@
 }
 
 .content {
-    display: block;
+    display: flex;
+    gap: 15px;
+
+}
+
+.calendlyImg {
+    border-radius: 23.009px;
+    border: 5.752px solid rgba(2, 49, 26, 0.25);
 
 }
 
@@ -34,6 +40,12 @@
     font-size: 30px;
 }
 
+.content h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
 
 .bannerSection span {
     color: var(--color-primary);
@@ -42,5 +54,69 @@
 .containerBody {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px;
+}
+
+.logoStep {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    border-radius: 100%;
+    text-align: center;
+
+}
+
+/* Tablet Version */
+
+@media only screen and (max-width: 980px) {
+    .bannerSection {
+        margin: 0;
+        align-items: center;
+    }
+
+    .bannerSection h3 {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .content {
+        font-size: 14px;
+    }
+
+    .calendlyImg {
+        max-width: 350px;
+    }
+}
+
+/* Mobile Version */
+
+@media only screen and (max-width: 768px) {
+    .bannerSection {
+        flex-direction: column-reverse;
+        margin: 15px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .containerBody {
+        align-items: center;
+    }
+
+    .containerBody h3 {
+        font-size: 18px;
+
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
 }
