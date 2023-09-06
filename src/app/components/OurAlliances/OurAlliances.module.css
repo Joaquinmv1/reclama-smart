@@ -1,4 +1,3 @@
-
 .containerSlide {
   display: flex;
   overflow: hidden;
@@ -11,6 +10,7 @@
   font-size: 2.5rem;
   text-align: center;
   font-family: var(--font-montserrat);
+  padding-top: 3rem;
 }
 
 .logosSlide {
