@@ -10,7 +10,9 @@
 }
 
 .answers-contain h2 {
+  width: 100%;
   padding: 20px 0px;
+  margin: auto;
 }
 
 .acordion {
@@ -36,18 +38,17 @@
 .acordionHeader {
   display: flex;
   justify-content: space-between;
-  border: 1px solid #ced4da;
+  border: none;
+  border-bottom: 1px solid #ced4da;
   padding: 16px;
 }
 
-.firstAccordion {
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+.deleteBorder {
+ border: none;
 }
 
-.lastAccordion {
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
+.addBorder {
+  border-bottom: 1px solid #ced4da;
 }
 
 .acordionHeader h5 {
@@ -74,18 +75,20 @@
 /* ACCORDION BODY */
 
 .acordionBody {
-  border: 1px solid #ced4da;
+  /* border-top: 1px solid #ced4da; */
+  border: none;
+  border-bottom: 1px solid #ced4da;
   padding: 16px;
 }
 
-.open {
+/* .open {
   max-height: 1000px;
   transition: max-height 0.7s ease-in-out;
-}
+} */
 
 .acordionBody p {
-  color: #02311a;
-  font-size: 16px;
+  color: #000000;
+  font-size: 17px;
   font-style: normal;
   font-weight: 400;
   font-family: var(--font-openSans);

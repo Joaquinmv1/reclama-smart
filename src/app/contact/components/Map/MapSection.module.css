@@ -1,5 +1,5 @@
 .mapImg {
-    max-width: 300px;
+    max-width: 400px;
     background-color: white;
     display: block;
     margin: 0 auto;
@@ -8,8 +8,10 @@
 
 .containerImg {
     background-color: white;
-    width: 40%;
-    margin: 20px;
+    width: 50%;
+    margin: 40px 20px;
+    padding: 100px;
+
 }
 
 .title {
@@ -26,6 +28,7 @@
 .sectionMap {
     background-color: #ffffff;
     padding: 50px;
+
 }
 
 .containerMap {
@@ -35,7 +38,6 @@
     gap: 40px;
     font-family: var(--font-roboto);
     color: black;
-
     font-family: Inter;
     font-size: 24px;
     font-style: normal;
@@ -77,6 +79,9 @@
     align-items: center;
     text-align: center;
     gap: 10px;
+    max-width: 300px;
+    font-family: var(--font-openSans);
+    font-size: 18px;
 }
 
 .button {
@@ -92,4 +97,121 @@
     font-weight: 600;
     border: none;
     transition: all 0.3s ease-in-out;
+}
+
+.mailImg {
+    width: 40px;
+}
+
+.wpImg {
+    width: 40px;
+}
+
+/* Tablet Version */
+@media only screen and (max-width: 980px) {
+    .sectionMap {
+        padding: 0;
+        margin: 0;
+    }
+
+    .containerMap {
+        padding: 15px;
+    }
+
+    .containerMap {
+        width: 90%;
+        margin: 40px auto;
+        gap: 5px;
+    }
+
+    .containerImg {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content {
+        width: 100px;
+    }
+
+    .contact div h2 {
+        font-size: 16px;
+    }
+
+    .contact div p {
+        font-size: 14px;
+    }
+
+
+    .containerRedes {
+        align-items: center;
+    }
+
+    .containerRedes {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .red {
+        width: 15px;
+    }
+
+}
+
+/* Mobile Version */
+
+@media only screen and (max-width: 768px) {
+    .sectionMap {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .containerMap {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+        padding-bottom: 30px;
+        width: 100%;
+    }
+
+    .containerImg {
+        width: 90%;
+        padding: 0;
+        margin-top: 15px;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .content {
+        width: 120px;
+    }
+
+
+
+    .title {
+        font-size: 25px;
+    }
+
+    .contact div h2 {
+        font-size: 16px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .wpImg {
+        width: 35px;
+    }
+
+    .mailImg {
+        width: 35px;
+    }
+
+    .red {
+        width: 20px;
+    }
 }
