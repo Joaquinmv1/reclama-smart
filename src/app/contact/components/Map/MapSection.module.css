@@ -159,6 +159,10 @@
         width: 15px;
     }
 
+    .logoStep h3 {
+        padding: 6px;
+    }
+
 }
 
 /* Mobile Version */
