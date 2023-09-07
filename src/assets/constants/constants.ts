@@ -17,7 +17,7 @@ import respuesta from '../../assets/images/asifunciona/Fotos38 1.svg'
 import recuperar from '../../assets/images/asifunciona/Fotos38 1 (1).svg'
 
 //PERSONS
-import person1 from "../images/person1.png"
+import person1 from "../images/person1.jpg"
 import person2 from "../images/person2.jpg"
 import person3 from "../images/person3.jpg"
 import person4 from "../images/person4.jpg"
