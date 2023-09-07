@@ -1,4 +1,14 @@
-import styles from './Terms.module.css';
+'use client'
+import style from './Terms.module.css';
+import { useState, useEffect } from 'react';
+import Image from 'next/image';
+import navImage from '../../public/images/nav-term.svg';
+import { FrequentQuestions } from '../components';
+import Link from 'next/link';
+import Script from 'next/script';
+
+
+
 
 interface ArticleProps {
     title?: string;
@@ -8,15 +18,31 @@ interface ArticleProps {
 
 export function ArticleTerms({ title, segment, text }: ArticleProps): JSX.Element {
     return (
-        <article>
-            <h2>{title}</h2>
+        <article >
+            <h2 className={style.title} >{title}</h2>
             <h3>{segment}</h3>
             <p>{text}</p>
         </article>
     )
 }
 
+export const Calendly = () => {
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://calendly.com/frankyanez9413/reunion-15-min';
+        script.async = true;
+        document.body.appendChild(script);
+
+        return () => {
+            document.body.removeChild(script);
+        };
+    }, []);
+}
+
 export default function TermsAndConditions() {
+
+    const [open, setOpen] = useState(false)
     const terms = [
         "1. DEFINICIONES",
         "2.GENERALIDADES, DATOS ALMACENADOS Y DECLARACIONES",
@@ -33,7 +59,7 @@ export default function TermsAndConditions() {
         "13. JURISDICCIÓN"
     ]
 
-    const articles = [
+    const articles: Array<Array<ArticleProps>> = [
         [
             {
                 title: "PRIMERA: DEFINICIONESPRIMERA: DEFINICIONES",
@@ -177,99 +203,63 @@ export default function TermsAndConditions() {
         ]
     ]
     return (
-        <div className={styles.containerGeneral}>
+        <div className={style.containerGeneral}>
 
-            <h1 className={styles.Terms}>Politicas de Privacidad</h1>
+            <aside className={style.segmentText}>
+                <FrequentQuestions />
 
-            <section className={styles.section}>
-                {
-                    terms.map((term, i) => <h2 key={i}>{term}</h2>)
-                }
-            </section>
+            </aside>
 
-
-            <section className={styles.section}>
+            <aside className={style.itemsText}>
 
                 {
-                    articles[0].map((article, i) => <ArticleTerms key={i} title={article.title} segment={article.segment} text={article.text} />)
+                    articles.map((article, i) => {
+                        return (
+                            <div key={i}>
+                                {
+
+                                    article.map(item => {
+                                        return (
+                                            <div key={item.title}>
+                                                <ArticleTerms title={item.title} segment={item.segment} text={item.text} />
+
+                                            </div>
+                                        )
+                                    })
+                                }
+
+                            </div>
+                        )
+                    })
                 }
-            </section>
 
 
-            <section className={styles.section}>
-                {
-                    articles[1].map((article, i) => <ArticleTerms key={i} segment={article.segment} title={article.title} text={article.text} />)
-                }
-            </section>
-
-            <section className={styles.section}>
-                {
-                    articles[2].map((article, i) => <ArticleTerms key={i} segment={article.segment} text={article.text} title={article.title} />)
-                }
-            </section>
+                {/* <Link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                <Script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></Script>
+                <Script id='2' type="text/javascript">window.onload = function() {Calendly.initBadgeWidget({ url: 'https://calendly.com/frankyanez9413/reunion-15-min', text: 'Schedule time with me', color: '#647a9a', textColor: '#ffffff', branding: undefined })}</Script>
+            </Link> */}
 
 
-            <section className={styles.section}>
-                {
-                    articles[3].map((article, i) => <ArticleTerms key={i} segment={article.segment} text={article.text} title={article.title} />)
-                }
-            </section>
+                <Calendly />
+                {/* <button onClick={ }></button> */}
+            </aside>
 
-
-
-            <section className={styles.section}>
-                {
-                    articles[4].map((article, i) => <ArticleTerms key={i} segment={article.segment} text={article.text} title={article.title} />)
-                }
-            </section>
-
-            <section className={styles.section}>
-                {
-                    articles[5].map((article, i) => <ArticleTerms key={i} segment={article.segment} text={article.text} title={article.title} />)
-                }
-            </section>
-
-            <section className={styles.section}>
-                {
-                    articles[6].map((article, i) => <ArticleTerms key={i} segment={article.segment} text={article.text} title={article.title} />)
-                }
-            </section>
-
-            <section className={styles.section}>
-                {
-                    articles[7].map((article, i) => <ArticleTerms key={i} segment={article.segment} text={article.text} title={article.title} />)
-                }
-            </section>
-
-            <section className={styles.section}>
-                {
-                    articles[8].map((article, i) => <ArticleTerms key={i} segment={article.segment} text={article.text} title={article.title} />)
-                }
-            </section>
-
-            <section className={styles.section}>
-                {
-                    articles[9].map((article, i) => <ArticleTerms key={i} segment={article.segment} text={article.text} title={article.title} />)
-                }
-            </section>
-
-            <section className={styles.section}>
-                {
-                    articles[10].map((article, i) => <ArticleTerms key={i} segment={article.segment} text={article.text} title={article.title} />)
-                }
-            </section>
-
-            <section className={styles.section}>
-                {
-                    articles[11].map((article, i) => <ArticleTerms key={i} segment={article.segment} text={article.text} title={article.title} />)
-                }
-            </section>
-
-            <section className={styles.section}>
-                {
-                    articles[12].map((article, i) => <ArticleTerms key={i} segment={article.segment} text={article.text} title={article.title} />)
-                }
-            </section>
         </div>
     )
 }
+{/* // components/Calendly.js
+
+        import React, {useEffect} from 'react';
+
+const Calendly = () => {
+  
+
+  return (
+        <div
+            className="calendly-inline-widget"
+            data-url="h
+
+
+        </div>
+    )
+} */}

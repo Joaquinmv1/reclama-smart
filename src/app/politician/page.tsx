@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ArticleTerms } from "../terms/page";
 import styles from './Privacity.module.css';
 
@@ -30,21 +31,29 @@ export default function Privacity() {
     ]
     return (
         <section className={styles.containerGeneral}>
-            <h1 className={styles.Privacity}>Política de Privacidad</h1>
+            <aside className={styles.banner}>
 
-            {
-                privacity.map((item, index) => {
-                    return (
+                <h1 className={styles.Privacity}>Política de Privacidad</h1>
+                <p>https://www.reclamasmart.com.pe</p>
+            </aside>
 
-                        <div key={index} className={styles.section}>
-                            <ArticleTerms title={item.title} text={item.text} />
-                        </div>
+            <aside className={styles.section}>
+                {
+                    privacity.map((item, index) => {
+                        return (
+
+                            <div key={index} className={styles.content} >
+                                <ArticleTerms title={item.title} text={item.text} />
+                            </div>
 
 
-                    )
-                })
-            }
+                        )
+                    })
+                }
 
+                <Link className={styles.link} href={"https://www.minjus.gob.pe/wpcontent/uploads/2018/12/FORMULARIO-DE-PROCEDIMIENTO-TRILATERAL-DE-TUTELA.pdf."}>https://www.minjus.gob.pe/wpcontent/uploads/2018/12/FORMULARIO-DE-PROCEDIMIENTO-TRILATERAL-DE-TUTELA.pdf.</Link>
+
+            </aside>
 
         </section>
     )

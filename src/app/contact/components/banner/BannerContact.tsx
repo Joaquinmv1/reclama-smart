@@ -2,6 +2,7 @@ import Button from '@/components/Button/Button';
 import style from './BannerContact.module.css';
 import Image from 'next/image';
 import calendlyImg from '../../../../assets/images/calendly-img.png';
+import faceCalendly from '../../../../assets/images/face-calendly.svg';
 
 export default function BannerContact() {
     return (
@@ -53,7 +54,7 @@ export default function BannerContact() {
                     <Button title={"Agendar reunion"} className={style.button} />
                 </section>
 
-                <article><Image className={style.calendlyImg} src={calendlyImg} alt='Calendly image' /></article>
+                <article className={style.imagesContent}><Image className={style.calendlyImg} src={calendlyImg} alt='Calendly image' /> <Image className={style.faceCalendly} src={faceCalendly} alt='Face Calendly' /><div className={style.point}></div></article>
             </aside>
 
         </section>

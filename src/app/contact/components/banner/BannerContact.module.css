@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     /* justify-content: space-around; */
-    margin: 150px;
+    margin: 50px 150px;
     padding: 40px;
     font-family: var(--font-openSans);
     color: var(--color-title);
@@ -86,6 +86,28 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.imagesContent {
+    position: relative;
+}
+
+.faceCalendly {
+    position: absolute;
+    top: -80px;
+    left: -80px;
+}
+
+.point {
+    position: absolute;
+    top: -50px;
+    left: 25px;
+    border: 5px solid var(--color-fondo);
+    background-color: green;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    z-index: 20;
 }
 
 /* Tablet Version */

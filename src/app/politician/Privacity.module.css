@@ -1,17 +1,46 @@
 .containerGeneral {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    font-size: var(--font-openSans);
+    font-family: var(--font-montserrat);
+    background-color: white;
+}
+
+.banner {
+    width: 100%;
+    background-color: #F0F2F5;
+    text-align: center;
+    padding: 80px 0;
+    font-family: var(--font-montserrat);
+}
+
+.banner h1 {
+    color: var(--color-title);
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
 }
 
 .section {
+    margin: 0 auto;
+    width: 80%;
+    padding: 60px 0;
+}
+
+.content {
     margin: 50px 0;
-    font-family: var(--font-openSans);
+    font-family: var(--font-montserrat);
     color: var(--color-title);
 }
 
 .Privacity {
     color: var(--color-primary);
     font-size: 36px;
-    font-family: var(--font-openSans);
+    font-family: var(--font-montserrat);
+}
+
+.link {
+    color: var(--color-primary);
+    font-weight: 700;
 }
