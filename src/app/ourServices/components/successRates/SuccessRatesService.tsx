@@ -18,6 +18,7 @@ export default function SuccessRatesService() {
                             <div>2</div>
                             <div>3</div>
                             <div>4</div>
+                            <div>5</div>
                         </section>
                     </div>
                     <section className={style.containerCard}>

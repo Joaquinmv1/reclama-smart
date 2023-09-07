@@ -30,6 +30,7 @@ import UIlima from '../images/imgTrajectory2.svg'
 import reclamaSmart from '../images/imgTrajectory3.svg'
 import errorService from '../images/errorService.svg'
 import gestionamos from '../images/gestionamos.svg'
+import reclamoProveedor from '../images/reclamaPro.svg'
 import exitoService from '../images/exitoService.svg'
 import calculoService from '../images/calculoService.svg'
 import img1 from 'src/assets/images/logo-face.svg'
@@ -124,7 +125,8 @@ export const imgTrajectory = [
 ]
 export const imgService = [
   {img: errorService, title: "Tu producto falló", text: "Imagina invertir 1000 soles en un televisor que se avería rápidamente debido a defectos de fábrica."},
-  {img: gestionamos, title: "Gestionamos tu reclamo", text: "Presentas tu reclamo con nosotros y nos encargamos de todo el proceso."},
+  {img: reclamoProveedor, title:"Reclamas al proveedor", text: "El proveedor no responde o no estás conforme con la respuesta. Importante: El plazo es de 15 días hábiles o 30 días naturales, dependiendo del tipo de empresa."},
+  {img: gestionamos, title: "Gestionamos tu reclamo", text: "Presentas tu reclamo con nosotros y nos encargamos de todo el proceso. Presentación de la denuncia ante la autoridad correspondiente. Espera del plazo (3-6 meses, dependiendo del valor del reclamo, si se apela la decisión, puede tardar otros 1-2 meses más)"},
   {img: exitoService, title: "Hemos tenido éxito", text: "Si ganamos, la entidad pública obliga a la empresa a reembolsarte."},
   {img: calculoService, title: "Calcula tu pago", text: "Nuestra tarifa es del 20%, si invertiste 1000 soles, tu recuperas 800 soles. 20% tarifa x s/1000= 800"},
 ]
