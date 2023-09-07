@@ -47,6 +47,8 @@ export default function FormClaims() {
               placeholder="María Suarez"
               minLength={10}
               maxLength={20}
+              pattern="[A-Za-z\s]+"
+              title="Solo se permiten letras y espacios"
               required
             />
           </div>
@@ -72,6 +74,7 @@ export default function FormClaims() {
               id="adress"
               placeholder="Lima 53"
               required
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
               minLength={5}
               maxLength={12}
             />
@@ -84,6 +87,8 @@ export default function FormClaims() {
               name="email"
               id="email"
               placeholder="Mariasuarez@gmail.com"
+              pattern=".*\..*"
+              title="El mail debe tener @ y .com, .org, etc"
               required
             />
           </div>
@@ -108,7 +113,7 @@ export default function FormClaims() {
               name="request"
               id="consumerRequest"
               required
-              minLength={20}
+              minLength={10}
               maxLength={120}
             />
           </div>
