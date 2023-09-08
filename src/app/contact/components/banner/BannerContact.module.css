@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     /* justify-content: space-around; */
-    margin: 50px 150px;
+    width: 80%;
+    margin: 50px auto;
     padding: 40px;
     font-family: var(--font-openSans);
     color: var(--color-title);
@@ -10,6 +11,20 @@
 
 .title {
     font-size: 40px;
+    text-align: left;
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 25px;
+}
+
+.titles h3 {
+    font-size: 26px;
 }
 
 .containerSteps {
@@ -17,6 +32,7 @@
     flex-direction: column;
     gap: 45px;
     margin-top: 20px;
+    width: 50%;
 
 }
 
@@ -45,7 +61,7 @@
 
 .content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 15px;
 }
 
@@ -63,7 +79,9 @@
 .containerBody {
     display: flex;
     /* flex-direction: column; */
-    gap: 25px;
+    justify-content: space-between;
+    gap: 55px;
+    width: 100%;
 }
 
 .logoStep {
@@ -90,12 +108,16 @@
 
 .imagesContent {
     position: relative;
+    width: 40%;
+    margin: 0 auto;
 }
 
 .faceCalendly {
     position: absolute;
-    top: -80px;
-    left: -80px;
+    top: -50px;
+    left: -50px;
+    max-width: 120px;
+
 }
 
 .point {
@@ -114,6 +136,7 @@
 
 @media only screen and (max-width: 980px) {
     .bannerSection {
+        width: 90%;
         margin: 0;
         align-items: center;
     }
@@ -135,11 +158,25 @@
     }
 
     .containerBody h3 {
+
         font-size: 23px;
     }
 
     .logoStep h3 {
         padding: 12px 20px;
+    }
+
+    .faceCalendly {
+        max-width: 100px;
+    }
+
+    .titles {
+        margin-bottom: 20px;
+    }
+
+    .point {
+        width: 20px;
+        height: 20px;
     }
 }
 

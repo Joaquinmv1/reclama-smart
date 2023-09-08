@@ -240,7 +240,7 @@ export default function TermsAndConditions() {
             </Link> */}
 
 
-                <Calendly />
+
                 {/* <button onClick={ }></button> */}
             </aside>
 

@@ -35,7 +35,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
     font-family: var(--font-roboto);
     color: black;
     font-family: Inter;
@@ -54,15 +53,16 @@
 
 .contact {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 50px;
 }
 
 .redes {
     display: flex;
-    gap: 15px;
+    gap: 25px;
     justify-content: center;
+    margin: 10px;
 }
 
 .contact div h2 {

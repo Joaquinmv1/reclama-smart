@@ -11,7 +11,7 @@ import TermsAndConditions from "@/app/terms/page";
 export default function MapSection() {
     return (
         <div className={style.sectionMap}>
-            <h2 className={style.title}>Nos encontramos en Peru</h2>
+            <h2 className={style.title}>Nos encontramos en Perú</h2>
             <section className={style.containerMap}>
 
                 <div className={style.containerImg}>
