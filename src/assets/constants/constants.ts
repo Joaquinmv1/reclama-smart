@@ -101,19 +101,19 @@ export const dataClients = [
     comment: '"Recuperé S/2031 a través de Reclama Smart por unos lentes defectuosos ¡Excelente servicio!"',
   },
   {
-    name: "María",
+    name: "Ana Paula",
     image: person4,
-    comment: '"Increíble experiencia con ReclamaSmart."',
+    comment: '"Mi laptop nueva tenía problemas, incluso después de llevarla al servicio técnico. Gracias a Reclama Smart, recuperé la totalidad de mi dinero: S/3699"',
   },
   {
-    name: "Javier",
+    name: "Paola",
     image: person5,
-    comment: '"ReclamaSmart superó mis expectativas."',
+    comment: '"Compré un vestido de novia en cuotas, pero debido a la pandemia, no pude seguir pagando. Devolví el vestido, pero la tienda nunca me reembolsó."',
   },
   {
-    name: "Sofía",
+    name: "Ingrid",
     image: person6,
-    comment: '"Recomendaría ReclamaSmart a cualquiera que busque una forma efectiva de resolver problemas."',
+    comment: '"Mi vuelo fue cancelado, la aerolínea no quería hacerse cargo al ser comprado por agencia. Gracias a Reclama Smart, recuperé mis $1922 USD."',
   },
 ];
 
@@ -158,32 +158,32 @@ export const info = [
   {
     title: "¿Quién puede hacer un reclamo?",
     description:
-      "No,  no tienes que adelantar ni un sol. Nosotros asumimos todos los gastos, incluyendo costos de trámite y otras tasas legales. Tú solo pagas  si ganamos tu caso y recuperamos tu dinero. No tienes que pagar nada por adelantado. Nosotros asumimos todos los gastos durante el proceso, lo que incluye costos de trámites y tasas legales. Si ganamos el caso y recuperamos el dinero, nos pagan.",
+      "Cualquier persona mayor de 18 años con DNI válido que haya realizado una compra en Perú.",
   },
   {
     title: "¿Cuánto tiempo tengo para reclamar?",
     description:
-      "No,  no tienes que adelantar ni un sol. Nosotros asumimos todos los gastos, incluyendo costos de trámite y otras tasas legales. Tú solo pagas  si ganamos tu caso y recuperamos tu dinero. No tienes que pagar nada por adelantado. Nosotros asumimos todos los gastos durante el proceso, lo que incluye costos de trámites y tasas legales. Si ganamos el caso y recuperamos el dinero, nos pagan.",
+      "Tienes hasta dos años desde la fecha de la compra para presentar un reclamo.",
   },
   {
     title: "¿Cómo funciona su servicio legal de atención de reclamos de consumidores?",
     description:
-      "No,  no tienes que adelantar ni un sol. Nosotros asumimos todos los gastos, incluyendo costos de trámite y otras tasas legales. Tú solo pagas  si ganamos tu caso y recuperamos tu dinero. No tienes que pagar nada por adelantado. Nosotros asumimos todos los gastos durante el proceso, lo que incluye costos de trámites y tasas legales. Si ganamos el caso y recuperamos el dinero, nos pagan.",
+      "Nos especializamos en ayudar a los consumidores a presentar reclamos efectivos contra prácticas comerciales injustas. Trabajamos en base a tarifas de éxito, lo que significa que solo nos pagan si logramos un resultado exitoso para ti.",
   },
   {
     title: "¿Qué tipos de reclamos de consumidores manejan?",
     description:
-      "No,  no tienes que adelantar ni un sol. Nosotros asumimos todos los gastos, incluyendo costos de trámite y otras tasas legales. Tú solo pagas  si ganamos tu caso y recuperamos tu dinero. No tienes que pagar nada por adelantado. Nosotros asumimos todos los gastos durante el proceso, lo que incluye costos de trámites y tasas legales. Si ganamos el caso y recuperamos el dinero, nos pagan.",
+      "Manejamos una amplia variedad de reclamos de consumidores, que incluyen problemas vinculados a compras, aerolíneas o bancos.",
   },
   {
     title: "¿Cómo puedo ponerme en contacto con su equipo para comenzar?",
     description:
-      "No,  no tienes que adelantar ni un sol. Nosotros asumimos todos los gastos, incluyendo costos de trámite y otras tasas legales. Tú solo pagas  si ganamos tu caso y recuperamos tu dinero. No tienes que pagar nada por adelantado. Nosotros asumimos todos los gastos durante el proceso, lo que incluye costos de trámites y tasas legales. Si ganamos el caso y recuperamos el dinero, nos pagan.",
+      "Puede comunicarse con nosotros a través de nuestro Whatsapp corporativo",
   },
   {
     title: "¿De qué países atienden reclamos?",
     description:
-      "No,  no tienes que adelantar ni un sol. Nosotros asumimos todos los gastos, incluyendo costos de trámite y otras tasas legales. Tú solo pagas  si ganamos tu caso y recuperamos tu dinero. No tienes que pagar nada por adelantado. Nosotros asumimos todos los gastos durante el proceso, lo que incluye costos de trámites y tasas legales. Si ganamos el caso y recuperamos el dinero, nos pagan.",
+      "Por ahora, solo atendemos casos en Perú.",
   }
 ];
 
