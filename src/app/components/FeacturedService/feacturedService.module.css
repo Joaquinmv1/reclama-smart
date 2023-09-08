@@ -6,7 +6,7 @@
   color: var(--color-title);
   font-family: var(--font-openSans);
   width: 100%;
-  margin-block: 5rem;
+  margin-bottom: 5rem;
   background: #FFF;
   padding-block: 80px;
 }

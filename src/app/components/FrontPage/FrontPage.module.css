@@ -6,11 +6,12 @@
   box-sizing: border-box;
   flex-wrap: nowrap;
   min-width: 100%;
-  padding: 1.5rem 5.5rem;
+  padding: 1.5rem 5.5rem 0rem 5.5rem;
 }
 
 .title {
   color: var(--color-title);
+  margin-bottom: 1.5rem;
   font-weight: 900;
   font-size: 4rem;
   font-weight: 900;
@@ -19,7 +20,9 @@
 
 .subTitle {
   color: var(--color-texts);
-  font-size: 1.7rem;
+  font-size: 32px;
+  font-weight: 500;
+  width: 65%;
   margin-bottom: 2rem;
   font-family: var(--font-montserrat);
 }
