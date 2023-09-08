@@ -1,8 +1,13 @@
+'use client'
 import Button from '@/components/Button/Button';
 import style from './BannerContact.module.css';
 import Image from 'next/image';
 import calendlyImg from '../../../../assets/images/calendly-img.png';
 import faceCalendly from '../../../../assets/images/face-calendly.svg';
+import { PopupWidget, PopupButton } from "react-calendly";
+import Script from 'next/script';
+import Calendly from '../Calendly/Calendly';
+
 
 export default function BannerContact() {
     return (
@@ -38,7 +43,7 @@ export default function BannerContact() {
                         <aside>
 
                             <h4>Completa la información</h4>
-                            <p>Empecemos por conocerte mejor.Indícanos tu nombre, correo electrónico y cualquier información que consideres relevante que sepamos.</p>
+                            <p>Empecemos por conocerte mejor. <br /> Indícanos tu nombre, correo electrónico y cualquier información que consideres relevante que sepamos.</p>
                         </aside>
                     </div>
                     <div className={style.content}>
@@ -51,12 +56,18 @@ export default function BannerContact() {
                             <p>Una vez agendada tu cita, recibirás una confirmación automática.</p>
                         </aside>
                     </div>
-                    <Button title={"Agendar reunion"} className={style.button} />
+                    <div id='calend'>
+                        <Calendly />
+                    </div>
                 </section>
 
                 <article className={style.imagesContent}><Image className={style.calendlyImg} src={calendlyImg} alt='Calendly image' /> <Image className={style.faceCalendly} src={faceCalendly} alt='Face Calendly' /><div className={style.point}></div></article>
             </aside>
 
-        </section>
+
+
+
+
+        </section >
     )
 }

@@ -35,8 +35,9 @@ export default function Footer() {
             <Link href={'/politician'} className={`${styles.text} ${styles.hover}`}>
               <Pharagraph text={"Políticas de privacidad"} />
             </Link>
-            <Pharagraph text={"Libro de reclamaciones"} />
-
+            <Link href={'/claims'} className={`${styles.text} ${styles.hover}`}>
+              <Pharagraph text={"Libro de reclamaciones"} />
+            </Link>
           </div>
 
         </article>
