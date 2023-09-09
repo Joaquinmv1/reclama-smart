@@ -1,0 +1,24 @@
+.bannerClaimContainer {
+  padding: 60px 100px;
+}
+
+.bannerClaimContainer h1 {
+  color: #02311a;
+  font-family: var(--font-montserrat);
+  text-align: center;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+
+.bannerClaimContainer p {
+  color: #02311a;
+  font-family: var(--font-montserrat);
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}

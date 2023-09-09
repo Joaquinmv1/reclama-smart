@@ -86,6 +86,7 @@
 .image {
     width: 200px;
     height: 200px;
+    margin-bottom: 0.5rem;
 }
 
 .itemService {
@@ -114,7 +115,7 @@
     font-family: var(--font-openSans);
     color: var(--color-texts);
 }
-@media only screen and (max-width: 1191px){
+@media only screen and (max-width: 1300px){
     .serviceContainer{
         padding: 50px 80px;
     }
@@ -132,7 +133,7 @@
         font-size: 14px;
     }
 }
-@media only screen and (max-width: 940px){
+@media only screen and (max-width: 1180px){
     .serviceContainer{
         padding: 30px 40px;
     }
@@ -167,11 +168,11 @@
         gap: 3rem;
     }
     .itemService{
-        width: 100px;
+        width: 90px;
     }
     .image {
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
     }
     .itemService span{
         font-size: 16px;
@@ -192,7 +193,7 @@
         font-size: 20px;
     }
 }
-@media only screen and (max-width: 499px){
+@media only screen and (max-width: 550px){
     .stepsConatiner{
         justify-content: center;
         align-items: center;
@@ -203,13 +204,13 @@
         display: flex;
         justify-content: top;
         align-items: top;
-        height: 950px;
+        height: 1200px;
         padding-bottom: 5rem;
     }
     .lines{
         flex-direction: column;
         width: 3px;
-        height: 800px;
+        height: 1200px;
     }
     .containerCard{
         justify-content: center;
@@ -229,7 +230,7 @@
         font-size: 17px;
     }
     .itemService p{
-        font-size: 12px;
+        font-size: 10px;
     }
     .serviceTitle h1{
         font-size: 32px;
