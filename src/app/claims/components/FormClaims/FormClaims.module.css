@@ -145,27 +145,112 @@
   border-radius: 8px;
 }
 
-.sendContain {
-  display: flex;
-  justify-content: center;
-  padding: 15px;
+/* MODAL */
+
+.backgroundStatic {
+  width: 100%;
+  height: 1600px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: 8000;
+  animation: slideInBackground 0.5s ease;
 }
 
-.sendContain h2 {
-  padding: 15px 50px;
-  color: #fff;
+.modalContain {
+  position: fixed;
+  top: 300px;
+  left: 750px;
+  width: 600px;
+  height: 400px;
+  background-color: #f0f2f5;
+  border-radius: 40px;
+  animation: slideIn 0.5s ease;
+  z-index: 9000;
+}
+
+.modalContain a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
   font-family: var(--font-openSans);
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.modalContain a:hover {
+  text-decoration: underline;
+}
+
+.modal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.modal h2 {
+  color: #02311a;
+  font-family: var(--font-openSans);
+  text-align: center;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  border-radius: 8px;
 }
 
-.green {
-  background-color: #02311a;
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
-.red {
-  background-color: #f01010;
+@keyframes slideInBackground {
+  from {
+    opacity: 0;
+  }
+  to { 
+    opacity: 1;
+  }
+}
+
+
+/* MEDIA QUERIES TABLET */
+@media only screen and (max-width: 1216px) {
+  .inputInfo {
+    width: 30%;
+  }
+
+  .inputInfo input {
+    width: 100%;
+  }
+
+  .inputInfo label {
+    font-size: 12px;
+  }
+}
+
+/* MEDIA QUERIES MOBILE */
+@media only screen and (max-width: 760px) {
+  .inputInfo {
+    width: 80%;
+  }
+
+  .inputInfo label {
+    font-size: 15px;
+  }
+
+  .textAreaInfo label {
+    font-size: 12px;
+  }
 }

@@ -2,24 +2,41 @@
 import { FormEvent, useState } from "react";
 import style from "./FormClaims.module.css";
 import emailjs from "@emailjs/browser";
+import { EMAIL_ID, TEMPLATE_ID, KEY_ID } from "../../../email.credentials";
+import Image from "next/image";
+import check from "../../../../assets/images/Check.png";
+import cancel from "../../../../assets/images/Cancel.png";
 
 export default function FormClaims() {
   const [send, setsend] = useState("no enviado");
   const [message, setmessage] = useState("");
 
+  //FORM DATA STATE
+  const [name, setname] = useState("");
+  const [dni, setdni] = useState("");
+  const [adress, setadress] = useState("");
+  const [email, setemail] = useState("");
+  const [phone, setphone] = useState("");
+  const [request, setrequest] = useState("");
+  const [detail, setdetail] = useState("");
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const emailServiceId = "service_z3px95g";
-    const templateId = "template_nqq9mf4";
-    const keyId = "rWreg_YhrnMARKfuN";
-
     try {
       const form = document.getElementById("email-form") as HTMLFormElement;
-      await emailjs.sendForm(emailServiceId, templateId, form, keyId);
+      await emailjs.sendForm(EMAIL_ID, TEMPLATE_ID, form, KEY_ID);
+
+      setname("");
+      setdni("");
+      setadress("");
+      setemail("");
+      setphone("");
+      setrequest("");
+      setdetail("");
 
       setsend("enviado");
-      setmessage("Mensaje enviado");
+      setmessage("Se envio el mail correctamente");
     } catch (error: any) {
       if (error.status === 400) {
         setsend("error");
@@ -49,6 +66,8 @@ export default function FormClaims() {
               maxLength={20}
               pattern="[A-Za-z\s]+"
               title="Solo se permiten letras y espacios"
+              onChange={(e) => setname(e.target.value)}
+              value={name}
               required
             />
           </div>
@@ -63,6 +82,8 @@ export default function FormClaims() {
               required
               minLength={8}
               maxLength={12}
+              onChange={(e) => setdni(e.target.value)}
+              value={dni}
             />
           </div>
 
@@ -74,9 +95,10 @@ export default function FormClaims() {
               id="adress"
               placeholder="Lima 53"
               required
-              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
               minLength={5}
               maxLength={12}
+              onChange={(e) => setadress(e.target.value)}
+              value={adress}
             />
           </div>
 
@@ -90,6 +112,8 @@ export default function FormClaims() {
               pattern=".*\..*"
               title="El mail debe tener @ y .com, .org, etc"
               required
+              onChange={(e) => setemail(e.target.value)}
+              value={email}
             />
           </div>
 
@@ -101,6 +125,8 @@ export default function FormClaims() {
               id="phone"
               placeholder="+51956321489"
               required
+              onChange={(e) => setphone(e.target.value)}
+              value={phone}
             />
           </div>
         </div>
@@ -115,6 +141,8 @@ export default function FormClaims() {
               required
               minLength={10}
               maxLength={120}
+              onChange={(e) => setrequest(e.target.value)}
+              value={request}
             />
           </div>
 
@@ -129,6 +157,8 @@ export default function FormClaims() {
               required
               minLength={20}
               maxLength={120}
+              onChange={(e) => setdetail(e.target.value)}
+              value={detail}
             />
           </div>
         </div>
@@ -153,11 +183,31 @@ export default function FormClaims() {
             <button className={style.buttonForm}>Enviar</button>
           </div>
         ) : (
-          <div className={style.sendContain}>
-            <h2 className={send === "enviado" ? style.green : style.red}>
-              {message}
-            </h2>
+          <>
+          <div className={style.backgroundStatic}></div>
+          <div className={style.modalContain}>
+            <div className={style.modal}>
+              {send === "enviado" ? (
+                <Image
+                  width={100}
+                  height={100}
+                  src={check}
+                  alt="Check Symbol"
+                />
+              ) : (
+                <Image
+                  width={100}
+                  height={100}
+                  src={cancel}
+                  alt="Cancel Symbol"
+                />
+              )}
+              <h2 className="">{message}</h2>
+            </div>
+            {send === "enviado" ? <a href="/claims">Regresar</a> : <a href="/claims">Volver a intentar</a>}
           </div>
+          </>
+          
         )}
       </form>
     </div>

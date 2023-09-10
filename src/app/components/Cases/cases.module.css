@@ -72,9 +72,10 @@
 }
 
 .box .comments p {
+  width: 85%;
   color: #374f42;
   font-family: var(--font-openSans);
-  font-size: 12px;
+  font-size: 14px;
   font-style: italic;
   font-weight: 600;
 }
