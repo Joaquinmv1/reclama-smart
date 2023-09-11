@@ -1,7 +1,6 @@
 .casesContain {
   width: 100%;
   margin: auto;
-  margin-top: 50px;
   background-color: #D6EDD4;
   padding: 80px 120px;
   overflow: hidden;
@@ -15,6 +14,7 @@
   font-size: 30px;
   font-style: normal;
   line-height: normal;
+  margin-bottom: 4rem;
 }
 
 /* CARROUSEL */
@@ -33,13 +33,15 @@
 .box {
   width: 100%;
   display: flex;
+  height: 200px;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   border-radius: 16px;
   background-color: #fff;
-  box-shadow: 0px 5px 5px 0px #ff744c;
+  box-shadow: 0px 4px 4px 0px rgba(255, 82, 32, 0.50);
   padding: 15px 20px;
+  margin-bottom: 3rem;
 }
 
 .box img {
@@ -161,7 +163,7 @@
 
 /* MEDIA QUERIES TABLET */
 
-@media only screen and (max-width: 1216px) {
+@media only screen and (max-width: 1221px) {
   .casesContain {
     padding: 50px 30px;
   }
@@ -170,6 +172,7 @@
     margin: 0px;
     font-size: 32px;
     padding: 10px 10px;
+    margin-bottom: 3rem;
   }
 
   .carrousel {
@@ -197,6 +200,7 @@
 @media only screen and (max-width: 755px) {
   .casesContain {
     padding: 30px 0px;
+    margin-bottom: 4rem;
   }
 
   .casesContain h3 {
@@ -233,79 +237,3 @@
 
 
 }
-
-
-
-
-
-/* @media only screen and (max-width: 904px) {
-  .casesContain {
-    padding: 20px 20px;
-  }
-
-  .casesContain h3 {
-    width: 50%;
-    margin-left: 1rem;
-    margin-bottom: 0px;
-  }
-
-  .carrousel {
-    height: auto;
-    gap: 20px;
-  }
-
-  .box {
-    width: 100%;
-    height: 220px;
-    position: relative;
-    padding: 15px 20px;
-    margin-top: 120px;
-    margin-bottom: 40px;
-  }
-
-  .box img {
-    position: absolute;
-    top: -55px;
-    left: 140px;
-  }
-
-  .box .comments {
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 45px;
-  }
-
-  .box .comments h6 {
-    font-size: 23px;
-  }
-} */
-
-/* MEDIA QUERIES MOBILE */
-/* @media only screen and (max-width: 599px) {
-  .casesContain h3 {
-    width: 80%;
-    margin-left: 0px;
-    margin-bottom: 0px;
-  }
-
-  .box {
-    position: relative;
-    margin-top: 70px;
-  }
-
-  .box img {
-    position: absolute;
-    top: -65px;
-    left: 195px;
-  }
-
-  .box .comments {
-    margin-top: 30px;
-    text-align: center;
-    padding: 10px 10px;
-  }
-
-  .box .comments h6 {
-    font-size: 34px;
-  }
-} */
