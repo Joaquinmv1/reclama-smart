@@ -124,11 +124,11 @@ export const imgTrajectory = [
   { img: reclamaAqui, title: "Reclama Smart", text: "Lanzamos nueva plataforma" }
 ]
 export const imgService = [
-  {img: errorService, title: "Tu producto falló", text: "Imagina invertir 1000 soles en un televisor que se avería rápidamente debido a defectos de fábrica."},
-  {img: reclamoProveedor, title:"Reclamas al proveedor", text: "El proveedor no responde o no estás conforme con la respuesta. Importante: El plazo es de 15 días hábiles o 30 días naturales, dependiendo del tipo de empresa."},
-  {img: gestionamos, title: "Gestionamos tu reclamo", text: "Presentas tu reclamo con nosotros y nos encargamos de todo el proceso. Presentación de la denuncia ante la autoridad correspondiente. Espera del plazo (3-6 meses, dependiendo del valor del reclamo, si se apela la decisión, puede tardar otros 1-2 meses más)"},
-  {img: exitoService, title: "Hemos tenido éxito", text: "Si ganamos, la entidad pública obliga a la empresa a reembolsarte."},
-  {img: calculoService, title: "Calcula tu pago", text: "Nuestra tarifa es del 20%, si invertiste 1000 soles, tu recuperas 800 soles. 20% tarifa x s/1000= 800"},
+  { img: errorService, title: "Tu producto falló", text: "Imagina invertir 1000 soles en un televisor que se avería rápidamente debido a defectos de fábrica." },
+  { img: reclamoProveedor, title: "Reclamas al proveedor", text: "El proveedor no responde o no estás conforme con la respuesta. Importante: El plazo es de 15 días hábiles o 30 días naturales, dependiendo del tipo de empresa." },
+  { img: gestionamos, title: "Gestionamos tu reclamo", text: "Presentas tu reclamo con nosotros y nos encargamos de todo el proceso. Presentación de la denuncia ante la autoridad correspondiente. Espera del plazo (3-6 meses, dependiendo del valor del reclamo, si se apela la decisión, puede tardar otros 1-2 meses más)" },
+  { img: exitoService, title: "Hemos tenido éxito", text: "Si ganamos, la entidad pública obliga a la empresa a reembolsarte." },
+  { img: calculoService, title: "Calcula tu pago", text: "Nuestra tarifa es del 20%, si invertiste 1000 soles, tu recuperas 800 soles. 20% tarifa x s/1000= 800" },
 ]
 
 export const businessInfo = [
@@ -227,4 +227,58 @@ export const redes = [
 
   }
 
+]
+
+export const terms = [{
+  title: "DEFINICIONES",
+  segment: "hola"
+},
+{
+  title: "GENERALIDADES, DATOS ALMACENADOS Y DECLARACIONES",
+  segment: "2.1. Generalidades \n 2.2. Datos almacenados \n 2.3. Declaraciones"
+},
+{
+  title: "REGISTRO Y AUTENTICACIÓN ",
+  segment: "hola"
+},
+{
+  title: "CONDICIONES DE USO DEL CANAL DE WHATSAPP",
+  segment: "hola"
+},
+{
+  title: "PROPIEDAD INTELECTUAL",
+  segment: "hola"
+},
+{
+  title: "CAMBIOS EN LOS TÉRMINOS Y CONDICIONES",
+  segment: "hola"
+},
+{
+  title: "MEDIOS DE PAGOS Y CONDICIONES DE VENTA",
+  segment: "hola"
+},
+{
+  title: "LOGÍSTICA EN LA PRESTACIÓN DEL SERVICIO ",
+  segment: "hola"
+},
+{
+  title: "SISTEMA DE COBROS",
+  segment: "hola"
+},
+{
+  title: "OBLIGACIÓN DE RESERVA",
+  segment: "hola"
+},
+{
+  title: "TERMINACIÓN",
+  segment: "hola"
+},
+{
+  title: "SERVICIO AL USUARIO",
+  segment: "hola"
+},
+{
+  title: "JURISDICCIÓN",
+  segment: "hola"
+}
 ]

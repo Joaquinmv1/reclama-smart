@@ -6,6 +6,7 @@ import navImage from '../../public/images/nav-term.svg';
 import { FrequentQuestions } from '../components';
 import Link from 'next/link';
 import Script from 'next/script';
+import Segments from './components/Segments/Segments';
 
 
 
@@ -18,7 +19,7 @@ interface ArticleProps {
 
 export function ArticleTerms({ title, segment, text }: ArticleProps): JSX.Element {
     return (
-        <article >
+        <article className={style.article} >
             <h2 className={style.title} >{title}</h2>
             <h3>{segment}</h3>
             <p>{text}</p>
@@ -26,45 +27,32 @@ export function ArticleTerms({ title, segment, text }: ArticleProps): JSX.Elemen
     )
 }
 
-export const Calendly = () => {
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = 'https://calendly.com/frankyanez9413/reunion-15-min';
-        script.async = true;
-        document.body.appendChild(script);
+// export const Calendly = () => {
+//     useEffect(() => {
+//         const script = document.createElement('script');
+//         script.type = 'text/javascript';
+//         script.src = 'https://calendly.com/frankyanez9413/reunion-15-min';
+//         script.async = true;
+//         document.body.appendChild(script);
 
-        return () => {
-            document.body.removeChild(script);
-        };
-    }, []);
-}
+//         return () => {
+//             document.body.removeChild(script);
+//         };
+//     }, []);
+// }
 
 export default function TermsAndConditions() {
 
     const [open, setOpen] = useState(false)
-    const terms = [
-        "1. DEFINICIONES",
-        "2.GENERALIDADES, DATOS ALMACENADOS Y DECLARACIONES",
-        "3. REGISTRO Y AUTENTICACIÓN ",
-        "4. CONDICIONES DE USO DEL CANAL DE WHATSAPP",
-        "5. PROPIEDAD INTELECTUAL",
-        "6. CAMBIOS EN LOS TÉRMINOS Y CONDICIONES",
-        "7. MEDIOS DE PAGOS Y CONDICIONES DE VENTA",
-        "8. LOGÍSTICA EN LA PRESTACIÓN DEL SERVICIO ",
-        "9. SISTEMA DE COBROS",
-        "10. OBLIGACIÓN DE RESERVA",
-        "11. TERMINACIÓN",
-        "12. SERVICIO AL USUARIO",
-        "13. JURISDICCIÓN"
-    ]
+
 
     const articles: Array<Array<ArticleProps>> = [
         [
             {
                 title: "PRIMERA: DEFINICIONESPRIMERA: DEFINICIONES",
-                segment: "",
-                text: "Para efectos de los términos y condiciones aquí regulados (los “Términos y Condiciones”), las palabras indicadas a continuación tendrán el significado que se les atribuye más adelante: \n \n -Autoridad Gubernamental: Es cualquier entidad que ejerza funciones ejecutivas, legislativas, judiciales o arbitrales, municipales, regionales, regulatorias o administrativas de, o que correspondan, a funciones de gobierno y ejerzan jurisdicción sobre cualquier persona o materia en cuestión, con competencia según las Leyes Aplicables en la República del Perú. \n -Contenido: Material registrado, marcas, patentes, logos, derechos de propiedad intelectual e industrial de exclusiva propiedad de Reclamaquí, asimismo incluyendo, sin ser esta lista taxativa, información, texto, software, diseños, dibujos, fotos y gráficas de titularidad de Reclamaquí y otros explicados en la sección 5.1 del presente documento. \n -Leyes Aplicables: Es la Constitución Política del Perú, cualquier Ley, Decreto de Urgencia, Decreto Ley, Decreto Legislativo, Decreto Supremo, y en general, cualquier norma u otra disposición de carácter legal o reglamentario vigente en la República del Perú, que puedan ser expedidas por los distintos poderes y autoridades de la República del Perú. \n -Reclamaquí o reclamaquí: RECLAMAQUÍ S.A.C., con Registro Único de Contribuyentes Nº 20610421157. \n Plataforma Web: Sitio web con la dirección https://www.reclamaqui.pe. \n -Políticas de Privacidad: Son las políticas de privacidad de Reclamaquí que resultan aplicables para efectos de la utilización de nuestro Canal de WhatsApp de Reclamaquí o nuestra Plataforma Web o nuestro correo electrónico info@reclamaqui.pe, con relación al tratamiento de sus datos personales de conformidad con la Ley N° 29733, Ley de Protección de Datos Personales y su Reglamento. \n -Servicios: Son los servicios brindados por Reclamaquí, que son comercializados u ofrecidos a través del Canal de WhatsApp de Reclamaquí con número +51 943 959 114, sea gratuito u oneroso. \n -Canal de WhatsApp: Es el medio de comunicación de Reclamaquí a través de la aplicación WhatsApp con número +51 943 959 114. A través de esta, los Usuarios se podrán poner en contacto con Reclamaquí. Los Usuarios podrán presentar sus peticiones, quejas, reclamos, felicitaciones y sugerencias al correo electrónico info@reclamaqui.pe. \n -Usuario: Toda persona, natural o jurídica, que utilice el Canal de Whatsapp de Reclamaquí. Estos podrán o no ser clientes de Reclamaquí. \n -Contrato: Es el acuerdo de voluntades entre el Usuario y Reclamaquí, mediante el cual el primero se establecen las obligaciones de Reclamaquí ante el Usuario y viceversa, y mediante el cual se convierte en un Cliente. \n -Cliente: Toda persona, natural o jurídica que accede a uno de nuestros Servicios a través del Canal de WhatsApp y ha firmado el Contrato. Todos los Clientes son Usuarios, pero no todos los Usuarios son Clientes. La relación jurídica entre Reclamaquí y el Cliente surge a partir del momento en el que el Cliente acepta a los Términos y Condiciones del Servicio mediante la firma del Contrato  A partir de este punto, Reclamaquí Iniciará los trámites de reclamación. \n -Proveedor: Persona natural o jurídica que habría realizado negocios jurídicos con el Cliente, con la cual este último mantendría una relación de consumo. \n -Reclamo: Queja correspondiente del Cliente hacia el Proveedor, respecto a una falla en alguno de los productos o servicios del mismo que Reclamaquí realizará y gestionará como parte de los Servicios. \n  -Horario Laboral: De lunes a viernes, desde las 10:00h a 17:00h, a excepción de los días feriados, festivos o no laborables. \n -IGV: Se refiere al Impuesto General a las Ventas."
+                // segment: "",
+                text: `Para efectos de los términos y condiciones aquí regulados (los “Términos y Condiciones”), las palabras indicadas a continuación tendrán el significado que se les atribuye más adelante: 
+                -Autoridad Gubernamental: Es cualquier entidad que ejerza funciones ejecutivas, legislativas, judiciales o arbitrales, municipales, regionales, regulatorias o administrativas de, o que correspondan, a funciones de gobierno y ejerzan jurisdicción sobre cualquier persona o materia en cuestión, con competencia según las Leyes Aplicables en la República del Perú. \n -Contenido: Material registrado, marcas, patentes, logos, derechos de propiedad intelectual e industrial de exclusiva propiedad de Reclamaquí, asimismo incluyendo, sin ser esta lista taxativa, información, texto, software, diseños, dibujos, fotos y gráficas de titularidad de Reclamaquí y otros explicados en la sección 5.1 del presente documento. \n -Leyes Aplicables: Es la Constitución Política del Perú, cualquier Ley, Decreto de Urgencia, Decreto Ley, Decreto Legislativo, Decreto Supremo, y en general, cualquier norma u otra disposición de carácter legal o reglamentario vigente en la República del Perú, que puedan ser expedidas por los distintos poderes y autoridades de la República del Perú. \n -Reclamaquí o reclamaquí: RECLAMAQUÍ S.A.C., con Registro Único de Contribuyentes Nº 20610421157. \n Plataforma Web: Sitio web con la dirección https://www.reclamaqui.pe. \n -Políticas de Privacidad: Son las políticas de privacidad de Reclamaquí que resultan aplicables para efectos de la utilización de nuestro Canal de WhatsApp de Reclamaquí o nuestra Plataforma Web o nuestro correo electrónico info@reclamaqui.pe, con relación al tratamiento de sus datos personales de conformidad con la Ley N° 29733, Ley de Protección de Datos Personales y su Reglamento. \n -Servicios: Son los servicios brindados por Reclamaquí, que son comercializados u ofrecidos a través del Canal de WhatsApp de Reclamaquí con número +51 943 959 114, sea gratuito u oneroso. \n -Canal de WhatsApp: Es el medio de comunicación de Reclamaquí a través de la aplicación WhatsApp con número +51 943 959 114. A través de esta, los Usuarios se podrán poner en contacto con Reclamaquí. Los Usuarios podrán presentar sus peticiones, quejas, reclamos, felicitaciones y sugerencias al correo electrónico info@reclamaqui.pe. \n -Usuario: Toda persona, natural o jurídica, que utilice el Canal de Whatsapp de Reclamaquí. Estos podrán o no ser clientes de Reclamaquí. \n -Contrato: Es el acuerdo de voluntades entre el Usuario y Reclamaquí, mediante el cual el primero se establecen las obligaciones de Reclamaquí ante el Usuario y viceversa, y mediante el cual se convierte en un Cliente. \n -Cliente: Toda persona, natural o jurídica que accede a uno de nuestros Servicios a través del Canal de WhatsApp y ha firmado el Contrato. Todos los Clientes son Usuarios, pero no todos los Usuarios son Clientes. La relación jurídica entre Reclamaquí y el Cliente surge a partir del momento en el que el Cliente acepta a los Términos y Condiciones del Servicio mediante la firma del Contrato  A partir de este punto, Reclamaquí Iniciará los trámites de reclamación. \n -Proveedor: Persona natural o jurídica que habría realizado negocios jurídicos con el Cliente, con la cual este último mantendría una relación de consumo. \n -Reclamo: Queja correspondiente del Cliente hacia el Proveedor, respecto a una falla en alguno de los productos o servicios del mismo que Reclamaquí realizará y gestionará como parte de los Servicios. \n  -Horario Laboral: De lunes a viernes, desde las 10:00h a 17:00h, a excepción de los días feriados, festivos o no laborables. \n -IGV: Se refiere al Impuesto General a las Ventas.`
             }
 
         ],
@@ -131,7 +119,7 @@ export default function TermsAndConditions() {
             {
 
                 title: "CUARTA: CONDICIONES DE USO DEL CANAL DE WHATSAPP",
-                segment: "",
+                // segment: "",
                 text: "4.1  El Usuario se compromete a hacer uso del Canal de WhatsApp con fines exclusivamente comerciales y dentro del marco de lo establecido en el acápite 2.2. \n 4.2  El Usuario no podrá hacer uso del Canal de WhatsApp con fines ilícitos, que lesionen derechos e intereses de Reclamaquí, terceros, o que de cualquier forma puedan dañar, inutilizar, sobrecargar, deteriorar, afectar o impedir la normal utilización del Canal de WhatsApp, los equipos informáticos o los documentos, archivos y toda clase de contenidos almacenados en cualquier equipo informático de Reclamaquí.Especialmente se considerará conductas contrarias a las presentes políticas de uso del Canal de WhatsApp, sin ser esta lista taxativa, la extracción de información del Canal de WhatsApp, copia de la información alojada en el Canal de WhatsApp para usos no establecidos en el presente instrumento y la comercialización a terceros de la información obtenida desde del Canal de WhatsApp. \n 4.3  El incumplimiento de los Términos y Condiciones de uso del Canal de WhatsApp por parte del Usuario, implicará la cancelación/ inhabilitación automática del Usuario y la eliminación de todos sus datos, quedando impedido de poder utilizar el Canal de WhatsApp a futuro.Reclamaquí hace expresa reserva de las acciones legales que estime pertinentes para los casos de incumplimiento de estas disposiciones y en general, cualquier Ley Aplicable."
             }
         ],
@@ -145,21 +133,21 @@ export default function TermsAndConditions() {
         [
             {
                 title: "SEXTA: CAMBIOS EN LOS TÉRMINOS Y CONDICIONES",
-                segment: "",
+                // segment: "",
                 text: "6.1 Reclamaquí se reserva el derecho a realizar modificaciones, actualizaciones y/o precisiones a estos Términos y Condiciones en cualquier momento y sin expresión de causa.  Los Términos y Condiciones (así como las modificaciones, actualizaciones y/o precisiones a los mismos) serán válidos desde el momento de su publicación en el Canal de WhatsApp. Cualquier modificación, actualización o precisión se considerará aceptada si el Usuario o el Cliente continúan realizando transacciones una vez que dichas modificaciones hayan entrado en vigencia. \n 6.2 Si cualquier disposición contenida en estos Términos y Condiciones se considerarán inválidas o inaplicables o de cualquier forma no puedan exigirse, dicha invalidez no afectará a las demás disposiciones incluidas en estos Términos y Condiciones. \n 6.3  Las modificaciones en las funcionalidades ofrecidas en el Canal de WhatsApp en atención a la necesidad de innovar y mejorar su experiencia y uso pueden llevarse a cabo en cualquier momento sin necesidad de preaviso alguno por parte de Reclamaquí. La misma regla se aplica para cualquier modificación que el Usuario pueda advertir con tan solo visitar o interactuar con el Canal de WhatsApp."
             }
         ],
         [
             {
                 title: "SÉPTIMA: MEDIOS DE PAGOS Y CONDICIONES DE VENTA",
-                segment: "",
+                // segment: "",
                 text: "7.1  Para adquirir los distintos Servicios ofrecidos en el Canal de WhatsApp, los Usuarios deberán cancelar el valor de estos a través de los siguientes medios de pago válidos y permitidos por el Canal de WhatsApp: \n Transferencia Bancaria (BCP): \n RECLAMAQUI S.A.C. \n Número de Cuenta: 193-74636999 \n CCI: 00219317463699900513 \n Yape (importante: también puede utilizarse para transferencias a cuentas distintas de BCP, por ejemplo, Interbank, Plin) \n Número de Teléfono: 932 468 027 \n 7.2  La transacción de pago deberá ser realizada para poder acceder a los Servicios de Reclamaquí. \n 7.3  La transacción que el Usuario realice para cancelar el precio de los Servicios adquiridos estará sujeta a la verificación por parte de Reclamaquí. De acuerdo a ello, no se considerará como completa una transacción destinada a la adquisición de cualquiera de los Servicios mientras Reclamaquí no haya podido confirmar o acreditar que el respectivo pago por parte del Usuario para adquirir los Servicios haya sido debidamente realizado. \n 7.4  Reclamaquí no será responsable por los problemas que puedan verificarse con ocasión de los servicios prestados por las empresas procesadoras de pago o las empresas que brindan los servicios bancarios o de intermediación financiera que el usuario elija para realizar las operaciones de compra a través del Canal de WhatsApp."
             }
         ],
         [
             {
                 title: "OCTAVA: LOGÍSTICA EN LA PRESTACIÓN DEL SERVICIO",
-                segment: "",
+                // segment: "",
                 text: "8.1 Una vez el Usuario decida adquirir un Servicio, deberá procederá firmar el Contrato, Poder y documentos correspondientes requeridos por Reclamaquí en un plazo no mayor a dos (2) días hábiles, entendiendo por tales los días que van de lunes a viernes, a excepción de los días feriados, festivos o no laborables. \n 8.2 Una vez firmados los documentos indicados en el acápite anterior, el Usuario se convierte en un Cliente. \n 8.3  Es responsabilidad del Usuario que: (i) los datos relativos al trámite de su reclamo sean correctamente proporcionados y, (ii) atender cualquier requerimiento o comunicación que sea realizada por Reclamaquí para efectos de poder culminar con la prestación del servicio. \n 8.4  El Cliente reconoce que, una vez firmado el Contrato, le otorga a Reclamaquí exclusividad sobre el trámite y gestión de su caso, y se compromete a no recurrir a servicios legales de terceros. En caso Reclamaquí tome conocimiento de que el Cliente ha contratado servicios legales externos, Reclamaquí se reserva el derecho de resolver el contrato, bastando para ello la sola comunicación al Cliente a través de los medios de contacto proporcionados por el mismo, dando fin a la relación contractual. El Cliente reconoce que en este caso, Reclamaquí se quedará con la contraprestación pagada, así como cualquier garantía proporcionada por el Cliente, de ser el caso. \n 8.5  El Contrato quedará vigente hasta obtener una respuesta en calidad de cosa juzgada en sede administrativa. Al tener esta resolución, las partes acuerdan dar por finalizado el Contrato. En este momento, corresponderá que el Cliente pague la Tarifa de Éxito. El Contrato se dará por finalizado al haberse llevado a cabo el pago de la tarifa completa de parte del Cliente. \n 8.6  Reclamaquí podrá poner término al Contrato a su sola discreción, dando aviso con quince (15) días de anticipación a la otra parte de tal hecho y comunicando la fecha del cese efectivo del Servicio contratado. En el caso que Reclamaquí decida poner fin unilateral al Contrato sin razón aparente, reconoce que deberá reembolsar al Cliente la tarifa inicial, en caso el Cliente la hubiera pagado. \n 8.7  En caso el Cliente decidiese resolver el presente contrato de manera anticipada y unilateral, el Cliente deberá pagar los honorarios de abogado correspondientes, correspondientes a s/ 200 (doscientos y 00/100 soles) por hora trabajada. Reclamaquí le presentará al Cliente la constancia de las horas trabajadas, de modo que este pueda pagar el monto correspondiente. \n 8.8 En este caso, el Cliente deberá comunicar su deseo de terminar el Contrato a Reclamaquí a través del Canal de WhatsApp o enviando un correo electrónico a info@reclamaqui.pe. El Contrato se dará como concluido una vez que Reclamaquí lo confirme a través de los medios anteriormente citados."
             }
         ],
@@ -176,28 +164,28 @@ export default function TermsAndConditions() {
         [
             {
                 title: "DÉCIMA: OBLIGACIÓN DE RESERVA",
-                segment: "",
+                // segment: "",
                 text: "Los trabajadores, representantes, ejecutivos y asociados vinculados a Reclamaquí que tengan acceso a la información de carácter confidencial (no pública) entregada por el Usuario en el marco de la utilización del Canal de WhatsApp estarán sujetos a la obligación de guardar confidencialidad y reserva de la información. \n Reclamaquí declara que ha hecho y hará sus mejores esfuerzos para evitar la divulgación no autorizada bajo el presente instrumento de cualquier información de carácter confidencial relativa a sus Usuarios. \n  La obligación de reserva respecto de la información confidencial aquí regulada no aplicará respecto de la información que: \n A la fecha de revelación de dicha información, sea de conocimiento general o pueda ser conocida con facilidad por el público en general o se vuelva de conocimiento general o de ser conocida con facilidad sin culpa de la contraparte. \n Deba ser divulgada por mandato de la Ley Aplicable o en cumplimiento de una resolución judicial, arbitral y/o administrativa."
             },
         ],
         [
             {
                 title: "UNDÉCIMA: TERMINACIÓN",
-                segment: "",
+                // segment: "",
                 text: "10.1  Reclamaquí podrá en cualquier momento dar de baja al Usuario de forma inmediata mediante simple notificación por escrito por cualquiera de las siguientes circunstancias: \n En caso de que el Usuario declare o proporcione a Reclamaquí cualquier información personal que sea falsa. \n En caso de que el Usuario incurra en insolvencia, no cuente con los recursos económicos y/o que no tenga la capacidad o se encuentre impedido de cumplir con estos Términos y Condiciones. \n En caso de incumplimiento por parte del Usuario a cualquiera de las obligaciones asumidas conforme a estos Términos y Condiciones y que dicho incumplimiento no sea subsanable. \n 10.2   El hecho de que Reclamaquí no exija o no haya exigido el cumplimiento de alguna de las disposiciones incluidas en estos Términos y Condiciones, no se considerará como una renuncia realizada por Reclamaquí para exigir su cumplimiento en un futuro."
             }
         ],
         [
             {
                 title: "DUODÉCIMA: SERVICIO AL USUARIO",
-                segment: "",
+                // segment: "",
                 text: "Reclamaquí pone a disposición de sus Usuarios un servicio de ayuda, con el fin de absolver todas las dudas que éstos puedan tener sobre las políticas de uso del Canal de WhatsApp y/o brindar asistencia respecto de cualquier problema relacionado u originado con el uso del Canal de WhatsApp. \n Los datos de contacto del servicio de ayuda que pone a disposición Reclamaquí en beneficio de los Usuarios es la dirección de correo electrónico: info@reclamaqui.pe "
             }
         ],
         [
             {
                 title: "DÉCIMATERCERA: JURISDICCIÓN",
-                segment: "",
+                // segment: "",
                 text: "Este documento queda sometido a las leyes de la República de Perú. Cualquier controversia se someterá a los tribunales del Cercado de Lima y tanto Reclamaquí como el Usuario renuncian expresamente a cualquier otro fuero que pudiera corresponderles en razón de su domicilio presente o futuro."
             }
         ]
@@ -206,60 +194,31 @@ export default function TermsAndConditions() {
         <div className={style.containerGeneral}>
 
             <aside className={style.segmentText}>
-                <FrequentQuestions />
+                <Segments />
 
             </aside>
 
             <aside className={style.itemsText}>
-
                 {
                     articles.map((article, i) => {
                         return (
                             <div key={i}>
                                 {
-
                                     article.map(item => {
                                         return (
                                             <div key={item.title}>
                                                 <ArticleTerms title={item.title} segment={item.segment} text={item.text} />
-
                                             </div>
                                         )
                                     })
                                 }
-
                             </div>
                         )
                     })
                 }
 
-
-                {/* <Link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-                <Script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></Script>
-                <Script id='2' type="text/javascript">window.onload = function() {Calendly.initBadgeWidget({ url: 'https://calendly.com/frankyanez9413/reunion-15-min', text: 'Schedule time with me', color: '#647a9a', textColor: '#ffffff', branding: undefined })}</Script>
-            </Link> */}
-
-
-
-                {/* <button onClick={ }></button> */}
             </aside>
 
         </div>
     )
 }
-{/* // components/Calendly.js
-
-        import React, {useEffect} from 'react';
-
-const Calendly = () => {
-  
-
-  return (
-        <div
-            className="calendly-inline-widget"
-            data-url="h
-
-
-        </div>
-    )
-} */}
