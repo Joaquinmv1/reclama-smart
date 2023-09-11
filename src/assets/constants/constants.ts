@@ -1,13 +1,13 @@
 import { Routes } from '@/app/models';
 import businessImg from '../../assets/images/business.jpg';
 import bag from '../images/bag.svg';
+import bussines from '../images/business.svg';
+import vector from '../images/Vector.svg'
 import home from '../images/home.svg';
 import about from '../images/conocenos.svg';
 import service from '../images/servicios.svg';
 import blog from '../images/blog.svg';
 import contact from '../images/contacto.svg';
-import bussines from '../images/business.svg';
-import vector from '../images/Vector.svg'
 import vision from '../../assets/images/MvvImages/eye2.svg'
 import mision from '../../assets/images/MvvImages/cohete2.svg'
 import bandera from '../../assets/images/MvvImages/flag2.svg'
@@ -135,17 +135,17 @@ export const businessInfo = [
   {
     image: reclamo,
     title: "Ingresa tu reclamo",
-    description: "Comunícate con nosotros por WhatsApp para contarnos los detalles de tu caso."
+    description: "Chatea con nosotros a través de nuestros canales y cuéntanos qué pasó."
   },
   {
     image: respuesta,
     title: "Responderemos en 24hs",
-    description: "Nosotros nos encargamos de todo, incluyendo la evaluación del reclamo, si podemos o no ayudarte."
+    description: "Evaluamos si podemos ayudarte y qué documentos necesitamos."
   },
   {
     image: recuperar,
     title: "Recuperamos tu dinero",
-    description: "Te mantenemos informado en cada paso del proceso."
+    description: "Nos encargamos de todo y te mantenemos informado en cada paso."
   }
 ];
 

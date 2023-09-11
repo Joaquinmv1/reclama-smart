@@ -8,7 +8,7 @@ export default function FrontPage() {
 	return (
 		<section className={style.frontContainer}>
 			<article className={style.bannerDescrip}>
-				<Image className={style.logo} width={516} height={100} alt="logo" src={logo} />
+				<Image className={style.logo} alt="logo" src={logo} />
 				<h1 className={style.title}>Recuperar tu plata nunca fue tan fácil </h1>
 				<Button title='Consulta Gratis' className={style.button} />
 			</article>
