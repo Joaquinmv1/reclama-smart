@@ -1,48 +1,79 @@
 "use client";
-import { FormEvent, useState } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
 import style from "./FormClaims.module.css";
 import emailjs from "@emailjs/browser";
-import { EMAIL_ID, TEMPLATE_ID, KEY_ID } from "../../../email.credentials";
 import Image from "next/image";
 import check from "../../../../assets/images/Check.png";
 import cancel from "../../../../assets/images/Cancel.png";
+
+const emailID = process.env.EMAIL_ID as string;
+const templateID = process.env.TEMPLATE_ID as string;
+const keyID = process.env.KEY_ID as string;
 
 export default function FormClaims() {
   const [send, setsend] = useState("no enviado");
   const [message, setmessage] = useState("");
 
-  //FORM DATA STATE
-  const [name, setname] = useState("");
-  const [dni, setdni] = useState("");
-  const [adress, setadress] = useState("");
-  const [email, setemail] = useState("");
-  const [phone, setphone] = useState("");
-  const [request, setrequest] = useState("");
-  const [detail, setdetail] = useState("");
+  const [dataForm, setdataForm] = useState({
+    name: "",
+    dni: "",
+    adress: "",
+    email: "",
+    phone: "",
+    request: "",
+    detail: "",
+  });
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setdataForm({
+      ...dataForm,
+      [e.target.name]: e.target.value,
+    });
+  };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     try {
       const form = document.getElementById("email-form") as HTMLFormElement;
-      await emailjs.sendForm(EMAIL_ID, TEMPLATE_ID, form, KEY_ID);
+      await emailjs.sendForm(emailID, templateID, form, keyID);
 
-      setname("");
-      setdni("");
-      setadress("");
-      setemail("");
-      setphone("");
-      setrequest("");
-      setdetail("");
+      setdataForm({
+        name: "",
+        dni: "",
+        adress: "",
+        email: "",
+        phone: "",
+        request: "",
+        detail: "",
+      });
 
       setsend("enviado");
       setmessage("Se envio el mail correctamente");
-    } catch (error: any) {
+    } catch (error:any) {
       if (error.status === 400) {
+        setdataForm({
+          name: "",
+          dni: "",
+          adress: "",
+          email: "",
+          phone: "",
+          request: "",
+          detail: "",
+        });
         setsend("error");
         setmessage("400 Bad Request: Ocurrio un error al enviar el mensaje");
       }
       if (error.status === 500) {
+        setdataForm({
+          name: "",
+          dni: "",
+          adress: "",
+          email: "",
+          phone: "",
+          request: "",
+          detail: "",
+        });
         setsend("error");
         setmessage(
           "500 Internal Server Error: Ocurrio un error en el servidor"
@@ -66,8 +97,8 @@ export default function FormClaims() {
               maxLength={20}
               pattern="[A-Za-z\s]+"
               title="Solo se permiten letras y espacios"
-              onChange={(e) => setname(e.target.value)}
-              value={name}
+              onChange={handleChange}
+              value={dataForm.name}
               required
             />
           </div>
@@ -82,8 +113,8 @@ export default function FormClaims() {
               required
               minLength={8}
               maxLength={12}
-              onChange={(e) => setdni(e.target.value)}
-              value={dni}
+              onChange={handleChange}
+              value={dataForm.dni}
             />
           </div>
 
@@ -97,8 +128,8 @@ export default function FormClaims() {
               required
               minLength={5}
               maxLength={12}
-              onChange={(e) => setadress(e.target.value)}
-              value={adress}
+              onChange={handleChange}
+              value={dataForm.adress}
             />
           </div>
 
@@ -112,8 +143,8 @@ export default function FormClaims() {
               pattern=".*\..*"
               title="El mail debe tener @ y .com, .org, etc"
               required
-              onChange={(e) => setemail(e.target.value)}
-              value={email}
+              onChange={handleChange}
+              value={dataForm.email}
             />
           </div>
 
@@ -125,8 +156,8 @@ export default function FormClaims() {
               id="phone"
               placeholder="+51956321489"
               required
-              onChange={(e) => setphone(e.target.value)}
-              value={phone}
+              onChange={handleChange}
+              value={dataForm.phone}
             />
           </div>
         </div>
@@ -141,8 +172,8 @@ export default function FormClaims() {
               required
               minLength={10}
               maxLength={120}
-              onChange={(e) => setrequest(e.target.value)}
-              value={request}
+              onChange={handleChange}
+              value={dataForm.request}
             />
           </div>
 
@@ -157,8 +188,8 @@ export default function FormClaims() {
               required
               minLength={20}
               maxLength={120}
-              onChange={(e) => setdetail(e.target.value)}
-              value={detail}
+              onChange={handleChange}
+              value={dataForm.detail}
             />
           </div>
         </div>
@@ -184,30 +215,33 @@ export default function FormClaims() {
           </div>
         ) : (
           <>
-          <div className={style.backgroundStatic}></div>
-          <div className={style.modalContain}>
-            <div className={style.modal}>
+            <div className={style.backgroundStatic}></div>
+            <div className={style.modalContain}>
+              <div className={style.modal}>
+                {send === "enviado" ? (
+                  <Image
+                    width={100}
+                    height={100}
+                    src={check}
+                    alt="Check Symbol"
+                  />
+                ) : (
+                  <Image
+                    width={100}
+                    height={100}
+                    src={cancel}
+                    alt="Cancel Symbol"
+                  />
+                )}
+                <h2 className="">{message}</h2>
+              </div>
               {send === "enviado" ? (
-                <Image
-                  width={100}
-                  height={100}
-                  src={check}
-                  alt="Check Symbol"
-                />
+                <a href="/claims">Regresar</a>
               ) : (
-                <Image
-                  width={100}
-                  height={100}
-                  src={cancel}
-                  alt="Cancel Symbol"
-                />
+                <a href="/claims">Volver a intentar</a>
               )}
-              <h2 className="">{message}</h2>
             </div>
-            {send === "enviado" ? <a href="/claims">Regresar</a> : <a href="/claims">Volver a intentar</a>}
-          </div>
           </>
-          
         )}
       </form>
     </div>
