@@ -1,6 +1,6 @@
-export type Route = "Inicio" | "Conócenos" | "Servicios" | "Blog" | "Contacto";
+export type Route = "/" | "/about" | "/ourServices" | "/blog" | "/contact";
 
 export interface Routes {
-  name: Route;
-  route: string;
+  name: string;
+  route: Route;
 }

@@ -3,7 +3,6 @@
   width: 100%;
   height: auto;
   background-color: #fff;
-  padding: 80px 160px;
 }
 
 .mvvTitle {
@@ -29,19 +28,18 @@
   justify-content: center;
   align-items: center;
   gap: 120px;
-  /* margin-block: 2.5rem; */
 }
 
 .mvv-card li {
-  width: 330px;
-  height: 370px;
+  width: 290px;
+  height: 350px;
 
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 34px;
+  flex-direction: column;
 
+  padding-block: 2rem;
   border-radius: 16px;
   background: var(--Fondo, #F0F2F5);
   box-shadow: 0px 4px 4px 0px #FF5220;
@@ -53,92 +51,22 @@
   color: #02311A;
 }
 
-.mvv-card li p {
-  width: 90%;
-  text-align: center;
+.containerp {
   font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 2rem;
+  text-align: center;
+  padding-inline: 1.5rem;
+  flex: 1;
+  border-top: 1px solid black;
 }
 
-@media screen and (max-width: 1300px) {
-  .mvvTitle {
-    width: 100%;
-  }
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  flex-direction: column;
 }
-
-@media screen and (max-width: 1050px) {
-  .mvv-card li {
-    width: 250px;
-    height: 400px;
-  }
-
-  .mvvTitle {
-    font-size: 1.9rem;
-    width: 100%;
-    padding: 30px 50px;
-  }
-} 
-
-@media screen and (max-width: 880px) {
-  .mvv-card li {
-    width: 230px;
-    height: 370px;
-  }
-
-  .mvv-card li p {
-    font-size: 1.1rem;
-    width: 100%;
-  }
-
-  .mvvTitle {
-    font-size: 1.9rem;
-    width: 100%;
-  }
-} 
-
-@media screen and (max-width: 770px) {
-  .mvv-card li {
-    width: 210px;
-    height: 370px;
-  }
-} 
-
-@media screen and (max-width: 750px) {
-  .mvv-card {
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .mvv-card li {
-    width: 50%;
-    border-radius: 16px;
-  }
-
-  .mvvTitle {
-    font-size: 1.5rem;
-    width: 100%;
-  }
-
-  .mvv-card li p {
-    font-size: 1.1rem;
-    width: 90%;
-  }
-} 
-
-@media screen and (max-width: 560px){
-  .mvv-card li {
-    width: 60%;
-    border-radius: 16px;
-  }
-  
-  .mvvTitle {
-    font-size: 1.3rem;
-    width: 100%;
-  }
-} 
-
-@media screen and (max-width: 365px){
-  .mvv-card li {
-    width: 70%;
-  }
-} 

@@ -1,0 +1,18 @@
+.blogTitle{
+  color:  #02311A;
+  font-family: var(--font-montserrat);
+  margin-block: .5rem;
+  border-bottom: 1px solid #345A47;
+  padding: 16px 0px;
+}
+
+.blogTitle h3 {
+  font-size: 40px;
+}
+
+.blogTitle h4 {
+  font-size: 32px;
+  color: #345A47;
+  font-weight: 600;
+} 
+
