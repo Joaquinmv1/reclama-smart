@@ -1,8 +1,6 @@
 .containerBenefits {
   width: 100%;
   font-family: var(--font-roboto);
-  margin-top: 50px;
-
 }
 
 .cardBenefits {
@@ -12,6 +10,7 @@
   flex-direction: column;
   background-color: #fff;
   padding: 30px 0px;
+  background: linear-gradient(180deg, #D6EDD4 0%, rgba(214, 237, 212, 0.00) 36.46%);
 }
 
 .containerBenefits p {
@@ -37,6 +36,7 @@
   font-weight: 500;
   color: #02311A;
   margin-block: 1rem;
+  margin-top: 80px;
 }
 
 .benefits-card-container {

@@ -1,4 +1,4 @@
-
+"use client"
 import { PopupButton } from 'react-calendly';
 import style from './Calendly.module.css';
 import { useEffect, useRef } from 'react';
