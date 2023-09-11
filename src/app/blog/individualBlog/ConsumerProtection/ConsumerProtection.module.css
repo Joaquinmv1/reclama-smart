@@ -1,0 +1,75 @@
+.containerConsumerProtection {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 0px;
+  width:100%;
+}
+
+.blogData {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  width: 80%;
+}
+
+.img {
+  width: 100%;
+}
+
+.stepsConsumerProtection {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: var(--font-openSans);
+  font-size: 24px;
+  color: #374F42;
+  font-weight: 400;
+  margin-block: 2rem;
+}
+
+.acuerdos {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: var(--font-openSans);
+  color: #374F42;
+}
+
+.acuerdos p span {
+  color: #02311A;
+  font-weight: 600;
+}
+
+.p {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  color: #374F42;
+  font-family: var(--font-openSans);
+  margin-top: 6rem;
+}
+
+.span {
+  color: #02311A !important;
+}
+
+.p span {
+  color:#FF5220;
+  
+}
+
+.font {
+  margin-top: 6rem;
+  padding-top: .7rem;
+  font-size: 21px;
+  color: #374F42;
+  font-family: var(--font-openSans);
+  border-top: 1px solid #374F42;
+}
+
+.link {
+  text-decoration: none;
+  color: #345A47; 
+}

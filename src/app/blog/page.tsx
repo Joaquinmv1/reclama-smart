@@ -1,6 +1,11 @@
+import { BannerBlog, BlogGallery } from "./components"
+  
 function Blog() {
   return (
-    <div>Blog</div>
+    <>
+      <BannerBlog />
+      <BlogGallery />
+    </>
   )
 }
 export default Blog
