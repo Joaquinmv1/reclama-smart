@@ -6,6 +6,9 @@
   min-width: 100%;
   gap: 1rem;
   padding: 2rem 150px;
+  background-image: linear-gradient( rgba(231, 247, 230, 0.00) 4.33%, rgba(240, 247, 250, 0.00) 8.41%, #E7F7E6 8.95%, #E7F7E6 8.96%, rgba(231, 247, 230, 0.50) 18.68%, rgba(231, 247, 230, 0.00) 110.25%), url(../../../../assets/images/imgBannerCon.svg);
+  background-position: center;
+  background-size: cover;
 }
 
 .bannerDescription {

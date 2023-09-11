@@ -7,10 +7,10 @@ export default function Home() {
     <main>
       <FrontPage />
       <FeacturedService />
-      <BusinessInsight />
+     {/*  <BusinessInsight />
       <Cases data={dataClients} />
       <OurAlliances />
-      <FrequentQuestions />
+      <FrequentQuestions /> */}
     </main>
   )
 }

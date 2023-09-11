@@ -7,8 +7,8 @@
   font-family: var(--font-openSans);
   width: 100%;
   margin-bottom: 5rem;
-  background: #FFF;
-  padding-block: 80px;
+  background: linear-gradient(180deg, #F0F2F5 0%, rgba(240, 242, 245, 0.00) 100%);
+  padding: 150px;
 }
 
 .container-aboutServices {
@@ -22,9 +22,8 @@
 }
 
 .titleServices {
-  font-size: 1.7rem;
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 48px;
+  font-weight: 600;
   margin-block: 1rem;
   font-family: var(--font-montserrat);
 }
