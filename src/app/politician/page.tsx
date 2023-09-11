@@ -10,7 +10,7 @@ export default function Privacity() {
         },
         {
             title: "FINALIDAD",
-            text: "En caso tus datos califiquen como datos personales, serán utilizados para gestionar tu caso; esto incluye todas las actividades relacionadas con la atención los servicios, facturación, firma de documentos, pagos, reclamos, según corresponda. \n Envío de información con fines publicitarios respecto de los productos y servicios de Reclamaquí. El envío de esta información se dará siempre y cuando Reclamaquí haya obtenido su consentimiento previo y expreso."
+            text: "En caso tus datos califiquen como datos personales, serán utilizados para gestionar tu caso; esto incluye todas las actividades relacionadas con la atención de los servicios, facturación, firma de documentos, pagos, reclamos, según corresponda. \n Envío de información con fines publicitarios respecto de los productos y servicios de Reclamaquí. El envío de esta información se dará siempre y cuando Reclamaquí haya obtenido su consentimiento previo y expreso."
         },
         {
             title: "DATOS PERSONALES OBLIGATORIOS",
