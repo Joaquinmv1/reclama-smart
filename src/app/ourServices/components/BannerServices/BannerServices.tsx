@@ -12,37 +12,25 @@ export default function BannerServices() {
 
       <div className={style.servicesContain}>
         <div className={style.services}>
-          <div>
+          <div className={style.item}>
             <Image width={30} height={20} src={icon} alt="Confirm Icon" />
             <h6>Nuestro conocimiento está a tu disposición</h6> {/* ver si agregar "br" */}
           </div>
-
-          <p>
-            Somos expertos en la materia. Evaluaremos tu caso y te daremos la
-            mejor solución.
-          </p>
         </div>
 
         <div className={style.services}>
-          <div>
+          <div className={style.item}>
             <Image width={30} height={20} src={icon} alt="Confirm Icon" />
             <h6>Garantizamos tu tranquilidad</h6> {/* ver si agregar "br" */}
           </div>
-
-          <p>
-            No te preocupes por el proceso legal. Nosotros nos encargaremos de
-            todo.
-          </p>
+        
         </div>
 
         <div className={style.services}>
-          <div>
+          <div className={style.item}>
             <Image width={30} height={20} src={icon} alt="Confirm Icon" />
             <h6>Solo ganamos  si tú ganas</h6> {/* ver si agregar "br" */}
           </div>
-          <p>
-            Nos interesa tu éxito. Nuestras tarifas son transparentes y justas.
-          </p>
         </div>
       </div>
     </div>

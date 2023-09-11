@@ -1,5 +1,5 @@
 .bannerContain {
-  background-color: #D6EDD4;
+  background-color: #F0F2F5;
   padding: 50px 40px;
 }
 
@@ -24,23 +24,27 @@
 .servicesContain {
   display: flex;
   justify-content: center;
+  gap: 15px;
   margin-top: 30px;
 }
 
 .services {
-  width: 30%;
-  padding: 10px;
-}
-
-.services div {
   width: 100%;
-  height: auto;
   display: flex;
   justify-content: center;
-  /* border: 2px solid blue; */
+  
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.6rem;
 }
 
 .services div h6 {
+  width: 50%;
   color: #4d8650;
   font-family: var(--font-montserrat);
   text-align: center;
@@ -54,18 +58,6 @@
   margin-right: 8px;
 }
 
-.services p {
-  width: 100%;
-  text-align: center;
-  color: #374f42;
-  font-family: var(--font-openSans);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin-top: 10px;
-}
-
 /* MEDIA QUERIES TABLET */
 
 @media only screen and (max-width: 904px) {
@@ -75,7 +67,18 @@
   }
 
   .services {
-    width: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
   }
 
   .services div h6 {
@@ -95,18 +98,6 @@
     margin-right: 0px;
     margin-top: 0px;
   }
-
-  .services p {
-    width: 100%;
-    text-align: center;
-    color: #374f42;
-    font-family: var(--font-openSans);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 10px;
-  }
 }
 
 /* MEDIA QUERIES MOBILE */
@@ -124,6 +115,7 @@
 
   .services div h6 {
     width: 50%;
+    font-size: 18px;
     text-align: center;
   }
 
