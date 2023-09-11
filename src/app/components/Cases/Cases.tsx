@@ -56,7 +56,7 @@ export default function Cases({ data }: CaseProps) {
   return (
     <>
       <div className={style.casesContain}>
-        <h3>Casos de éxito</h3>
+        <h3>Casos de <span style={{color: "#FF5220"}}>éxito</span></h3>
 
         <div className={style.carrousel}>
           {data.slice(currentIndex, currentIndex + screen)
