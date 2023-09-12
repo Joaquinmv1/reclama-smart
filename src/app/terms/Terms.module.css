@@ -1,0 +1,40 @@
+.containerGeneral {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    font-family: var(--font-montserrat);
+
+}
+
+.segmentText {
+    width: 30%;
+    border-right: 1px solid #345A47;
+}
+
+.itemsText {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 40px;
+}
+
+.title {
+    border-bottom: 1px solid #345A47;
+    margin: 20px 0 10px 0;
+    padding: 5px 0;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .itemsText {
+        width: 100%;
+    }
+
+    .segmentText {
+        width: 5%;
+        border-right: none;
+    }
+}
