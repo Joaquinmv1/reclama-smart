@@ -1,0 +1,11 @@
+.containerTitle {
+  border-bottom: 1px solid #345A47;
+  padding-block: .5rem;
+}
+
+.title {
+  font-size: 48px;
+  color: #02311A;
+  font-weight: 600;
+  font-family: var(--font-montserrat);
+}

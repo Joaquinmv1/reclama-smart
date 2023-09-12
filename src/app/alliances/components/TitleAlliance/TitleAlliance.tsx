@@ -3,9 +3,9 @@ import style from './TitleAlliance.module.css';
 function TitleAlliance({ title }: { title: string }) {
   return (
     <>
-      <section className={style.title}>
-        {title}
-      </section>
+      <article className={style.containerTitle}>
+        <h3 className={style.title}>{title}</h3>
+      </article>
     </>
   )
 }
