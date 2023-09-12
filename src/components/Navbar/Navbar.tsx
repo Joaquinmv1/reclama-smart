@@ -8,17 +8,13 @@ import { useState } from "react"
 import logo from '../../assets/images/LOGO.svg'
 import what from '../../assets/images/whatsapp.svg'
 import style from './navbar.module.css'
+import { usePathname } from 'next/navigation'
 
 export default function Navbar() {
-  // const [activeLink, setActiveLink] = useState<Route>(() => {
-  //   const hasStorage = window.localStorage.getItem('route') ?? 'Inicio';
-  //   return hasStorage as Route;
-  // })
-
-  const [activeLink, setActiveLink] = useState<Route>('Inicio')
-
+  const pathname = usePathname() as Route;
+  const [activeLink, setActiveLink] = useState<Route>(pathname);
+  
   const activeClick = (route: Route) => {
-    // window.localStorage.setItem('route', route);
     setActiveLink(route);
   };
 
@@ -29,10 +25,10 @@ export default function Navbar() {
       <nav className={style.navB}>
         <ul className={style.links}>
           {routes.map(({ route, name }) => {
-            const classNames = activeLink === name ? style.activeLink : '';
+            const classNames = activeLink === route ? style.activeLink : '';
             return (
               <li key={name} className={classNames}>
-                <Link onClick={() => activeClick(name)} className={style.link} href={route}>{name}</Link>
+                <Link onClick={() => activeClick(route)} className={style.link} href={route}>{name}</Link>
               </li>
             )
           })}

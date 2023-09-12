@@ -82,20 +82,20 @@
 
 .timelineItem {
     display: flex;
-    justify-content: start;
     flex-direction: column;
-    align-items: start;
     max-width: 160px;
-    color: #FFFFFF;
-    padding-left: 2rem;
     font-size: 16px;
     font-family: var(--font-openSans);
+    padding-left: 1rem;
 }
 .timelineItem span{
     color: var(--color-texts);
     font-weight: 600;
+    text-align: center;
 }
 .timelineItem p{
+    text-align: center;
+    font-size: 16px;
     color: var(--color-texts);
 }
 
@@ -266,7 +266,7 @@
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 460px) {
     .containerTrajectory {
         padding: 0.6rem;
     }

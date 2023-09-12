@@ -1,0 +1,12 @@
+.button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    color: #FFFFFF;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    /* display: inline-flex; */
+    max-width: 300px;
+}

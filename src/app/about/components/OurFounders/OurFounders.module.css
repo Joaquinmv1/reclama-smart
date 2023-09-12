@@ -80,8 +80,9 @@
 
 .containLogo {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   flex: 1;
+  padding-top: 1rem;
   width: 100%;
 }
 

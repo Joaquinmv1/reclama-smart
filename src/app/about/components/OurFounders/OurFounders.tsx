@@ -18,7 +18,10 @@ export default function OurFounders() {
         <div className={style.one}>
           <div className={style.info}>
             <div className={style.containInfo}>
-              <h6>Mariana Silva<br/> Santisteban</h6>
+              <h6>
+                Mariana Silva
+                <br /> Santisteban
+              </h6>
               <p>CCO</p>
 
               <p>
@@ -29,7 +32,7 @@ export default function OurFounders() {
             </div>
 
             <div className={style.containLogo}>
-              <Link href="#">
+              <Link href="https://www.linkedin.com/in/mariana-silva-santisteban-5b2183169/" target="_blank">
                 <Image
                   width={40}
                   height={40}
@@ -46,18 +49,22 @@ export default function OurFounders() {
         <div className={style.two}>
           <div className={style.info}>
             <div className={style.containInfo}>
-              <h6>Eluisa Maria Helbig-<br/>Marchena</h6>
+              <h6>
+                Eluisa Maria Helbig-
+                <br />
+                Marchena
+              </h6>
               <p>CEO</p>
 
               <p>
-                Abogada alemana, PhD en Derecho por la Universidad de Tübingen, 
-                5+ años experiencia en Litigios, desarrolló el primer índice de
-                Legal Tech en América Latina.
+                Abogada con doctorado en Derecho por la Universidad de Tübingen,
+                Alemania. Con más de 5 años de experiencia en litigios,
+                desarrolló el primer índice de Legal Tech en América Latina.
               </p>
             </div>
 
             <div className={style.containLogo}>
-              <Link href="#">
+              <Link href="https://www.linkedin.com/in/eluisa-m-helbig-marchena-913691173/" target="_blank">
                 <Image
                   width={40}
                   height={40}

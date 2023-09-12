@@ -10,6 +10,7 @@ import partner5 from '../../../assets/images/alliances/image 53 (1).svg';
 import partner6 from '../../../assets/images/alliances/image 53 (2).svg';
 import partner7 from '../../../assets/images/alliances/image 53.svg';
 import style from './OurAlliances.module.css';
+import Link from 'next/link';
 
 const options = {
   root: null,
@@ -44,22 +45,32 @@ function OurAlliances() {
       <section ref={ref} className={style.containerSlide}>
         <article className={`${style.logosSlide} ${isObserver ? '' : style.noAnimation}`}>
           <div>
-            <Image src={partner1} alt={'partner'} />
+            <Link href={'alliances?alliance=InnovaUlima'}>
+              <Image src={partner1} alt={'partner'} />
+            </Link>
           </div>
           <div>
-            <Image src={partner2} alt={'partner'} />
+            <Link href={'alliances?alliance=InnovaUlima'}>
+              <Image src={partner2} alt={'partner'} />
+            </Link>
           </div>
           <div>
-            <Image src={partner3} alt={'partner'} />
+            <Link href={'alliances?alliance=ParlamentoAndino'}>
+              <Image src={partner3} alt={'partner'} />
+            </Link>
           </div>
           <div>
-            <Image src={partner4} alt={'partner'} />
+            <Link href={'alliances?alliance=Warmiventures'}>
+              <Image src={partner4} alt={'partner'} />
+            </Link>
           </div>
           <div>
             <Image src={partner5} alt={'partner'} />
           </div>
           <div>
-            <Image src={partner6} alt={'partner'} />
+            <Link href={'alliances?alliance=ProgramaUsil'}>
+              <Image src={partner6} alt={'partner'} />
+            </Link>
           </div> <div>
             <Image src={partner7} alt={'partner'} />
           </div>
@@ -70,20 +81,29 @@ function OurAlliances() {
             <Image src={partner1} alt={'partner'} />
           </div>
           <div>
-            <Image src={partner2} alt={'partner'} />
+            <Link href={'alliances?alliance=InnovaUlima'}>
+              <Image src={partner2} alt={'partner'} />
+            </Link>
           </div>
           <div>
-            <Image src={partner3} alt={'partner'} />
+            <Link href={'alliances?alliance=ParlamentoAndino'}>
+              <Image src={partner3} alt={'partner'} />
+            </Link>
           </div>
           <div>
-            <Image src={partner4} alt={'partner'} />
+            <Link href={'alliances?alliance=Warmiventures'}>
+              <Image src={partner4} alt={'partner'} />
+            </Link>
           </div>
           <div>
             <Image src={partner5} alt={'partner'} />
           </div>
           <div>
-            <Image src={partner6} alt={'partner'} />
-          </div> <div>
+            <Link href={'alliances?alliance=ProgramaUsil'}>
+              <Image src={partner6} alt={'partner'} />
+            </Link>
+          </div> 
+          <div>
             <Image src={partner7} alt={'partner'} />
           </div>
         </article>

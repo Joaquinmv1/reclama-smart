@@ -26,12 +26,18 @@ export default function Footer() {
       <section className={styles.containerFooter}>
 
         <article className={styles.featuresSection}>
+
           <div className={styles.information}>
 
-            <Pharagraph text={"Términos y condiciones"} />
-            <Pharagraph text={"Políticas de privacidad"} />
-            <Pharagraph text={"Libro de reclamaciones"} />
-
+            <Link href={'/terms'} className={`${styles.text} ${styles.hover}`}>
+              <Pharagraph text={"Términos y condiciones"} />
+            </Link>
+            <Link href={'/politician'} className={`${styles.text} ${styles.hover}`}>
+              <Pharagraph text={"Políticas de privacidad"} />
+            </Link>
+            <Link href={'/claims'} className={`${styles.text} ${styles.hover}`}>
+              <Pharagraph text={"Libro de reclamaciones"} />
+            </Link>
           </div>
 
         </article>
@@ -42,9 +48,9 @@ export default function Footer() {
           <div className={styles.infoContactSection}>
 
             <Image src={logo} alt="logo" className={styles.logo} />
-            <Pharagraph text={"info@reclamaqui.pe"} className={`${styles.text} ${styles.underline} ${styles.hover}`} />
-            <Link href={redes[3].link}>
-              <Pharagraph text={"+ 51 932 468 027"} className={`${styles.text} ${styles.underline} ${styles.hover}`} />
+            <Pharagraph text={"info@reclamaqui.pe"} />
+            <Link href={redes[0].link} className={`${styles.text} ${styles.underline} ${styles.hover}`}>
+              <Pharagraph text={"+ 51 932 468 027"} />
             </Link>
 
           </div>

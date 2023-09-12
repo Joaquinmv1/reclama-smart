@@ -1,0 +1,59 @@
+.containerCybercrimeScams {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 0px;
+  width:100%;
+}
+
+.blogData {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  width: 80%;
+}
+
+.img {
+  width: 100%;
+}
+
+.containerComercy {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 24px;
+  color: #374F42;
+  font-weight: 400;
+  font-family: var(--font-openSans);
+  margin-block: 3rem;
+}
+
+.containerComercy p span {
+  color: #FF5220;
+  font-weight: 600;
+}
+
+.span {
+  color: #02311A !important;
+}
+
+.fontsWeb {
+  border-top: 1px solid #374F42;
+  font-size: 24px;
+  font-weight: 400;
+  color: #374F42;
+  font-family: var(--font-openSans);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 1rem;
+}
+
+.link{
+  text-decoration: none;
+  color: #02311A !important;
+}
+
+.link:hover{
+  color: #046436;
+}

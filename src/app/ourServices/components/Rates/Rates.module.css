@@ -1,0 +1,145 @@
+.containerRates {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    background-color: #F0F2F5;
+    padding: 80px 20px 100px 135px;
+
+
+}
+
+.titleOne {
+    font-size: 40px;
+    font-family: var(--font-montserrat);
+    color: var(--color-title);
+    margin: 20px 0;
+}
+
+.titleTwo {
+    font-size: 32px;
+    font-family: var(--font-montserrat);
+}
+
+.background {
+    width: 100%;
+    background-color: white;
+}
+
+.containerRates p {
+    font-family: var(--font-openSans);
+}
+
+.titles {
+    font-family: var(--font-montserrat);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    color: var(--color-title);
+    gap: 30px;
+
+}
+
+.contentRates {
+    display: flex;
+}
+
+.contentInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.contentInfo h2 {
+    color: #02311A;
+    font-family: var(--font-montserrat);
+}
+
+.contentInfo p {
+    font-size: 18px;
+    color: #7C7979;
+
+}
+
+.analize {
+    text-align: center;
+    width: 90%;
+}
+
+.span {
+    color: var(--color-primary);
+}
+
+.contentRates h4 {
+    font-family: var(--font-openSans);
+    color: var(--color-title);
+}
+
+.containerRates article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.containExample {
+    display: flex;
+    gap: 20px;
+}
+
+.num {
+    color: #43A047;
+    font-size: 20px;
+    background-color: white;
+    border: 2px solid #43A047;
+    padding: 6px 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-weight: bold;
+    font-family: var(--font-openSans);
+}
+
+.imgHands {
+    position: absolute;
+    right: -140px;
+    top: 120px;
+}
+
+@media only screen and (max-width: 830px) {
+
+    .containerRates {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .contentInfo {
+        width: 90%;
+    }
+
+    .contentRates {
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+
+    .imgHands {
+        position: initial;
+        margin: 0 auto;
+    }
+
+    .containExample {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .analize {
+        margin-bottom: 40px;
+    }
+
+
+}
