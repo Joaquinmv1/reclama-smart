@@ -6,7 +6,7 @@
   box-sizing: border-box;
   flex-wrap: nowrap;
   min-width: 100%;
-  padding: 0px 50px;
+  padding: 40px 150px;
   background: var(--color-fondo);
 }
 
@@ -15,7 +15,7 @@
   text-align: center;
   margin-bottom: 1.5rem;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 34px;
   width: 100%;
   font-weight: 700;
   font-family: var(--font-montserrat);
@@ -55,11 +55,11 @@
 }
 
 .image{
-  width: 800px;
-  height: 800px;
+  width: 700px;
+  height: 600px;
 }
 .logo{
-  width: 516px;
+  width: 440px;
   height: 100px;
 }
 
