@@ -1,0 +1,12 @@
+.navGeneral {
+    display: none;
+    /* border: 4px solid #345A47; */
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .navGeneral {
+        display: block;
+    }
+}

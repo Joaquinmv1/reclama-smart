@@ -17,7 +17,7 @@ import respuesta from '../../assets/images/asifunciona/Fotos38 1.svg'
 import recuperar from '../../assets/images/asifunciona/Fotos38 1 (1).svg'
 
 //PERSONS
-import person1 from "../images/person1.png"
+import person1 from "../images/person1.jpg"
 import person2 from "../images/person2.jpg"
 import person3 from "../images/person3.jpg"
 import person4 from "../images/person4.jpg"
@@ -101,19 +101,19 @@ export const dataClients = [
     comment: '"Recuperé S/2031 a través de Reclama Smart por unos lentes defectuosos ¡Excelente servicio!"',
   },
   {
-    name: "María",
+    name: "Ana Paula",
     image: person4,
-    comment: '"Increíble experiencia con ReclamaSmart."',
+    comment: '"Mi laptop nueva tenía problemas, incluso después de llevarla al servicio técnico. Gracias a Reclama Smart, recuperé la totalidad de mi dinero: S/3699"',
   },
   {
-    name: "Javier",
+    name: "Paola",
     image: person5,
-    comment: '"ReclamaSmart superó mis expectativas."',
+    comment: '"Compré un vestido de novia en cuotas, pero debido a la pandemia, no pude seguir pagando. Devolví el vestido, pero la tienda nunca me reembolsó."',
   },
   {
-    name: "Sofía",
+    name: "Ingrid",
     image: person6,
-    comment: '"Recomendaría ReclamaSmart a cualquiera que busque una forma efectiva de resolver problemas."',
+    comment: '"Mi vuelo fue cancelado, la aerolínea no quería hacerse cargo al ser comprado por agencia. Gracias a Reclama Smart, recuperé mis $1922 USD."',
   },
 ];
 
@@ -124,11 +124,11 @@ export const imgTrajectory = [
   { img: reclamaAqui, title: "Reclama Smart", text: "2° Lanzamiento" }
 ]
 export const imgService = [
-  {img: errorService, title: "Tu producto falló", text: "Imagina invertir 1000 soles en un televisor que se avería rápidamente debido a defectos de fábrica."},
-  {img: reclamoProveedor, title:"Reclamas al proveedor", text: "El proveedor no responde o no estás conforme con la respuesta. Importante: El plazo es de 15 días hábiles o 30 días naturales, dependiendo del tipo de empresa."},
-  {img: gestionamos, title: "Gestionamos tu reclamo", text: "Presentas tu reclamo con nosotros y nos encargamos de todo el proceso. Presentación de la denuncia ante la autoridad correspondiente. Espera del plazo (3-6 meses, dependiendo del valor del reclamo, si se apela la decisión, puede tardar otros 1-2 meses más)"},
-  {img: exitoService, title: "Hemos tenido éxito", text: "Si ganamos, la entidad pública obliga a la empresa a reembolsarte."},
-  {img: calculoService, title: "Calcula tu pago", text: "Nuestra tarifa es del 20%, si invertiste 1000 soles, tu recuperas 800 soles. 20% tarifa x s/1000= 800"},
+  { img: errorService, title: "Tu producto falló", text: "Imagina invertir 1000 soles en un televisor que se avería rápidamente debido a defectos de fábrica." },
+  { img: reclamoProveedor, title: "Reclamas al proveedor", text: "El proveedor no responde o no estás conforme con la respuesta. Importante: El plazo es de 15 días hábiles o 30 días naturales, dependiendo del tipo de empresa." },
+  { img: gestionamos, title: "Gestionamos tu reclamo", text: "Presentas tu reclamo con nosotros y nos encargamos de todo el proceso. Presentación de la denuncia ante la autoridad correspondiente. Espera del plazo (3-6 meses, dependiendo del valor del reclamo, si se apela la decisión, puede tardar otros 1-2 meses más)" },
+  { img: exitoService, title: "Hemos tenido éxito", text: "Si ganamos, la entidad pública obliga a la empresa a reembolsarte." },
+  { img: calculoService, title: "Calcula tu pago", text: "Nuestra tarifa es del 20%, si invertiste 1000 soles, tu recuperas 800 soles. 20% tarifa x s/1000= 800" },
 ]
 
 export const businessInfo = [
@@ -158,32 +158,32 @@ export const info = [
   {
     title: "¿Quién puede hacer un reclamo?",
     description:
-      "No,  no tienes que adelantar ni un sol. Nosotros asumimos todos los gastos, incluyendo costos de trámite y otras tasas legales. Tú solo pagas  si ganamos tu caso y recuperamos tu dinero. No tienes que pagar nada por adelantado. Nosotros asumimos todos los gastos durante el proceso, lo que incluye costos de trámites y tasas legales. Si ganamos el caso y recuperamos el dinero, nos pagan.",
+      "Cualquier persona mayor de 18 años con DNI válido que haya realizado una compra en Perú.",
   },
   {
     title: "¿Cuánto tiempo tengo para reclamar?",
     description:
-      "No,  no tienes que adelantar ni un sol. Nosotros asumimos todos los gastos, incluyendo costos de trámite y otras tasas legales. Tú solo pagas  si ganamos tu caso y recuperamos tu dinero. No tienes que pagar nada por adelantado. Nosotros asumimos todos los gastos durante el proceso, lo que incluye costos de trámites y tasas legales. Si ganamos el caso y recuperamos el dinero, nos pagan.",
+      "Tienes hasta dos años desde la fecha de la compra para presentar un reclamo.",
   },
   {
     title: "¿Cómo funciona su servicio legal de atención de reclamos de consumidores?",
     description:
-      "No,  no tienes que adelantar ni un sol. Nosotros asumimos todos los gastos, incluyendo costos de trámite y otras tasas legales. Tú solo pagas  si ganamos tu caso y recuperamos tu dinero. No tienes que pagar nada por adelantado. Nosotros asumimos todos los gastos durante el proceso, lo que incluye costos de trámites y tasas legales. Si ganamos el caso y recuperamos el dinero, nos pagan.",
+      "Nos especializamos en ayudar a los consumidores a presentar reclamos efectivos contra prácticas comerciales injustas. Trabajamos en base a tarifas de éxito, lo que significa que solo nos pagan si logramos un resultado exitoso para ti.",
   },
   {
     title: "¿Qué tipos de reclamos de consumidores manejan?",
     description:
-      "No,  no tienes que adelantar ni un sol. Nosotros asumimos todos los gastos, incluyendo costos de trámite y otras tasas legales. Tú solo pagas  si ganamos tu caso y recuperamos tu dinero. No tienes que pagar nada por adelantado. Nosotros asumimos todos los gastos durante el proceso, lo que incluye costos de trámites y tasas legales. Si ganamos el caso y recuperamos el dinero, nos pagan.",
+      "Manejamos una amplia variedad de reclamos de consumidores, que incluyen problemas vinculados a compras, aerolíneas o bancos.",
   },
   {
     title: "¿Cómo puedo ponerme en contacto con su equipo para comenzar?",
     description:
-      "No,  no tienes que adelantar ni un sol. Nosotros asumimos todos los gastos, incluyendo costos de trámite y otras tasas legales. Tú solo pagas  si ganamos tu caso y recuperamos tu dinero. No tienes que pagar nada por adelantado. Nosotros asumimos todos los gastos durante el proceso, lo que incluye costos de trámites y tasas legales. Si ganamos el caso y recuperamos el dinero, nos pagan.",
+      "Puede comunicarse con nosotros a través de nuestro Whatsapp corporativo",
   },
   {
     title: "¿De qué países atienden reclamos?",
     description:
-      "No,  no tienes que adelantar ni un sol. Nosotros asumimos todos los gastos, incluyendo costos de trámite y otras tasas legales. Tú solo pagas  si ganamos tu caso y recuperamos tu dinero. No tienes que pagar nada por adelantado. Nosotros asumimos todos los gastos durante el proceso, lo que incluye costos de trámites y tasas legales. Si ganamos el caso y recuperamos el dinero, nos pagan.",
+      "Por ahora, solo atendemos casos en Perú.",
   }
 ];
 
@@ -227,4 +227,58 @@ export const redes = [
 
   }
 
+]
+
+export const terms = [{
+  title: "DEFINICIONES",
+  segment: "hola"
+},
+{
+  title: "GENERALIDADES, DATOS ALMACENADOS Y DECLARACIONES",
+  segment: "2.1. Generalidades \n 2.2. Datos almacenados \n 2.3. Declaraciones"
+},
+{
+  title: "REGISTRO Y AUTENTICACIÓN ",
+  segment: "hola"
+},
+{
+  title: "CONDICIONES DE USO DEL CANAL DE WHATSAPP",
+  segment: "hola"
+},
+{
+  title: "PROPIEDAD INTELECTUAL",
+  segment: "hola"
+},
+{
+  title: "CAMBIOS EN LOS TÉRMINOS Y CONDICIONES",
+  segment: "hola"
+},
+{
+  title: "MEDIOS DE PAGOS Y CONDICIONES DE VENTA",
+  segment: "hola"
+},
+{
+  title: "LOGÍSTICA EN LA PRESTACIÓN DEL SERVICIO ",
+  segment: "hola"
+},
+{
+  title: "SISTEMA DE COBROS",
+  segment: "hola"
+},
+{
+  title: "OBLIGACIÓN DE RESERVA",
+  segment: "hola"
+},
+{
+  title: "TERMINACIÓN",
+  segment: "hola"
+},
+{
+  title: "SERVICIO AL USUARIO",
+  segment: "hola"
+},
+{
+  title: "JURISDICCIÓN",
+  segment: "hola"
+}
 ]

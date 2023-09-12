@@ -6,12 +6,12 @@ import mailImg from '../../../../assets/images/mail-vector.svg';
 import Link from "next/link";
 import Button from "@/components/Button/Button";
 import { redes } from '@/assets/constants/constants'
-import TermsAndConditions from "@/app/components/Terms&Conditions/Terms&Conditions";
+
 
 export default function MapSection() {
     return (
         <div className={style.sectionMap}>
-            <h2 className={style.title}>Nos encontramos en Peru</h2>
+            <h2 className={style.title}>Nos encontramos en Perú</h2>
             <section className={style.containerMap}>
 
                 <div className={style.containerImg}>

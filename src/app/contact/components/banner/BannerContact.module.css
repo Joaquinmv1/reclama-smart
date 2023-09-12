@@ -1,7 +1,9 @@
 .bannerSection {
     display: flex;
-    justify-content: space-around;
-    margin: 150px;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    width: 85%;
+    margin: 50px auto;
     padding: 40px;
     font-family: var(--font-openSans);
     color: var(--color-title);
@@ -9,11 +11,28 @@
 
 .title {
     font-size: 40px;
+    text-align: left;
 }
 
-.content {
+.titles {
     display: flex;
-    gap: 15px;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 25px;
+}
+
+.titles h3 {
+    font-size: 26px;
+}
+
+.containerSteps {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    margin-top: 20px;
+    width: 50%;
 
 }
 
@@ -36,8 +55,14 @@
     max-width: 300px;
 }
 
-.bannerSection h3 {
+/* .bannerSection h3 {
     font-size: 30px;
+} */
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
 }
 
 .content h3 {
@@ -53,30 +78,70 @@
 
 .containerBody {
     display: flex;
-    flex-direction: column;
-    gap: 25px;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    gap: 55px;
+    width: 100%;
 }
 
 .logoStep {
-    width: 50px;
+    width: 60px;
     height: 50px;
+
+
+}
+
+.logoStep h3 {
+    padding: 7px 20px;
     background-color: #fff;
     color: var(--color-primary);
     border: 2px solid var(--color-primary);
     border-radius: 100%;
     text-align: center;
+}
 
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.imagesContent {
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.faceCalendly {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    max-width: 120px;
+
+}
+
+.point {
+    position: absolute;
+    top: -50px;
+    left: 25px;
+    border: 5px solid var(--color-fondo);
+    background-color: green;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    z-index: 20;
 }
 
 /* Tablet Version */
 
 @media only screen and (max-width: 980px) {
     .bannerSection {
+        width: 90%;
         margin: 0;
         align-items: center;
     }
 
-    .bannerSection h3 {
+    .containerBody h3 {
         font-size: 18px;
     }
 
@@ -91,32 +156,63 @@
     .calendlyImg {
         max-width: 350px;
     }
+
+    .containerBody h3 {
+
+        font-size: 23px;
+    }
+
+    .logoStep h3 {
+        padding: 12px 20px;
+    }
+
+    .faceCalendly {
+        max-width: 100px;
+    }
+
+    .titles {
+        margin-bottom: 20px;
+    }
+
+    .point {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 /* Mobile Version */
 
 @media only screen and (max-width: 768px) {
     .bannerSection {
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin: 15px;
         padding: 0;
         text-align: center;
     }
 
     .containerBody {
+        flex-direction: column-reverse;
         align-items: center;
-    }
-
-    .containerBody h3 {
-        font-size: 18px;
-
     }
 
     .content {
         flex-direction: column;
         align-items: center;
+        width: 70%;
     }
 
 
+    .containerSteps {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titles {
+        margin: 45px 0;
+    }
+
+    .titles h3 {
+        font-size: 16px;
+    }
 
 }

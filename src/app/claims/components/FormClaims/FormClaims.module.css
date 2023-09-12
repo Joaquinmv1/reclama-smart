@@ -1,0 +1,301 @@
+.formContainer {
+  padding: 60px 100px;
+  background-color: #fff;
+}
+
+/* INPUT DATA */
+
+.inputContain {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  gap: 75px;
+  margin-bottom: 25px;
+}
+
+.inputInfo {
+  width: 30%;
+  position: relative;
+}
+
+.inputInfo label {
+  position: absolute;
+  background-color: #fff;
+  left: 10px;
+  top: -9px;
+  padding: 2px;
+  color: #02311a;
+  font-family: var(--font-openSans);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.inputInfo input {
+  width: 100%;
+  color: #02311a;
+  font-family: var(--font-openSans);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  height: 55px;
+  border: 2px solid #02311a;
+  padding: 10px;
+}
+
+.inputInfo input:focus {
+  outline: none;
+  border-color: #02311a;
+  box-shadow: 0 0 9px rgba(5, 29, 17, 0.5);
+}
+
+/* TEXT AREA DATA */
+
+.textAreaContain {
+  padding: 15px;
+}
+
+.textAreaInfo {
+  width: 100%;
+  position: relative;
+}
+
+.textAreaContain .textAreaInfo:first-child {
+  margin-bottom: 80px;
+}
+
+.textAreaInfo label {
+  position: absolute;
+  left: 10px;
+  top: -12px;
+  background-color: #fff;
+  padding: 2px;
+  color: #02311a;
+  font-family: var(--font-openSans);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.textAreaInfo input[type="text"] {
+  width: 100%;
+  height: 120px;
+  color: #02311a;
+  font-family: var(--font-openSans);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  border: 2px solid #02311a;
+  padding: 20px 10px;
+  resize: none;
+}
+
+.textAreaInfo input[type="text"]:focus {
+  outline: none;
+  border-color: #02311a;
+  box-shadow: 0 0 9px rgba(5, 29, 17, 0.5);
+}
+
+/* CHECK */
+
+.checkedContain {
+  display: flex;
+  padding: 15px;
+}
+
+.checkbox {
+  border: 3px solid #ff5220;
+  width: 20px;
+  height: 20px;
+}
+
+.checkedContain p {
+  color: #02311a;
+  font-family: var(--font-openSans);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 10px;
+  margin-top: -2px;
+}
+
+/* BUTTON */
+
+.buttonContain {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.buttonForm {
+  /* padding: 15px 50px; */
+  background-color: #ff5220;
+  padding: 15px 50px;
+  color: #fff;
+  font-family: var(--font-openSans);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 8px;
+}
+
+/* MODAL */
+
+.backgroundStatic {
+  width: 100%;
+  height: 1600px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: 8000;
+  animation: slideInBackground 0.5s ease;
+}
+
+.modalContain {
+  position: fixed;
+  top: 150px;
+  left: 550px;
+  width: 600px;
+  height: 400px;
+  background-color: #f0f2f5;
+  border-radius: 40px;
+  animation: slideIn 0.5s ease;
+  z-index: 9000;
+}
+
+.modalContain a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
+  font-family: var(--font-openSans);
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.modalContain a:hover {
+  text-decoration: underline;
+}
+
+.modal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.modal h2 {
+  color: #02311a;
+  font-family: var(--font-openSans);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInBackground {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* MEDIA QUERIES TABLET */
+@media only screen and (max-width: 1216px) {
+  .backgroundStatic {
+    height: 2200px;
+  }
+
+  .inputInfo {
+    width: 30%;
+  }
+
+  .inputInfo input {
+    width: 100%;
+  }
+
+  .inputInfo label {
+    font-size: 12px;
+  }
+
+  .modalContain {
+    width: 400px;
+    height: 350px;
+    left: 30%;
+  }
+
+  .modalContain a {
+    font-size: 18px;
+  }
+
+  .modal {
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+  }
+
+  .modal h2 {
+    font-size: 18px;
+  }
+}
+
+/* MEDIA QUERIES MOBILE */
+@media only screen and (max-width: 761px) {
+  .inputInfo {
+    width: 80%;
+  }
+
+  .inputInfo label {
+    font-size: 15px;
+  }
+
+  .textAreaInfo label {
+    font-size: 12px;
+  }
+
+  .modalContain {
+    width: 350px;
+    height: 250px;
+    top: 250px;
+    left: 20%;
+    right: 20%;
+  }
+
+  .modalContain a {
+    font-size: 12px;
+  }
+
+  .modal {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .modal h2 {
+    font-size: 10px;
+  }
+}
