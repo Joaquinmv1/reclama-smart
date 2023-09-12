@@ -7,6 +7,7 @@ import { FrequentQuestions } from '../components';
 import Link from 'next/link';
 import Script from 'next/script';
 import Segments from './components/Segments/Segments';
+import FAB from './components/FABresponsive/FAB';
 
 
 
@@ -42,10 +43,6 @@ export function ArticleTerms({ title, segment, text }: ArticleProps): JSX.Elemen
 // }
 
 export default function TermsAndConditions() {
-
-    const [open, setOpen] = useState(false)
-
-
     const articles: Array<Array<ArticleProps>> = [
         [
             {
@@ -195,6 +192,7 @@ export default function TermsAndConditions() {
 
             <aside className={style.segmentText}>
                 <Segments />
+                <FAB />
 
             </aside>
 
