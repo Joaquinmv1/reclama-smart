@@ -23,10 +23,13 @@ export default function SuccessRatesService() {
                     </div>
                     <section className={style.containerCard}>
                         {imgService.map(({ img, title, text }, index) => (
-                            <article className={style.itemService} key={index} >
+                            <article className={style.itemService} key={title}>
+                                <section className={style.containerIndex}><div className={style.index}>{index + 1}</div></section>
                                 <Image className={style.image} alt="img" src={img} />
-                                <span>{title}</span>
-                                <p>{text}</p>
+                                <div className={style.itemInfo}>
+                                    <span>{title}</span>
+                                    <p>{text}</p>
+                                </div>
                             </article>
                         ))}
                     </section>

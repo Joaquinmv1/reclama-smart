@@ -8,10 +8,7 @@ const FeacturedService = () => {
     <>
       <section className={style['container-feacturedService']}>
         <article className={style['container-aboutServices']}>
-          <h2 className={style.titleServices}>Conoce nuestros servicios</h2>
-          <p className={style.pServices}>
-            Estamos comprometidos a recuperar su dinero de la manera más rápida y eficiente posible. Trabajaremos con usted en cada paso del camino para garantizar que reciba el dinero que le corresponde.
-          </p>
+          <h2 className={style.titleServices}>Conoce nuestros <span style={{color:'#FF5220'}}>servicios</span></h2>
         </article>
         <ul className={style.cardContainer}>
           {cardsServices.map((card, i) => (

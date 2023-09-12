@@ -11,7 +11,7 @@ function MvvCard({ card }: Props) {
     <>
       <li>
         <div className={style.infoContainer}>
-          <Image src={card.image} alt={`mmv ${card.title}`} />
+          <Image className={style.image} src={card.image} alt={`mmv ${card.title}`} />
           <h3>{card.title}</h3>
         </div>
         <div className={style.containerp}>

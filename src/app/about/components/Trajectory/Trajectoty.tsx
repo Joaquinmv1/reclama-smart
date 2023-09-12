@@ -3,6 +3,7 @@ import { imgTrajectory } from "@/assets/constants/constants";
 import style from './trajectory.module.css';
 import TrajectoryResponsive from "./components/TrajectoryResponsive";
 
+
 interface TrajectoryItemProps {
     title: string
     description: string
@@ -41,24 +42,30 @@ export default function Trajectory() {
                     <div />
                 </article>
                 <article className={style.timeline}>
-                    <div className={style.timelineItem}>
-                        <span>Reclamaquí</span>
-                        <p>con un MVP para crear una empresa digital</p>
-                    </div>
-                    <div className={style.timelineItem}>
-                        <span>Canal 9</span>
-                        <p>Entrevista Canal 9 “El Cliente”</p>
-                    </div>
-                    <div className={style.timelineItem}>
-                        <span>ULima Emprendimiento Social</span>
-                        <p>Ganamos en el Contest “ULima Emprendimiento Social”</p>
-                    </div>
-                    <div className={style.timelineItem}>
-                        <span>Reclama Smart</span>
-                        <p>Lanzamos nueva plataforma</p>
-                    </div>
+                {imgTrajectory.map(({title, text }, index) => (
+                        <article className={style.timelineItem} key={index} >
+                            <span>{title}</span>
+                            <p>{text}</p>
+                        </article>
+                    ))}
                 </article>
             </section>
         </section>
     );
 }
+{/* <div className={style.timelineItem}>
+    <span>Reclamaquí</span>
+    <p>con un MVP para crear una empresa digital</p>
+</div>
+<div className={style.timelineItem}>
+    <span>Canal 9</span>
+    <p>Entrevista Canal 9 “El Cliente”</p>
+</div>
+<div className={style.timelineItem}>
+    <span>ULima Emprendimiento Social</span>
+    <p>Ganamos en el Contest “ULima Emprendimiento Social”</p>
+</div>
+<div className={style.timelineItem}>
+    <span>Reclama Smart</span>
+    <p>Lanzamos nueva plataforma</p>
+</div> */}

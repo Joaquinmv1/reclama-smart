@@ -1,22 +1,25 @@
 .mvv-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem;
+  gap: 2rem;
   font-family: var(--font-openSans);
   width: 100%;
   height: auto;
-  background-color: #fff;
+  background: linear-gradient(180deg, #F0F2F5 0%, rgba(240, 242, 245, 0.00) 100%);
 }
 
 .mvvTitle {
   font-family: var(--font-montserrat);
-  color: var(--color-title);
-  font-size: 46px;
-  font-size: 2.5rem; 
-  font-weight: 600;
+  color: #7C7979;
+  font-size: 48px;
   /* margin-bottom: 2.5rem; */
-  padding-inline: 200px;
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 150px;
   margin: 0 auto;
-  width: 65%;
+  width: 85%;
 }
 
 .mvvTitle span {
@@ -27,23 +30,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   gap: 120px;
 }
 
 .mvv-card li {
   width: 290px;
   height: 350px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-
   padding-block: 2rem;
   border-radius: 16px;
-  background: var(--Fondo, #F0F2F5);
-  box-shadow: 0px 4px 4px 0px #FF5220;
   margin-bottom: 3rem;
+  border-radius: 16px;
+  border: 3px solid #43A047;
+  background: #F0F2F5;
 }
 
 .mvv-card li h3 {
@@ -52,7 +55,7 @@
 }
 
 .containerp {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +63,123 @@
   text-align: center;
   padding-inline: 1.5rem;
   flex: 1;
-  border-top: 1px solid black;
+  color: #7C7979;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 1300px) {
+  .mvv-card {
+    padding: 1rem;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .containerp {
+    font-size: 1rem;
+  }
+
+  .mvvTitle {
+    font-size: 38px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 953px) {
+  .mvv-card li {
+    width: 200px;
+    height: 234px;
+    padding: 0.7rem;
+  }
+
+  .image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .containerp {
+    font-size: 12px;
+    width: 100%;
+    padding-inline: .7rem;
+  }
+
+  .mvv-card li h3 {
+    font-size: 16px;
+  }
+
+  .mvvTitle {
+    font-size: 24px;
+    width: 100%;
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 664px) {
+  .mvv-card li {
+    width: 180px;
+    height: 200px;
+    padding: 5px;
+    justify-content: center;
+  }
+
+  .containerp {
+    padding-inline: .4rem;
+    font-size: 14px;
+  }
+
+  .mvv-card {
+    gap: 20px;
+  }
+
+  .image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .infoContainer {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 571px) {
+  .mvv-Container {
+    padding: 1.5rem;
+  }
+
+  .mvv-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .containerp {
+    font-size: 20px;
+  }
+
+  .mvvTitle {
+    font-size: 22px;
+    width: 100%;
+  }
+
+  .mvv-card li {
+    width: 290px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.8rem;
+  }
 }
 
 .infoContainer {
