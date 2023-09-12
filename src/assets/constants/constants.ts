@@ -118,10 +118,10 @@ export const dataClients = [
 ];
 
 export const imgTrajectory = [
-  { img: UIlima, title: "Reclamaquí", text: "con un MVP para crear una empresa digital" },
-  { img: canal9, title: "Canal 9", text: "Entrevista Canal 9 “El Cliente" },
-  { img: reclamaSmart, title: "ULima Emprendimiento Social", text: "Ganamos en el Contest “ULima Emprendimiento Social”" },
-  { img: reclamaAqui, title: "Reclama Smart", text: "Lanzamos nueva plataforma" }
+  { img: UIlima, title: "Reclamaquí", text: "1° Lanzamiento" },
+  { img: canal9, title: "Entrevista", text: "Conversamos con Marco Antonio Merino Montan en el programa El CLIENTE" },
+  { img: reclamaSmart, title: "ULima Innova: Concurso de  Emprendimiento Social", text: "Ganamos en el Contest “ULima Emprendimiento Social" },
+  { img: reclamaAqui, title: "Reclama Smart", text: "2° Lanzamiento" }
 ]
 export const imgService = [
   {img: errorService, title: "Tu producto falló", text: "Imagina invertir 1000 soles en un televisor que se avería rápidamente debido a defectos de fábrica."},
