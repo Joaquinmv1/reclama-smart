@@ -218,7 +218,7 @@ export const redes = [
   },
   {
     img: img1,
-    link: ""
+    link: "https://www.facebook.com/reclamaqui.pe?mibextid=ZbWKwL"
 
   },
   {

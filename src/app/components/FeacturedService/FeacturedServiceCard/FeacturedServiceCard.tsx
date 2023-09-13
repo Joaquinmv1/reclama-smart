@@ -1,5 +1,6 @@
-import { Card } from '@/app/models';
-import Image from 'next/image';
+import { Card } from "@/app/models";
+import Image from "next/image";
+import Link from "next/link";
 
 interface Props {
   card: Card;
@@ -8,12 +9,14 @@ interface Props {
 function FeacturedServiceCard({ card }: Props) {
   return (
     <>
-      <li >
-        <Image src={card.image} alt={`${card.title} services`} />
-        <p>{card.title}</p>
-      </li>
+      <Link href="/ourServices">
+        <li>
+          <Image src={card.image} alt={`${card.title} services`} />
+          <p>{card.title}</p>
+        </li>
+      </Link>
     </>
-  )
-};
+  );
+}
 
 export default FeacturedServiceCard;
