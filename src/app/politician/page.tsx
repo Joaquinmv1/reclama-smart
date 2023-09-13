@@ -26,7 +26,7 @@ export default function Privacity() {
         },
         {
             title: "EJERCICIO DE LOS DERECHOS ARCO",
-            text: "Puede ejercer los derechos de acceso, rectificación, cancelación y oposición, a través del correo electrónico info@reclamaqui.pe. \n De considerar que no ha sido atendido en el ejercicio de tus derechos puede presentar una reclamación ante la Autoridad Nacional de Protección de Datos Personales, dirigiéndose a la Mesa de Partes del Ministerio de Justicia y Derechos Humanos: Calle Scipión Llona 350, Miraflores, Lima, Perú llenando el formulario publicado en el siguiente enlace: \n \n https://www.minjus.gob.pe/wpcontent/uploads/2018/12/FORMULARIO-DE-PROCEDIMIENTO-TRILATERAL-DE-TUTELA.pdf."
+            text: "Puede ejercer los derechos de acceso, rectificación, cancelación y oposición, a través del correo electrónico info@reclamaqui.pe. \n De considerar que no ha sido atendido en el ejercicio de tus derechos puede presentar una reclamación ante la Autoridad Nacional de Protección de Datos Personales, dirigiéndose a la Mesa de Partes del Ministerio de Justicia y Derechos Humanos: Calle Scipión Llona 350, Miraflores, Lima, Perú llenando el formulario publicado en el siguiente enlace: "
         }
     ]
     return (
