@@ -208,7 +208,7 @@ export const mvvData = [
 export const redes = [
   {
     img: img4,
-    link: "https://api.whatsapp.com/send?phone=+51932468027&text=¡Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20Reclamaqu%C3%AD."
+    link: "https://api.whatsapp.com/send?phone=+51932468027&text=¡Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20ReclamaSmart."
   }
   ,
   {
@@ -218,7 +218,7 @@ export const redes = [
   },
   {
     img: img1,
-    link: ""
+    link: "https://www.facebook.com/reclamaqui.pe?mibextid=ZbWKwL"
 
   },
   {
@@ -230,55 +230,55 @@ export const redes = [
 ]
 
 export const terms = [{
-  title: "DEFINICIONES",
-  segment: "hola"
+  title: "PRIMER: DEFINICIONES",
+  // segment: "hola"
 },
 {
-  title: "GENERALIDADES, DATOS ALMACENADOS Y DECLARACIONES",
-  segment: "2.1. Generalidades \n 2.2. Datos almacenados \n 2.3. Declaraciones"
+  title: "SEGUNDA: GENERALIDADES, DATOS ALMACENADOS Y DECLARACIONES",
+  segment: ["2.1. Generalidades", "2.2. Datos almacenados", "S2.3. Declaraciones"]
 },
 {
-  title: "REGISTRO Y AUTENTICACIÓN ",
-  segment: "hola"
+  title: "TERCERA: REGISTRO Y AUTENTICACIÓN ",
+  segment: ["3.1.  Registro", "3.2.Autenticación"]
 },
 {
-  title: "CONDICIONES DE USO DEL CANAL DE WHATSAPP",
-  segment: "hola"
+  title: "CUARTA: CONDICIONES DE USO DEL CANAL DE WHATSAPP",
+  // segment: "hola"
 },
 {
-  title: "PROPIEDAD INTELECTUAL",
-  segment: "hola"
+  title: "QUINTA: PROPIEDAD INTELECTUAL",
+  // segment: "hola"
 },
 {
-  title: "CAMBIOS EN LOS TÉRMINOS Y CONDICIONES",
-  segment: "hola"
+  title: "SEXTA : CAMBIOS EN LOS TÉRMINOS Y CONDICIONES",
+  // segment: "hola"
 },
 {
-  title: "MEDIOS DE PAGOS Y CONDICIONES DE VENTA",
-  segment: "hola"
+  title: "SEPTIMA: MEDIOS DE PAGOS Y CONDICIONES DE VENTA",
+  // segment: "hola"
 },
 {
-  title: "LOGÍSTICA EN LA PRESTACIÓN DEL SERVICIO ",
-  segment: "hola"
+  title: "OCTAVA: LOGÍSTICA EN LA PRESTACIÓN DEL SERVICIO ",
+  // segment: "hola"
 },
 {
-  title: "SISTEMA DE COBROS",
-  segment: "hola"
+  title: "NOVENA: SISTEMA DE COBROS",
+  segment: ["9.1.  Pago en caso de éxito", "9.2.  Costos y Costas"]
 },
 {
-  title: "OBLIGACIÓN DE RESERVA",
-  segment: "hola"
+  title: "DECIMA: OBLIGACIÓN DE RESERVA",
+  // segment: "hola"
 },
 {
-  title: "TERMINACIÓN",
-  segment: "hola"
+  title: "DECIMA PRIMERA: TERMINACIÓN",
+  // segment: "hola"
 },
 {
-  title: "SERVICIO AL USUARIO",
-  segment: "hola"
+  title: "DECIMA SEGUNDA: SERVICIO AL USUARIO",
+  // segment: "hola"
 },
 {
-  title: "JURISDICCIÓN",
-  segment: "hola"
+  title: "DECIMA TERCERA: JURISDICCIÓN",
+  // segment: "hola"
 }
 ]
