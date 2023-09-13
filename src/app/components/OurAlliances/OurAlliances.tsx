@@ -38,7 +38,7 @@ function OurAlliances() {
   }, []);
 
   return (
-    <>
+    <section className={style.container}>
       <div className={style.partersTitle}>
         <h2 className={style.h2}>Somos <span style={{ color: "#FF5220" }}>smart</span></h2>
       </div>
@@ -108,7 +108,7 @@ function OurAlliances() {
           </div>
         </article>
       </section>
-    </>
+    </section>
   )
 }
 
