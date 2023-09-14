@@ -26,7 +26,7 @@ export default function Privacity() {
         },
         {
             title: "EJERCICIO DE LOS DERECHOS ARCO",
-            text: "Puede ejercer los derechos de acceso, rectificación, cancelación y oposición, a través del nuestro Libro de Reclamaciones por el Canal de WhatsApp +51 982 979 268 y por nuestro correo electrónico info@reclamasmart.pe. De considerar que no ha sido atendido en el ejercicio de sus derechos puede presentar una reclamación ante la Autoridad Nacional de Protección de Datos Personales, dirigiéndose a la Mesa de Partes del Ministerio de Justicia y Derechos Humanos: Calle Scipión Llona 350, Miraflores, Lima, Perú llenando el formulario publicado en el siguiente enlace: "
+            text: "Puede ejercer los derechos de acceso, rectificación, cancelación y oposición, a través del nuestro Libro de Reclamaciones o por el Canal de WhatsApp +51 982 979 268 y por nuestro correo electrónico info@reclamasmart.pe. De considerar que no ha sido atendido en el ejercicio de sus derechos puede presentar una reclamación ante la Autoridad Nacional de Protección de Datos Personales, dirigiéndose a la Mesa de Partes del Ministerio de Justicia y Derechos Humanos: Calle Scipión Llona 350, Miraflores, Lima, Perú llenando el formulario publicado en el siguiente enlace: "
         }
     ]
     return (
@@ -51,7 +51,7 @@ export default function Privacity() {
                     })
                 }
 
-                <Link className={styles.link} target="_blank" href={"https://sgd.minjus.gob.pe/sgd-virtual/public/ciudadano/ciudadanoMain.xhtml"}>https://sgd.minjus.gob.pe/sgd-virtual/public/ciudadano/ciudadanoMain.xhtml.</Link>
+                <Link className={styles.link} target="_blank" href={"https://sgd.minjus.gob.pe/sgd-virtual/public/ciudadano/ciudadanoMain.xhtml"}>https://sgd.minjus.gob.pe/sgd-virtual/public/ciudadano/ciudadanoMain.xhtml</Link>
 
             </aside>
 

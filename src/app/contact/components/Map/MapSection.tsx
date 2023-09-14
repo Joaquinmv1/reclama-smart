@@ -44,7 +44,7 @@ export default function MapSection() {
                                 }
                             </div>
                         </div>
-                        <Link href={redes[3].link}>
+                        <Link target="_blank" href={redes[0].link}>
 
                             <Button title='Consulta gratis' className={style.button} />
                         </Link>
