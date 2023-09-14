@@ -21,7 +21,9 @@ export default function Navbar() {
   return (
     <header className={style.containerNavbar}>
       <NavbarResponsive />
-      <Image className={style.logo} width={250} height={30} alt="logo" src={logo} />
+      <Link href={'/'}>
+        <Image className={style.logo} width={250} height={30} alt="logo" src={logo} />
+      </Link>
       <nav className={style.navB}>
         <ul className={style.links}>
           {routes.map(({ route, name }) => {
@@ -33,12 +35,12 @@ export default function Navbar() {
             )
           })}
         </ul>
-        <button className={style.button}>
-          <Image className={style.whatsapp} alt="whatsapp" src={what} width={36} height={36} />
-          <Link href="https://api.whatsapp.com/send?phone=+51932468027&text=¡Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20ReclamaSmart.">
+        <Link className={style.delete} target="_blank" href="https://api.whatsapp.com/send?phone=+51932468027&text=¡Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20ReclamaSmart">
+          <button className={style.button}>
+            <Image className={style.whatsapp} alt="whatsapp" src={what} width={36} height={36} />
             Chatear
-          </Link>
-        </button>
+          </button>
+        </Link>
       </nav>
     </header>
   )

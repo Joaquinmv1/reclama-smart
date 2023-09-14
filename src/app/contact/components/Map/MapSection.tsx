@@ -44,7 +44,7 @@ export default function MapSection() {
                                 }
                             </div>
                         </div>
-                        <Link href={redes[3].link}>
+                        <Link target="_blank" href="https://api.whatsapp.com/send?phone=+51932468027&text=¡Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20ReclamaSmart">
 
                             <Button title='Consulta gratis' className={style.button} />
                         </Link>

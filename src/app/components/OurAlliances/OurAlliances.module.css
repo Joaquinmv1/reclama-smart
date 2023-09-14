@@ -7,6 +7,7 @@
   padding-bottom: 4rem;
   gap: 3rem;
 }
+
 .containerSlide {
   display: flex;
   overflow: hidden;
@@ -27,7 +28,7 @@
 .logosSlide {
   display: flex;
   gap: 40px;
-  animation: 30s slide infinite linear;
+  animation: 50s slide infinite linear;
   margin: 1.5rem 1rem;
 }
 

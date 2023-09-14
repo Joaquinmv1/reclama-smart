@@ -5,11 +5,13 @@ import arrow from "../../../../assets/images/chevron-up.png";
 import Image from "next/image";
 
 export default function Segments() {
-    const [open, setOpen] = useState<number | null>(null)
+    const [open, setOpen] = useState<number>();
 
     const handleOpen = (index: number) => {
-        setOpen(index == open ? null : index)
+        const isOpen = index == open ? index : open;
+        setOpen(isOpen);
     }
+
     return (
         <section className={style.containerGeneral}>
             {
@@ -24,7 +26,7 @@ export default function Segments() {
                         </div>
                         {
                             open === index && (
-                                < div className={`${style.segment} ${open === index ? style.open : ""}`}>
+                                <div className={`${style.segment} ${open === index ? style.open : ""}`}>
                                     {term.segment?.map((segment, index) => (
                                         <p key={index}>{segment}</p>
                                     ))}

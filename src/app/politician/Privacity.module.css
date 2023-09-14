@@ -41,6 +41,6 @@
 }
 
 .link {
-    color: var(--color-primary);
+    color: var(--color-primary) !important;
     font-weight: 700;
 }

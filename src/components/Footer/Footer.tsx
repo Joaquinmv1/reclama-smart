@@ -48,7 +48,12 @@ export default function Footer() {
           <div className={styles.infoContactSection}>
 
             <Image src={logo} alt="logo" className={styles.logo} />
-            <Pharagraph text={"info@reclamaqui.pe"} />
+            <Link
+              href="mailto:mesadepartes.legal@reclamasmart.com.pe"
+              target="_blank"
+            >
+              <Pharagraph text={"mesadepartes.legal@reclamasmart.com.pe"} />
+            </Link>
             <Link href={redes[0].link} target='_blank' className={`${styles.text}  ${styles.hover}`}>
               <Pharagraph text={"+ 51 932 468 027"} />
             </Link>
@@ -56,7 +61,6 @@ export default function Footer() {
           </div>
 
           <div className={styles.containerRedes}>
-
             <div className={styles.redes}>
               {
                 redes.map((red, i) => <Link className={styles.hover} target='_blank' key={`${red} ${i}`} href={red.link}> <Image src={red.img} alt="logo-red" /></Link>)
