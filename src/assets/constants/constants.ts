@@ -178,7 +178,7 @@ export const info = [
   {
     title: "¿Cómo puedo ponerme en contacto con su equipo para comenzar?",
     description:
-      "Puede comunicarse con nosotros a través de nuestro Whatsapp corporativo",
+      "Puede comunicarse con nosotros a través de nuestro Whatsapp corporativo.",
   },
   {
     title: "¿De qué países atienden reclamos?",

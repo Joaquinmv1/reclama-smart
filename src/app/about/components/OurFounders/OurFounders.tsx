@@ -90,7 +90,7 @@ export default function OurFounders() {
                 Legal Tech en América Latina.
               </p>
 
-              <Link href="#">
+              <Link href="https://www.linkedin.com/in/eluisa-m-helbig-marchena-913691173/">
                 <Image
                   width={40}
                   height={40}
@@ -114,7 +114,7 @@ export default function OurFounders() {
                 en firmas de abogados y empresas transnacionales.
               </p>
 
-              <Link href="#">
+              <Link href="https://www.linkedin.com/in/mariana-silva-santisteban-5b2183169/">
                 <Image
                   width={40}
                   height={40}
