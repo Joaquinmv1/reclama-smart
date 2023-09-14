@@ -5,6 +5,7 @@ import {
   InnovaUlima,
   ParlamentoAndino,
   ProgramaUsil,
+  Utec,
   Warmiventures
 } from "./Alliance";
 import { Alliance } from "./model/alliance.model";
@@ -14,7 +15,8 @@ const componentMappings = {
   'ParlamentoAndino': <ParlamentoAndino />,
   'ProgramaUsil': <ProgramaUsil />,
   'Warmiventures': <Warmiventures />,
-  'CamaraDeComercio': <CamaraDeComercio />
+  'CamaraDeComercio': <CamaraDeComercio />,
+  'utec': <Utec />
 };
 
 function Alliances() {

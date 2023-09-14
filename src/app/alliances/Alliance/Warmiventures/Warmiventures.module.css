@@ -16,6 +16,8 @@
 
 .img {
   width: 100%;
+  /* height: ; */
+  object-fit: cover;
 }
 
 .warmiContent {
@@ -23,8 +25,22 @@
   flex-direction: column;
   gap: 30px;
 
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 400;
   color: #374F42;
   margin-block: 2.5rem;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+  margin-block: 1rem;
+  gap: 10px;
+}
+
+.btn{
+  width: 5%;
+  padding: 5px 10px;
+  border: none;
+  font-weight: bold;
 }

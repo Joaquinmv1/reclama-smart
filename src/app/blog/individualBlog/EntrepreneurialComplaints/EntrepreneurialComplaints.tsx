@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Date, TitleBlog } from '../../components';
 import style from './EntrepreneurialComplaints.module.css';
 import entrepreneurialImg from '../../../../assets/images/blog/vistaFrontal.jpg';
+import Link from 'next/link';
 
 function EntrepreneurialComplaints() {
   return (
@@ -9,8 +10,7 @@ function EntrepreneurialComplaints() {
       <section className={style.containerEntrepreneurial}>
         <div className={style.blogData}>
           <TitleBlog>
-            <h3>Soy empresario, ¿puedo denunciar ante INDECOPI? </h3>
-            <h4>Por Eluisa Maria Helbig-Marchena</h4>
+            <h3>Soy empresario, ¿puedo denunciar ante INDECOPI?</h3>
           </TitleBlog>
           <Date date='10/08/2023' />
           <Image
@@ -20,7 +20,7 @@ function EntrepreneurialComplaints() {
           />
           <article className={style.entrepreneurialTexts}>
             <p>Hemos visto muchos casos, en los que las empresas también se ven afectadas en sus derechos como consumidores, como al adquirir productos o servicios que no cumplen con sus expectativas (productos financieros, servicios de catering para eventos, entre otros). En nuestro rol como consultores, hemos recibido numerosas preguntas y consultas sobre cómo podemos brindar asistencia en estos casos.</p>
-            <p>Recientemente, hemos llevado a cabo un Webinar en colaboración con la AHK (Cámara de Comercio e Industria Peruano-Alemana), que exploró a fondo este tema (puedes ver la grabación aquí). En nuestro próximo artículo, nos sumergiremos en los conceptos esenciales relacionados con la protección al consumidor y cómo las empresas pueden aplicar estas normativas de manera efectiva y detallada.</p>
+            <p>Recientemente, hemos llevado a cabo un <Link className={style.link} href={'camaradecomercio'}>Webinar</Link> en colaboración con la AHK (Cámara de Comercio e Industria Peruano-Alemana), que exploró a fondo este tema (puedes ver la grabación aquí). En nuestro próximo artículo, nos sumergiremos en los conceptos esenciales relacionados con la protección al consumidor y cómo las empresas pueden aplicar estas normativas de manera efectiva y detallada.</p>
             <p>Para que una empresa pueda acogerse a la normativa de protección al consumidor y recurrir a INDECOPI u otras autoridades competentes, es necesario verificar si cumple con los requisitos para ser considerada consumidora. </p>
           </article>
           <article className={style.listRights}>

@@ -19,7 +19,8 @@
   color: #374F42;
   font-family: var(--font-openSans);
   font-weight: 400;
-  font-size: 24px;
+  font-size: 21px;
+
 }
 
 .consumer img {
@@ -28,7 +29,6 @@
 
 .consumer p {
   margin-block: 1.5rem;
-  font-size: 24px;
 }
 
 .stepsBlog {
@@ -49,14 +49,14 @@
 }
 
 .step p {
-  font-size: 19px;
+  font-size: 21px;
   font-weight: 400;
 }
 
 .aclaracion {
   margin-block: 1.5rem;
   color: #374F42;
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 600;
   font-family: var(--font-openSans);
 }

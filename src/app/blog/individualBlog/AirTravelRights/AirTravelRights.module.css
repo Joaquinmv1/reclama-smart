@@ -23,7 +23,7 @@
   gap: 30px;
   margin-block: 2rem;
   color: #374F42;
-  font-size: 24px;
+  font-size: 21px;
   font-family: var(--font-openSans);
 }
 
@@ -42,15 +42,13 @@
 
 .stepAirTravel p {
   font-size: 1.2rem;
-  font-size: 24px;
-
+  font-size: 21px;
 }
 
 .textStepAirTravel {
   color: #374F42;
   font-size: 1.2rem;
-  font-size: 24px;
-
+  font-size: 21px;
 }
 
 .textStepAirTravel span {
@@ -70,9 +68,8 @@
   margin-top: 6rem;
 
   color: #374F42;
-  font-size: 24px;
+  font-size: 21px;
   border-top: 1px solid #345A47;
   padding-top: .7rem;
   font-family: var(--font-openSans);
-
 }
