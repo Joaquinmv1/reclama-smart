@@ -6,7 +6,7 @@
   box-sizing: border-box;
   flex-wrap: nowrap;
   min-width: 100%;
-  padding: 40px 150px;
+  padding: 40px 150px 0px 150px;
   background: var(--color-fondo);
 }
 
@@ -52,11 +52,12 @@
   flex-direction: column;
   gap: 2rem;
   box-sizing: border-box;
+  padding-bottom: 45px;
 }
 
 .image{
   width: 700px;
-  height: 600px;
+  height: 700px;
 }
 .logo{
   width: 440px;
@@ -96,6 +97,9 @@
   }
   .title {
     font-size: 2rem;
+  }
+  .frontContainer{
+    padding: 40px 80px 0px 80px;
   }
 }
 @media only screen and (max-width: 800px){
