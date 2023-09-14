@@ -235,7 +235,7 @@ export const terms = [{
 },
 {
   title: "SEGUNDA: GENERALIDADES, DATOS ALMACENADOS Y DECLARACIONES",
-  segment: ["2.1. Generalidades", "2.2. Datos almacenados", "S2.3. Declaraciones"]
+  segment: ["2.1. Generalidades", "2.2. Accesibilidad", "2.3. Servicios", "2.3.1. Evaluación del caso", "2.3.2. Reclamamos por ti", "2.3.2.1. Coordinación con el Proveedor", "2.3.2.2. Actuaciones en el SAC", "2.3.2.3. Actuaciones en la Denuncia Administrativa", "2.4. Declaraciones del Usuario", "2.5. Datos Almacenados"]
 },
 {
   title: "TERCERA: REGISTRO Y AUTENTICACIÓN ",
@@ -243,23 +243,23 @@ export const terms = [{
 },
 {
   title: "CUARTA: CONDICIONES DE USO DEL CANAL DE WHATSAPP",
-  // segment: "hola"
+
 },
 {
   title: "QUINTA: PROPIEDAD INTELECTUAL",
-  // segment: "hola"
+
 },
 {
   title: "SEXTA : CAMBIOS EN LOS TÉRMINOS Y CONDICIONES",
-  // segment: "hola"
+
 },
 {
   title: "SEPTIMA: MEDIOS DE PAGOS Y CONDICIONES DE VENTA",
-  // segment: "hola"
+
 },
 {
   title: "OCTAVA: LOGÍSTICA EN LA PRESTACIÓN DEL SERVICIO ",
-  // segment: "hola"
+
 },
 {
   title: "NOVENA: SISTEMA DE COBROS",
@@ -267,18 +267,18 @@ export const terms = [{
 },
 {
   title: "DECIMA: OBLIGACIÓN DE RESERVA",
-  // segment: "hola"
+
 },
 {
   title: "DECIMA PRIMERA: TERMINACIÓN",
-  // segment: "hola"
+
 },
 {
   title: "DECIMA SEGUNDA: SERVICIO AL USUARIO",
-  // segment: "hola"
+
 },
 {
   title: "DECIMA TERCERA: JURISDICCIÓN",
-  // segment: "hola"
+
 }
 ]
