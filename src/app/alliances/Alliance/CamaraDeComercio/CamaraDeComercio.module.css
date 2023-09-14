@@ -16,6 +16,7 @@
 
 .img {
   width: 100%;
+  object-fit: contain;
 }
 
 .camaraContent {
@@ -23,7 +24,7 @@
   flex-direction: column;
   gap: 30px;
 
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 400;
   color: #374F42;
   margin-block: 2.5rem;

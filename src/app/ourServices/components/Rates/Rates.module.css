@@ -3,10 +3,10 @@
     flex-direction: column;
     position: relative;
     width: 80%;
-    background-color: #F0F2F5;
-    padding: 80px 20px 100px 135px;
-
-
+    border-radius: 16px;
+    background: linear-gradient(180deg, #E7F7E6 0%, rgba(231, 247, 230, 0.00) 100%);
+    padding: 80px 20px 100px 100px;
+    border-radius: 15px;
 }
 
 .titleOne {
@@ -14,6 +14,7 @@
     font-family: var(--font-montserrat);
     color: var(--color-title);
     margin: 20px 0;
+    text-align: center;
 }
 
 .titleTwo {
@@ -23,7 +24,7 @@
 
 .background {
     width: 100%;
-    background-color: var(--color-fondo);
+    position: relative;
 }
 
 .containerRates p {
@@ -46,7 +47,7 @@
 }
 
 .contentInfo {
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,6 +91,9 @@
 }
 
 .num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #43A047;
     font-size: 20px;
     background-color: white;
@@ -103,13 +107,44 @@
 }
 
 .imgHands {
-    position: absolute;
-    right: -140px;
-    top: 120px;
-    border-radius: 30px;
+    object-fit: cover;
+
 }
 
-@media only screen and (max-width: 830px) {
+.containerImg {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0px;
+    top: 120px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.containerImgTable {
+    display: none;
+}
+
+.imgHandsTable {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 1330px) {
+    .containerImg {
+        width: 40%;
+        height: 350px;
+        top: 200px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
 
     .containerRates {
         width: 100%;
@@ -132,10 +167,28 @@
 
     }
 
-    .imgHands {
-        position: initial;
-        margin: 0 auto;
-        max-width: 100%;
+    .containerImg {
+        display: none;
+    }
+
+    .containerImgTable {
+        border-radius: 15px;
+        max-height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .imgHandsTable {
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .imgHandsTable {
+        object-fit: cover;
     }
 
     .containExample {
@@ -146,8 +199,11 @@
     .analize {
         margin-bottom: 40px;
     }
-
-
 }
 
-@media only screen and (max-width: 430px) {}
+@media only screen and (max-width: 600px){
+    .titleOne{
+        font-size: 30px;
+    }
+}
+

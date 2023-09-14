@@ -17,7 +17,7 @@ function DateAlliance({ date, about }: Props) {
   return (
     <>
       <article className={style.containerDate}>
-        <span><DateIcon /> {date}</span>
+        <span>{date !== '' && <DateIcon />}  {date}</span>
         <span>{about}</span>
       </article>
     </>

@@ -11,7 +11,7 @@ import { redes } from '@/assets/constants/constants'
 export default function MapSection() {
     return (
         <div className={style.sectionMap}>
-            <h2 className={style.title}>Nos encontramos en Perú</h2>
+            <h2 className={style.title}>Nos encontramos en el <span style={{color:"#FF5220"}}>Perú</span></h2>
             <section className={style.containerMap}>
 
                 <div className={style.containerImg}>
@@ -23,7 +23,7 @@ export default function MapSection() {
                     <div className={style.content}>
                         <Image className={style.mailImg} src={wpImg} alt='Whatsapp image' />
                         <h2>EMAIL</h2>
-                        <p>info@reclamaqui.pe</p>
+                        <p>info@reclamasmart.pe</p>
                     </div>
 
                     <div className={style.content}>

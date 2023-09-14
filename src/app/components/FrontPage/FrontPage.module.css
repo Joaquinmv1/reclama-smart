@@ -1,13 +1,14 @@
 .frontContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   box-sizing: border-box;
   flex-wrap: nowrap;
   min-width: 100%;
-  padding: 40px 150px 0px 150px;
-  background: var(--color-fondo);
+  height: 600px;
+  padding: 60px 150px 0px 150px;
+  background: linear-gradient(90deg, #E7F7E6 49.41%, #F0F2F5 59.11%);
 }
 
 .title {
@@ -15,7 +16,7 @@
   text-align: center;
   margin-bottom: 1.5rem;
   font-weight: 700;
-  font-size: 34px;
+  font-size: 25px;
   width: 100%;
   font-weight: 700;
   font-family: var(--font-montserrat);
@@ -54,28 +55,47 @@
   box-sizing: border-box;
   padding-bottom: 45px;
 }
-
+.bannerImage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/*   position: absolute;
+  right: 17%; */
+}
 .image{
   width: 700px;
-  height: 700px;
+  height: 500px;
 }
 .logo{
-  width: 440px;
+  width: 400px;
   height: 100px;
 }
-
+/* @media only screen and (max-width: 1445px){
+  .bannerImage{
+    right: 15%;
+    bottom: 0px;
+  }
+  .image{
+  width: 600px;
+  height: 450px;
+}
+.frontContainer{
+  height: 450px;
+  align-items: end;
+}
+.logo{
+  width: 350px;
+  height: 100px;
+}
+} */
 
 @media only screen and (max-width: 1290px) {
   .title {
-    font-size: 3rem;
-  }
-  .image{
-    max-width: 500px;
-    max-height: 500px;
+    font-size: 2rem;
   }
  
   .logo{
-  width: 400px;
+  width: 350px;
   height: 100px;
 }
 }
@@ -83,12 +103,8 @@
   .frontContainer{
     gap: 0.5rem;
   }
-  .image{
-    max-width: 400px;
-    max-height: 400px;
-  }
   .bannerDescrip {
-    gap: 1.5rem;
+    gap: 1rem;
     padding-left: 0.3rem;
   }
   .logo{
@@ -96,36 +112,56 @@
     height: 100px;
   }
   .title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .frontContainer{
-    padding: 40px 80px 0px 80px;
+    align-items: end;
+    padding: 0px 50px;
+    height: 500px;
+  }
+  .image{
+    width: 550px;
+    height: 400px;
   }
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 900px){
   .button{
     padding: 1rem 2rem;
   }
   .image{
-    max-width: 330px;
-    max-height: 330px;
+    width: 400px;
+    height: 300px;
   }
   .logo{
-    width: 280px;
+    width: 230px;
     height: 80px;
   }
-}
-@media only screen and (max-width: 700px){
-  .bannerDescrip{
-    gap: 0.6rem;
+  .title {
+    font-size: 1.5rem;
   }
-  .image{
+  .frontContainer{
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 749px){
+  .bannerDescrip{
+    gap: 0.4rem;
+  }
+  .title{
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 643px){
+   .image{
     display: none;
   }
   .bannerDescrip{
     width: 100%;
     justify-content: center;
     align-items: center;
+  }
+  .frontContainer{
+    background: #E7F7E6;
   }
 }
 @media only screen and (max-width: 435px){

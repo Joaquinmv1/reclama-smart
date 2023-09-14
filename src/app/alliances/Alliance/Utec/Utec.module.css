@@ -1,0 +1,26 @@
+.containerUtec {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 0px;
+  width:100%;
+  font-family: var(--font-openSans);
+}
+
+.allianceData {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  width: 80%;
+}
+
+.img {
+  width: 100%;
+  /* height: ; */
+  object-fit: cover;
+}
+
+.text {
+  font-size: 21px;
+  color: #374F42;
+}
