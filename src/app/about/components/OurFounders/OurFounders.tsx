@@ -32,7 +32,7 @@ export default function OurFounders() {
             </div>
 
             <div className={style.containLogo}>
-              <Link href="#">
+              <Link href="https://www.linkedin.com/in/mariana-silva-santisteban-5b2183169/" target="_blank">
                 <Image
                   width={40}
                   height={40}
@@ -64,7 +64,7 @@ export default function OurFounders() {
             </div>
 
             <div className={style.containLogo}>
-              <Link href="#">
+              <Link href="https://www.linkedin.com/in/eluisa-m-helbig-marchena-913691173/" target="_blank">
                 <Image
                   width={40}
                   height={40}

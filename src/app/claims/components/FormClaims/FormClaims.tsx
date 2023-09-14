@@ -1,31 +1,79 @@
 "use client";
-import { FormEvent, useState } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
 import style from "./FormClaims.module.css";
 import emailjs from "@emailjs/browser";
+import Image from "next/image";
+import check from "../../../../assets/images/Check.png";
+import cancel from "../../../../assets/images/Cancel.png";
+
+const emailID = process.env.EMAIL_ID as string;
+const templateID = process.env.TEMPLATE_ID as string;
+const keyID = process.env.KEY_ID as string;
 
 export default function FormClaims() {
   const [send, setsend] = useState("no enviado");
   const [message, setmessage] = useState("");
 
+  const [dataForm, setdataForm] = useState({
+    name: "",
+    dni: "",
+    adress: "",
+    email: "",
+    phone: "",
+    request: "",
+    detail: "",
+  });
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setdataForm({
+      ...dataForm,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const emailServiceId = "service_z3px95g";
-    const templateId = "template_nqq9mf4";
-    const keyId = "rWreg_YhrnMARKfuN";
-
     try {
       const form = document.getElementById("email-form") as HTMLFormElement;
-      await emailjs.sendForm(emailServiceId, templateId, form, keyId);
+      await emailjs.sendForm(emailID, templateID, form, keyID);
+
+      setdataForm({
+        name: "",
+        dni: "",
+        adress: "",
+        email: "",
+        phone: "",
+        request: "",
+        detail: "",
+      });
 
       setsend("enviado");
-      setmessage("Mensaje enviado");
-    } catch (error: any) {
+      setmessage("Se envio el mail correctamente");
+    } catch (error:any) {
       if (error.status === 400) {
+        setdataForm({
+          name: "",
+          dni: "",
+          adress: "",
+          email: "",
+          phone: "",
+          request: "",
+          detail: "",
+        });
         setsend("error");
         setmessage("400 Bad Request: Ocurrio un error al enviar el mensaje");
       }
       if (error.status === 500) {
+        setdataForm({
+          name: "",
+          dni: "",
+          adress: "",
+          email: "",
+          phone: "",
+          request: "",
+          detail: "",
+        });
         setsend("error");
         setmessage(
           "500 Internal Server Error: Ocurrio un error en el servidor"
@@ -49,6 +97,8 @@ export default function FormClaims() {
               maxLength={20}
               pattern="[A-Za-z\s]+"
               title="Solo se permiten letras y espacios"
+              onChange={handleChange}
+              value={dataForm.name}
               required
             />
           </div>
@@ -63,6 +113,8 @@ export default function FormClaims() {
               required
               minLength={8}
               maxLength={12}
+              onChange={handleChange}
+              value={dataForm.dni}
             />
           </div>
 
@@ -74,9 +126,10 @@ export default function FormClaims() {
               id="adress"
               placeholder="Lima 53"
               required
-              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
               minLength={5}
               maxLength={12}
+              onChange={handleChange}
+              value={dataForm.adress}
             />
           </div>
 
@@ -90,6 +143,8 @@ export default function FormClaims() {
               pattern=".*\..*"
               title="El mail debe tener @ y .com, .org, etc"
               required
+              onChange={handleChange}
+              value={dataForm.email}
             />
           </div>
 
@@ -101,6 +156,8 @@ export default function FormClaims() {
               id="phone"
               placeholder="+51956321489"
               required
+              onChange={handleChange}
+              value={dataForm.phone}
             />
           </div>
         </div>
@@ -115,6 +172,8 @@ export default function FormClaims() {
               required
               minLength={10}
               maxLength={120}
+              onChange={handleChange}
+              value={dataForm.request}
             />
           </div>
 
@@ -129,6 +188,8 @@ export default function FormClaims() {
               required
               minLength={20}
               maxLength={120}
+              onChange={handleChange}
+              value={dataForm.detail}
             />
           </div>
         </div>
@@ -153,11 +214,34 @@ export default function FormClaims() {
             <button className={style.buttonForm}>Enviar</button>
           </div>
         ) : (
-          <div className={style.sendContain}>
-            <h2 className={send === "enviado" ? style.green : style.red}>
-              {message}
-            </h2>
-          </div>
+          <>
+            <div className={style.backgroundStatic}></div>
+            <div className={style.modalContain}>
+              <div className={style.modal}>
+                {send === "enviado" ? (
+                  <Image
+                    width={100}
+                    height={100}
+                    src={check}
+                    alt="Check Symbol"
+                  />
+                ) : (
+                  <Image
+                    width={100}
+                    height={100}
+                    src={cancel}
+                    alt="Cancel Symbol"
+                  />
+                )}
+                <h2 className="">{message}</h2>
+              </div>
+              {send === "enviado" ? (
+                <a href="/claims">Regresar</a>
+              ) : (
+                <a href="/claims">Volver a intentar</a>
+              )}
+            </div>
+          </>
         )}
       </form>
     </div>

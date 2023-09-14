@@ -13,8 +13,11 @@ function BusinessInsightCard({ card, index }: Props) {
       <li key={card.title}>
         <Circle number={index} />
         <Image src={card.image} alt={`business card`} />
-        <h3>{card.title}</h3>
-        <p>{card.description}</p>
+        <article>
+          <h3>{card.title}</h3>
+          <p>{card.description}</p>
+        </article>
+
       </li>
     </>
   )

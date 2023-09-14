@@ -1,13 +1,9 @@
 'use client'
-import Button from '@/components/Button/Button';
-import style from './BannerContact.module.css';
 import Image from 'next/image';
 import calendlyImg from '../../../../assets/images/calendly-img.png';
 import faceCalendly from '../../../../assets/images/face-calendly.svg';
-import { PopupWidget, PopupButton } from "react-calendly";
-import Script from 'next/script';
-import Calendly from '../Calendly/Calendly';
-
+import style from './BannerContact.module.css';
+import Calendly from '../Canlendly/Calendly';
 
 export default function BannerContact() {
     return (

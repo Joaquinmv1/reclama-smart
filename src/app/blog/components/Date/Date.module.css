@@ -1,0 +1,16 @@
+.containerDate {   
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: var(--font-openSans);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-block: 1.5rem;
+}
+
+.containerDate span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #345A47;
+}

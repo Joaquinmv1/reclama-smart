@@ -1,0 +1,79 @@
+.containerConsumer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 0px;
+  width:100%;
+}
+
+.blogData {
+  display: flex;
+  justify-content: center;
+  
+  flex-direction: column; 
+  width: 80%;
+}
+
+.consumer {
+  margin-block: 1rem;
+  color: #374F42;
+  font-family: var(--font-openSans);
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.consumer img {
+  width: 100%;
+}
+
+.consumer p {
+  margin-block: 1.5rem;
+  font-size: 24px;
+}
+
+.stepsBlog {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  color: #374F42;
+  font-family: var(--font-openSans);
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+}
+
+.step h4 {
+  font-size: 24px;
+}
+
+.step p {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.aclaracion {
+  margin-block: 1.5rem;
+  color: #374F42;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--font-openSans);
+}
+
+.aclaracion span {
+  color: #FF5220;
+}
+
+.fuente {
+  color: #374F42;
+  border-top: 1px solid #345A47;
+  padding: 16px 0px;
+  font-size: 24px;
+  margin-top: 2.5rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #345A47; 
+}

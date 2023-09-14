@@ -1,12 +1,14 @@
 .bannerContainer {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
+  align-items: flex-start;
   min-width: 100%;
-  gap: 1rem;
-  padding: 2rem 150px;
+  height: 700px;
+  background-image:linear-gradient(1deg, rgba(231, 247, 230, 0.00) -4.58%, rgba(240, 247, 250, 0.00) -0.13%, #E7F7E6 0.46%, #E7F7E6 0.47%, rgba(231, 247, 230, 0.50) 11.1%, rgba(231, 247, 230, 0.00) 111.2%),  url(../../../../assets/images/imgBannerCono.png);
+  background-position: bottom;
+  background-size: cover;
 }
+
 
 .bannerDescription {
   display: flex;
@@ -14,14 +16,18 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
+  gap: 3rem;
+  margin-top: 6rem;
 }
 
 .title {
+  width: 70%;
   color: var(--color-texts);
   font-size: 60px;
   text-align: center;
   font-family: var(--font-montserrat);
   font-weight: 900;
+  margin-bottom: 1.5rem;
 }
 .title span{
   color: var(--color-primary);
@@ -30,7 +36,7 @@
 .description {
   color: var(--color-texts);
   font-size: 32px;
-  width: 80%;
+  width: 74%;
   font-weight: 600;
   text-align: center;
   font-family: var(--font-openSans);
@@ -38,6 +44,7 @@
 }
 .description2{
   font-size: 20px;
+  font-weight: 600;
   width: 50%;
   color: var(--color-texts);
   text-align: center;
@@ -68,12 +75,11 @@
 @media only screen and (max-width: 1348px){
   .title{
     font-size:40px ;
-    width: 100%;
+    width: 80%;
   }
   .bannerContainer{
     justify-content: space-between;
     padding: 50px 100px;
-    margin-top: 1.5rem;
   }
   .image {
     max-width: 500px;
@@ -89,7 +95,6 @@
 @media only screen and (max-width: 1158px){
   .bannerContainer{
     padding: 30px 80px;
-    margin-top: 1rem;
   }
   .description{
     font-size: 18px;
@@ -107,7 +112,6 @@
     flex-direction: column;
     gap: 10px;
     padding: 1rem 50px;
-    margin-top: 0.7rem;
   }
   .imgContain{
     padding: 0;
@@ -116,12 +120,13 @@
 @media only screen and (max-width: 600px){
   .bannerContainer{
     padding: 10px 10px;
+    padding-bottom: 50px;
     width: 100%;
-    margin-top: 0.5rem;
+    height: 500px;
   }
   .title{
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 800;
     font-family: var(--font-openSans);
   }
   .image{
@@ -133,9 +138,19 @@
   }
   .description2{
     font-size: 14px;
+    font-weight: 400;
   }
   .button{
     padding: 8px 10px;
     font-size: 14px;
+  }
+  .bannerDescription{
+    gap: .7rem;
+  }
+  .description{
+    width: 70%;
+  }
+  .description2{
+    width: 70%;
   }
 }
