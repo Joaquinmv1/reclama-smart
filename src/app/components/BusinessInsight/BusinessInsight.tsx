@@ -11,13 +11,13 @@ function BusinessInsight() {
         <article className={style.businessInfo}>
           <h2>Así funciona reclama <span style={{ color: '#FF5220' }}>smart</span>, lo hacemos sencillo</h2>
         </article>
+        <article className={style.line}>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </article>
         <article className={style.containerSteps}>
           <section>
-            <Image
-              src={lineaDeProgresoHorizontal}
-              className={style.businessImg}
-              alt="steps horizontal"
-            />
             <ul className={style['card-business']}>
               {businessInfo.map((card, i) => {
                 return <BusinessInsightCard key={card.title} card={card} index={i + 1} />

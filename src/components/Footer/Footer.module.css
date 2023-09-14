@@ -7,13 +7,12 @@
 }
 
 .footer {
-  background-color: #F0F2F5;
-  /* background-color: #FFF; */
+  background-color: #FFF;
+  border-top: 4px solid rgba(0, 0, 0, 0.15);
   padding: 48px 150px;
   /* display: none; */
   display: flex;
   flex-direction: column;
-
 }
 
 .containerFooter {

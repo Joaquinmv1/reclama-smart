@@ -23,7 +23,7 @@
 
 .background {
     width: 100%;
-    background-color: white;
+    background-color: var(--color-fondo);
 }
 
 .containerRates p {
@@ -106,6 +106,7 @@
     position: absolute;
     right: -140px;
     top: 120px;
+    border-radius: 30px;
 }
 
 @media only screen and (max-width: 830px) {
@@ -121,6 +122,10 @@
         width: 90%;
     }
 
+    .titleOne {
+        margin: 0 auto;
+    }
+
     .contentRates {
         flex-direction: column-reverse;
         align-items: center;
@@ -130,6 +135,7 @@
     .imgHands {
         position: initial;
         margin: 0 auto;
+        max-width: 100%;
     }
 
     .containExample {
@@ -143,3 +149,5 @@
 
 
 }
+
+@media only screen and (max-width: 430px) {}
