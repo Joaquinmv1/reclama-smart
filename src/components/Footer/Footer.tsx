@@ -48,7 +48,7 @@ export default function Footer() {
           <div className={styles.infoContactSection}>
 
             <Image src={logo} alt="logo" className={styles.logo} />
-            <Pharagraph text={"info@reclamaqui.pe"} />
+            <Pharagraph text={"mesadepartes.legal@reclamasmart.com.pe"} />
             <Link href={redes[0].link} className={`${styles.text} ${styles.underline} ${styles.hover}`}>
               <Pharagraph text={"+ 51 932 468 027"} />
             </Link>
