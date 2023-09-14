@@ -10,7 +10,7 @@ export default function OurFounders() {
   return (
     <div className={style.teamContainer}>
       <h2>
-        Somos <span>EQUIPO</span>
+        Somos <span>equipo</span>
       </h2>
 
       <div className={style.team}>

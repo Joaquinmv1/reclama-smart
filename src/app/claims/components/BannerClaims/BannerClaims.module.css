@@ -22,3 +22,10 @@
   font-weight: 600;
   line-height: normal;
 }
+
+
+@media only screen and (max-width: 761px){
+  .bannerClaimContainer {
+    padding: 25px 20px;
+  }
+}

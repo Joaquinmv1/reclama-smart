@@ -10,7 +10,7 @@ export default function FAB() {
     }
     return (
         <aside className={style.navGeneral}>
-            <h2>Fab</h2>
+            <h2></h2>
         </aside>
     )
 }

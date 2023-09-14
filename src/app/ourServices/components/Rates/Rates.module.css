@@ -156,6 +156,10 @@
         width: 90%;
     }
 
+    .titleOne {
+        margin: 0 auto;
+    }
+
     .contentRates {
         flex-direction: column-reverse;
         align-items: center;
@@ -195,8 +199,10 @@
         margin-bottom: 40px;
     }
 }
+
 @media only screen and (max-width: 600px){
     .titleOne{
         font-size: 30px;
     }
 }
+
