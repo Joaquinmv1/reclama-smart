@@ -32,7 +32,7 @@ export default function Footer() {
             <Link href={'/terms'} className={`${styles.text} ${styles.hover}`}>
               <Pharagraph text={"Términos y condiciones"} />
             </Link>
-            <Link href={'/politician'} className={`${styles.text} ${styles.hover}`}>
+            <Link href={'/privacy'} className={`${styles.text} ${styles.hover}`}>
               <Pharagraph text={"Políticas de privacidad"} />
             </Link>
             <Link href={'/claims'} className={`${styles.text} ${styles.hover}`}>
@@ -48,7 +48,7 @@ export default function Footer() {
           <div className={styles.infoContactSection}>
 
             <Image src={logo} alt="logo" className={styles.logo} />
-            <Pharagraph text={"info@reclamaqui.pe"} />
+            <Pharagraph text={"info@reclamasmart.pe"} />
             <Link href={redes[0].link} target='_blank' className={`${styles.text}  ${styles.hover}`}>
               <Pharagraph text={"+ 51 932 468 027"} />
             </Link>
