@@ -93,8 +93,8 @@ export default function FormClaims() {
               name="name"
               id="name"
               placeholder="María Suarez"
-              minLength={10}
-              maxLength={20}
+              minLength={5}
+              maxLength={25}
               pattern="[A-Za-z\s]+"
               title="Solo se permiten letras y espacios"
               onChange={handleChange}
@@ -111,8 +111,8 @@ export default function FormClaims() {
               id="dni"
               placeholder="30626751"
               required
-              minLength={8}
-              maxLength={12}
+              minLength={4}
+              maxLength={10}
               onChange={handleChange}
               value={dataForm.dni}
             />
@@ -127,7 +127,7 @@ export default function FormClaims() {
               placeholder="Lima 53"
               required
               minLength={5}
-              maxLength={12}
+              maxLength={25}
               onChange={handleChange}
               value={dataForm.adress}
             />
@@ -156,6 +156,8 @@ export default function FormClaims() {
               id="phone"
               placeholder="+51956321489"
               required
+              minLength={6}
+              maxLength={12}
               onChange={handleChange}
               value={dataForm.phone}
             />

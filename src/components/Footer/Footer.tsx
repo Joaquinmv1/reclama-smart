@@ -62,8 +62,7 @@ export default function Footer() {
                 redes.map((red, i) => <Link className={styles.hover} target='_blank' key={`${red} ${i}`} href={red.link}> <Image src={red.img} alt="logo-red" /></Link>)
               }
             </div>
-            <Link href={'/contact'}>
-
+            <Link href="/contact">
               <Button title='Consulta Gratis' className={styles.button} />
             </Link>
           </div>
