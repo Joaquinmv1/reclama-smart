@@ -48,7 +48,7 @@ export default function BannerContact() {
                             <h3 >3</h3>
                         </div>
                         <aside>
-                            <h4>Confirmación y recordatorio:</h4>
+                            <h4>Confirmación y recordatorio</h4>
                             <p>Una vez agendada tu cita, recibirás una confirmación automática.</p>
                         </aside>
                     </div>

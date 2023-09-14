@@ -177,6 +177,7 @@
     .point {
         width: 20px;
         height: 20px;
+        top: -30px;
     }
 }
 
@@ -208,11 +209,44 @@
     }
 
     .titles {
+        align-items: center;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .titles {
         margin: 45px 0;
     }
 
     .titles h3 {
         font-size: 16px;
     }
+
+
+
+}
+
+@media only screen and (max-width: 530px) {
+    /* .calendlyImg {
+        max-width: 300px;
+        margin: 0 auto;
+    } */
+
+    .imagesContent {
+        width: 100%;
+    }
+
+    .faceCalendly {
+        max-width: 80px;
+        left: 0;
+    }
+
+    .point {
+        top: -10px;
+        left: 60px;
+    }
+
 
 }
