@@ -52,6 +52,7 @@
 
 .activeLink {
   text-decoration: underline 2px var(--color-primary);
+  text-underline-offset: 7px;
   font-weight: 600;
 }
 
@@ -107,7 +108,7 @@
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 930px) {
   .links {
     display: none;
   }

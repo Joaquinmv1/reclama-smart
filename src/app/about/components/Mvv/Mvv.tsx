@@ -7,7 +7,7 @@ function Mvv() {
     <>
       <section className={style['mvv-Container']}>
         <h2 className={style.mvvTitle}>
-          Descubre la <span>MISIÓN</span> que guía nuestra empresa, la <span>VISIÓN</span> que nos impulsa y los <span>VALORES</span> que nos fortalecen
+          Descubre la misión que guía nuestra empresa, la visión que nos impulsa y los valores que nos fortalecen
         </h2>
         <ul className={style['mvv-card']}>
           {mvvData.map((card, i) => {

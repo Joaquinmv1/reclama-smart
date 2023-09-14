@@ -14,12 +14,11 @@
 .mvvTitle {
   font-family: var(--font-montserrat);
   color: #7C7979;
-  font-size: 48px;
+  font-size: 40px;
   /* margin-bottom: 2.5rem; */
   text-align: center;
   padding: 50px 150px;
-  margin: 0 auto;
-  width: 85%;
+  width: 100%;
 }
 
 .mvvTitle span {
@@ -38,10 +37,10 @@
   width: 290px;
   height: 350px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-block: 2rem;
+  padding-block: 1rem;
   border-radius: 16px;
   margin-bottom: 3rem;
   border-radius: 16px;
@@ -50,29 +49,31 @@
 }
 
 .mvv-card li h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #02311A;
 }
 
 .containerp {
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-block: 2rem;
   text-align: center;
-  padding-inline: 1.5rem;
   flex: 1;
   color: #7C7979;
+  padding: 0px 10px;
 }
 
 .infoContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
+.image{
+  width: 60px;
+  height: 60px;
+}
 @media only screen and (max-width: 1300px) {
   .mvv-card {
     padding: 1rem;
@@ -93,17 +94,17 @@
 @media only screen and (max-width: 953px) {
   .mvv-card li {
     width: 200px;
-    height: 234px;
+    height: 254px;
     padding: 0.7rem;
   }
 
   .image {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
 
   .containerp {
-    font-size: 12px;
+    font-size: 10px;
     width: 100%;
     padding-inline: .7rem;
   }
@@ -119,30 +120,35 @@
   }
 }
 
-@media only screen and (max-width: 664px) {
-  .mvv-card li {
-    width: 180px;
-    height: 200px;
-    padding: 5px;
-    justify-content: center;
-  }
+@media only screen and (max-width: 707px) {
 
   .containerp {
-    padding-inline: .4rem;
-    font-size: 14px;
+    line-height: 1.5rem;
+    font-size: 16px;
   }
 
   .mvv-card {
     gap: 20px;
   }
 
-  .image {
-    width: 40px;
-    height: 40px;
-  }
-
   .infoContainer {
     justify-content: center;
+  }
+  .mvv-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mvv-card li {
+    width: 250px;
+    height: 300px;
+    padding: 0.7rem;
+    gap: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
