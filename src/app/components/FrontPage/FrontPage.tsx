@@ -5,7 +5,6 @@ import imgBanner from "../../../assets/images/ImgBannerHome.png";
 import logo from "../../../assets/images/LOGO.svg";
 import Link from "next/link";
 
-
 export default function FrontPage() {
   return (
     <section className={style.frontContainer}>

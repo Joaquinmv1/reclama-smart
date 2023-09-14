@@ -20,7 +20,7 @@ function TrajectoryItem({ title, description }: TrajectoryItemProps) {
 export default function Trajectory() {
     return (
         <section className={style.containerTrajectory}>
-            <h3>Reclama Smart a lo largo de los años</h3>
+            <h3>Reclama Smart a lo largo del tiempo</h3>
             <article className={style.statsSection}>
                 <TrajectoryItem title="+100" description="CLIENTES ATENDIDOS" />
                 <TrajectoryItem title="+40K" description="SOLES RECUPERADOS" />
@@ -53,19 +53,3 @@ export default function Trajectory() {
         </section>
     );
 }
-{/* <div className={style.timelineItem}>
-    <span>Reclamaquí</span>
-    <p>con un MVP para crear una empresa digital</p>
-</div>
-<div className={style.timelineItem}>
-    <span>Canal 9</span>
-    <p>Entrevista Canal 9 “El Cliente”</p>
-</div>
-<div className={style.timelineItem}>
-    <span>ULima Emprendimiento Social</span>
-    <p>Ganamos en el Contest “ULima Emprendimiento Social”</p>
-</div>
-<div className={style.timelineItem}>
-    <span>Reclama Smart</span>
-    <p>Lanzamos nueva plataforma</p>
-</div> */}
