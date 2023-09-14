@@ -37,9 +37,9 @@ function OurAlliances() {
   }, []);
 
   return (
-    <>
+    <section className={style.container}>
       <div className={style.partersTitle}>
-        <h2 className={style.h2}>Nuestros <span style={{ color: "#FF5220" }}>aliados</span></h2>
+        <h2 className={style.h2}>Nuestros aliados</h2>
       </div>
       <section ref={ref} className={style.containerSlide}>
         <article className={`${style.logosSlide} ${isObserver ? '' : style.noAnimation}`}>
@@ -111,7 +111,7 @@ function OurAlliances() {
           </div> */}
         </article>
       </section>
-    </>
+    </section>
   )
 }
 

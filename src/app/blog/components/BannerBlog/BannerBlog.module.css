@@ -1,6 +1,6 @@
 .containerBlog {
   font-family: var(--font-montserrat);
-  /* padding: 80px 0px; */
+  padding: 30px 50px;
   margin-bottom: 3.5rem;
 }
 
@@ -29,7 +29,7 @@
 
 .infoBlog p{
   margin-top: 1rem;
-  width: 75%;
+  width: 100%;
   color: #374F42;
   font-size: 23px;
 }

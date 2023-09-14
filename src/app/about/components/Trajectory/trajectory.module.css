@@ -86,7 +86,7 @@
     max-width: 160px;
     font-size: 16px;
     font-family: var(--font-openSans);
-    padding-left: 1rem;
+/*     padding-left: 0.7rem; */
 }
 .timelineItem span{
     color: var(--color-texts);
