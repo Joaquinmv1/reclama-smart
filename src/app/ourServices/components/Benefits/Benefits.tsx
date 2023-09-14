@@ -11,7 +11,7 @@ function Benefits() {
     <>
       <section className={style.containerBenefits}>
         <div className={style.cardBenefits}>
-          <h2>¡Conoce nuestros servicios!</h2>
+          <h2>¡Conoce nuestros <span style={{color: "#FF5220"}}>servicios</span>!</h2>
           <ul className={style['benefits-card-container']}>
             {benefitsData.map((card, i) => {
               return (
