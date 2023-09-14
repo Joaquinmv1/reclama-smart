@@ -1,7 +1,7 @@
 import style from './FrontPage.module.css';
 import Button from '@/components/Button/Button';
 import Image from 'next/image';
-import imgBanner from '../../../assets/images/ImgBannerHome.png';
+import imgBanner from '../../../assets/images/ImgBannerHome2.png';
 import logo from '../../../assets/images/LOGO.svg'
 
 export default function FrontPage() {
