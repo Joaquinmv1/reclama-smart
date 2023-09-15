@@ -1,7 +1,7 @@
-import programadorImage from './programador.svg';
-import ladrones from './ladrones-usan-sombrero-negro-sostienen-telefono-tarjeta-inteligente-gris 1.svg'
-import vistaFrontal from './vistaFrontal.svg';
-import vistaPosterior from './vista-posterior-hombre-maleta 2.svg';
+import programadorImage from './programador.png';
+import ladrones from './ladrones.png'
+import vistaFrontal from './vistaFrontal.png';
+import vistaPosterior from './hombreMaleta.png';
 
 const images = {
   programadorImage,

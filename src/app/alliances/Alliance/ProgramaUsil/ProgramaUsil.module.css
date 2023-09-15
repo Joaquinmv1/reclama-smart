@@ -27,8 +27,9 @@
   font-weight: 400;
   color: #374F42;
 }
-
-.link {
+.link{
+  font-size: 12px;
+  line-height: 16px;
   color: #374F42;
   font-weight: bold;
 }
