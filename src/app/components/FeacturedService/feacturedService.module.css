@@ -7,7 +7,7 @@
   font-family: var(--font-openSans);
   width: 100%;
   background: linear-gradient(180deg, #F0F2F5 0%, rgba(240, 242, 245, 0.00) 100%);
-  padding: 150px;
+  padding: 80px 150px;
   gap: 5rem;
 }
 
@@ -49,20 +49,20 @@
 
 .cardContainer li {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 35px;
-  border-radius: 8px;
-  font-size: 1.5rem;
-  width: 240px;
-  height: 230px;
-  font-weight: bolder;
-  border-radius: 8px;
-  background: var(--Fondo, #F0F2F5);
-  box-shadow: 0px 4px 4px 0px rgba(67, 160, 71, 0.50);
-  color: var(--color-title);
-  transition: all 0.2s ease-in;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    width: 240px;
+    height: 230px;
+    font-weight: bolder;
+    border-radius: 8px;
+    background: var(--Fondo, #F0F2F5);
+    box-shadow: 0px 4px 4px 0px rgba(67, 160, 71, 0.50);
+    color: var(--color-title);
+    transition: all 0.2s ease-in;
 }
 
 .cardContainer li:hover {

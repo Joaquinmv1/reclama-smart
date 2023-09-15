@@ -115,6 +115,7 @@
 
 .imagesContent img {
     width: 600px;
+    object-fit: contain;
 }
 
 /* Tablet Version */

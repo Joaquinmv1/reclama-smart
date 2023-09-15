@@ -15,6 +15,7 @@
 
 .img {
   width: 100%;
+  height: auto;
 }
 
 .travelText1 {
@@ -72,4 +73,9 @@
   border-top: 1px solid #345A47;
   padding-top: .7rem;
   font-family: var(--font-openSans);
+}
+
+.link {
+  color: #02311A;
+  font-weight: bold;
 }

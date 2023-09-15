@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import style from './BannerContact.module.css';
 import Calendly from '../Canlendly/Calendly';
-import calendlyImg from '../Group 3513.svg'
+import calendlyImg from '../../../../assets/images/Calendly.png'
 
 export default function BannerContact() {
     return (

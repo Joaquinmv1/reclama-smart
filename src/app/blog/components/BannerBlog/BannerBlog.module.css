@@ -7,6 +7,7 @@
   font-family: var(--font-montserrat);
   padding: 30px 50px;
   margin-bottom: 3.5rem;
+  background-color: #F0F2F5;
 }
 
 .containerBlog h2 {
@@ -36,16 +37,18 @@
 .infoBlog p{
   margin-top: 1rem;
   max-width: 100%;
+  width:90%;
   color: #374F42;
   font-size: 23px;
 }
+
 .bannerImg{
   display: flex;
   border-radius: 20px;
   background-image: url(../../../../assets/images/blog/bannerBlog.jpg);
   background-position: center;
   background-size: cover;
-  width: 100%;
+  width: 90%;
   height: 500px;
   position: relative;
 }
@@ -61,6 +64,7 @@
   bottom: 5%;
 }
 .bannerSubtitle p{
+  width: 100%;
   font-size: 28px;
   font-weight: 600;
   color: #FFFFFF;
@@ -73,7 +77,7 @@
   justify-content: flex-end;
   align-items: center;
   text-align: center;
-  width: 88%;
+  width: 90%;
 }
 
 .btnBlog {
@@ -91,11 +95,13 @@
 .btnBlog svg {
   padding-top: .5rem;
 }
+
 .dateBlog{
   right: 0px;
   top: 50px;
   position: absolute;
 }
+
 @media only screen and (max-width: 1100px){
   .bannerSubtitle{
     height: 60px;
