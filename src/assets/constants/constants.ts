@@ -17,7 +17,7 @@ import respuesta from '../../assets/images/asifunciona/Fotos38 1.svg'
 import recuperar from '../../assets/images/asifunciona/Fotos38 1 (1).svg'
 
 //PERSONS
-import person1 from "../images/person1.jpg"
+import person1 from "../images/joven 1.jpg"
 import person2 from "../images/person2.jpg"
 import person3 from "../images/person3.jpg"
 import person4 from "../images/person4.jpg"
@@ -118,10 +118,10 @@ export const dataClients = [
 ];
 
 export const imgTrajectory = [
-  { img: UIlima, title: "Reclamaquí", text: " Enero        1° Lanzamiento" },
+  { img: UIlima, title: "Reclamaquí", text: "Lanzamiento 1° Enero" },
   { img: canal9, title: "Entrevista", text: "Conversamos con Marco Antonio Merino Montan en el programa El CLIENTE; Julio" },
   { img: reclamaSmart, title: "Universidad de Lima: Concurso de  Emprendimiento Social", text: "Ganamos en el Contest “ULima Emprendimiento Social; Julio" },
-  { img: reclamaAqui, title: "Reclama Smart", text: "2° Lanzamiento; Octubre" }
+  { img: reclamaAqui, title: "Reclama Smart", text: "2° Lanzamiento Octubre" }
 ]
 export const imgService = [
   { img: errorService, title: "Tu producto falló", text: "Imagina invertir 1000 soles en un televisor que se avería rápidamente debido a defectos de fábrica." },
@@ -208,7 +208,7 @@ export const mvvData = [
 export const redes = [
   {
     img: img4,
-    link: "https://api.whatsapp.com/send?phone=+51932468027&text=¡Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20Reclamaqu%C3%AD."
+    link: "https://api.whatsapp.com/send?phone=+51932468027&text=¡Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20ReclamaSmart."
   }
   ,
   {
@@ -218,7 +218,7 @@ export const redes = [
   },
   {
     img: img1,
-    link: ""
+    link: "https://www.facebook.com/reclamaqui.pe?mibextid=ZbWKwL"
 
   },
   {
@@ -230,55 +230,54 @@ export const redes = [
 ]
 
 export const terms = [{
-  title: "DEFINICIONES",
-  segment: "hola"
+  title: "PRIMER: DEFINICIONES",
 },
 {
-  title: "GENERALIDADES, DATOS ALMACENADOS Y DECLARACIONES",
-  segment: "2.1. Generalidades \n 2.2. Datos almacenados \n 2.3. Declaraciones"
+  title: "SEGUNDA: GENERALIDADES, DATOS ALMACENADOS Y DECLARACIONES",
+  segment: ["2.1. Generalidades", "2.2. Accesibilidad", "2.3. Servicios", "2.3.1. Evaluación del caso", "2.3.2. Reclamamos por ti", "2.3.2.1. Coordinación con el Proveedor", "2.3.2.2. Actuaciones en el SAC", "2.3.2.3. Actuaciones en la Denuncia Administrativa", "2.4. Declaraciones del Usuario", "2.5. Datos Almacenados"]
 },
 {
-  title: "REGISTRO Y AUTENTICACIÓN ",
-  segment: "hola"
+  title: "TERCERA: REGISTRO Y AUTENTICACIÓN ",
+  segment: ["3.1.  Registro", "3.2.Autenticación"]
 },
 {
-  title: "CONDICIONES DE USO DEL CANAL DE WHATSAPP",
-  segment: "hola"
+  title: "CUARTA: CONDICIONES DE USO DEL CANAL DE WHATSAPP",
+
 },
 {
-  title: "PROPIEDAD INTELECTUAL",
-  segment: "hola"
+  title: "QUINTA: PROPIEDAD INTELECTUAL",
+
 },
 {
-  title: "CAMBIOS EN LOS TÉRMINOS Y CONDICIONES",
-  segment: "hola"
+  title: "SEXTA : CAMBIOS EN LOS TÉRMINOS Y CONDICIONES",
+
 },
 {
-  title: "MEDIOS DE PAGOS Y CONDICIONES DE VENTA",
-  segment: "hola"
+  title: "SEPTIMA: MEDIOS DE PAGOS Y CONDICIONES DE VENTA",
+
 },
 {
-  title: "LOGÍSTICA EN LA PRESTACIÓN DEL SERVICIO ",
-  segment: "hola"
+  title: "OCTAVA: LOGÍSTICA EN LA PRESTACIÓN DEL SERVICIO ",
+
 },
 {
-  title: "SISTEMA DE COBROS",
-  segment: "hola"
+  title: "NOVENA: SISTEMA DE COBROS",
+  segment: ["9.1.  Pago en caso de éxito", "9.2.  Costos y Costas"]
 },
 {
-  title: "OBLIGACIÓN DE RESERVA",
-  segment: "hola"
+  title: "DECIMA: OBLIGACIÓN DE RESERVA",
+
 },
 {
-  title: "TERMINACIÓN",
-  segment: "hola"
+  title: "DECIMA PRIMERA: TERMINACIÓN",
+
 },
 {
-  title: "SERVICIO AL USUARIO",
-  segment: "hola"
+  title: "DECIMA SEGUNDA: SERVICIO AL USUARIO",
+
 },
 {
-  title: "JURISDICCIÓN",
-  segment: "hola"
+  title: "DECIMA TERCERA: JURISDICCIÓN",
+
 }
 ]

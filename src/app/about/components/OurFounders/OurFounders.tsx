@@ -10,7 +10,7 @@ export default function OurFounders() {
   return (
     <div className={style.teamContainer}>
       <h2>
-        Somos <span>EQUIPO</span>
+        Somos <span>equipo</span>
       </h2>
 
       <div className={style.team}>
@@ -22,7 +22,7 @@ export default function OurFounders() {
                 Mariana Silva
                 <br /> Santisteban
               </h6>
-              <p>CCO</p>
+              <p>COO</p>
 
               <p>
                 Abogada de la Universidad de Lima con más de 5 años de

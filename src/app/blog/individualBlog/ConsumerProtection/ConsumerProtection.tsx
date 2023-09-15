@@ -11,7 +11,6 @@ function ConsumerProtection() {
         <div className={style.blogData}>
           <TitleBlog>
             <h3>3 derechos fundamentales como consumidor</h3>
-            <h4>Por Eluisa Maria Helbig-Marchena</h4>
           </TitleBlog>
           <Date date='05/04/2023' />
           <Image className={style.img} src={ladrones} alt='ConsumerProtection Image' />

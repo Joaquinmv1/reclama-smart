@@ -11,7 +11,7 @@ import { redes } from '@/assets/constants/constants'
 export default function MapSection() {
     return (
         <div className={style.sectionMap}>
-            <h2 className={style.title}>Nos encontramos en Perú</h2>
+            <h2 className={style.title}>Nos encontramos en el <span style={{ color: "#FF5220" }}>Perú</span></h2>
             <section className={style.containerMap}>
 
                 <div className={style.containerImg}>
@@ -21,15 +21,24 @@ export default function MapSection() {
                 <aside className={style.contact}>
 
                     <div className={style.content}>
-                        <Image className={style.mailImg} src={wpImg} alt='Whatsapp image' />
+                        <Image className={style.wpImg} src={mailImg} alt='Mail image' />
                         <h2>EMAIL</h2>
-                        <p>info@reclamaqui.pe</p>
+                        <Link
+                            href="mailto:mesadepartes.legal@reclamasmart.com.pe"
+                            target="_blank"
+                            className={style.link}
+                        >
+                            <p>info@reclamasmart.pe</p>
+                        </Link>
                     </div>
 
                     <div className={style.content}>
-                        <Image className={style.wpImg} src={mailImg} alt='Mail image' />
+                        <Image className={style.mailImg} src={wpImg} alt='Whatsapp image' />
+
                         <h2>WHATSAPP</h2>
-                        <p>+ 51 932 468 027</p>
+                        <Link className={style.link} target="_blank" href="https://api.whatsapp.com/send?phone=+51932468027&text=¡Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20ReclamaSmart">
+                            <p>+ 51 932 468 027</p>
+                        </Link>
                     </div>
 
                     <div className={style.containerRedes}>
@@ -44,8 +53,7 @@ export default function MapSection() {
                                 }
                             </div>
                         </div>
-                        <Link href={redes[3].link}>
-
+                        <Link target="_blank" href="https://api.whatsapp.com/send?phone=+51932468027&text=¡Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20ReclamaSmart">
                             <Button title='Consulta gratis' className={style.button} />
                         </Link>
                     </div>

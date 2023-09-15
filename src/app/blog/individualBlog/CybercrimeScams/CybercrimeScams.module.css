@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  font-size: 24px;
+  font-size: 21px;
   color: #374F42;
   font-weight: 400;
   font-family: var(--font-openSans);
@@ -39,7 +39,7 @@
 
 .fontsWeb {
   border-top: 1px solid #374F42;
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 400;
   color: #374F42;
   font-family: var(--font-openSans);

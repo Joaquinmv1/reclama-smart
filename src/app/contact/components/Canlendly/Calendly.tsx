@@ -14,7 +14,7 @@ const Calendly: React.FC = () => {
   return (
     <div id='pup' className={style.popupWidget} ref={elementRef}>
       {isVisible && <PopupButton
-        url="https://calendly.com/frankyanez9413/reunion-15-min"
+        url="https://calendly.com/reclamasmart/15_min"
         rootElement={elementRef.current as HTMLElement}
         text="Agendar Reunion"
         className={style.button}

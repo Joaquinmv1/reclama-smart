@@ -11,7 +11,6 @@ function CybercrimeScams() {
         <div className={style.blogData}>
           <TitleBlog>
             <h3>Estafas a usuarios: ciberdelitos y robos de datos</h3>
-            <h4>Por Eluisa Maria Helbig-Marchena</h4>
           </TitleBlog>
           <Date date="06/09/2023" />
           <Image className={style.img} src={programmer} alt="CybercrimeScams Image" />

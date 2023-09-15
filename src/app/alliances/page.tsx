@@ -5,6 +5,7 @@ import {
   InnovaUlima,
   ParlamentoAndino,
   ProgramaUsil,
+  Utec,
   Warmiventures
 } from "./Alliance";
 import { Alliance } from "./model/alliance.model";
@@ -14,13 +15,18 @@ const componentMappings = {
   'ParlamentoAndino': <ParlamentoAndino />,
   'ProgramaUsil': <ProgramaUsil />,
   'Warmiventures': <Warmiventures />,
-  'CamaraDeComercio': <CamaraDeComercio />
+  'CamaraDeComercio': <CamaraDeComercio />,
+  'utec': <Utec />
 };
 
 function Alliances() {
   const searchParams = useSearchParams();
   const search = searchParams.get('alliance');
   const selectedComponent = componentMappings[search as Alliance];
+
+  if (!selectedComponent) {
+    throw new Error('404 not found');
+  }
 
   return (
     <>

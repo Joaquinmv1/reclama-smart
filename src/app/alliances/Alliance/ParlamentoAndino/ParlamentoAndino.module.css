@@ -16,6 +16,7 @@
 
 .img {
   width: 100%;
+  object-fit: cover;
 }
 
 .ParlamentoArticle {
@@ -23,7 +24,7 @@
   flex-direction: column;
   gap: 30px;
   margin-block: 2.5rem;
-  font-size: 1.5rem;
+  font-size: 21px;
   font-weight: 400;
   color: #374F42;
 }
@@ -32,4 +33,16 @@
  color: #374F42; 
  font-size: 12px;
  line-height: 16px;
+}
+
+@media screen and (max-width: 1050px) {
+  .img{
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .img{
+    height: 200px;
+  }
 }

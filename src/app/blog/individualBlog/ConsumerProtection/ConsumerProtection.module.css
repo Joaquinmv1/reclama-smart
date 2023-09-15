@@ -22,14 +22,14 @@
   flex-direction: column;
   gap: 30px;
   font-family: var(--font-openSans);
-  font-size: 24px;
+  font-size: 21px;
   color: #374F42;
   font-weight: 400;
   margin-block: 2rem;
 }
 
 .acuerdos {
-  font-size: 24px;
+  font-size: 21px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -43,7 +43,7 @@
 }
 
 .p {
-  font-size: 24px;
+  font-size: 21px;
   font-style: normal;
   font-weight: 600;
   color: #374F42;
@@ -57,7 +57,6 @@
 
 .p span {
   color:#FF5220;
-  
 }
 
 .font {

@@ -16,6 +16,7 @@
 
 .img {
   width: 100%;
+  object-fit: contain;
 }
 
 .innovaUlimaContent {
@@ -23,14 +24,44 @@
   flex-direction: column;
   gap: 30px;
 
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 400;
   color: #374F42;
   margin-block: 2.5rem;
 }
 
 .link {
+  display: block;
   color: #374F42;
   font-size: 12px;
   line-height: 16px;
+  /* width: 100%; */
+}
+
+/* .containerLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+@media screen and (max-width: 980px) {
+  .img{
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .img{
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .link {
+    display: inline-block;
+    width: 50%;
+  } 
+  
+  .containerLink {
+  }
 }

@@ -19,6 +19,7 @@
   text-align: center;
   padding: 50px 150px;
   width: 100%;
+  /* font-weight: bold; */
 }
 
 .mvvTitle span {
@@ -60,7 +61,7 @@
   align-items: center;
   text-align: center;
   flex: 1;
-  color: #7C7979;
+  color: #545454;
   padding: 0px 10px;
 }
 

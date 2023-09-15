@@ -135,6 +135,7 @@
 }
 
 
+
 @media only screen and (max-width: 1330px) {
     .containerImg {
         width: 40%;
@@ -154,6 +155,10 @@
 
     .contentInfo {
         width: 90%;
+    }
+
+    .titleOne {
+        margin: 0 auto;
     }
 
     .contentRates {
@@ -195,8 +200,10 @@
         margin-bottom: 40px;
     }
 }
+
 @media only screen and (max-width: 600px){
     .titleOne{
         font-size: 30px;
     }
 }
+

@@ -14,7 +14,7 @@ export default function Rates() {
                         </article>
                         <h2 className={style.titleTwo}>Tarifa de <span className={style.span}>Exito</span> </h2>
                         <h4>Nuestro compromiso: <span className={style.span}>solo ganamos si tu ganas</span></h4>
-                        <p className={style.analize}> Analizamos gratuitamente cada caso y asesoramos sobre que se puede reclamar y cómo hacerlo. Nos gustan las cosas claras, seguras y explicadas de un modo fácil</p>
+                        <p className={style.analize}> Analizamos gratuitamente cada caso sin costo adelantado y asesoramos sobre que se puede reclamar y cómo hacerlo. Nos gustan las cosas claras, seguras y explicadas de un modo fácil</p>
                         <h2>Te mostramos 2 ejemplos</h2>
                         <article>
                             <div className={style.containExample}>

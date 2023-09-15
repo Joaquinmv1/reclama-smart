@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Date, TitleBlog } from "../../components";
-import style from './ConsumerRights.module.css';
 import banner from '../../../../assets/images/blog/banner.jpg';
+import style from './ConsumerRights.module.css';
 import Link from "next/link";
 
 function ConsumerRights() {
@@ -11,7 +11,6 @@ function ConsumerRights() {
         <div className={style.blogData}>
           <TitleBlog>
             <h3>3 derechos fundamentales como consumidor</h3>
-            <h4>Por Eluisa Maria Helbig-Marchena</h4>
           </TitleBlog>
           <Date date="05/04/2023" />
           <article className={style.consumer}>

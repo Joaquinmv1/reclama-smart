@@ -10,26 +10,33 @@ export default function Segments() {
     const handleOpen = (index: number) => {
         setOpen(index == open ? null : index)
     }
+
     return (
         <section className={style.containerGeneral}>
             {
                 terms.map((term, index) => (
                     <div className={style.container} key={term.title}>
                         <div className={style.title} onClick={() => handleOpen(index)}>
-                            <Image src={arrow} alt="arrow" className={`${style.arrow} ${open === index ? style.rotated : ""}`} />
+                            {
+                                term.segment ? <Image src={arrow} alt="arrow" className={`${style.arrow} ${open === index ? style.rotated : ""}`} /> : <small className={style.margin}></small>
+                            }
                             <h3>{term.title}</h3>
                         </div>
                         {
                             open === index && (
                                 <div className={`${style.segment} ${open === index ? style.open : ""}`}>
-                                    <p>{term.segment}</p>
+                                    {term.segment?.map((segment, index) => (
+                                        <p key={index}>{segment}</p>
+                                    ))}
+
                                 </div>
+
                             )
                         }
-
                     </div>
                 ))
             }
+
         </section>
     )
 }

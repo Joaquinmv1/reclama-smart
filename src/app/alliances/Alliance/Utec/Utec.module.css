@@ -1,0 +1,44 @@
+.containerUtec {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 0px;
+  width:100%;
+  font-family: var(--font-openSans);
+}
+
+.allianceData {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  width: 80%;
+}
+
+.img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.text {
+  font-size: 21px;
+  color: #374F42;
+}
+
+
+@media screen and (max-width: 950px) {
+  .img{
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .img{
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .img{
+    height: 200px;
+  }
+}

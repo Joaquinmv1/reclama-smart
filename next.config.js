@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    EMAIL_ID: "service_z3px95g",
+    EMAIL_ID: "service_gv4jlnj",
     TEMPLATE_ID: "template_nqq9mf4",
-    KEY_ID: "rWreg_YhrnMARKfu",
+    KEY_ID: "rWreg_YhrnMARKfuN",
   },
 };
 

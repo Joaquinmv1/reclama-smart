@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Date, TitleBlog } from '../../components';
 import style from './AirTravelRights.module.css';
 import airTravelImg from '../../../../assets/images/blog/vista-posterior-hombre-maleta 1.jpg';
+import Link from 'next/link';
 
 function AirTravelRights() {
   return (
@@ -10,13 +11,12 @@ function AirTravelRights() {
         <div className={style.blogData}>
           <TitleBlog>
             <h3>3 derechos fundamentales cuando viajes en avión</h3>
-            <h4>Por Eluisa Maria Helbig-Marchena</h4>
           </TitleBlog>
           <Date date='05/07/2023' />
           <Image className={style.img} src={airTravelImg} alt='AirTravel Rights Image' />
           <article className={style.travelText1}>
             <p>Fin de semana largo. Piensas que es el momento ideal para escapar de la rutina y hacer ese viaje perfecto con el que estabas soñando desde hace tiempo. Sin embargo, hemos visto muchos casos, en los que los derechos de los consumidores fueron violados. Entendemos tu frustración y te contamos 3 derechos fundamentales que tienes como pasajero aéreo.</p>
-            <p>Para el contexto es importante saber que las normas que aplican para las aerolíneas provienen de la Decisión 619 CAN (Comunidad Andina de Naciones) del 2005, que establecen los Derechos y Obligaciones de los Usuarios y Operadores de los Servicios de Transporte Aéreo en la comunidad Andina (en este contexto véase nuestro compromiso aquí).</p>
+            <p>Para el contexto es importante saber que las normas que aplican para las aerolíneas provienen de la Decisión 619 CAN (Comunidad Andina de Naciones) del 2005, que establecen los Derechos y Obligaciones de los Usuarios y Operadores de los Servicios de Transporte Aéreo en la comunidad Andina (en este contexto véase nuestro compromiso <Link href={''}>aquí</Link> ).</p>
           </article>
           <article className={style.stepsAirTravel}>
             <div className={style.stepAirTravel}>
