@@ -19,6 +19,7 @@ function ParlamentoAndino() {
             <article>Esto ilustra de manera elocuente cómo la influencia internacional puede moldear los derechos de los consumidores.</article>
             <article>Estamos profundamente agradecidos al Parlamento Andino por su invitación y la oportunidad de compartir nuestros conocimientos. Continuamos firmemente comprometidos en nuestra labor de garantizar y proteger los derechos de los consumidores en toda la región.</article>
             <article>
+              <p>Enlace:</p>
               <Link className={style.link} href={'https://www.parlamentoandino.org.pe/derecho-al-olvido/'} target="_blank">bit.ly/45UtwwO</Link>
             </article>
           </div>

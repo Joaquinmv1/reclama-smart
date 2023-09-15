@@ -120,7 +120,7 @@ export const dataClients = [
 export const imgTrajectory = [
   { img: UIlima, title: "Reclamaquí", text: "1° Lanzamiento", date: 'Enero' },
   { img: canal9, title: "Entrevista", text: "Conversamos con Marco Antonio Merino Montan en el programa El CLIENTE.", date: 'Julio' },
-  { img: reclamaSmart, title: "Universidad de Lima: Concurso de  Emprendimiento Social", text: "Ganamos en el Contest “ULima Emprendimiento Social.", date: 'Julio' },
+  { img: reclamaSmart, title: "Universidad de Lima", text: "Ganamos el concurso de  Emprendimiento Social. Innova ULima.", date: 'Julio' },
   { img: reclamaAqui, title: "Reclama Smart", text: "2° Lanzamiento ", date: 'Octubre' }
 ]
 export const imgService = [
