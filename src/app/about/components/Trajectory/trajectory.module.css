@@ -29,7 +29,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .trajectoryItem {
@@ -87,7 +87,7 @@
     max-width: 160px;
     font-size: 16px;
     font-family: var(--font-openSans);
-/*     padding-left: 0.7rem; */
+    padding-inline: 1.6rem;
 }
 .timelineItem span{
     color: var(--color-texts);

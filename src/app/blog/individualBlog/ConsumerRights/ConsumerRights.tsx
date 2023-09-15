@@ -32,7 +32,7 @@ function ConsumerRights() {
             </div>
           </article>
           <p className={style.aclaracion}>reclama <span>smart</span> con nosotros ¡Sólo nos tendrás que pagar si es que recuperamos tu plata!</p>
-          <p className={style.fuente}> Fuente:<br/> <Link className={style.link} href={'https://www.consumidor.gob.pe/tus-derechos'}>bit.ly/3RFkL5N</Link></p>
+          <p className={style.fuente}> Fuente:<br/> <Link target="_blank" className={style.link} href={'https://www.consumidor.gob.pe/tus-derechos'}>bit.ly/3RFkL5N</Link></p>
         </div>
       </section>
     </>

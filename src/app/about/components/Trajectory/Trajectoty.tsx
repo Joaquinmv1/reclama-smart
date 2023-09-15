@@ -28,7 +28,7 @@ export default function Trajectory() {
             </article>
 
             <h4>Compartimos nuestro camino</h4>
-            <TrajectoryResponsive/>
+            <TrajectoryResponsive />
             <section className={style.imagesSection}>
                 <div className={style.imageContainer}>
                     {imgTrajectory.map(({ img }, index) => (
@@ -42,8 +42,9 @@ export default function Trajectory() {
                     <div />
                 </article>
                 <article className={style.timeline}>
-                {imgTrajectory.map(({title, text }, index) => (
-                        <article className={style.timelineItem} key={index} >
+                    {imgTrajectory.map(({ title, text, date }, index) => (
+                        <article className={style.timelineItem} key={index}>
+                            <p>{date}</p>
                             <span>{title}</span>
                             <p>{text}</p>
                         </article>

@@ -26,7 +26,7 @@ import person6 from "../images/person6.jpg"
 
 import reclamaAqui from '../images/imgTrajectory.svg'
 import canal9 from '../images/imgTrajectory1.svg'
-import UIlima from '../images/imgTrajectory2.svg'
+import UIlima from '../images/reclamaSmart.png'
 import reclamaSmart from '../images/imgTrajectory3.svg'
 import errorService from '../images/errorService.svg'
 import gestionamos from '../images/gestionamos.svg'
@@ -118,10 +118,10 @@ export const dataClients = [
 ];
 
 export const imgTrajectory = [
-  { img: UIlima, title: "Reclamaquí", text: "Enero 1° Lanzamiento" },
-  { img: canal9, title: "Entrevista", text: "Julio, Conversamos con Marco Antonio Merino Montan en el programa El CLIENTE." },
-  { img: reclamaSmart, title: "Universidad de Lima: Concurso de  Emprendimiento Social", text: "Julio, Ganamos en el Contest “ULima Emprendimiento Social." },
-  { img: reclamaAqui, title: "Reclama Smart", text: "Octubre, 2° Lanzamiento " }
+  { img: UIlima, title: "Reclamaquí", text: "1° Lanzamiento", date: 'Enero' },
+  { img: canal9, title: "Entrevista", text: "Conversamos con Marco Antonio Merino Montan en el programa El CLIENTE.", date: 'Julio' },
+  { img: reclamaSmart, title: "Universidad de Lima: Concurso de  Emprendimiento Social", text: "Ganamos en el Contest “ULima Emprendimiento Social.", date: 'Julio' },
+  { img: reclamaAqui, title: "Reclama Smart", text: "2° Lanzamiento ", date: 'Octubre' }
 ]
 export const imgService = [
   { img: errorService, title: "Tu producto falló", text: "Imagina invertir 1000 soles en un televisor que se avería rápidamente debido a defectos de fábrica." },

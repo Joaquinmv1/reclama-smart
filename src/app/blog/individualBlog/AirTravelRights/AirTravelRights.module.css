@@ -74,3 +74,8 @@
   padding-top: .7rem;
   font-family: var(--font-openSans);
 }
+
+.link {
+  color: #02311A;
+  font-weight: bold;
+}

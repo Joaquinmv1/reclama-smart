@@ -95,7 +95,6 @@
 @media only screen and (max-width: 1222px) {
   .teamContainer {
     padding: 30px 30px;
-    margin: 0px;
     margin-bottom: 30px;
   }
 
@@ -110,7 +109,7 @@
 
   .info h6 {
     width: 100%;
-    font-size: 19px;
+    font-size: 17px;
   }
 
   .info p:first-of-type {
@@ -119,10 +118,9 @@
   }
 
   .info p:nth-of-type(2) {
-    width: 309px;
-    height: 265px;
     font-size: 19px;
-    margin-bottom: 0;
+    /* margin-bottom: 6rem; */
+    width: 80%;
   }
 
   .info img {
@@ -132,12 +130,19 @@
   }
 }
 
-@media only screen and (max-width: 965px) {
+@media only screen and (max-width: 980px) {
   .info p:nth-of-type(2) {
     width: 180px;
-    height: 265px;
+    height: 200px;
     font-size: 16px;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .foundersImg {
+    width: 200px;
+    height: 250px;
   }
 }
 
@@ -175,7 +180,7 @@
   .infoMobileOne > img,
   .infoMobileTwo > img {
     width: 100%;
-    height: 300px;
+    height: 150px;
   }
 
   .mobile1,
@@ -187,7 +192,7 @@
   .mobile2 h6 {
     color: #02311a;
     font-family: var(--font-openSans);
-    font-size: 22px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -227,5 +232,16 @@
   .mobile1 p:nth-of-type(2),
   .mobile2 p:nth-of-type(2) {
     font-size: 12px;
+  }
+
+  .infoMobileTwo img
+  .infoMobileOne img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .info h6 {
+    width: 100%;
+    font-size: 16px;
   }
 }
