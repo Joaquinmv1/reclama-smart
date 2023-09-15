@@ -118,10 +118,10 @@ export const dataClients = [
 ];
 
 export const imgTrajectory = [
-  { img: UIlima, title: "Reclamaquí", text: "Lanzamiento 1° Enero" },
-  { img: canal9, title: "Entrevista", text: "Conversamos con Marco Antonio Merino Montan en el programa El CLIENTE; Julio" },
-  { img: reclamaSmart, title: "Universidad de Lima: Concurso de  Emprendimiento Social", text: "Ganamos en el Contest “ULima Emprendimiento Social; Julio" },
-  { img: reclamaAqui, title: "Reclama Smart", text: "2° Lanzamiento Octubre" }
+  { img: UIlima, title: "Reclamaquí", text: "Enero 1° Lanzamiento" },
+  { img: canal9, title: "Entrevista", text: "Julio, Conversamos con Marco Antonio Merino Montan en el programa El CLIENTE." },
+  { img: reclamaSmart, title: "Universidad de Lima: Concurso de  Emprendimiento Social", text: "Julio, Ganamos en el Contest “ULima Emprendimiento Social." },
+  { img: reclamaAqui, title: "Reclama Smart", text: "Octubre, 2° Lanzamiento " }
 ]
 export const imgService = [
   { img: errorService, title: "Tu producto falló", text: "Imagina invertir 1000 soles en un televisor que se avería rápidamente debido a defectos de fábrica." },

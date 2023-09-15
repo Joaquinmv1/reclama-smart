@@ -33,6 +33,8 @@
 .link {
   display: block;
   color: #374F42;
+  font-size: 12px;
+  line-height: 16px;
   /* width: 100%; */
 }
 
