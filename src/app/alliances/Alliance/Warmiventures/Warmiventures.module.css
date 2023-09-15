@@ -16,8 +16,9 @@
 
 .img {
   width: 100%;
-  /* height: ; */
-  object-fit: cover;
+  height: 700px;
+  /* object-fit: cover; */
+  
 }
 
 .warmiContent {
@@ -43,4 +44,23 @@
   padding: 5px 10px;
   border: none;
   font-weight: bold;
+  color: green;
+}
+
+@media screen and (max-width: 850px) {
+  .img{
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .img{
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .img{
+    height: 300px;
+  }
 }

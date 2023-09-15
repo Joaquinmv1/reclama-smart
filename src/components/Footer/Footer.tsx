@@ -48,7 +48,12 @@ export default function Footer() {
           <div className={styles.infoContactSection}>
 
             <Image src={logo} alt="logo" className={styles.logo} />
-            <Pharagraph text={"info@reclamasmart.pe"} />
+            <Link
+              href="mailto:mesadepartes.legal@reclamasmart.com.pe"
+              target="_blank"
+            >
+              <Pharagraph text={"mesadepartes.legal@reclamasmart.com.pe"} />
+            </Link>
             <Link href={redes[0].link} target='_blank' className={`${styles.text}  ${styles.hover}`}>
               <Pharagraph text={"+ 51 932 468 027"} />
             </Link>
@@ -56,13 +61,12 @@ export default function Footer() {
           </div>
 
           <div className={styles.containerRedes}>
-
             <div className={styles.redes}>
               {
                 redes.map((red, i) => <Link className={styles.hover} target='_blank' key={`${red} ${i}`} href={red.link}> <Image src={red.img} alt="logo-red" /></Link>)
               }
             </div>
-            <Link href="/contact">
+            <Link target="_blank" href="https://api.whatsapp.com/send?phone=+51932468027&text=¡Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20ReclamaSmart">
               <Button title='Consulta Gratis' className={styles.button} />
             </Link>
           </div>

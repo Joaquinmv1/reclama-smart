@@ -16,6 +16,7 @@
 
 .img {
   width: 100%;
+  object-fit: cover;
 }
 
 .ParlamentoArticle {
@@ -30,4 +31,16 @@
 
 .link {
  color: #374F42; 
+}
+
+@media screen and (max-width: 1050px) {
+  .img{
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .img{
+    height: 200px;
+  }
 }

@@ -22,7 +22,7 @@ export default function OurFounders() {
                 Mariana Silva
                 <br /> Santisteban
               </h6>
-              <p>CCO</p>
+              <p>COO</p>
 
               <p>
                 Abogada de la Universidad de Lima con más de 5 años de

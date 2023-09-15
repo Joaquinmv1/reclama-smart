@@ -9,8 +9,10 @@ function CamaraDeComercio() {
     <>
       <section className={style.containerCamara}>
         <div className={style.allianceData}>
-          <TitleAlliance title="Cámara de Comercio e Industria Peruano-Alemana" />
-          <DateAlliance date="08/08/2023" about="Webinar “Introducción al derecho del consumidor para Empresarios”" />
+            <TitleAlliance title="Cámara de Comercio e Industria Peruano-Alemana" />
+          <div className={style.dateAbout}>
+            <DateAlliance date="08/08/2023" about="Webinar “Introducción al derecho del consumidor para Empresarios”" />
+          </div>
           <Image className={style.img} src={camaraDeComercioimg} alt="Camara de comercio Image" />
           <div className={style.camaraContent}>
             <article>En este webinar, dictado por Mariana Silva Santisteban, nuestra co-fundadora, los participantes adquirieron conocimientos fundamentales sobre los derechos del consumidor. Esto no solo les permitirá proteger sus negocios, sino también garantizar los derechos de sus clientes, abordar reclamos de manera efectiva y aplicar buenas prácticas corporativas. Queremos expresar nuestro sincero agradecimiento a la Cámara de Comercio Alemana para el Perú por brindarnos esta valiosa oportunidad de compartir información crucial.</article>

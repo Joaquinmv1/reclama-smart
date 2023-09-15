@@ -33,3 +33,12 @@
 .link {
   color: #374F42;
 }
+
+
+
+@media screen and (max-width: 1000px) {
+  .dateAbout {
+    display: flex;
+    flex-direction: column;
+  }
+}

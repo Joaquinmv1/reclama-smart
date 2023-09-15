@@ -106,9 +106,72 @@ function OurAlliances() {
               <Image src={partner1} alt={'partner'} />
             </div>
           </Link>
-          {/* <div>
-            <Image src={partner7} alt={'partner'} />
-          </div> */}
+        </article>
+
+        <article className={`${style.logosSlide} ${isObserver ? '' : style.noAnimation}`}>
+          <div>
+            <Link href={'alliances?alliance=InnovaUlima'}>
+              <Image src={partner2} alt={'partner'} />
+            </Link>
+          </div>
+          <Link href={'alliances?alliance=ParlamentoAndino'}>
+            <div>
+              <Image src={partner3} alt={'partner'} />
+            </div>
+          </Link>
+          <Link href={'alliances?alliance=InnovaUlima'}>
+            <div>
+              <Image src={partner6} alt={'utec'} />
+            </div>
+          </Link>
+          <Link href={'alliances?alliance=Warmiventures'}>
+            <div>
+              <Image src={partner4} alt={'partner'} />
+            </div>
+          </Link>
+          <Link href={''}>
+            <div>
+              <Image src={partner5} alt={'partner'} />
+            </div>
+          </Link>
+          <Link href={'alliances?alliance=ProgramaUsil'}>
+            <div>
+              <Image src={partner1} alt={'partner'} />
+            </div>
+          </Link>
+        </article>
+
+        <article className={`${style.logosSlide} ${isObserver ? '' : style.noAnimation}`}>
+          <div>
+            <Link href={'alliances?alliance=InnovaUlima'}>
+              <Image src={partner2} alt={'partner'} />
+            </Link>
+          </div>
+          <Link href={'alliances?alliance=ParlamentoAndino'}>
+            <div>
+              <Image src={partner3} alt={'partner'} />
+            </div>
+          </Link>
+          <Link href={'alliances?alliance=InnovaUlima'}>
+            <div>
+              <Image src={partner6} alt={'utec'} />
+            </div>
+          </Link>
+          <Link href={'alliances?alliance=Warmiventures'}>
+            <div>
+              <Image src={partner4} alt={'partner'} />
+            </div>
+          </Link>
+          <Link href={''}>
+            <div>
+              <Image src={partner5} alt={'partner'} />
+            </div>
+          </Link>
+          <Link href={'alliances?alliance=ProgramaUsil'}>
+            <div>
+              <Image src={partner1} alt={'partner'} />
+            </div>
+          </Link>
         </article>
       </section>
     </section>
