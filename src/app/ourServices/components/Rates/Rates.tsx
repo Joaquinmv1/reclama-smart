@@ -1,4 +1,4 @@
-import hands from '../../../../assets/images/hands.svg'
+import hands from '../../../../assets/images/hands.png'
 import Image from 'next/image'
 import style from './Rates.module.css'
 
