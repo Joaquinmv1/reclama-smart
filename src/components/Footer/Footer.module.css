@@ -192,6 +192,6 @@
 }
 @media (max-width: 600px){
   .containerFooter{
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 } 
