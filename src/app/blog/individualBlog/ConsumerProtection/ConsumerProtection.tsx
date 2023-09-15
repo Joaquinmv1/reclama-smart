@@ -26,7 +26,7 @@ function ConsumerProtection() {
             <p><span>3. Monitorear tus saldos y cambiar tus contraseñas para garantizar la seguridad de tu dinero:</span>  Si has recibido una llamada sospechosa, existe la posibilidad de que tu información confidencial esté en riesgo. Te aconsejamos monitorear tus saldos y cambiar tus contraseñas para garantizar la seguridad de tu dinero.</p>
           </article>
           <p className={style.p}>¿Ha experimentado algo similar? <span className={style.span}>reclama</span> <span>smart</span> con nosotros ¡Sólo nos tendrás que pagar si es que recuperamos tu plata!</p>
-          <p className={style.font}>Fuente: <Link className={style.link} href={'https://www.bn.com.pe/noticias/2023/21082023-llamada-de-banco-podria-no-serlo-spoofing-telefonico.html'}>https://www.bn.com.pe/noticias/2023/21082023-llamada-de-banco-podria-no-serlo-spoofing-telefonico.html.</Link> </p>
+          <p className={style.font}>Fuente:<br/> <Link className={style.link} href={'https://www.bn.com.pe/noticias/2023/21082023-llamada-de-banco-podria-no-serlo-spoofing-telefonico.html'}>bit.ly/3sVwNgW</Link> </p>
         </div>
       </section>
     </>

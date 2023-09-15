@@ -1,4 +1,9 @@
 .containerBlog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
   font-family: var(--font-montserrat);
   padding: 30px 50px;
   margin-bottom: 3.5rem;
@@ -20,23 +25,50 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  max-width: 100%;
   font-family: var(--font-openSans);
 }
 
-.infoBlog img {
-  object-fit: cover;
+.infoBlog .image {
+  max-width: 90%;
 }
 
 .infoBlog p{
   margin-top: 1rem;
-  width: 100%;
+  max-width: 100%;
   color: #374F42;
   font-size: 23px;
 }
+.bannerImg{
+  display: flex;
+  border-radius: 20px;
+  background-image: url(../../../../assets/images/blog/bannerBlog.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.bannerSubtitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background: var(--color-title);
+  border-radius: 0px 16px 16px 0px;
+  height: 70px;
+  position: absolute;
+  bottom: 5%;
+}
+.bannerSubtitle p{
+  font-size: 28px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
 
 .btnContainer {
-  margin-top: 1rem;
-
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -58,4 +90,57 @@
 
 .btnBlog svg {
   padding-top: .5rem;
+}
+.dateBlog{
+  right: 0px;
+  top: 50px;
+  position: absolute;
+}
+@media only screen and (max-width: 1100px){
+  .bannerSubtitle{
+    height: 60px;
+  }
+  .bannerSubtitle p{
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 650px){
+  .bannerSubtitle p{
+    font-size: 14px;
+  }
+  .containerBlog h2{
+    font-size: 35px;
+  }
+  .infoBlog p{
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 495px){
+  .bannerSubtitle p{
+    font-size: 10px;
+  }
+  .dateBlog img{
+    width: 200px;
+  }
+  .bannerSubtitle{
+    width: 85%;
+  }
+  .containerBlog{
+    padding: 10px;
+  }
+  .btnBlog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+  .btnContainer .btnBlog svg {
+    padding-top: 0rem;
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+}
 }
