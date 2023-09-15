@@ -26,19 +26,7 @@ export function ArticleTerms({ title, segment, text }: ArticleProps): JSX.Elemen
   )
 }
 
-// export const Calendly = () => {
-//     useEffect(() => {
-//         const script = document.createElement('script');
-//         script.type = 'text/javascript';
-//         script.src = 'https://calendly.com/frankyanez9413/reunion-15-min';
-//         script.async = true;
-//         document.body.appendChild(script);
 
-//         return () => {
-//             document.body.removeChild(script);
-//         };
-//     }, []);
-// }
 
 export default function TermsAndConditions() {
   const articles: Array<Array<ArticleProps>> = [

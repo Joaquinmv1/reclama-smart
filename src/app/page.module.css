@@ -1,0 +1,38 @@
+.errorContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 80vh;
+  font-family: var(--font-openSans);
+  gap: 30px;
+  color: #02311A;
+}
+
+.errorContent p {
+  font-size: 8rem;
+}
+
+.errorContent span {
+  color: #F24E1E;
+  font-weight: bold;
+}
+
+
+.error {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.errorBtn {
+  display: flex;
+  padding: 16px 36px;
+  color: #fff;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #FF5220;
+  font-weight: bold;
+}

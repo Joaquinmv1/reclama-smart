@@ -16,6 +16,7 @@
 
 .img {
   width: 100%;
+  object-fit: contain;
 }
 
 .innovaUlimaContent {
@@ -30,5 +31,35 @@
 }
 
 .link {
+  display: block;
   color: #374F42;
+  /* width: 100%; */
+}
+
+/* .containerLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+@media screen and (max-width: 980px) {
+  .img{
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .img{
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .link {
+    display: inline-block;
+    width: 50%;
+  } 
+  
+  .containerLink {
+  }
 }

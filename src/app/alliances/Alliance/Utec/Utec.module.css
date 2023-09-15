@@ -16,11 +16,29 @@
 
 .img {
   width: 100%;
-  /* height: ; */
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .text {
   font-size: 21px;
   color: #374F42;
+}
+
+
+@media screen and (max-width: 950px) {
+  .img{
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .img{
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .img{
+    height: 200px;
+  }
 }

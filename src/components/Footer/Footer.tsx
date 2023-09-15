@@ -32,7 +32,7 @@ export default function Footer() {
             <Link href={'/terms'} className={`${styles.text} ${styles.hover}`}>
               <Pharagraph text={"Términos y condiciones"} />
             </Link>
-            <Link href={'/politician'} className={`${styles.text} ${styles.hover}`}>
+            <Link href={'/privacy'} className={`${styles.text} ${styles.hover}`}>
               <Pharagraph text={"Políticas de privacidad"} />
             </Link>
             <Link href={'/claims'} className={`${styles.text} ${styles.hover}`}>
@@ -66,7 +66,7 @@ export default function Footer() {
                 redes.map((red, i) => <Link className={styles.hover} target='_blank' key={`${red} ${i}`} href={red.link}> <Image src={red.img} alt="logo-red" /></Link>)
               }
             </div>
-            <Link href="/contact">
+            <Link target="_blank" href="https://api.whatsapp.com/send?phone=+51932468027&text=¡Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20ReclamaSmart">
               <Button title='Consulta Gratis' className={styles.button} />
             </Link>
           </div>

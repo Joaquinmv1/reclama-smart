@@ -32,3 +32,25 @@
   color: #374F42;
   font-weight: bold;
 }
+
+@media screen and (max-width: 1400px) {
+  .img{
+    height: 500px;
+    object-fit: cover;
+    object-position: top center;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .img{
+    height: 360px;
+    object-position: right center;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .img{
+    height: 300px;
+    object-position: right center;
+  }
+}

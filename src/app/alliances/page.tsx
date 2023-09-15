@@ -24,6 +24,10 @@ function Alliances() {
   const search = searchParams.get('alliance');
   const selectedComponent = componentMappings[search as Alliance];
 
+  if (!selectedComponent) {
+    throw new Error('404 not found');
+  }
+
   return (
     <>
       <main>

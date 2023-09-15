@@ -5,11 +5,10 @@ import arrow from "../../../../assets/images/chevron-up.png";
 import Image from "next/image";
 
 export default function Segments() {
-    const [open, setOpen] = useState<number>();
+    const [open, setOpen] = useState<number | null>(null)
 
     const handleOpen = (index: number) => {
-        const isOpen = index == open ? index : open;
-        setOpen(isOpen);
+        setOpen(index == open ? null : index)
     }
 
     return (
@@ -21,7 +20,6 @@ export default function Segments() {
                             {
                                 term.segment ? <Image src={arrow} alt="arrow" className={`${style.arrow} ${open === index ? style.rotated : ""}`} /> : <small className={style.margin}></small>
                             }
-
                             <h3>{term.title}</h3>
                         </div>
                         {
