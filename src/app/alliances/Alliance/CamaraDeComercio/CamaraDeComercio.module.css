@@ -36,8 +36,6 @@
   line-height: 16px;
 }
 
-
-
 @media screen and (max-width: 1000px) {
   .dateAbout {
     display: flex;
