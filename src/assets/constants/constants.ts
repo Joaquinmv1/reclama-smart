@@ -1,5 +1,4 @@
 import { Routes } from '@/app/models';
-import businessImg from '../../assets/images/business.jpg';
 import bag from '../images/bag.svg';
 import bussines from '../images/business.svg';
 import vector from '../images/Vector.svg'
@@ -12,9 +11,9 @@ import vision from '../../assets/images/MvvImages/eye2.svg'
 import mision from '../../assets/images/MvvImages/cohete2.svg'
 import bandera from '../../assets/images/MvvImages/flag2.svg'
 import otros from '../../assets/images/MvvImages/Vector (1).svg'
-import reclamo from '../../assets/images/asifunciona/reclamasmart2 1.svg'
-import respuesta from '../../assets/images/asifunciona/Fotos38 1.svg'
-import recuperar from '../../assets/images/asifunciona/Fotos38 1 (1).svg'
+import reclamo from '../../assets/images/asifunciona/reclamo.png'
+import respuesta from '../../assets/images/asifunciona/respuesta.png'
+import recuperar from '../../assets/images/asifunciona/recuperar.png'
 
 //PERSONS
 import person1 from "../images/joven 1.jpg"
