@@ -16,3 +16,9 @@
   font-weight: 600;
 } 
 
+
+@media screen and (max-width: 400px) {
+  .blogTitle h3 {
+    font-size: 35px;
+  }
+}

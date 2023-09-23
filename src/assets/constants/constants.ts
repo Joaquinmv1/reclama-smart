@@ -1,5 +1,4 @@
 import { Routes } from '@/app/models';
-import businessImg from '../../assets/images/business.jpg';
 import bag from '../images/bag.svg';
 import bussines from '../images/business.svg';
 import vector from '../images/Vector.svg'
@@ -12,9 +11,9 @@ import vision from '../../assets/images/MvvImages/eye2.svg'
 import mision from '../../assets/images/MvvImages/cohete2.svg'
 import bandera from '../../assets/images/MvvImages/flag2.svg'
 import otros from '../../assets/images/MvvImages/Vector (1).svg'
-import reclamo from '../../assets/images/asifunciona/reclamasmart2 1.svg'
-import respuesta from '../../assets/images/asifunciona/Fotos38 1.svg'
-import recuperar from '../../assets/images/asifunciona/Fotos38 1 (1).svg'
+import reclamo from '../../assets/images/asifunciona/reclamo.png'
+import respuesta from '../../assets/images/asifunciona/respuesta.png'
+import recuperar from '../../assets/images/asifunciona/recuperar.png'
 
 //PERSONS
 import person1 from "../images/joven 1.jpg"
@@ -26,7 +25,7 @@ import person6 from "../images/person6.jpg"
 
 import reclamaAqui from '../images/imgTrajectory.svg'
 import canal9 from '../images/imgTrajectory1.svg'
-import UIlima from '../images/imgTrajectory2.svg'
+import UIlima from '../images/reclamaSmart.png'
 import reclamaSmart from '../images/imgTrajectory3.svg'
 import errorService from '../images/errorService.svg'
 import gestionamos from '../images/gestionamos.svg'
@@ -118,10 +117,10 @@ export const dataClients = [
 ];
 
 export const imgTrajectory = [
-  { img: UIlima, title: "Reclamaquí", text: "Lanzamiento 1° Enero" },
-  { img: canal9, title: "Entrevista", text: "Conversamos con Marco Antonio Merino Montan en el programa El CLIENTE; Julio" },
-  { img: reclamaSmart, title: "Universidad de Lima: Concurso de  Emprendimiento Social", text: "Ganamos en el Contest “ULima Emprendimiento Social; Julio" },
-  { img: reclamaAqui, title: "Reclama Smart", text: "2° Lanzamiento Octubre" }
+  { img: UIlima, title: "Reclamaquí", text: "1° Lanzamiento", date: 'Enero' },
+  { img: canal9, title: "Entrevista", text: "Conversamos con Marco Antonio Merino Montan en el programa El CLIENTE.", date: 'Julio' },
+  { img: reclamaSmart, title: "Universidad de Lima", text: "Ganamos el concurso de  Emprendimiento Social. Innova ULima.", date: 'Julio' },
+  { img: reclamaAqui, title: "Reclama Smart", text: "2° Lanzamiento ", date: 'Octubre' }
 ]
 export const imgService = [
   { img: errorService, title: "Tu producto falló", text: "Imagina invertir 1000 soles en un televisor que se avería rápidamente debido a defectos de fábrica." },

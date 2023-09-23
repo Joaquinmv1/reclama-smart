@@ -11,7 +11,7 @@ function BlogGallery() {
           <article className={style.dataContent}>
             <Image className={style.image}  src={images.programadorImage} alt='image 1' />
             <Link className={style.link} href='/blog/blogContent?blog=cybercrime-scams'>
-              <h4>Tus derechos fundamentales como consumidor ¿Los Conoces?</h4>
+              <h4>Estafas a usuarios: ciberdelitos y robos de datos</h4>
             </Link>
             <p>06/09/2023</p>
           </article>
